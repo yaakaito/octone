@@ -22,13 +22,13 @@
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B9EE7C6615B7C24200BC79D6 /* BrowseGithub-Info.plist */ = {isa = PBXFileReference; path = "BrowseGithub-Info.plist"; sourceTree = "<group>"; };
+		B9EE7C6615B7C24200BC79D6 /* BrowseGithub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithub-Info.plist"; sourceTree = "<group>"; };
 		B9EE7C6815B7C24200BC79D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9EE7C6A15B7C24200BC79D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9EE7C6C15B7C24200BC79D6 /* BrowseGithub-Prefix.pch */ = {isa = PBXFileReference; path = "BrowseGithub-Prefix.pch"; sourceTree = "<group>"; };
-		B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */ = {isa = PBXFileReference; path = BGAppDelegate.h; sourceTree = "<group>"; };
+		B9EE7C6C15B7C24200BC79D6 /* BrowseGithub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithub-Prefix.pch"; sourceTree = "<group>"; };
+		B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
 		B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		B9EE7C7015B7C24200BC79D6 /* BGViewController.h */ = {isa = PBXFileReference; path = BGViewController.h; sourceTree = "<group>"; };
+		B9EE7C7015B7C24200BC79D6 /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
 		B9EE7C7115B7C24200BC79D6 /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		B9EE7C7415B7C24200BC79D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BGViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
