@@ -14,6 +14,9 @@
 		B9075DEF15E5EE3700DADA73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9075DED15E5EE3700DADA73 /* InfoPlist.strings */; };
 		B9075DF115E5EE3700DADA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DF015E5EE3700DADA73 /* main.m */; };
 		B9075DFA15E5EEF400DADA73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
+		B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
+		B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
+		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -29,6 +32,8 @@
 		B9075DEE15E5EE3700DADA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9075DF015E5EE3700DADA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9075DF215E5EE3700DADA73 /* BrowseGithubTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubTests-Prefix.pch"; sourceTree = "<group>"; };
+		B9075DFE15E5F69000DADA73 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
+		B9075DFF15E5F69000DADA73 /* BGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationController.m; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +129,8 @@
 				B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */,
 				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
+				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
+				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
 			);
 			path = BrowseGithub;
 			sourceTree = "<group>";
@@ -246,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9075DF115E5EE3700DADA73 /* main.m in Sources */,
+				B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */,
+				B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 			files = (
 				B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */,
 				B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */,
+				B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
