@@ -20,8 +20,6 @@
 		B9EE7C6915B7C24200BC79D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9EE7C6715B7C24200BC79D6 /* InfoPlist.strings */; };
 		B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6A15B7C24200BC79D6 /* main.m */; };
 		B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
-		B9EE7C7215B7C24200BC79D6 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C7115B7C24200BC79D6 /* BGViewController.m */; };
-		B9EE7C7515B7C24200BC79D6 /* BGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EE7C7315B7C24200BC79D6 /* BGViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +39,6 @@
 		B9EE7C6C15B7C24200BC79D6 /* BrowseGithub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithub-Prefix.pch"; sourceTree = "<group>"; };
 		B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
 		B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		B9EE7C7015B7C24200BC79D6 /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
-		B9EE7C7115B7C24200BC79D6 /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
-		B9EE7C7415B7C24200BC79D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BGViewController.xib; sourceTree = "<group>"; };
 		BFB0973B50B04429AE388A5D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,9 +123,6 @@
 			children = (
 				B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */,
 				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
-				B9EE7C7015B7C24200BC79D6 /* BGViewController.h */,
-				B9EE7C7115B7C24200BC79D6 /* BGViewController.m */,
-				B9EE7C7315B7C24200BC79D6 /* BGViewController.xib */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
 			);
 			path = BrowseGithub;
@@ -226,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9EE7C6915B7C24200BC79D6 /* InfoPlist.strings in Resources */,
-				B9EE7C7515B7C24200BC79D6 /* BGViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +255,6 @@
 			files = (
 				B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */,
 				B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */,
-				B9EE7C7215B7C24200BC79D6 /* BGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +275,6 @@
 				B9EE7C6815B7C24200BC79D6 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B9EE7C7315B7C24200BC79D6 /* BGViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9EE7C7415B7C24200BC79D6 /* en */,
-			);
-			name = BGViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

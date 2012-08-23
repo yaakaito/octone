@@ -8,8 +8,6 @@
 
 #import "BGAppDelegate.h"
 
-#import "BGViewController.h"
-
 @implementation BGAppDelegate
 
 @synthesize window = _window;
@@ -19,7 +17,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[BGViewController alloc] initWithNibName:@"BGViewController" bundle:nil];
+    self.viewController = [[JASidePanelController alloc] init];
+    self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[UIViewController alloc] init]];
+    self.viewController.leftPanel = [[UIViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
