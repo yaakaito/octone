@@ -1,4 +1,5 @@
 platform :ios
+pod 'Kiwi'
 pod 'GHUnitIOS'
 pod 'OCMock'
 pod 'NLTHTTPStubServer'

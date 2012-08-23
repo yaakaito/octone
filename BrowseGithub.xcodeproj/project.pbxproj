@@ -17,6 +17,13 @@
 		B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 		B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
+		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */; };
+		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */; };
+		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
+		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
+		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
+		B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B948A2AE15E6C26700712CB0 /* InfoPlist.strings */; };
+		B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -34,6 +41,16 @@
 		B9075DF215E5EE3700DADA73 /* BrowseGithubTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubTests-Prefix.pch"; sourceTree = "<group>"; };
 		B9075DFE15E5F69000DADA73 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
 		B9075DFF15E5F69000DADA73 /* BGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationController.m; sourceTree = "<group>"; };
+		B9075E0915E67A0D00DADA73 /* BGGlobalMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuViewController.h; sourceTree = "<group>"; };
+		B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuViewController.m; sourceTree = "<group>"; };
+		B9075E0F15E67B4000DADA73 /* BGGlobalMenuViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuViewControllerDelegate.h; sourceTree = "<group>"; };
+		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
+		B948A2AF15E6C26700712CB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseGithubSpecs.h; sourceTree = "<group>"; };
+		B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseGithubSpecs.m; sourceTree = "<group>"; };
+		B948A2B415E6C26700712CB0 /* BrowseGithubSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +73,16 @@
 				B9075DE815E5EE3700DADA73 /* Foundation.framework in Frameworks */,
 				B9075DE915E5EE3700DADA73 /* CoreGraphics.framework in Frameworks */,
 				B9075DFA15E5EEF400DADA73 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B948A2A215E6C26700712CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */,
+				B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */,
+				B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,11 +119,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B9075E0D15E67A1700DADA73 /* Roots */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */,
+				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
+				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
+				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
+				B9075E0F15E67B4000DADA73 /* BGGlobalMenuViewControllerDelegate.h */,
+				B9075E0915E67A0D00DADA73 /* BGGlobalMenuViewController.h */,
+				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */,
+			);
+			name = Roots;
+			sourceTree = "<group>";
+		};
+		B9075E0E15E67A2B00DADA73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */,
+				B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */,
+				B948A2AC15E6C26700712CB0 /* Supporting Files */,
+			);
+			path = BrowseGithubSpecs;
+			sourceTree = "<group>";
+		};
+		B948A2AC15E6C26700712CB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */,
+				B948A2AE15E6C26700712CB0 /* InfoPlist.strings */,
+				B948A2B415E6C26700712CB0 /* BrowseGithubSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B9EE7C4F15B7C24200BC79D6 = {
 			isa = PBXGroup;
 			children = (
 				B9EE7C6415B7C24200BC79D6 /* BrowseGithub */,
 				B9075DEA15E5EE3700DADA73 /* BrowseGithubTests */,
+				B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */,
 				B9EE7C5D15B7C24200BC79D6 /* Frameworks */,
 				B9EE7C5B15B7C24200BC79D6 /* Products */,
 				97B639BC8EB943CD8994A6BC /* Pods.xcconfig */,
@@ -108,6 +177,7 @@
 			children = (
 				B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */,
 				B9075DE515E5EE3700DADA73 /* BrowseGithubTests.app */,
+				B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +189,7 @@
 				B9EE7C6015B7C24200BC79D6 /* Foundation.framework */,
 				B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */,
 				BFB0973B50B04429AE388A5D /* libPods.a */,
+				B948A2A715E6C26700712CB0 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,11 +197,9 @@
 		B9EE7C6415B7C24200BC79D6 /* BrowseGithub */ = {
 			isa = PBXGroup;
 			children = (
-				B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */,
-				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
+				B9075E0E15E67A2B00DADA73 /* Models */,
+				B9075E0D15E67A1700DADA73 /* Roots */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
-				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
-				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
 			);
 			path = BrowseGithub;
 			sourceTree = "<group>";
@@ -165,6 +234,24 @@
 			productName = BrowseGithubTests;
 			productReference = B9075DE515E5EE3700DADA73 /* BrowseGithubTests.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B948A2A515E6C26700712CB0 /* BrowseGithubSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B948A2B715E6C26700712CB0 /* Build configuration list for PBXNativeTarget "BrowseGithubSpecs" */;
+			buildPhases = (
+				B948A2A115E6C26700712CB0 /* Sources */,
+				B948A2A215E6C26700712CB0 /* Frameworks */,
+				B948A2A315E6C26700712CB0 /* Resources */,
+				B948A2A415E6C26700712CB0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrowseGithubSpecs;
+			productName = BrowseGithubSpecs;
+			productReference = B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 		B9EE7C5915B7C24200BC79D6 /* BrowseGithub */ = {
 			isa = PBXNativeTarget;
@@ -207,6 +294,7 @@
 			targets = (
 				B9EE7C5915B7C24200BC79D6 /* BrowseGithub */,
 				B9075DE415E5EE3700DADA73 /* BrowseGithubTests */,
+				B948A2A515E6C26700712CB0 /* BrowseGithubSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9075DEF15E5EE3700DADA73 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B948A2A315E6C26700712CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +327,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B948A2A415E6C26700712CB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		CCCF857172D544359056C7B9 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +364,15 @@
 				B9075DF115E5EE3700DADA73 /* main.m in Sources */,
 				B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */,
 				B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */,
+				B9075E0C15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B948A2A115E6C26700712CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +383,7 @@
 				B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */,
 				B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */,
 				B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */,
+				B9075E0B15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +394,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				B9075DEE15E5EE3700DADA73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B948A2AE15E6C26700712CB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B948A2AF15E6C26700712CB0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -368,6 +495,52 @@
 			};
 			name = Release;
 		};
+		B948A2B515E6C26700712CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseGithubSpecs/BrowseGithubSpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"${PODS_HEADERS_SEARCH_PATHS}",
+				);
+				INFOPLIST_FILE = "BrowseGithubSpecs/BrowseGithubSpecs-Info.plist";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/Kiwi\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B948A2B615E6C26700712CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrowseGithubSpecs/BrowseGithubSpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"${PODS_HEADERS_SEARCH_PATHS}",
+				);
+				INFOPLIST_FILE = "BrowseGithubSpecs/BrowseGithubSpecs-Info.plist";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/Kiwi\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		B9EE7C7615B7C24200BC79D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,10 +590,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97B639BC8EB943CD8994A6BC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,10 +605,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97B639BC8EB943CD8994A6BC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -445,6 +624,15 @@
 			buildConfigurations = (
 				B9075DF615E5EE3700DADA73 /* Debug */,
 				B9075DF715E5EE3700DADA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B948A2B715E6C26700712CB0 /* Build configuration list for PBXNativeTarget "BrowseGithubSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B948A2B515E6C26700712CB0 /* Debug */,
+				B948A2B615E6C26700712CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

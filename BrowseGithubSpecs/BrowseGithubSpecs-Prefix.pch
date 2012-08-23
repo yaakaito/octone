@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'BrowseGithubSpecs' target in the 'BrowseGithubSpecs' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
