@@ -1,0 +1,9 @@
+platform :ios
+pod 'GHUnitIOS'
+pod 'OCMock'
+pod 'NLTHTTPStubServer'
+pod 'AFNetworking'
+pod 'AFOAuth2Client'
+pod 'MagicalRecord'
+pod 'TTTAttributedLabel'
+pod 'JASidePanels'

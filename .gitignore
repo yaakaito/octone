@@ -1,2 +1,5 @@
 BrowseGithub.xcodeproj/project.xcworkspace/*
 BrowseGithub.xcodeproj/xcuserdata/*
+Podfile.lock
+Pods
+BrowseGithub.xcworkspace/xcuserdata/*
