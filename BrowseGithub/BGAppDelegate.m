@@ -9,6 +9,7 @@
 #import "BGAppDelegate.h"
 #import "BGNavigationController.h"
 #import "BGGlobalMenuController.h"
+#import "PatchedJASidePanelController.h"
 
 @implementation BGAppDelegate
 
@@ -19,7 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[JASidePanelController alloc] init];
+    self.viewController = [[PatchedJASidePanelController alloc] init];
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
@@ -62,3 +63,4 @@
 }
 
 @end
+
