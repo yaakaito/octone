@@ -1,5 +1,5 @@
 //
-//  BGNavigationController.h
+//  BGGlobalMenuController.h
 //  BrowseGithub
 //
 //  Created by KAZUMA Ukyo on 12/08/23.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BGGlobalMenuControllerDelegate.h"
 
-@interface BGNavigationController : UINavigationController<BGGlobalMenuControllerDelegate>
-
+@interface BGGlobalMenuController : UITableViewController
+@property (nonatomic, strong) NSObject<BGGlobalMenuControllerDelegate> *delegate;
 @end

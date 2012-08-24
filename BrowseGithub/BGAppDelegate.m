@@ -8,6 +8,7 @@
 
 #import "BGAppDelegate.h"
 #import "BGNavigationController.h"
+#import "BGGlobalMenuController.h"
 
 @implementation BGAppDelegate
 
@@ -21,9 +22,14 @@
     self.viewController = [[JASidePanelController alloc] init];
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
-    self.viewController.centerPanel = [[BGNavigationController alloc] initWithRootViewController:vc];
-    self.viewController.leftPanel = [[UIViewController alloc] init];
+    
+    BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
+    BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
+    globalMenuController.delegate = navigationController;
+    self.viewController.centerPanel = navigationController;
+    self.viewController.leftPanel = globalMenuController;
     self.window.rootViewController = self.viewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

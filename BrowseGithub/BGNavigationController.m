@@ -8,7 +8,7 @@
 
 #import "BGNavigationController.h"
 
-@interface BGNavigationController ()
+@interface BGNavigationController()
 
 @end
 
@@ -42,4 +42,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - BGGlobalMenuViewControllerDelegate
+- (void)globalMenuViewController:(id)sender didSelectNextViewController:(UIViewController *)viewController {
+    
+#warning wontfix
+}
 @end

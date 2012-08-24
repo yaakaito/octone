@@ -17,13 +17,17 @@
 		B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 		B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
-		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */; };
-		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */; };
+		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
+		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B948A2AE15E6C26700712CB0 /* InfoPlist.strings */; };
 		B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */; };
+		B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
+		B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
+		B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
+		B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -41,9 +45,9 @@
 		B9075DF215E5EE3700DADA73 /* BrowseGithubTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubTests-Prefix.pch"; sourceTree = "<group>"; };
 		B9075DFE15E5F69000DADA73 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
 		B9075DFF15E5F69000DADA73 /* BGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationController.m; sourceTree = "<group>"; };
-		B9075E0915E67A0D00DADA73 /* BGGlobalMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuViewController.h; sourceTree = "<group>"; };
-		B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuViewController.m; sourceTree = "<group>"; };
-		B9075E0F15E67B4000DADA73 /* BGGlobalMenuViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuViewControllerDelegate.h; sourceTree = "<group>"; };
+		B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuController.h; sourceTree = "<group>"; };
+		B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuController.m; sourceTree = "<group>"; };
+		B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuControllerDelegate.h; sourceTree = "<group>"; };
 		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseGithubSpecs.h; sourceTree = "<group>"; };
 		B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseGithubSpecs.m; sourceTree = "<group>"; };
 		B948A2B415E6C26700712CB0 /* BrowseGithubSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuControllerSpec.m; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,9 +131,9 @@
 				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
 				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
 				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
-				B9075E0F15E67B4000DADA73 /* BGGlobalMenuViewControllerDelegate.h */,
-				B9075E0915E67A0D00DADA73 /* BGGlobalMenuViewController.h */,
-				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuViewController.m */,
+				B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */,
+				B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */,
+				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */,
 			);
 			name = Roots;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */ = {
 			isa = PBXGroup;
 			children = (
+				B948A2C515E745FD00712CB0 /* Roots */,
 				B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */,
 				B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */,
 				B948A2AC15E6C26700712CB0 /* Supporting Files */,
@@ -160,12 +166,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B948A2C515E745FD00712CB0 /* Roots */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */,
+			);
+			name = Roots;
+			sourceTree = "<group>";
+		};
 		B9EE7C4F15B7C24200BC79D6 = {
 			isa = PBXGroup;
 			children = (
 				B9EE7C6415B7C24200BC79D6 /* BrowseGithub */,
-				B9075DEA15E5EE3700DADA73 /* BrowseGithubTests */,
 				B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */,
+				B9075DEA15E5EE3700DADA73 /* BrowseGithubTests */,
 				B9EE7C5D15B7C24200BC79D6 /* Frameworks */,
 				B9EE7C5B15B7C24200BC79D6 /* Products */,
 				97B639BC8EB943CD8994A6BC /* Pods.xcconfig */,
@@ -364,7 +378,7 @@
 				B9075DF115E5EE3700DADA73 /* main.m in Sources */,
 				B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */,
 				B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */,
-				B9075E0C15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */,
+				B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +387,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */,
+				B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */,
+				B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */,
+				B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */,
+				B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +401,7 @@
 				B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */,
 				B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */,
 				B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */,
-				B9075E0B15E67A0D00DADA73 /* BGGlobalMenuViewController.m in Sources */,
+				B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +653,7 @@
 				B948A2B615E6C26700712CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EE7C5415B7C24200BC79D6 /* Build configuration list for PBXProject "BrowseGithub" */ = {
 			isa = XCConfigurationList;
