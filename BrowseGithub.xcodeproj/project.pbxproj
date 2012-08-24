@@ -30,6 +30,10 @@
 		B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */; };
 		B948A2CC15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B948A2CD15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
+		B948A2D315E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */; };
+		B948A2D415E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */; };
+		B948A2D815E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */; };
+		B948A2D915E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -60,6 +64,10 @@
 		B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuControllerSpec.m; sourceTree = "<group>"; };
 		B948A2CA15E748AA00712CB0 /* PatchedJASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatchedJASidePanelController.h; sourceTree = "<group>"; };
 		B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatchedJASidePanelController.m; sourceTree = "<group>"; };
+		B948A2D115E74AC400712CB0 /* BGGlobalMenuContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContentCell.h; sourceTree = "<group>"; };
+		B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContentCell.m; sourceTree = "<group>"; };
+		B948A2D615E74C7300712CB0 /* UIColor+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BrowseGithub.h"; sourceTree = "<group>"; };
+		B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrowseGithub.m"; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,13 +139,10 @@
 		B9075E0D15E67A1700DADA73 /* Roots */ = {
 			isa = PBXGroup;
 			children = (
+				B948A2CF15E74A6F00712CB0 /* Views */,
+				B948A2CE15E74A5900712CB0 /* Controllers */,
 				B9EE7C6D15B7C24200BC79D6 /* BGAppDelegate.h */,
 				B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */,
-				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
-				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
-				B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */,
-				B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */,
-				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */,
 			);
 			name = Roots;
 			sourceTree = "<group>";
@@ -178,13 +183,59 @@
 			name = Roots;
 			sourceTree = "<group>";
 		};
-		B948A2C915E747FC00712CB0 /* Patched */ = {
+		B948A2C915E747FC00712CB0 /* Patches */ = {
 			isa = PBXGroup;
 			children = (
 				B948A2CA15E748AA00712CB0 /* PatchedJASidePanelController.h */,
 				B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */,
 			);
-			name = Patched;
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		B948A2CE15E74A5900712CB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */,
+				B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */,
+				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */,
+				B9075DFE15E5F69000DADA73 /* BGNavigationController.h */,
+				B9075DFF15E5F69000DADA73 /* BGNavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B948A2CF15E74A6F00712CB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2D015E74A7600712CB0 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B948A2D015E74A7600712CB0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2D115E74AC400712CB0 /* BGGlobalMenuContentCell.h */,
+				B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B948A2D515E74C4E00712CB0 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2DA15E74C7A00712CB0 /* Extensions */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		B948A2DA15E74C7A00712CB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B948A2D615E74C7300712CB0 /* UIColor+BrowseGithub.h */,
+				B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		B9EE7C4F15B7C24200BC79D6 = {
@@ -224,7 +275,8 @@
 		B9EE7C6415B7C24200BC79D6 /* BrowseGithub */ = {
 			isa = PBXGroup;
 			children = (
-				B948A2C915E747FC00712CB0 /* Patched */,
+				B948A2D515E74C4E00712CB0 /* Commons */,
+				B948A2C915E747FC00712CB0 /* Patches */,
 				B9075E0E15E67A2B00DADA73 /* Models */,
 				B9075E0D15E67A1700DADA73 /* Roots */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
@@ -406,6 +458,8 @@
 				B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */,
 				B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */,
 				B948A2CD15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */,
+				B948A2D415E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */,
+				B948A2D915E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +472,8 @@
 				B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */,
 				B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */,
 				B948A2CC15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */,
+				B948A2D315E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */,
+				B948A2D815E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
