@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *kGlobalMenuContentCellReuseIdentifier;
+#define kGlobalMenuContentCellReuseIdentifier (@"GlobalMenuContentCell")
 
 @interface BGGlobalMenuContentCell : UITableViewCell
 

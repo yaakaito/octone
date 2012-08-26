@@ -8,8 +8,6 @@
 
 #import "BGGlobalMenuContentCell.h"
 
-NSString *kGlobalMenuContentCellReuseIdentifier = @"GlobalMenuContentCell";
-
 @implementation BGGlobalMenuContentCell
 
 - (id)init
@@ -18,6 +16,9 @@ NSString *kGlobalMenuContentCellReuseIdentifier = @"GlobalMenuContentCell";
                 reuseIdentifier:kGlobalMenuContentCellReuseIdentifier];
     if (self) {
         // Initialization code
+        self.backgroundColor = [UIColor darkGrayColor];
+        self.contentView.backgroundColor = [UIColor darkGrayColor];
+        self.selectedBackgroundView.backgroundColor = [UIColor blackColor];
     }
     return self;
 }
