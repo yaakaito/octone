@@ -7,6 +7,7 @@
 //
 
 #import "BGGlobalMenuController.h"
+#import "BGGlobalMenuContentCell.h"
 
 @interface BGGlobalMenuController ()
 
@@ -51,22 +52,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = kGlobalMenuContentCellReuseIdentifier;
+    BGGlobalMenuContentCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(!cell) {
+        cell = [[BGGlobalMenuContentCell alloc] init];
+    }
     
     // Configure the cell...
     
