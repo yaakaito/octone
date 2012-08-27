@@ -27,6 +27,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B948A2A515E6C26700712CB0"
+               BuildableName = "BrowseGithubSpecs.octest"
+               BlueprintName = "BrowseGithubSpecs"
+               ReferencedContainer = "container:BrowseGithub.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -10,4 +10,18 @@
 
 @interface UIColor (BrowseGithub)
 
+#pragma mark - Bases
++ (UIColor*)githubTextColor;
++ (UIColor*)githubBackgroundColor;
+
+#pragma mark - Colors
++ (UIColor*)githubPrimaryColor;
++ (UIColor*)githubSecondaryColor;
++ (UIColor*)githubComplementaryColor;
+
+#pragma mark - Decorations
++ (UIColor*)githubHightlightedBackgroundColor;
++ (UIColor*)githubHightlightColor;
++ (UIColor*)githubSeparatorColor;
+
 @end

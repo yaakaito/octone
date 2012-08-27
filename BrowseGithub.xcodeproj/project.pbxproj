@@ -23,7 +23,6 @@
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B948A2AE15E6C26700712CB0 /* InfoPlist.strings */; };
-		B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */; };
 		B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 		B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
@@ -36,6 +35,9 @@
 		B948A2D915E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */; };
 		B948A2DD15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
 		B948A2DE15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
+		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
+		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
+		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -43,6 +45,16 @@
 		B9EE7C6B15B7C24200BC79D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6A15B7C24200BC79D6 /* main.m */; };
 		B9EE7C6F15B7C24200BC79D6 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B99D7AE915EBC069006543D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9EE7C5115B7C24200BC79D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9EE7C5915B7C24200BC79D6;
+			remoteInfo = BrowseGithub;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		97B639BC8EB943CD8994A6BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -60,8 +72,6 @@
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
 		B948A2AF15E6C26700712CB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseGithubSpecs.h; sourceTree = "<group>"; };
-		B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowseGithubSpecs.m; sourceTree = "<group>"; };
 		B948A2B415E6C26700712CB0 /* BrowseGithubSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuControllerSpec.m; sourceTree = "<group>"; };
 		B948A2CA15E748AA00712CB0 /* PatchedJASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatchedJASidePanelController.h; sourceTree = "<group>"; };
@@ -104,6 +114,8 @@
 				B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */,
 				B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */,
 				B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */,
+				B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */,
+				B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				B948A2C515E745FD00712CB0 /* Roots */,
-				B948A2B115E6C26700712CB0 /* BrowseGithubSpecs.h */,
-				B948A2B215E6C26700712CB0 /* BrowseGithubSpecs.m */,
 				B948A2AC15E6C26700712CB0 /* Supporting Files */,
 			);
 			path = BrowseGithubSpecs;
@@ -244,6 +254,13 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		B99D7AEF15EBC18E006543D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B9EE7C4F15B7C24200BC79D6 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +302,7 @@
 				B948A2C915E747FC00712CB0 /* Patches */,
 				B9075E0E15E67A2B00DADA73 /* Models */,
 				B9075E0D15E67A1700DADA73 /* Roots */,
+				B99D7AEF15EBC18E006543D1 /* Resources */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
 			);
 			path = BrowseGithub;
@@ -333,6 +351,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B99D7AEA15EBC069006543D1 /* PBXTargetDependency */,
 			);
 			name = BrowseGithubSpecs;
 			productName = BrowseGithubSpecs;
@@ -451,6 +470,7 @@
 				B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */,
 				B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */,
 				B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */,
+				B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +478,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B948A2B315E6C26700712CB0 /* BrowseGithubSpecs.m in Sources */,
 				B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */,
 				B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */,
 				B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */,
@@ -486,6 +505,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B99D7AEA15EBC069006543D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9EE7C5915B7C24200BC79D6 /* BrowseGithub */;
+			targetProxy = B99D7AE915EBC069006543D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9075DED15E5EE3700DADA73 /* InfoPlist.strings */ = {
@@ -607,6 +634,26 @@
 					"${PODS_HEADERS_SEARCH_PATHS}",
 				);
 				INFOPLIST_FILE = "BrowseGithubSpecs/BrowseGithubSpecs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreData,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreText,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					SystemConfiguration,
+				);
 				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/Kiwi\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
@@ -630,6 +677,26 @@
 					"${PODS_HEADERS_SEARCH_PATHS}",
 				);
 				INFOPLIST_FILE = "BrowseGithubSpecs/BrowseGithubSpecs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreData,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreText,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					SystemConfiguration,
+				);
 				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/Kiwi\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";

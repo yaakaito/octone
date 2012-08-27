@@ -124,6 +124,10 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    if(self.delegate && [self.delegate respondsToSelector:@selector(globalMenuController:didSelectNextViewController:)])
+    {
+        [self.delegate globalMenuController:self didSelectNextViewController:nil];
+    }
 }
 
 @end

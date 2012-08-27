@@ -6,25 +6,37 @@
 //
 
 #import "Kiwi.h"
-#import "BGGlobalMenuControllerSpec.m"
+#import "BGGlobalMenuController.h"
+
+@interface MockMenuDelegate : NSObject<BGGlobalMenuControllerDelegate>
+@property(nonatomic) BOOL calledDelegate;
+@property(nonatomic, retain) UIViewController *nextController;
+@end
+
+@implementation MockMenuDelegate
+- (void)globalMenuController:(id)sender didSelectNextViewController:(UIViewController *)viewController
+{
+    self.calledDelegate = YES;
+    self.nextController= viewController;
+}
+@end
+
 
 SPEC_BEGIN(BGGlobalMenuControllerSpec)
 
-describe(@"BGGlobalMenuController", ^{
-    __block NSString *string;
-    context(@"New", ^{
+describe(@"Global Menu Controller", ^{
+    context(@"メニューの選択", ^{
+        __block BGGlobalMenuController *globalMenuController;
+        __block MockMenuDelegate *mockDelegate;
         beforeEach(^{
-            string = @"example";
+            globalMenuController = [[BGGlobalMenuController alloc] init];
+            mockDelegate= [[MockMenuDelegate alloc] init];
+            globalMenuController.delegate = mockDelegate;
         });
         
-        context(@"append 'exsample'", ^{
-            beforeEach(^{
-                string = [string stringByAppendingString:@"example"];
-            });
-            
-            it(@"length = 14", ^{
-                [[theValue([string length]) should] equal:theValue(15)];
-            });
+        it(@"何かしらのメニューがタップで選択されたとき、delegateへ通知される", ^{
+            [globalMenuController tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            [[theValue(mockDelegate.calledDelegate) should] beYes];
         });
     });
 });
