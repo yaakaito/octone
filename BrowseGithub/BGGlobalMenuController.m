@@ -14,8 +14,6 @@
 @end
 
 @implementation BGGlobalMenuController
-#warning xcode4.3 fix
-@synthesize delegate = _delegate;
 
 - (id)init {
     self = [super initWithStyle:UITableViewStylePlain];
