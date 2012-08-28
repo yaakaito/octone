@@ -7,7 +7,7 @@
 //
 
 
-#import "JASidePanelController.h"
+#import <JASidePanels/JASidePanelController.h>
 
 @interface PatchedJASidePanelController : JASidePanelController
 
