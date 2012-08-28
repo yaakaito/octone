@@ -43,6 +43,11 @@
 		B9BD471415EC955800DBAA04 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471215EC955800DBAA04 /* BGFeedEntry.m */; };
 		B9BD471815EC959D00DBAA04 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471715EC959D00DBAA04 /* BGFeedParser.m */; };
 		B9BD471915EC959D00DBAA04 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471715EC959D00DBAA04 /* BGFeedParser.m */; };
+		B9BD471D15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471C15ED122600DBAA04 /* BGFeedEntryManager.m */; };
+		B9BD471E15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471C15ED122600DBAA04 /* BGFeedEntryManager.m */; };
+		B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */; };
+		B9BD472715ED17AD00DBAA04 /* user.private.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472515ED17AD00DBAA04 /* user.private.atom */; };
+		B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472615ED17AD00DBAA04 /* user.private.short.atom */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -92,6 +97,12 @@
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
 		B9BD471615EC959D00DBAA04 /* BGFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedParser.h; sourceTree = "<group>"; };
 		B9BD471715EC959D00DBAA04 /* BGFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParser.m; sourceTree = "<group>"; };
+		B9BD471B15ED122600DBAA04 /* BGFeedEntryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntryManager.h; sourceTree = "<group>"; };
+		B9BD471C15ED122600DBAA04 /* BGFeedEntryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryManager.m; sourceTree = "<group>"; };
+		B9BD471F15ED140400DBAA04 /* NSBundle+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Specs.h"; sourceTree = "<group>"; };
+		B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Specs.m"; sourceTree = "<group>"; };
+		B9BD472515ED17AD00DBAA04 /* user.private.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.atom; sourceTree = "<group>"; };
+		B9BD472615ED17AD00DBAA04 /* user.private.short.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.short.atom; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -185,6 +196,8 @@
 		B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */ = {
 			isa = PBXGroup;
 			children = (
+				B9BD472315ED17A000DBAA04 /* Resouces */,
+				B9BD472215ED141400DBAA04 /* Supporting Extensions */,
 				B9BD471015EC94E600DBAA04 /* Github */,
 				B948A2C515E745FD00712CB0 /* Roots */,
 				B948A2AC15E6C26700712CB0 /* Supporting Files */,
@@ -300,6 +313,42 @@
 			name = Parser;
 			sourceTree = "<group>";
 		};
+		B9BD471A15EC99C400DBAA04 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD471B15ED122600DBAA04 /* BGFeedEntryManager.h */,
+				B9BD471C15ED122600DBAA04 /* BGFeedEntryManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B9BD472215ED141400DBAA04 /* Supporting Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD471F15ED140400DBAA04 /* NSBundle+Specs.h */,
+				B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */,
+			);
+			name = "Supporting Extensions";
+			sourceTree = "<group>";
+		};
+		B9BD472315ED17A000DBAA04 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD472415ED17AD00DBAA04 /* Mocks */,
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
+		B9BD472415ED17AD00DBAA04 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD472515ED17AD00DBAA04 /* user.private.atom */,
+				B9BD472615ED17AD00DBAA04 /* user.private.short.atom */,
+			);
+			name = Mocks;
+			path = Resouces/Mocks;
+			sourceTree = "<group>";
+		};
 		B9EE7C4F15B7C24200BC79D6 = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +389,7 @@
 				B948A2D515E74C4E00712CB0 /* Commons */,
 				B948A2C915E747FC00712CB0 /* Patches */,
 				B9075E0E15E67A2B00DADA73 /* Models */,
+				B9BD471A15EC99C400DBAA04 /* Managers */,
 				B9075E0D15E67A1700DADA73 /* Roots */,
 				B99D7AEF15EBC18E006543D1 /* Resources */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,
@@ -457,6 +507,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */,
+				B9BD472715ED17AD00DBAA04 /* user.private.atom in Resources */,
+				B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +580,8 @@
 				B9BD470F15EC94D300DBAA04 /* BGGithubFeedSpec.m in Sources */,
 				B9BD471415EC955800DBAA04 /* BGFeedEntry.m in Sources */,
 				B9BD471915EC959D00DBAA04 /* BGFeedParser.m in Sources */,
+				B9BD471E15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */,
+				B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +599,7 @@
 				B948A2DD15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */,
 				B9BD471315EC955800DBAA04 /* BGFeedEntry.m in Sources */,
 				B9BD471815EC959D00DBAA04 /* BGFeedParser.m in Sources */,
+				B9BD471D15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
