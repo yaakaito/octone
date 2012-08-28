@@ -22,6 +22,7 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) {
         // Custom initialization
+        self.navigationBar.barStyle = UIBarStyleDefault;
         self.navigationBar.tintColor = [UIColor githubNavigationColor];
     }
     return self;
