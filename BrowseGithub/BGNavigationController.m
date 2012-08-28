@@ -23,7 +23,6 @@
     if (self) {
         // Custom initialization
         self.navigationBar.tintColor = [UIColor githubNavigationColor];
-        self.navigationBar.
     }
     return self;
 }
