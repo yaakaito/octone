@@ -1,4 +1,4 @@
-platform :ios
+platform :ios, '5.0'
 pod 'Kiwi'
 pod 'GHUnitIOS'
 pod 'OCMock'
@@ -9,3 +9,4 @@ pod 'MagicalRecord'
 pod 'TTTAttributedLabel'
 pod 'JASidePanels'
 pod 'KissXML'
+pod 'EEHUDView'
