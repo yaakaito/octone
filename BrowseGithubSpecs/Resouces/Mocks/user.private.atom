@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/yaakaito.private</id>
+  <link type="text/html" rel="alternate" href="https://github.com/yaakaito"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/yaakaito.private.atom?token=a105091517fe47ba706a4ebd25292d7a"/>
+  <title>Private Feed for yaakaito</title>
+  <updated>2012-08-28T04:44:08Z</updated>
+  <entry>
+    <id>tag:github.com,2008:CreateEvent/1590394401</id>
+    <published>2012-08-28T04:44:08Z</published>
+    <updated>2012-08-28T04:44:08Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/visionmedia/dom"/>
+    <title type="html">visionmedia created repository dom</title>
+    <author>
+      <name>visionmedia</name>
+      <email>tj@vision-media.ca</email>
+      <uri>https://github.com/visionmedia</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-create&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/visionmedia&quot;&gt;visionmedia&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; repository &lt;a href=&quot;/visionmedia/dom&quot;&gt;dom&lt;/a&gt; 
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T04:44:08Z&quot; title=&quot;2012-08-28 04:44:08&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+
+        DOM traversal, manipulation and events aggregate library (like jQuery)
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PullRequestEvent/1590373427</id>
+    <published>2012-08-28T02:55:21Z</published>
+    <updated>2012-08-28T02:55:21Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/pull/429"/>
+    <title type="html">bricooke closed pull request 429 on CocoaPods/Specs</title>
+    <author>
+      <name>bricooke</name>
+      <email>bri@bricooke.com</email>
+      <uri>https://github.com/bricooke</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-pull-request&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt; &lt;span&gt;closed&lt;/span&gt; &lt;a href=&quot;https://github.com/CocoaPods/Specs/pull/429&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590373426</id>
+    <published>2012-08-28T02:55:21Z</published>
+    <updated>2012-08-28T02:55:21Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/issues/429#issuecomment-8077910"/>
+    <title type="html">bricooke commented on pull request 429 on CocoaPods/Specs</title>
+    <author>
+      <name>bricooke</name>
+      <email>bri@bricooke.com</email>
+      <uri>https://github.com/bricooke</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/CocoaPods/Specs/issues/429#issuecomment-8077910&quot; title=&quot;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Sigh, gets a little uglier. `uservoice-iphone-sdk` includes categories also defined in YOAuth proper but renames their category name, but not the files. So, https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h has a category UVOauthResponse (the UV is in the category name, but not the file) and the implementations seem to collide.
+
+I'm declaring defeat on this for now. I think `uservoice-iphone-sdk` needs some cleanup before it'll play nicely. &quot;&gt;
+      &lt;p&gt;Sigh, gets a little uglier. &lt;code&gt;uservoice-iphone-sdk&lt;/code&gt; includes categories also defined in YOAuth proper but renames their category name, but not the files. So, &lt;a href=&quot;https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h&quot;&gt;https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h&lt;/a&gt; has a category UVOauthResponse (the UV is in the category name, but not the file) and the implementations seem to collide.&lt;/p&gt;
+
+&lt;p&gt;I'm declaring defeat on this for now. I think &lt;code&gt;uservoice-iphone-sdk&lt;/code&gt; needs some cleanup before it'll play nicely. &lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:FollowEvent/1590365389</id>
+    <published>2012-08-28T02:17:21Z</published>
+    <updated>2012-08-28T02:17:21Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/gkz"/>
+    <title type="html">VoQn started following gkz</title>
+    <author>
+      <name>VoQn</name>
+      <email>VoQn.tyrantist@gmail.com</email>
+      <uri>https://github.com/VoQn</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/73889ae12e3dbade2478538fd20c072f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-follow&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/VoQn&quot;&gt;VoQn&lt;/a&gt; &lt;span&gt;started following&lt;/span&gt; &lt;a href=&quot;/gkz&quot;&gt;gkz&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:17:21Z&quot; title=&quot;2012-08-28 02:17:21&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    gkz has
+    8
+    public repos
+    and 22 followers
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:FollowEvent/1590365177</id>
+    <published>2012-08-28T02:16:19Z</published>
+    <updated>2012-08-28T02:16:19Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/michaelficarra"/>
+    <title type="html">VoQn started following michaelficarra</title>
+    <author>
+      <name>VoQn</name>
+      <email>VoQn.tyrantist@gmail.com</email>
+      <uri>https://github.com/VoQn</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/73889ae12e3dbade2478538fd20c072f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-follow&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/VoQn&quot;&gt;VoQn&lt;/a&gt; &lt;span&gt;started following&lt;/span&gt; &lt;a href=&quot;/michaelficarra&quot;&gt;michaelficarra&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:16:19Z&quot; title=&quot;2012-08-28 02:16:19&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    michaelficarra has
+    48
+    public repos
+    and 117 followers
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:GistEvent/1590360937</id>
+    <published>2012-08-28T01:56:21Z</published>
+    <updated>2012-08-28T01:56:21Z</updated>
+    <link type="text/html" rel="alternate" href="https://gist.github.com/3494237"/>
+    <title type="html">katsuyoshi created gist: 3494237</title>
+    <author>
+      <name>katsuyoshi</name>
+      <uri>https://github.com/katsuyoshi</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/ea4f647d2ebc49e087fb84739194b19c?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-gist&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/katsuyoshi&quot;&gt;katsuyoshi&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; &lt;a href=&quot;https://gist.github.com/3494237&quot;&gt;gist: 3494237&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:56:21Z&quot; title=&quot;2012-08-28 01:56:21&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;spec file for nsindexpath in sugarcube&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1590356299</id>
+    <published>2012-08-28T01:35:42Z</published>
+    <updated>2012-08-28T01:35:42Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/compare/022e74e874...989bb3ede6"/>
+    <title type="html">msv pushed to master at CocoaPods/Specs</title>
+    <author>
+      <name>msv</name>
+      <uri>https://github.com/msv</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cb15b592f4b997b163fc1338bd246c8d?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-push&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/msv&quot;&gt;msv&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:35:42Z&quot; title=&quot;2012-08-28 01:35:42&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/msv&quot; class=&quot;committer&quot;&gt;msv&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/989bb3ede6307d4e2f7f884328d860492aa18a55&quot;&gt;989bb3e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Add StackMob beta.3&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1590355699</id>
+    <published>2012-08-28T01:33:11Z</published>
+    <updated>2012-08-28T01:33:11Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/compare/0e0bb4287a...022e74e874"/>
+    <title type="html">msv pushed to master at CocoaPods/Specs</title>
+    <author>
+      <name>msv</name>
+      <uri>https://github.com/msv</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cb15b592f4b997b163fc1338bd246c8d?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-push&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/msv&quot;&gt;msv&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:33:11Z&quot; title=&quot;2012-08-28 01:33:11&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/msv&quot; class=&quot;committer&quot;&gt;msv&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/022e74e8745aea54cdb0074a957ed7a0a5261853&quot;&gt;022e74e&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Remove StackMob beta.3&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1590352746</id>
+    <published>2012-08-28T01:20:03Z</published>
+    <updated>2012-08-28T01:20:03Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/compare/bccc8759fd...0e0bb4287a"/>
+    <title type="html">msv pushed to master at CocoaPods/Specs</title>
+    <author>
+      <name>msv</name>
+      <uri>https://github.com/msv</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cb15b592f4b997b163fc1338bd246c8d?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-push&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/msv&quot;&gt;msv&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:20:03Z&quot; title=&quot;2012-08-28 01:20:03&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/msv&quot; class=&quot;committer&quot;&gt;msv&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/0e0bb4287adc6858eb6d7d3b1e9f71fdd264e8b7&quot;&gt;0e0bb42&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Merge branch &amp;#39;master&amp;#39; of github.com:CocoaPods/Specs&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/msv&quot; class=&quot;committer&quot;&gt;msv&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/d45e4085426aeb539d573750912a782cc49ce1aa&quot;&gt;d45e408&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;[Edit] commit number on Spec&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;more&quot;&gt;&lt;a href=&quot;https://github.com/CocoaPods/Specs/compare/bccc8759fd...0e0bb4287a&quot;&gt;View comparison for these 2 commits &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590351931</id>
+    <published>2012-08-28T01:16:47Z</published>
+    <updated>2012-08-28T01:16:47Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076541"/>
+    <title type="html">bvanderveen commented on pull request 44 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076541&quot; title=&quot;Add +combineLatest:&quot;&gt;pull request 44&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:16:47Z&quot; title=&quot;2012-08-28 01:16:47&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Not for me. Tried twiddling Base SDK and compiler settings but no go.&quot;&gt;
+      &lt;p&gt;Not for me. Tried twiddling Base SDK and compiler settings but no go.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590351420</id>
+    <published>2012-08-28T01:14:40Z</published>
+    <updated>2012-08-28T01:14:40Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076510"/>
+    <title type="html">jspahrsummers commented on pull request 44 on github/ReactiveCocoa</title>
+    <author>
+      <name>jspahrsummers</name>
+      <email>jspahrsummers@github.com</email>
+      <uri>https://github.com/jspahrsummers</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/jspahrsummers&quot;&gt;jspahrsummers&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076510&quot; title=&quot;Add +combineLatest:&quot;&gt;pull request 44&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:14:40Z&quot; title=&quot;2012-08-28 01:14:40&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Does it not work on 10.7?&quot;&gt;
+      &lt;p&gt;Does it not work on 10.7?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590350770</id>
+    <published>2012-08-28T01:12:01Z</published>
+    <updated>2012-08-28T01:12:01Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076470"/>
+    <title type="html">bvanderveen commented on pull request 44 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076470&quot; title=&quot;Add +combineLatest:&quot;&gt;pull request 44&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:12:01Z&quot; title=&quot;2012-08-28 01:12:01&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;I was hoping you'd ask. ;) I'm in the midst of downloading OS X 10.8 so I
+can compile the test suite. :S
+
+On Mon, Aug 27, 2012 at 6:08 PM, Justin Spahr-Summers &amp;lt;
+notifications@github.com&amp;gt; wrote:
+
+&amp;gt; This is looking good. Do you mind adding a unit test as well?
+&amp;gt;
+&amp;gt; —
+&amp;gt; Reply to this email directly or view it on GitHub&amp;lt;https://github.com/github/ReactiveCocoa/pull/44#issuecomment-8076406&amp;gt;.
+&amp;gt;
+&amp;gt;&quot;&gt;
+      &lt;p&gt;I was hoping you'd ask. ;) I'm in the midst of downloading OS X 10.8 so I&lt;br&gt;
+can compile the test suite. :S&lt;/p&gt;
+
+&lt;p&gt;On Mon, Aug 27, 2012 at 6:08 PM, Justin Spahr-Summers &amp;lt;&lt;br&gt;&lt;a href=&quot;mailto:notifications@github.com&quot;&gt;notifications@github.com&lt;/a&gt;&amp;gt; wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is looking good. Do you mind adding a unit test as well?&lt;/p&gt;
+
+&lt;p&gt;—&lt;br&gt;
+Reply to this email directly or view it on GitHub&lt;a href=&quot;https://github.com/github/ReactiveCocoa/pull/44#issuecomment-8076406&quot;&gt;https://github.com/github/ReactiveCocoa/pull/44#issuecomment-8076406&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590349999</id>
+    <published>2012-08-28T01:08:46Z</published>
+    <updated>2012-08-28T01:08:46Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076406"/>
+    <title type="html">jspahrsummers commented on pull request 44 on github/ReactiveCocoa</title>
+    <author>
+      <name>jspahrsummers</name>
+      <email>jspahrsummers@github.com</email>
+      <uri>https://github.com/jspahrsummers</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/jspahrsummers&quot;&gt;jspahrsummers&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/44#issuecomment-8076406&quot; title=&quot;Add +combineLatest:&quot;&gt;pull request 44&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T01:08:46Z&quot; title=&quot;2012-08-28 01:08:46&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;This is looking good. Do you mind adding a unit test as well?&quot;&gt;
+      &lt;p&gt;This is looking good. Do you mind adding a unit test as well?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PullRequestEvent/1590343881</id>
+    <published>2012-08-28T00:44:11Z</published>
+    <updated>2012-08-28T00:44:11Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/pull/44"/>
+    <title type="html">bvanderveen opened pull request 44 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-pull-request&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt; &lt;span&gt;opened&lt;/span&gt; &lt;a href=&quot;https://github.com/github/ReactiveCocoa/pull/44&quot;&gt;pull request 44&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:44:11Z&quot; title=&quot;2012-08-28 00:44:11&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;Add +combineLatest:&lt;/blockquote&gt;
+    1 commit with
+    12 additions and
+    1 deletion
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590341056</id>
+    <published>2012-08-28T00:33:17Z</published>
+    <updated>2012-08-28T00:33:17Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075800"/>
+    <title type="html">bvanderveen commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075800&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:33:17Z&quot; title=&quot;2012-08-28 00:33:17&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Perhaps `+combineLatest:reduce:` could be deprecated in favor of composing `+combineLatest:` with a `-select:`?&quot;&gt;
+      &lt;p&gt;Perhaps &lt;code&gt;+combineLatest:reduce:&lt;/code&gt; could be deprecated in favor of composing &lt;code&gt;+combineLatest:&lt;/code&gt; with a &lt;code&gt;-select:&lt;/code&gt;?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590339776</id>
+    <published>2012-08-28T00:28:23Z</published>
+    <updated>2012-08-28T00:28:23Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075719"/>
+    <title type="html">bvanderveen commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075719&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:28:23Z&quot; title=&quot;2012-08-28 00:28:23&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;:+1: for adding `-combineLatest:` which has the same behavior as `-whenAll:` except that the tuple of values is returned.&quot;&gt;
+      &lt;p&gt;&lt;img class=&quot;emoji&quot; title=&quot;:+1:&quot; alt=&quot;:+1:&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/icons/emoji/+1.png?v5&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot;&gt; for adding &lt;code&gt;-combineLatest:&lt;/code&gt; which has the same behavior as &lt;code&gt;-whenAll:&lt;/code&gt; except that the tuple of values is returned.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590339672</id>
+    <published>2012-08-28T00:28:00Z</published>
+    <updated>2012-08-28T00:28:00Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075711"/>
+    <title type="html">jspahrsummers commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>jspahrsummers</name>
+      <email>jspahrsummers@github.com</email>
+      <uri>https://github.com/jspahrsummers</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/jspahrsummers&quot;&gt;jspahrsummers&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075711&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:28:00Z&quot; title=&quot;2012-08-28 00:28:00&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Right, it combines into a tuple. I don't know why that's any less of a combination. :P&quot;&gt;
+      &lt;p&gt;Right, it combines into a tuple. I don't know why that's any less of a combination. :P&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590339316</id>
+    <published>2012-08-28T00:26:45Z</published>
+    <updated>2012-08-28T00:26:45Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075689"/>
+    <title type="html">joshaber commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>joshaber</name>
+      <email>josh@github.com</email>
+      <uri>https://github.com/joshaber</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/joshaber&quot;&gt;joshaber&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075689&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:26:45Z&quot; title=&quot;2012-08-28 00:26:45&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;@jspahrsummers I almost suggested that but it felt weird to call it `-combineLatest:` when it wasn't actually, you know, combining (well, I guess it does into a tuple but whatev).&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/jspahrsummers&quot; class=&quot;user-mention&quot;&gt;@jspahrsummers&lt;/a&gt; I almost suggested that but it felt weird to call it &lt;code&gt;-combineLatest:&lt;/code&gt; when it wasn't actually, you know, combining (well, I guess it does into a tuple but whatev).&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590339036</id>
+    <published>2012-08-28T00:25:47Z</published>
+    <updated>2012-08-28T00:25:47Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075675"/>
+    <title type="html">jspahrsummers commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>jspahrsummers</name>
+      <email>jspahrsummers@github.com</email>
+      <uri>https://github.com/jspahrsummers</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/jspahrsummers&quot;&gt;jspahrsummers&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075675&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:25:47Z&quot; title=&quot;2012-08-28 00:25:47&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;I'm :+1: on making the changes discussed in this thread. I think it makes the most sense to just add a `combineLatest:` (with no reduce block), though. That gives you API consistently, and has a more transformative (rather than effective) feel.&quot;&gt;
+      &lt;p&gt;I'm &lt;img class=&quot;emoji&quot; title=&quot;:+1:&quot; alt=&quot;:+1:&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/icons/emoji/+1.png?v5&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot;&gt; on making the changes discussed in this thread. I think it makes the most sense to just add a &lt;code&gt;combineLatest:&lt;/code&gt; (with no reduce block), though. That gives you API consistently, and has a more transformative (rather than effective) feel.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590338642</id>
+    <published>2012-08-28T00:24:30Z</published>
+    <updated>2012-08-28T00:24:30Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075657"/>
+    <title type="html">joshaber commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>joshaber</name>
+      <email>josh@github.com</email>
+      <uri>https://github.com/joshaber</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/joshaber&quot;&gt;joshaber&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075657&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:24:30Z&quot; title=&quot;2012-08-28 00:24:30&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;`-whenAll:` in its current form is pretty minimally useful. The name also seems odd to me. Feels more like `-whenAny:` than `-whenAll:`. Lol @ Pastjosh. So what if we do this. Deprecate `-whenAll:`, add `-whenAny:` which passes the tuple from `combineLatest:reduce:` through.&quot;&gt;
+      &lt;p&gt;&lt;code&gt;-whenAll:&lt;/code&gt; in its current form is pretty minimally useful. The name also seems odd to me. Feels more like &lt;code&gt;-whenAny:&lt;/code&gt; than &lt;code&gt;-whenAll:&lt;/code&gt;. Lol @ Pastjosh. So what if we do this. Deprecate &lt;code&gt;-whenAll:&lt;/code&gt;, add &lt;code&gt;-whenAny:&lt;/code&gt; which passes the tuple from &lt;code&gt;combineLatest:reduce:&lt;/code&gt; through.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:WatchEvent/1590333479</id>
+    <published>2012-08-28T00:05:55Z</published>
+    <updated>2012-08-28T00:05:55Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/ConradIrwin/pry-rescue"/>
+    <title type="html">irrationalfab starred ConradIrwin/pry-rescue</title>
+    <author>
+      <name>irrationalfab</name>
+      <uri>https://github.com/irrationalfab</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/b6dde1a78e6215a592768c1e78a54adc?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-star&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/irrationalfab&quot;&gt;irrationalfab&lt;/a&gt; &lt;span&gt;starred&lt;/span&gt; &lt;a href=&quot;/ConradIrwin/pry-rescue&quot;&gt;ConradIrwin/pry-rescue&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T00:05:55Z&quot; title=&quot;2012-08-28 00:05:55&quot;&gt;August 28, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;Start a pry session whenever something goes wrong.&lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590330427</id>
+    <published>2012-08-27T23:56:12Z</published>
+    <updated>2012-08-27T23:56:12Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075096"/>
+    <title type="html">bvanderveen commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8075096&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T23:56:12Z&quot; title=&quot;2012-08-27 23:56:12&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Compare .NET ForkJoin (http://msdn.microsoft.com/en-us/library/ff708019(v=vs.92).aspx)
+
+(Pardon the links, Markdown is choking on the parens.)&quot;&gt;
+      &lt;p&gt;Compare .NET ForkJoin (&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ff708019(v=vs.92).aspx&quot;&gt;http://msdn.microsoft.com/en-us/library/ff708019(v=vs.92).aspx&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;(Pardon the links, Markdown is choking on the parens.)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590328413</id>
+    <published>2012-08-27T23:49:13Z</published>
+    <updated>2012-08-27T23:49:13Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074982"/>
+    <title type="html">bvanderveen commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074982&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T23:49:13Z&quot; title=&quot;2012-08-27 23:49:13&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Ah yes, missed that documentation. :S
+
+I would prefer the return value be a tuple so I don't have to introduce side-effects (e.g., `doNext:`) to retrieve those values. I could achieve the same result with `combineLatest:reduce:` (where the reduceBlock is a simple identity, as in the change I proposed) but it might be nice to have a shorthand for that. &quot;&gt;
+      &lt;p&gt;Ah yes, missed that documentation. :S&lt;/p&gt;
+
+&lt;p&gt;I would prefer the return value be a tuple so I don't have to introduce side-effects (e.g., &lt;code&gt;doNext:&lt;/code&gt;) to retrieve those values. I could achieve the same result with &lt;code&gt;combineLatest:reduce:&lt;/code&gt; (where the reduceBlock is a simple identity, as in the change I proposed) but it might be nice to have a shorthand for that. &lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590326820</id>
+    <published>2012-08-27T23:43:51Z</published>
+    <updated>2012-08-27T23:43:51Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074894"/>
+    <title type="html">bvanderveen commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074894&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T23:43:51Z&quot; title=&quot;2012-08-27 23:43:51&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;Currently, the subscribables passed to `whenAll:` have to side-effects to capture their values (if any). It would be nice if the value yielded by `whenAll:` was an ordered tuple of the values of the subscribables from which it was created, rather than a unit value. &quot;&gt;
+      &lt;p&gt;Currently, the subscribables passed to &lt;code&gt;whenAll:&lt;/code&gt; have to side-effects to capture their values (if any). It would be nice if the value yielded by &lt;code&gt;whenAll:&lt;/code&gt; was an ordered tuple of the values of the subscribables from which it was created, rather than a unit value. &lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590326723</id>
+    <published>2012-08-27T23:43:29Z</published>
+    <updated>2012-08-27T23:43:29Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074884"/>
+    <title type="html">jspahrsummers commented on issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>jspahrsummers</name>
+      <email>jspahrsummers@github.com</email>
+      <uri>https://github.com/jspahrsummers</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/jspahrsummers&quot;&gt;jspahrsummers&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43#issuecomment-8074884&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T23:43:29Z&quot; title=&quot;2012-08-27 23:43:29&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;This is [what the method is documented to do](https://github.com/github/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/RACSubscribable%2BOperations.h#L91). Are you saying that you would prefer a different interface? If so, what would be the motivation?&quot;&gt;
+      &lt;p&gt;This is &lt;a href=&quot;https://github.com/github/ReactiveCocoa/blob/master/ReactiveCocoaFramework/ReactiveCocoa/RACSubscribable%2BOperations.h#L91&quot;&gt;what the method is documented to do&lt;/a&gt;. Are you saying that you would prefer a different interface? If so, what would be the motivation?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssuesEvent/1590325157</id>
+    <published>2012-08-27T23:38:10Z</published>
+    <updated>2012-08-27T23:38:10Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/github/ReactiveCocoa/issues/43"/>
+    <title type="html">bvanderveen opened issue 43 on github/ReactiveCocoa</title>
+    <author>
+      <name>bvanderveen</name>
+      <email>b@bvanderveen.com</email>
+      <uri>https://github.com/bvanderveen</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/3a6fa82776b1210043b28ae6872e0451?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-opened&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+
+  &lt;a href=&quot;/bvanderveen&quot;&gt;bvanderveen&lt;/a&gt; &lt;span&gt;opened&lt;/span&gt; &lt;a href=&quot;https://github.com/github/ReactiveCocoa/issues/43&quot; title=&quot;whenAll: always yields [RACUnit defaultUnit]&quot;&gt;issue 43&lt;/a&gt; on &lt;a href=&quot;/github/ReactiveCocoa&quot;&gt;github/ReactiveCocoa&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T23:38:10Z&quot; title=&quot;2012-08-27 23:38:10&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote&gt;
+      whenAll: always yields [RACUnit defaultUnit]
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1590295989</id>
+    <published>2012-08-27T22:14:13Z</published>
+    <updated>2012-08-27T22:14:13Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/compare/f833430561...bccc8759fd"/>
+    <title type="html">NSError pushed to master at CocoaPods/Specs</title>
+    <author>
+      <name>NSError</name>
+      <email>contact@fsdev.net</email>
+      <uri>https://github.com/NSError</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/d5fcdcf81168b7c93c2eccccf13195bd?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-push&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/NSError&quot;&gt;NSError&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T22:14:13Z&quot; title=&quot;2012-08-27 22:14:13&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/NSError&quot; class=&quot;committer&quot;&gt;NSError&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/bccc8759fd5f91c11468bc79245fc4f6e0c0bc70&quot;&gt;bccc875&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Exciting new CoreParse release.&lt;br&gt;
+&lt;br&gt;
+Includes some slight API changes and a bunch of optimizations.&lt;br&gt;
+&lt;br&gt;
+Thanks Tom (Beelsebob)!&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590244663</id>
+    <published>2012-08-27T20:21:49Z</published>
+    <updated>2012-08-27T20:21:49Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/pkluz/ZUUIRevealController/issues/31#issuecomment-8069228"/>
+    <title type="html">dmishe commented on issue 31 on pkluz/ZUUIRevealController</title>
+    <author>
+      <name>dmishe</name>
+      <email>dmishe@gmail.com</email>
+      <uri>https://github.com/dmishe</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/1a74541e905579cc2f21a29515c6d875?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/dmishe&quot;&gt;dmishe&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/pkluz/ZUUIRevealController/issues/31#issuecomment-8069228&quot; title=&quot;UITableView inside FrontViewController, not responding to statusbar Taps&quot;&gt;issue 31&lt;/a&gt; on &lt;a href=&quot;/pkluz/ZUUIRevealController&quot;&gt;pkluz/ZUUIRevealController&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T20:21:49Z&quot; title=&quot;2012-08-27 20:21:49&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;I just had this issue because both rear and front VCs had tableviews in them. I had to disable scrolls to top on rear view to fix it.
+
+But I wonder what is the correct way to do this. Shouldn't rear VC remove itself and its view from the hierarchy when hidden?&quot;&gt;
+      &lt;p&gt;I just had this issue because both rear and front VCs had tableviews in them. I had to disable scrolls to top on rear view to fix it.&lt;/p&gt;
+
+&lt;p&gt;But I wonder what is the correct way to do this. Shouldn't rear VC remove itself and its view from the hierarchy when hidden?&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:IssueCommentEvent/1590239672</id>
+    <published>2012-08-27T20:10:43Z</published>
+    <updated>2012-08-27T20:10:43Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/issues/429#issuecomment-8068868"/>
+    <title type="html">irrationalfab commented on pull request 429 on CocoaPods/Specs</title>
+    <author>
+      <name>irrationalfab</name>
+      <uri>https://github.com/irrationalfab</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/b6dde1a78e6215a592768c1e78a54adc?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/irrationalfab&quot;&gt;irrationalfab&lt;/a&gt;
+  &lt;span&gt;commented&lt;/span&gt; on
+  &lt;a href=&quot;https://github.com/CocoaPods/Specs/issues/429#issuecomment-8068868&quot; title=&quot;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T20:10:43Z&quot; title=&quot;2012-08-27 20:10:43&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;details&quot;&gt;
+  
+  &lt;div class=&quot;message&quot;&gt;
+    &lt;blockquote title=&quot;&amp;gt; Would it be OK to include those UVJSON files from Vendors to satisfy that.
+
+This is definitely an acceptable solution which could suffice for now.
+
+&amp;gt; Or should I take a stab at forking uservoice-iphone-sdk to test for the existence of the proper SBJSON classes, and if present, use those instead and see if they'll pull that in?
+
+Modifying the library to use SBJson would definitely be the best solution. In that case I think that you could contact the original author and ask him what he would.&quot;&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;Would it be OK to include those UVJSON files from Vendors to satisfy that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is definitely an acceptable solution which could suffice for now.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Or should I take a stab at forking uservoice-iphone-sdk to test for the existence of the proper SBJSON classes, and if present, use those instead and see if they'll pull that in?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Modifying the library to use SBJson would definitely be the best solution. In that case I think that you could contact the original author and ask him what he would.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:PushEvent/1590233189</id>
+    <published>2012-08-27T19:56:34Z</published>
+    <updated>2012-08-27T19:56:34Z</updated>
+    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/compare/fe17f479a4...f833430561"/>
+    <title type="html">irrationalfab pushed to master at CocoaPods/Specs</title>
+    <author>
+      <name>irrationalfab</name>
+      <uri>https://github.com/irrationalfab</uri>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/b6dde1a78e6215a592768c1e78a54adc?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <content type="html">&lt;span class=&quot;mini-icon mini-icon-push&quot;&gt;&lt;/span&gt;
+
+&lt;div class=&quot;title&quot;&gt;
+  &lt;a href=&quot;/irrationalfab&quot;&gt;irrationalfab&lt;/a&gt; &lt;span&gt;pushed&lt;/span&gt; to master at &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-27T19:56:34Z&quot; title=&quot;2012-08-27 19:56:34&quot;&gt;August 27, 2012&lt;/time&gt;
+&lt;/div&gt;
+&lt;div class=&quot;details&quot;&gt;
+  
+
+  &lt;div class=&quot;commits&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/irrationalfab&quot; class=&quot;committer&quot;&gt;irrationalfab&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/f833430561e676f027da642a9ba468abf9ee646d&quot;&gt;f833430&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Merge pull request #435 from thisandagain/master&lt;br&gt;
+&lt;br&gt;
+EDStorage v0.1.5&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;a href=&quot;/thisandagain&quot; class=&quot;committer&quot;&gt;thisandagain&lt;/a&gt; committed &lt;a href=&quot;/CocoaPods/Specs/commit/fcef640fb9c0372cf2c27a998e9fe575e62f66a2&quot;&gt;fcef640&lt;/a&gt;
+
+        &lt;div class=&quot;message&quot;&gt;
+          &lt;blockquote&gt;Push EDStorage to v0.1.5&lt;/blockquote&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;more&quot;&gt;&lt;a href=&quot;https://github.com/CocoaPods/Specs/compare/fe17f479a4...f833430561&quot;&gt;View comparison for these 2 commits &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
+
