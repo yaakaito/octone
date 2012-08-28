@@ -24,7 +24,7 @@
     container.layer.shadowPath = shadowPath.CGPath;	
     container.layer.shadowColor = [UIColor blackColor].CGColor;
     if(self.centerPanel.view == container) {
-        container.layer.shadowRadius = 10.0f;        
+        container.layer.shadowRadius = 4.0f;
     }
     container.layer.shadowOpacity = 0.75f;
     container.clipsToBounds = NO;
@@ -32,7 +32,7 @@
 
 - (void)stylePanel:(UIView *)panel {
     if(self.centerPanel.view == panel) {
-        panel.layer.cornerRadius = 6.0f;
+        panel.layer.cornerRadius = 4.0f;
     }
     panel.clipsToBounds = YES;
 }
