@@ -7,6 +7,8 @@
 //
 
 #import "BGNavigationController.h"
+#import "UIColor+BrowseGithub.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface BGNavigationController()
 
@@ -20,7 +22,8 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) {
         // Custom initialization
-        self.navigationBar.tintColor = [UIColor colorWithWhite:0.825 alpha:1.0f];
+        self.navigationBar.tintColor = [UIColor githubNavigationColor];
+        self.navigationBar.
     }
     return self;
 }
