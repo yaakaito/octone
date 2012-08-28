@@ -12,27 +12,27 @@
 
 /*
 #pragma mark - Base texts
-+ (UIColor*)githubTextColor;
-+ (UIColor*)githubLightTextColor;
++ (UIColor *)githubTextColor;
++ (UIColor *)githubLightTextColor;
 */
 #pragma mark - Base backgrounds
-+ (UIColor*)githubNavigationColor
++ (UIColor *)githubNavigationColor
 {
     return [UIColor colorWithRed:0.92 green:0.92 blue:0.94 alpha:1.0];
 }
 /*
-+ (UIColor*)githubBackgroundColor;
-+ (UIColor*)githubGlobalMenuBacbkgroundColor;
-+ (UIColor*)githubSectionBbackgroundColor;
++ (UIColor *)githubBackgroundColor;
++ (UIColor *)githubGlobalMenuBacbkgroundColor;
++ (UIColor *)githubSectionBbackgroundColor;
 
 #pragma mark - Colors
-+ (UIColor*)githubPrimaryColor;
-+ (UIColor*)githubSecondaryColor;
-+ (UIColor*)githubComplementaryColor;
++ (UIColor *)githubPrimaryColor;
++ (UIColor *)githubSecondaryColor;
++ (UIColor *)githubComplementaryColor;
 
 #pragma mark - Decorations
-+ (UIColor*)githubHightlightedBackgroundColor;
-+ (UIColor*)githubHightlightColor;
-+ (UIColor*)githubSeparatorColor;
++ (UIColor *)githubHightlightedBackgroundColor;
++ (UIColor *)githubHightlightColor;
++ (UIColor *)githubSeparatorColor;
 */
 @end
