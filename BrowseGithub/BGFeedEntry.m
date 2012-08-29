@@ -34,4 +34,5 @@
     _entryId = entryId;
     _type = kBGFeedEntryTypeUnknown;
 }
+
 @end
