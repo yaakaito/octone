@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    kBGFeedEntryTypeUnknown = -1
+    , kBGFeedEntryTypeCommit = 0
+    , kBGFeedEntryTypePush
+    , kBGFeedEntryTypeForkApply
+    , kBGFeedEntryTypeFork
+    , kBGFeedEntryTypePullRequest
+    , kBGFeedEntryTypeIssue
+    , kBGFeedEntryTypeFollow
+    , kBGFeedEntryTypeWatch
+    , kBGFeedEntryTypeStar
+    , kBGFeedEntryTypeCommitComment
+    , kBGFeedEntryTypeIssueComment
+    , kBGFeedEntryTypeCreate
+    , kBGFeedEntryTypeDelete
+    , kBGFeedEntryTypeWiki
+    , kBGFeedEntryTypeDownload
+} BGFeedEntryType;
+
 @interface BGFeedEntry : NSObject
 
 @property (nonatomic, strong) NSString *entryId;
@@ -18,4 +37,5 @@
 @property (nonatomic, strong) NSString *authorName;
 @property (nonatomic, strong) NSURL *auhtorUri;
 @property (nonatomic, strong) NSURL *gavatarUri;
+@property (nonatomic) BGFeedEntryType type;
 @end

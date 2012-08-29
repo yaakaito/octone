@@ -10,4 +10,28 @@
 
 @implementation BGFeedEntry
 
+- (id)init {
+    self = [super init];
+    if(self) {
+        self.type = kBGFeedEntryTypeUnknown;
+    }
+    return self;
+}
+
+- (BGFeedEntryType)type {
+    if(_type != kBGFeedEntryTypeUnknown) {
+        return _type;
+    }
+    
+    if(!self.entryId) {
+        return kBGFeedEntryTypeUnknown;
+    }
+
+    return kBGFeedEntryTypeUnknown;
+}
+
+- (void)setEntryId:(NSString *)entryId {
+    _entryId = entryId;
+    _type = kBGFeedEntryTypeUnknown;
+}
 @end
