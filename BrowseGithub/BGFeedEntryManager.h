@@ -10,7 +10,7 @@
 #import "BGFeedEntry.h"
 
 #define kBGFeedEntryManagerDidUpdateFeedEntriesNotification     (@"BGFEMDidUpdateFeedEntries")
-#define kBGFeedEntryManagerDidUpdateFailNotification            (@"BGFEMDidFailedUpdateNotification")
+#define kBGFeedEntryManagerDidUpdateFailNotification            (@"BGFEMDidFailedUpdate")
 
 @interface BGFeedEntryManager : NSObject
 @property (nonatomic, strong, readonly) NSMutableArray *feedEntries;
