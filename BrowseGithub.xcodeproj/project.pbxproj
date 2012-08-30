@@ -48,7 +48,7 @@
 		B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */; };
 		B9BD472715ED17AD00DBAA04 /* user.private.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472515ED17AD00DBAA04 /* user.private.atom */; };
 		B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472615ED17AD00DBAA04 /* user.private.short.atom */; };
-		B9BD473A15EDE87500DBAA04 /* BGFeedEntrySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473915EDE87500DBAA04 /* BGFeedEntrySpec.m */; };
+		B9BD473A15EDE87500DBAA04 /* BGFeedEntryTypeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */; };
 		B9BD473D15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */; };
 		B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */; };
 		B9BD474115EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
@@ -109,7 +109,7 @@
 		B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Specs.m"; sourceTree = "<group>"; };
 		B9BD472515ED17AD00DBAA04 /* user.private.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.atom; sourceTree = "<group>"; };
 		B9BD472615ED17AD00DBAA04 /* user.private.short.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.short.atom; sourceTree = "<group>"; };
-		B9BD473915EDE87500DBAA04 /* BGFeedEntrySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntrySpec.m; sourceTree = "<group>"; };
+		B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryTypeSpec.m; sourceTree = "<group>"; };
 		B9BD473B15EF338100DBAA04 /* BGFeedEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntryCell.h; sourceTree = "<group>"; };
 		B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryCell.m; sourceTree = "<group>"; };
 		B9BD473F15EF340600DBAA04 /* BGGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageView.h; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 		B9BD473815EDE82B00DBAA04 /* Units */ = {
 			isa = PBXGroup;
 			children = (
-				B9BD473915EDE87500DBAA04 /* BGFeedEntrySpec.m */,
+				B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */,
 				B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */,
 			);
 			name = Units;
@@ -608,7 +608,7 @@
 				B9BD471915EC959D00DBAA04 /* BGFeedParser.m in Sources */,
 				B9BD471E15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */,
 				B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */,
-				B9BD473A15EDE87500DBAA04 /* BGFeedEntrySpec.m in Sources */,
+				B9BD473A15EDE87500DBAA04 /* BGFeedEntryTypeSpec.m in Sources */,
 				B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */,
 				B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */,
 				B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */,

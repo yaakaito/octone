@@ -8,7 +8,7 @@
 #import "Kiwi.h"
 #import "BGFeedEntry.h"
 
-SPEC_BEGIN(BGFeedEntrySpec)
+SPEC_BEGIN(BGFeedEntryTypeSpec)
 
 describe(@"Feed Entry", ^{
 
