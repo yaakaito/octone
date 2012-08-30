@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "BGFeedEntry.h"
 
+#define kBGFeedEntryManagerDidUpdateFeedEntriesNotification     (@"BGFEMDidUpdateFeedEntries")
+#define kBGFeedEntryManagerDidUpdateFailNotification            (@"BGFEMDidFailedUpdateNotification")
+
 @interface BGFeedEntryManager : NSObject
 @property (nonatomic, strong, readonly) NSMutableArray *feedEntries;
 - (void)reloadFeedEntries;
