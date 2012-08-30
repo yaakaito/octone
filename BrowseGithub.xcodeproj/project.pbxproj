@@ -367,10 +367,18 @@
 		B9BD473815EDE82B00DBAA04 /* Units */ = {
 			isa = PBXGroup;
 			children = (
+				B9BD474515EF3C7800DBAA04 /* Feed */,
+			);
+			name = Units;
+			sourceTree = "<group>";
+		};
+		B9BD474515EF3C7800DBAA04 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
 				B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */,
 				B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */,
 			);
-			name = Units;
+			name = Feed;
 			sourceTree = "<group>";
 		};
 		B9EE7C4F15B7C24200BC79D6 = {
