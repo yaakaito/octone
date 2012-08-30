@@ -25,6 +25,8 @@ typedef enum {
     , kBGFeedEntryTypeDelete
     , kBGFeedEntryTypeWiki
     , kBGFeedEntryTypeDownload
+    , kBGFeedEntryTypeTeamAdd
+    , kBGFeedEntryTypeMember
 } BGFeedEntryType;
 
 @interface BGFeedEntry : NSObject

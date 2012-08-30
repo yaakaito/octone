@@ -96,6 +96,16 @@ describe(@"Feed Entry", ^{
             feedEntry.entryId = @"tag:github.com,2008:DownloadEvent/1000000";
             [[theValue(feedEntry.type) should] equal:theValue(kBGFeedEntryTypeCommit)];
         });
+        
+        it(@"idにTeamAddが含まれるとき、typeはTeamAdd", ^{
+            feedEntry.entryId = @"tag:github.com,2008:TeamAddEvent/1000000";
+            [[theValue(feedEntry.type) should] equal:theValue(kBGFeedEntryTypeCommit)];
+        });
+        
+        it(@"idにMemberが含まれるとき、typeはMember", ^{
+            feedEntry.entryId = @"tag:github.com,2008:MemberEvent/1000000";
+            [[theValue(feedEntry.type) should] equal:theValue(kBGFeedEntryTypeCommit)];
+        });
     });
 });
 
