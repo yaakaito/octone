@@ -38,6 +38,6 @@ typedef enum {
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *authorName;
 @property (nonatomic, strong) NSURL *auhtorUri;
-@property (nonatomic, strong) NSURL *gavatarUri;
+@property (nonatomic, strong) NSURL *gravatarUri;
 @property (nonatomic) BGFeedEntryType type;
 @end

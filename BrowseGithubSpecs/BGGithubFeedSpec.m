@@ -57,7 +57,7 @@ describe(@"Github Feed", ^{
                 [[entry.title should] equal:@"visionmedia created repository dom"];
                 [[entry.authorName should] equal:@"visionmedia"];
                 [[[entry.auhtorUri absoluteString] should] equal:@"https://github.com/visionmedia"];
-                [[[entry.gavatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
+                [[[entry.gravatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
             });
             
             it(@"2つ目のエントリーがパースに成功", ^{
@@ -70,7 +70,7 @@ describe(@"Github Feed", ^{
                 [[entry.title should] equal:@"bricooke closed pull request 429 on CocoaPods/Specs"];
                 [[entry.authorName should] equal:@"bricooke"];
                 [[[entry.auhtorUri absoluteString] should] equal:@"https://github.com/bricooke"];
-                [[[entry.gavatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
+                [[[entry.gravatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
 
             });
             
@@ -84,7 +84,7 @@ describe(@"Github Feed", ^{
                 [[entry.title should] equal:@"bricooke commented on pull request 429 on CocoaPods/Specs"];
                 [[entry.authorName should] equal:@"bricooke"];
                 [[[entry.auhtorUri absoluteString] should] equal:@"https://github.com/bricooke"];
-                [[[entry.gavatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
+                [[[entry.gravatarUri absoluteString] should] equal:@"https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
 
             });
 
