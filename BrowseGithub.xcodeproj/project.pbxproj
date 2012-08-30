@@ -53,6 +53,7 @@
 		B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */; };
 		B9BD474115EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
 		B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
+		B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -113,6 +114,7 @@
 		B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryCell.m; sourceTree = "<group>"; };
 		B9BD473F15EF340600DBAA04 /* BGGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageView.h; sourceTree = "<group>"; };
 		B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageView.m; sourceTree = "<group>"; };
+		B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParserSpec.m; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -366,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				B9BD473915EDE87500DBAA04 /* BGFeedEntrySpec.m */,
+				B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */,
 			);
 			name = Units;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				B9BD473A15EDE87500DBAA04 /* BGFeedEntrySpec.m in Sources */,
 				B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */,
 				B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */,
+				B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
