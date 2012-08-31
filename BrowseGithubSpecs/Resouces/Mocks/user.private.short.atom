@@ -1,99 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
-  <id>tag:github.com,2008:/yaakaito.private</id>
-  <link type="text/html" rel="alternate" href="https://github.com/yaakaito"/>
-  <link type="application/atom+xml" rel="self" href="https://github.com/yaakaito.private.atom?token=a105091517fe47ba706a4ebd25292d7a"/>
-  <title>Private Feed for yaakaito</title>
-  <updated>2012-08-28T04:44:08Z</updated>
-  <entry>
-    <id>tag:github.com,2008:CreateEvent/1590394401</id>
-    <published>2012-08-28T04:44:08Z</published>
+    <id>tag:github.com,2008:/yaakaito.private</id>
+    <link type="text/html" rel="alternate" href="https://github.com/yaakaito"/>
+    <link type="application/atom+xml" rel="self" href="https://github.com/yaakaito.private.atom?token=a105091517fe47ba706a4ebd25292d7a"/>
+    <title>Private Feed for yaakaito</title>
     <updated>2012-08-28T04:44:08Z</updated>
-    <link type="text/html" rel="alternate" href="https://github.com/visionmedia/dom"/>
-    <title type="html">visionmedia created repository dom</title>
-    <author>
-      <name>visionmedia</name>
-      <email>tj@vision-media.ca</email>
-      <uri>https://github.com/visionmedia</uri>
-    </author>
-    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
-    <content type="html">&lt;span class=&quot;mini-icon mini-icon-create&quot;&gt;&lt;/span&gt;
-
-&lt;div class=&quot;title&quot;&gt;
-  &lt;a href=&quot;/visionmedia&quot;&gt;visionmedia&lt;/a&gt; &lt;span&gt;created&lt;/span&gt; repository &lt;a href=&quot;/visionmedia/dom&quot;&gt;dom&lt;/a&gt; 
-  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T04:44:08Z&quot; title=&quot;2012-08-28 04:44:08&quot;&gt;August 28, 2012&lt;/time&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;details&quot;&gt;
-  
-  &lt;div class=&quot;message&quot;&gt;
-
-        DOM traversal, manipulation and events aggregate library (like jQuery)
-
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:github.com,2008:PullRequestEvent/1590373427</id>
-    <published>2012-08-28T02:55:21Z</published>
-    <updated>2012-08-28T02:55:21Z</updated>
-    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/pull/429"/>
-    <title type="html">bricooke closed pull request 429 on CocoaPods/Specs</title>
-    <author>
-      <name>bricooke</name>
-      <email>bri@bricooke.com</email>
-      <uri>https://github.com/bricooke</uri>
-    </author>
-    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
-    <content type="html">&lt;span class=&quot;mini-icon mini-icon-pull-request&quot;&gt;&lt;/span&gt;
-
-&lt;div class=&quot;title&quot;&gt;
-  &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt; &lt;span&gt;closed&lt;/span&gt; &lt;a href=&quot;https://github.com/CocoaPods/Specs/pull/429&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
-  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
-&lt;/div&gt;
-&lt;div class=&quot;details&quot;&gt;
-  
-  &lt;div class=&quot;message&quot;&gt;
-    &lt;blockquote&gt;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&lt;/blockquote&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:github.com,2008:IssueCommentEvent/1590373426</id>
-    <published>2012-08-28T02:55:21Z</published>
-    <updated>2012-08-28T02:55:21Z</updated>
-    <link type="text/html" rel="alternate" href="https://github.com/CocoaPods/Specs/issues/429#issuecomment-8077910"/>
-    <title type="html">bricooke commented on pull request 429 on CocoaPods/Specs</title>
-    <author>
-      <name>bricooke</name>
-      <email>bri@bricooke.com</email>
-      <uri>https://github.com/bricooke</uri>
-    </author>
-    <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/avatar/916de6eec58087391b518c5ac3ac7f47?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
-    <content type="html">&lt;span class=&quot;mini-icon mini-icon-issue-comment&quot;&gt;&lt;/span&gt;
-
-&lt;div class=&quot;title&quot;&gt;
-  &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt;
-  &lt;span&gt;commented&lt;/span&gt; on
-  &lt;a href=&quot;https://github.com/CocoaPods/Specs/issues/429#issuecomment-8077910&quot; title=&quot;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
-  &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;details&quot;&gt;
-  
-  &lt;div class=&quot;message&quot;&gt;
-    &lt;blockquote title=&quot;Sigh, gets a little uglier. `uservoice-iphone-sdk` includes categories also defined in YOAuth proper but renames their category name, but not the files. So, https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h has a category UVOauthResponse (the UV is in the category name, but not the file) and the implementations seem to collide.
-
-I'm declaring defeat on this for now. I think `uservoice-iphone-sdk` needs some cleanup before it'll play nicely. &quot;&gt;
-      &lt;p&gt;Sigh, gets a little uglier. &lt;code&gt;uservoice-iphone-sdk&lt;/code&gt; includes categories also defined in YOAuth proper but renames their category name, but not the files. So, &lt;a href=&quot;https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h&quot;&gt;https://github.com/uservoice/uservoice-iphone-sdk/blob/master/Categories/NSData%2BOAuthResponse.h&lt;/a&gt; has a category UVOauthResponse (the UV is in the category name, but not the file) and the implementations seem to collide.&lt;/p&gt;
-
-&lt;p&gt;I'm declaring defeat on this for now. I think &lt;code&gt;uservoice-iphone-sdk&lt;/code&gt; needs some cleanup before it'll play nicely. &lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
+    <entry>
+        <id>id</id>
+        <published>2000-00-00T00:00:00Z</published>
+        <updated>2000-00-00T00:00:00Z</updated>
+        <link type="text/html" rel="alternate" href="https://github.com/"/>
+        <title type="html">title</title>
+        <author>
+            <name>author</name>
+            <email>email@mail.com</email>
+            <uri>https://github.com/</uri>
+        </author>
+        <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/"/>
+        <content type="html">&lt;span class=&quot;mini-icon mini-icon-pull-request&quot;&gt;&lt;/span&gt;
+            
+            &lt;div class=&quot;title&quot;&gt;
+            &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt; &lt;span&gt;closed&lt;/span&gt; &lt;a href=&quot;https://github.com/CocoaPods/Specs/pull/429&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+            &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;details&quot;&gt;
+            
+            &lt;div class=&quot;message&quot;&gt;
+            &lt;blockquote&gt;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&lt;/blockquote&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        </content>
+    </entry>
+    <entry>
+        <id>id</id>
+        <published>2000-00-00T00:00:00Z</published>
+        <updated>2000-00-00T00:00:00Z</updated>
+        <link type="text/html" rel="alternate" href="https://github.com/"/>
+        <title type="html">title</title>
+        <author>
+            <name>author</name>
+            <email>email@mail.com</email>
+            <uri>https://github.com/</uri>
+        </author>
+        <media:thumbnail height="30" width="30" url="https://secure.gravatar.com/"/>
+        <content type="html">&lt;span class=&quot;mini-icon mini-icon-pull-request&quot;&gt;&lt;/span&gt;
+            
+            &lt;div class=&quot;title&quot;&gt;
+            &lt;a href=&quot;/bricooke&quot;&gt;bricooke&lt;/a&gt; &lt;span&gt;closed&lt;/span&gt; &lt;a href=&quot;https://github.com/CocoaPods/Specs/pull/429&quot;&gt;pull request 429&lt;/a&gt; on &lt;a href=&quot;/CocoaPods/Specs&quot;&gt;CocoaPods/Specs&lt;/a&gt;
+            &lt;time class=&quot;js-relative-date&quot; datetime=&quot;2012-08-28T02:55:21Z&quot; title=&quot;2012-08-28 02:55:21&quot;&gt;August 28, 2012&lt;/time&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;details&quot;&gt;
+            
+            &lt;div class=&quot;message&quot;&gt;
+            &lt;blockquote&gt;Podspec for https://github.com/uservoice/uservoice-iphone-sdk&lt;/blockquote&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        </content>
+    </entry>
 </feed>
 
