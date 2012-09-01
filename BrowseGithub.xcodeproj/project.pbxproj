@@ -54,10 +54,12 @@
 		B9BD474115EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
 		B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
 		B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */; };
-		B9BD47D215F2331600DBAA04 /*  AppStore.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47CC15F2331600DBAA04 /*  AppStore.png */; };
-		B9BD47D315F2331600DBAA04 /*  AppStore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47CD15F2331600DBAA04 /*  AppStore@2x.png */; };
 		B9BD47D915F2334100DBAA04 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47D815F2334000DBAA04 /* iPhone.png */; };
 		B9BD47DB15F2336600DBAA04 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */; };
+		B9BD47E115F2393100DBAA04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E015F2392F00DBAA04 /* Default.png */; };
+		B9BD47E315F2394B00DBAA04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E215F2394A00DBAA04 /* Default@2x.png */; };
+		B9BD47EA15F23B6500DBAA04 /* default-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E815F23B6500DBAA04 /* default-logo.png */; };
+		B9BD47EB15F23B6500DBAA04 /* default-logo@2.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E915F23B6500DBAA04 /* default-logo@2.png */; };
 		B9EE7C5F15B7C24200BC79D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B9EE7C6115B7C24200BC79D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B9EE7C6315B7C24200BC79D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -119,10 +121,12 @@
 		B9BD473F15EF340600DBAA04 /* BGGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageView.h; sourceTree = "<group>"; };
 		B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageView.m; sourceTree = "<group>"; };
 		B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParserSpec.m; sourceTree = "<group>"; };
-		B9BD47CC15F2331600DBAA04 /*  AppStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = " AppStore.png"; path = "Resources/ AppStore.png"; sourceTree = "<group>"; };
-		B9BD47CD15F2331600DBAA04 /*  AppStore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = " AppStore@2x.png"; path = "Resources/ AppStore@2x.png"; sourceTree = "<group>"; };
 		B9BD47D815F2334000DBAA04 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = ../iPhone.png; sourceTree = "<group>"; };
 		B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone@2x.png"; path = "../iPhone@2x.png"; sourceTree = "<group>"; };
+		B9BD47E015F2392F00DBAA04 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		B9BD47E215F2394A00DBAA04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		B9BD47E815F23B6500DBAA04 /* default-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-logo.png"; path = "Resources/default-logo.png"; sourceTree = "<group>"; };
+		B9BD47E915F23B6500DBAA04 /* default-logo@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-logo@2.png"; path = "Resources/default-logo@2.png"; sourceTree = "<group>"; };
 		B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9EE7C6015B7C24200BC79D6 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -306,10 +310,12 @@
 		B99D7AEF15EBC18E006543D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9BD47E815F23B6500DBAA04 /* default-logo.png */,
+				B9BD47E915F23B6500DBAA04 /* default-logo@2.png */,
+				B9BD47E215F2394A00DBAA04 /* Default@2x.png */,
+				B9BD47E015F2392F00DBAA04 /* Default.png */,
 				B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */,
 				B9BD47D815F2334000DBAA04 /* iPhone.png */,
-				B9BD47CC15F2331600DBAA04 /*  AppStore.png */,
-				B9BD47CD15F2331600DBAA04 /*  AppStore@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -563,10 +569,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9EE7C6915B7C24200BC79D6 /* InfoPlist.strings in Resources */,
-				B9BD47D215F2331600DBAA04 /*  AppStore.png in Resources */,
-				B9BD47D315F2331600DBAA04 /*  AppStore@2x.png in Resources */,
 				B9BD47D915F2334100DBAA04 /* iPhone.png in Resources */,
 				B9BD47DB15F2336600DBAA04 /* iPhone@2x.png in Resources */,
+				B9BD47E115F2393100DBAA04 /* Default.png in Resources */,
+				B9BD47E315F2394B00DBAA04 /* Default@2x.png in Resources */,
+				B9BD47EA15F23B6500DBAA04 /* default-logo.png in Resources */,
+				B9BD47EB15F23B6500DBAA04 /* default-logo@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
