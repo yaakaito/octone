@@ -37,6 +37,10 @@
 		B948A2DE15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
+		B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
+		B98B802F15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
+		B98B803015F3792B00583C39 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */; };
+		B98B803115F3792B00583C39 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
 		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -114,6 +118,8 @@
 		B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserView.m; sourceTree = "<group>"; };
 		B98B801F15F3669C00583C39 /* BGAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationView.h; sourceTree = "<group>"; };
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
+		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Resources/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9BD471115EC955800DBAA04 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
@@ -334,6 +340,8 @@
 		B99D7AEF15EBC18E006543D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */,
+				B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */,
 				B9BD47E815F23B6500DBAA04 /* default-logo.png */,
 				B9BD47E915F23B6500DBAA04 /* default-logo@2.png */,
 				B9BD47E215F2394A00DBAA04 /* Default@2x.png */,
@@ -585,6 +593,8 @@
 				B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */,
 				B9BD472715ED17AD00DBAA04 /* user.private.atom in Resources */,
 				B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */,
+				B98B802F15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
+				B98B803115F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +609,8 @@
 				B9BD47E315F2394B00DBAA04 /* Default@2x.png in Resources */,
 				B9BD47EA15F23B6500DBAA04 /* default-logo.png in Resources */,
 				B9BD47EB15F23B6500DBAA04 /* default-logo@2.png in Resources */,
+				B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
+				B98B803015F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
