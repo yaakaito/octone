@@ -7,9 +7,7 @@
 //
 
 #import "BGAppDelegate.h"
-#import "BGNavigationController.h"
-#import "BGGlobalMenuController.h"
-#import "PatchedJASidePanelController.h"
+#import "BGRootController.h"
 
 @implementation BGAppDelegate
 
@@ -18,20 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[PatchedJASidePanelController alloc] init];
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
-    BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
-    BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
-    globalMenuController.delegate = navigationController;
-    self.viewController.centerPanel = navigationController;
-    self.viewController.leftPanel = globalMenuController;
+    self.viewController = [[BGRootController alloc] init];
     self.window.rootViewController = self.viewController;
-    
+
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JASidePanelController.h"
-
-@class BGViewController;
 
 @interface BGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) JASidePanelController *viewController;
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end

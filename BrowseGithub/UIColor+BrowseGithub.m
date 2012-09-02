@@ -20,8 +20,11 @@
 {
     return [UIColor colorWithRed:0.92 green:0.92 blue:0.94 alpha:1.0];
 }
+
++ (UIColor *)githubBackgroundColor {
+    return [UIColor colorWithWhite:0.95 alpha:1.0];
+}
 /*
-+ (UIColor *)githubBackgroundColor;
 + (UIColor *)githubGlobalMenuBacbkgroundColor;
 + (UIColor *)githubSectionBbackgroundColor;
 
