@@ -41,6 +41,10 @@
 		B98B802F15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
 		B98B803015F3792B00583C39 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */; };
 		B98B803115F3792B00583C39 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */; };
+		B98B803815F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */; };
+		B98B803915F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */; };
+		B98B803C15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */; };
+		B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
 		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -65,7 +69,7 @@
 		B9BD47E115F2393100DBAA04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E015F2392F00DBAA04 /* Default.png */; };
 		B9BD47E315F2394B00DBAA04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E215F2394A00DBAA04 /* Default@2x.png */; };
 		B9BD47EA15F23B6500DBAA04 /* default-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E815F23B6500DBAA04 /* default-logo.png */; };
-		B9BD47EB15F23B6500DBAA04 /* default-logo@2.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E915F23B6500DBAA04 /* default-logo@2.png */; };
+		B9BD47EB15F23B6500DBAA04 /* default-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E915F23B6500DBAA04 /* default-logo@2x.png */; };
 		B9BD47EE15F23C0600DBAA04 /* BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD47ED15F23C0600DBAA04 /* BrowseGithub.m */; };
 		B9BD47EF15F23C0600DBAA04 /* BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD47ED15F23C0600DBAA04 /* BrowseGithub.m */; };
 		B9BD47F215F23E4300DBAA04 /* BGAuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD47F115F23E4200DBAA04 /* BGAuthenticationController.m */; };
@@ -120,6 +124,10 @@
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
 		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Resources/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		B98B803615F37C6D00583C39 /* UIGlossyButton+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGlossyButton+BrowseGithub.h"; sourceTree = "<group>"; };
+		B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGlossyButton+BrowseGithub.m"; sourceTree = "<group>"; };
+		B98B803A15F37D4B00583C39 /* UIFont+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+BrowseGithub.h"; sourceTree = "<group>"; };
+		B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+BrowseGithub.m"; sourceTree = "<group>"; };
 		B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9BD471115EC955800DBAA04 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
@@ -142,7 +150,7 @@
 		B9BD47E015F2392F00DBAA04 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		B9BD47E215F2394A00DBAA04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		B9BD47E815F23B6500DBAA04 /* default-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-logo.png"; path = "Resources/default-logo.png"; sourceTree = "<group>"; };
-		B9BD47E915F23B6500DBAA04 /* default-logo@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-logo@2.png"; path = "Resources/default-logo@2.png"; sourceTree = "<group>"; };
+		B9BD47E915F23B6500DBAA04 /* default-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-logo@2x.png"; path = "Resources/default-logo@2x.png"; sourceTree = "<group>"; };
 		B9BD47EC15F23C0600DBAA04 /* BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseGithub.h; sourceTree = "<group>"; };
 		B9BD47ED15F23C0600DBAA04 /* BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseGithub.m; sourceTree = "<group>"; };
 		B9BD47F015F23E4100DBAA04 /* BGAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationController.h; sourceTree = "<group>"; };
@@ -333,21 +341,49 @@
 			children = (
 				B948A2D615E74C7300712CB0 /* UIColor+BrowseGithub.h */,
 				B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */,
+				B98B803A15F37D4B00583C39 /* UIFont+BrowseGithub.h */,
+				B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */,
+				B98B803615F37C6D00583C39 /* UIGlossyButton+BrowseGithub.h */,
+				B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B98B803315F37A8B00583C39 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */,
+				B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		B98B803415F37A9E00583C39 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD47E815F23B6500DBAA04 /* default-logo.png */,
+				B9BD47E915F23B6500DBAA04 /* default-logo@2x.png */,
+				B9BD47E215F2394A00DBAA04 /* Default@2x.png */,
+				B9BD47E015F2392F00DBAA04 /* Default.png */,
+				B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */,
+				B9BD47D815F2334000DBAA04 /* iPhone.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B98B803515F37ABF00583C39 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Licenses;
 			sourceTree = "<group>";
 		};
 		B99D7AEF15EBC18E006543D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */,
-				B98B802D15F3792B00583C39 /* OpenSans-Regular.ttf */,
-				B9BD47E815F23B6500DBAA04 /* default-logo.png */,
-				B9BD47E915F23B6500DBAA04 /* default-logo@2.png */,
-				B9BD47E215F2394A00DBAA04 /* Default@2x.png */,
-				B9BD47E015F2392F00DBAA04 /* Default.png */,
-				B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */,
-				B9BD47D815F2334000DBAA04 /* iPhone.png */,
+				B98B803515F37ABF00583C39 /* Licenses */,
+				B98B803415F37A9E00583C39 /* Images */,
+				B98B803315F37A8B00583C39 /* Fonts */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -608,7 +644,7 @@
 				B9BD47E115F2393100DBAA04 /* Default.png in Resources */,
 				B9BD47E315F2394B00DBAA04 /* Default@2x.png in Resources */,
 				B9BD47EA15F23B6500DBAA04 /* default-logo.png in Resources */,
-				B9BD47EB15F23B6500DBAA04 /* default-logo@2.png in Resources */,
+				B9BD47EB15F23B6500DBAA04 /* default-logo@2x.png in Resources */,
 				B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
 				B98B803015F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
 			);
@@ -684,6 +720,8 @@
 				B9BD47F315F23E4300DBAA04 /* BGAuthenticationController.m in Sources */,
 				B9BD47F715F23E7800DBAA04 /* BGRootController.m in Sources */,
 				B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */,
+				B98B803915F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
+				B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +746,8 @@
 				B9BD47F215F23E4300DBAA04 /* BGAuthenticationController.m in Sources */,
 				B9BD47F615F23E7800DBAA04 /* BGRootController.m in Sources */,
 				B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */,
+				B98B803815F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
+				B98B803C15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

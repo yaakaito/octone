@@ -22,8 +22,13 @@
 
 #pragma mark - Colors
 + (UIColor *)githubPrimaryColor;
-+ (UIColor *)githubSecondaryColor;
++ (UIColor *)githubPrimaryDarkColor;
++ (UIColor *)githubSecondaryColorA;
++ (UIColor *)githubSecondaryDarkColorA;
++ (UIColor *)githubSecondaryColorB;
++ (UIColor *)githubSecondaryDarkColorB;
 + (UIColor *)githubComplementaryColor;
++ (UIColor *)githubComplementaryDarkColor;
 
 #pragma mark - Decorations
 + (UIColor *)githubHightlightedBackgroundColor;

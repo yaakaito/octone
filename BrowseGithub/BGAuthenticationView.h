@@ -10,4 +10,5 @@
 
 @interface BGAuthenticationView : UIView
 
+- (void)openOAuthWindowAnimation;
 @end

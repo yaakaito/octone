@@ -29,6 +29,11 @@
     self.view = [[BGAuthenticationView alloc] initWithFrame:CGRectZero];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+
+    [((BGAuthenticationView*)self.view) openOAuthWindowAnimation];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
