@@ -11,6 +11,9 @@
 NSString *kBGAuthenticationManagerDidOAuthSuccessNotification = @"BGAuthenticationManagerDidOAuthSuccessNotification";
 NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticationManagerDidOAuthFailureNotification";
 
+@interface BGAuthenticationManager()
+@end
+
 @implementation BGAuthenticationManager
 
 + (id)sharedManager {

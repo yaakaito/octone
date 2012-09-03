@@ -12,6 +12,8 @@ extern NSString *kBGAuthenticationManagerDidOAuthSuccessNotification;
 extern NSString *kBGAuthenticationManagerDidOAuthFailureNotification;
 
 @interface BGAuthenticationManager : NSObject
+@property (nonatomic, readonly) NSTimeInterval timeoutInterval;
+
 + (id)sharedManager;
 - (BOOL)authenticated;
 - (NSString *)accessToken;
