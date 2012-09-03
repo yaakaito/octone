@@ -45,6 +45,8 @@
 		B98B803915F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */; };
 		B98B803C15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */; };
 		B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */; };
+		B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
+		B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
 		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -128,6 +130,8 @@
 		B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGlossyButton+BrowseGithub.m"; sourceTree = "<group>"; };
 		B98B803A15F37D4B00583C39 /* UIFont+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+BrowseGithub.h"; sourceTree = "<group>"; };
 		B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+BrowseGithub.m"; sourceTree = "<group>"; };
+		B98B805A15F4492600583C39 /* BGAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationManager.h; sourceTree = "<group>"; };
+		B98B805B15F4492700583C39 /* BGAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManager.m; sourceTree = "<group>"; };
 		B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9BD471115EC955800DBAA04 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				B9BD47ED15F23C0600DBAA04 /* BrowseGithub.m */,
 				B9BD47F415F23E7700DBAA04 /* BGRootController.h */,
 				B9BD47F515F23E7800DBAA04 /* BGRootController.m */,
+				B98B805A15F4492600583C39 /* BGAuthenticationManager.h */,
+				B98B805B15F4492700583C39 /* BGAuthenticationManager.m */,
 			);
 			name = Roots;
 			sourceTree = "<group>";
@@ -722,6 +728,7 @@
 				B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */,
 				B98B803915F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
+				B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +755,7 @@
 				B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */,
 				B98B803815F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B98B803C15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
+				B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
