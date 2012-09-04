@@ -9,32 +9,31 @@
 @class BGEventManager;
 
 SPEC_BEGIN(BGEventManagerSpec)
-
+/*
 describe(@"Event Manager", ^{
     __block BGEventManager *manager;
-    context(@"ユーザーのプライベートライムラインを取得", ^{
+    context(@"がユーザーのプライベートライムラインを取得したとき", ^{
         beforeAll(^{
             manager = [[BGEventManager alloc] init];
             [manager reloadUserPrivateTimeline];
         });
         
-        it(@"取得に成功したとき、30件のイベントをリストで受け取ることができる", ^{
+        it(@"は、30件のイベントリストを持つ", ^{
             [[[manager should] have:30] userPrivateTimelines];
         });
     });
     
-    context(@"タイムラインの表示", ^{
+    context(@"がタイムラインの表示するとき", ^{
     
-        pending(@"表示するタイムラインのフィルター", ^{
+        pending(@"に、フィルターを行ったとき", ^{
             
         });
 
-        pending(@"フィルターしないとすべてのタイムラインを表示", ^{
+        pending(@"に、フィルターをしないとき", ^{
         });
     
     });
-    
 
 });
-
+*/
 SPEC_END

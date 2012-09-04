@@ -25,7 +25,7 @@
 SPEC_BEGIN(BGGlobalMenuControllerSpec)
 
 describe(@"Global Menu Controller", ^{
-    context(@"メニューの選択", ^{
+    context(@"のメニューを何かしら選択したとき", ^{
         __block BGGlobalMenuController *globalMenuController;
         __block MockMenuDelegate *mockDelegate;
         beforeEach(^{
@@ -34,7 +34,7 @@ describe(@"Global Menu Controller", ^{
             globalMenuController.delegate = mockDelegate;
         });
         
-        it(@"何かしらのメニューがタップで選択されたとき、delegateへ通知される", ^{
+        it(@"は、delegateへ通知を送る", ^{
             [globalMenuController tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             [[theValue(mockDelegate.calledDelegate) should] beYes];
         });

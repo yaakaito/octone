@@ -14,7 +14,7 @@ SPEC_BEGIN(BGGithubFeedSpec)
 describe(@"Github Feed", ^{
     
 
-    context(@"フィードの取得と表示", ^{
+    context(@"がフィードの取得して表示する", ^{
 
     });
     

@@ -13,21 +13,21 @@ SPEC_BEGIN(BGAuthenticationManagerSpec)
 
 describe(@"Authentication Manager", ^{
     __block BGAuthenticationManager *manager;
-    context(@"OAuthしていない状態noとき", ^{
+    context(@"がOAuthしていないとき", ^{
         beforeEach(^{
             manager = [[BGAuthenticationManager alloc] init];
         });
         
-        it(@"authenticatedはNO", ^{
+        it(@"は、認証されていないと返す", ^{
             [[theValue([manager authenticated]) should] beNo];
         });
         
-        it(@"tokenは取得できない", ^{
+        it(@"は、トークンを持っていない", ^{
             [[manager accessToken] shouldBeNil];
         });
     });
     
-    pending(@"Authentication", ^{
+    pending(@"がOAuthを開始したとき", ^{
         context(@"OAuthを開始したとき", ^{
             beforeAll(^{
                 // ヘルパーでUIApplicationをモック
@@ -51,17 +51,17 @@ describe(@"Authentication Manager", ^{
         });
     });
     
-    context(@"認証が完了したあと", ^{
+    context(@"が認証を完了したあと", ^{
         beforeEach(^{
             manager = [[BGAuthenticationManager alloc] init];
             // なんらかの手順で認証を通す
         });
         
-        it(@"authenticatedはYES", ^{
+        it(@"は、認証されていると返す", ^{
             [[theValue([manager authenticated]) should] beYes];
         });
         
-        it(@"デバッグ用のトークンが取得できる", ^{
+        it(@"は、何らかのアクセストークンを持っている", ^{
             [[[manager accessToken] should] equal:kDebugAccessKey];
         });
     });

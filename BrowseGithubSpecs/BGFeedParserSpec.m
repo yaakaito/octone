@@ -14,26 +14,26 @@ SPEC_BEGIN(BGFeedParserSpec)
 
 describe(@"Feed Parser", ^{
     
-    context(@"user.private.atomを使ったとき", ^{
+    context(@"がuser.private.atomをパースしたとき", ^{
         __block NSData *atom;
         beforeEach(^{
             atom = [NSBundle atomForResouceName:@"user.private"];
         });
         
-        it(@"パースに成功するのでエラーはない", ^{
+        it(@"は、パースに成功するのでエラーはない", ^{
             NSError *error;
             [BGFeedParser parseFeedXMLData:atom error:&error];
             [error shouldBeNil];
         });
         
-        it(@"パース結果は30件", ^{
+        it(@"は、30件のエントリーを返す", ^{
             NSArray *feedEntries = [BGFeedParser parseFeedXMLData:atom error:NULL];
             [[theValue([feedEntries count]) should] equal:theValue(30)];
         });
         
     });
     
-    context(@"user.private.short.atomをパースしたとき", ^{
+    context(@"がuser.private.short.atomをパースしたとき", ^{
         __block NSData *atom;
         __block NSArray *feedEntries;
         beforeEach(^{
@@ -41,7 +41,7 @@ describe(@"Feed Parser", ^{
             feedEntries = [BGFeedParser parseFeedXMLData:atom error:NULL];
         });
         
-        it(@"取り出せるエントリーは2つ", ^{
+        it(@"は、2件のエントリーを返す", ^{
             [[theValue([feedEntries count]) should] equal:theValue(2)];
         });
         
@@ -58,11 +58,11 @@ describe(@"Feed Parser", ^{
             
         };
         
-        it(@"1つ目のエントリーがパースに成功", ^{
+        it(@"は、1つめのエントリーのパースに成功している", ^{
             checkFeedEntryFields([feedEntries objectAtIndex:0]);
         });
         
-        it(@"2つ目のエントリーがパースに成功", ^{
+        it(@"は、2つ目のエントリーのパースに成功している", ^{
             checkFeedEntryFields([feedEntries objectAtIndex:1]);
 
         });
