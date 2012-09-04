@@ -48,6 +48,7 @@
 		B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B98B806015F44BEE00583C39 /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */; };
+		B98B809C15F5D47600583C39 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B809B15F5D47600583C39 /* BGEventManagerSpec.m */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
 		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
@@ -135,6 +136,7 @@
 		B98B805B15F4492700583C39 /* BGAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManager.m; sourceTree = "<group>"; };
 		B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManagerSpec.m; sourceTree = "<group>"; };
 		B98B806315F5038D00583C39 /* BGSecretKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
+		B98B809B15F5D47600583C39 /* BGEventManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManagerSpec.m; sourceTree = "<group>"; };
 		B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9BD471115EC955800DBAA04 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
@@ -259,8 +261,8 @@
 		B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				B9BD473815EDE82B00DBAA04 /* Units */,
-				B9BD471015EC94E600DBAA04 /* Stories */,
+				B9BD473815EDE82B00DBAA04 /* Specs */,
+				B9BD471015EC94E600DBAA04 /* features */,
 				B948A2C515E745FD00712CB0 /* Roots */,
 				B9BD472315ED17A000DBAA04 /* Resouces */,
 				B9BD472215ED141400DBAA04 /* Supporting Extensions */,
@@ -404,6 +406,13 @@
 			name = Secret;
 			sourceTree = "<group>";
 		};
+		B98B809A15F5D42100583C39 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		B99D7AEF15EBC18E006543D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,12 +432,12 @@
 			name = Github;
 			sourceTree = "<group>";
 		};
-		B9BD471015EC94E600DBAA04 /* Stories */ = {
+		B9BD471015EC94E600DBAA04 /* features */ = {
 			isa = PBXGroup;
 			children = (
 				B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */,
 			);
-			name = Stories;
+			name = features;
 			sourceTree = "<group>";
 		};
 		B9BD471515EC957900DBAA04 /* Parser */ = {
@@ -476,21 +485,23 @@
 			path = Resouces/Mocks;
 			sourceTree = "<group>";
 		};
-		B9BD473815EDE82B00DBAA04 /* Units */ = {
+		B9BD473815EDE82B00DBAA04 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				B9BD474515EF3C7800DBAA04 /* Feed */,
+				B98B809A15F5D42100583C39 /* Repository */,
+				B9BD474515EF3C7800DBAA04 /* Event */,
 			);
-			name = Units;
+			name = Specs;
 			sourceTree = "<group>";
 		};
-		B9BD474515EF3C7800DBAA04 /* Feed */ = {
+		B9BD474515EF3C7800DBAA04 /* Event */ = {
 			isa = PBXGroup;
 			children = (
 				B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */,
 				B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */,
+				B98B809B15F5D47600583C39 /* BGEventManagerSpec.m */,
 			);
-			name = Feed;
+			name = Event;
 			sourceTree = "<group>";
 		};
 		B9EE7C4F15B7C24200BC79D6 = {
@@ -751,6 +762,7 @@
 				B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
 				B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
 				B98B806015F44BEE00583C39 /* BGAuthenticationManagerSpec.m in Sources */,
+				B98B809C15F5D47600583C39 /* BGEventManagerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
