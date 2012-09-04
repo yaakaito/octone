@@ -134,6 +134,7 @@
 		B98B805A15F4492600583C39 /* BGAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationManager.h; sourceTree = "<group>"; };
 		B98B805B15F4492700583C39 /* BGAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManager.m; sourceTree = "<group>"; };
 		B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManagerSpec.m; sourceTree = "<group>"; };
+		B98B806315F5038D00583C39 /* BGSecretKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
 		B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9BD471115EC955800DBAA04 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
 		B9BD471215EC955800DBAA04 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
@@ -242,8 +243,6 @@
 				B9BD47ED15F23C0600DBAA04 /* BrowseGithub.m */,
 				B9BD47F415F23E7700DBAA04 /* BGRootController.h */,
 				B9BD47F515F23E7800DBAA04 /* BGRootController.m */,
-				B98B805A15F4492600583C39 /* BGAuthenticationManager.h */,
-				B98B805B15F4492700583C39 /* BGAuthenticationManager.m */,
 			);
 			name = Roots;
 			sourceTree = "<group>";
@@ -301,8 +300,6 @@
 		B948A2CE15E74A5900712CB0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B9BD47F015F23E4100DBAA04 /* BGAuthenticationController.h */,
-				B9BD47F115F23E4200DBAA04 /* BGAuthenticationController.m */,
 				B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */,
 				B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */,
 				B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */,
@@ -320,8 +317,6 @@
 				B948A2DB15E74DC500712CB0 /* BGGlobalMenuUserView.h */,
 				B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */,
 				B948A2D015E74A7600712CB0 /* Cells */,
-				B98B801F15F3669C00583C39 /* BGAuthenticationView.h */,
-				B98B802015F3669C00583C39 /* BGAuthenticationView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -385,6 +380,28 @@
 			children = (
 			);
 			name = Licenses;
+			sourceTree = "<group>";
+		};
+		B98B806115F5034500583C39 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B98B806215F5036F00583C39 /* Secret */,
+				B9BD47F015F23E4100DBAA04 /* BGAuthenticationController.h */,
+				B9BD47F115F23E4200DBAA04 /* BGAuthenticationController.m */,
+				B98B801F15F3669C00583C39 /* BGAuthenticationView.h */,
+				B98B802015F3669C00583C39 /* BGAuthenticationView.m */,
+				B98B805A15F4492600583C39 /* BGAuthenticationManager.h */,
+				B98B805B15F4492700583C39 /* BGAuthenticationManager.m */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		B98B806215F5036F00583C39 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				B98B806315F5038D00583C39 /* BGSecretKeys.h */,
+			);
+			name = Secret;
 			sourceTree = "<group>";
 		};
 		B99D7AEF15EBC18E006543D1 /* Resources */ = {
@@ -519,6 +536,7 @@
 				B9BD471A15EC99C400DBAA04 /* Managers */,
 				B948A2CF15E74A6F00712CB0 /* Views */,
 				B948A2CE15E74A5900712CB0 /* Controllers */,
+				B98B806115F5034500583C39 /* Auth */,
 				B9075E0D15E67A1700DADA73 /* Roots */,
 				B99D7AEF15EBC18E006543D1 /* Resources */,
 				B9EE7C6515B7C24200BC79D6 /* Supporting Files */,

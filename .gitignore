@@ -3,3 +3,4 @@ BrowseGithub.xcodeproj/xcuserdata/*
 Podfile.lock
 Pods
 BrowseGithub.xcworkspace/xcuserdata/*
+BrowseGithub/BGSecretKeys.h
