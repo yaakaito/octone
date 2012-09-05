@@ -12,7 +12,7 @@
 
 + (BOOL)authenticated {
 
-    return NO;
+    return YES;
 }
 
 @end

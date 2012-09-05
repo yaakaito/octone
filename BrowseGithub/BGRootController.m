@@ -14,6 +14,7 @@
 #import "BGNavigationController.h"
 #import "BGGlobalMenuController.h"
 #import "PatchedJASidePanelController.h"
+#import "UIColor+BrowseGithub.h"
 
 @interface BGRootController ()
 @property (nonatomic, strong) BGAuthenticationController *authenticationController;
@@ -48,7 +49,7 @@
     _appRootController.view.frame = [self initialFrame];
     
     UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+    vc.view.backgroundColor = [UIColor githubBackgroundColor];
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
     BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
     globalMenuController.delegate = navigationController;

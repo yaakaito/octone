@@ -19,6 +19,12 @@
 		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
 		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
+		B9386BA215F79F9C0037F493 /* navigation-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA015F79F9C0037F493 /* navigation-background.png */; };
+		B9386BA315F79F9C0037F493 /* navigation-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA115F79F9C0037F493 /* navigation-background@2x.png */; };
+		B9386BA615F7A4A40037F493 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA515F7A4A40037F493 /* menu-button.png */; };
+		B9386BA815F7A4B00037F493 /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA715F7A4B00037F493 /* menu-button@2x.png */; };
+		B9386BAB15F7AA090037F493 /* menu-button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA915F7AA090037F493 /* menu-button-highlighted.png */; };
+		B9386BAC15F7AA090037F493 /* menu-button-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BAA15F7AA090037F493 /* menu-button-highlighted@2x.png */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
@@ -110,6 +116,12 @@
 		B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuController.h; sourceTree = "<group>"; };
 		B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuController.m; sourceTree = "<group>"; };
 		B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuControllerDelegate.h; sourceTree = "<group>"; };
+		B9386BA015F79F9C0037F493 /* navigation-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation-background.png"; path = "Resources/navigation-background.png"; sourceTree = "<group>"; };
+		B9386BA115F79F9C0037F493 /* navigation-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation-background@2x.png"; path = "Resources/navigation-background@2x.png"; sourceTree = "<group>"; };
+		B9386BA515F7A4A40037F493 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button.png"; path = "Resources/menu-button.png"; sourceTree = "<group>"; };
+		B9386BA715F7A4B00037F493 /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button@2x.png"; path = "Resources/menu-button@2x.png"; sourceTree = "<group>"; };
+		B9386BA915F7AA090037F493 /* menu-button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button-highlighted.png"; path = "Resources/menu-button-highlighted.png"; sourceTree = "<group>"; };
+		B9386BAA15F7AA090037F493 /* menu-button-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button-highlighted@2x.png"; path = "Resources/menu-button-highlighted@2x.png"; sourceTree = "<group>"; };
 		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -367,6 +379,12 @@
 		B98B803415F37A9E00583C39 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B9386BA915F7AA090037F493 /* menu-button-highlighted.png */,
+				B9386BAA15F7AA090037F493 /* menu-button-highlighted@2x.png */,
+				B9386BA515F7A4A40037F493 /* menu-button.png */,
+				B9386BA715F7A4B00037F493 /* menu-button@2x.png */,
+				B9386BA015F79F9C0037F493 /* navigation-background.png */,
+				B9386BA115F79F9C0037F493 /* navigation-background@2x.png */,
 				B9BD47E815F23B6500DBAA04 /* default-logo.png */,
 				B9BD47E915F23B6500DBAA04 /* default-logo@2x.png */,
 				B9BD47E215F2394A00DBAA04 /* Default@2x.png */,
@@ -685,6 +703,12 @@
 				B9BD47EB15F23B6500DBAA04 /* default-logo@2x.png in Resources */,
 				B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
 				B98B803015F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
+				B9386BA215F79F9C0037F493 /* navigation-background.png in Resources */,
+				B9386BA315F79F9C0037F493 /* navigation-background@2x.png in Resources */,
+				B9386BA615F7A4A40037F493 /* menu-button.png in Resources */,
+				B9386BA815F7A4B00037F493 /* menu-button@2x.png in Resources */,
+				B9386BAB15F7AA090037F493 /* menu-button-highlighted.png in Resources */,
+				B9386BAC15F7AA090037F493 /* menu-button-highlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

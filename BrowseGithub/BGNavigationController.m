@@ -22,8 +22,8 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) {
         // Custom initialization
-        self.navigationBar.barStyle = UIBarStyleDefault;
-        self.navigationBar.tintColor = [UIColor githubNavigationColor];
+//        self.navigationBar.barStyle = UIBarStyleDefault;
+        [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-background"] forBarMetrics:UIBarMetricsDefault];
     }
     return self;
 }
