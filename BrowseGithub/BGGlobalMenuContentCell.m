@@ -8,6 +8,7 @@
 
 #import "BGGlobalMenuContentCell.h"
 #import "UIColor+BrowseGithub.h"
+#import "UIFont+BrowseGithub.h"
 
 @interface BGGlobalMenuContentCell()
 @property (nonatomic, strong) UIView *hightlighter;
@@ -32,6 +33,8 @@
         self.separator = [[UIView alloc] init];
         self.separator.backgroundColor = [UIColor githubGlobalMenuSeparatorColor];
         [self addSubview:self.separator];
+        self.textLabel.font = [UIFont boldOpenSansFontOfSize:14];
+        self.textLabel.textColor = [UIColor githubPrimaryColor];
     }
     return self;
 }

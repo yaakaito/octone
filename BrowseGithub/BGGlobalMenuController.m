@@ -9,9 +9,10 @@
 #import "BGGlobalMenuController.h"
 #import "BGGlobalMenuContentCell.h"
 #import "UIColor+BrowseGithub.h"
+#import "BGGlobalMenuContents.h"
 
 @interface BGGlobalMenuController ()
-
+@property (nonatomic, weak) BGGlobalMenuContents *contents;
 @end
 
 @implementation BGGlobalMenuController
@@ -19,7 +20,7 @@
 - (id)init {
     self = [super initWithStyle:UITableViewStylePlain];
     if(self) {
-        
+        self.contents = [BGGlobalMenuContents sharedContents];
     }
     return self;
 }
@@ -37,6 +38,7 @@
     self.tableView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
 
 - (void)viewDidUnload
@@ -62,7 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 4;
+    return [self.contents numberOfContents];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,7 +77,7 @@
     }
     
     // Configure the cell...
-    
+    cell.textLabel.text = [self.contents contentsTitleForIndex:indexPath.row];
     return cell;
 }
 
@@ -122,13 +124,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
     if(self.delegate && [self.delegate respondsToSelector:@selector(globalMenuController:didSelectNextViewController:)])
     {
         [self.delegate globalMenuController:self didSelectNextViewController:nil];

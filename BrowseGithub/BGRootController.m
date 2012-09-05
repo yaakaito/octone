@@ -50,6 +50,7 @@
     
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.backgroundColor = [UIColor githubBackgroundColor];
+    vc.title = @"News Feeds";
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
     BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
     globalMenuController.delegate = navigationController;
