@@ -15,10 +15,11 @@
 + (UIColor *)githubLightTextColor;
 
 #pragma mark - Base backgrounds
-+ (UIColor *)githubNavigationColor;
 + (UIColor *)githubBackgroundColor;
-+ (UIColor *)githubGlobalMenuBacbkgroundColor;
-+ (UIColor *)githubSectionBbackgroundColor;
++ (UIColor *)githubHightlightedBackgroundColor;
++ (UIColor *)githubGlobalMenuBackgroundColor;
++ (UIColor *)githubHightlightedGlobalMenuBackgroundColor;
++ (UIColor *)githubSectionBackgroundColor;
 
 #pragma mark - Colors
 + (UIColor *)githubPrimaryColor;
@@ -31,8 +32,9 @@
 + (UIColor *)githubComplementaryDarkColor;
 
 #pragma mark - Decorations
-+ (UIColor *)githubHightlightedBackgroundColor;
 + (UIColor *)githubHightlightColor;
 + (UIColor *)githubSeparatorColor;
++ (UIColor *)githubGlobalMenuHightlightColor;
++ (UIColor *)githubGlobalMenuSeparatorColor;
 
 @end

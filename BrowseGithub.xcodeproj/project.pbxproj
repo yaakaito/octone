@@ -25,6 +25,8 @@
 		B9386BA815F7A4B00037F493 /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA715F7A4B00037F493 /* menu-button@2x.png */; };
 		B9386BAB15F7AA090037F493 /* menu-button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA915F7AA090037F493 /* menu-button-highlighted.png */; };
 		B9386BAC15F7AA090037F493 /* menu-button-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BAA15F7AA090037F493 /* menu-button-highlighted@2x.png */; };
+		B9386BAF15F7AD030037F493 /* BGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BAE15F7AD030037F493 /* BGBaseCell.m */; };
+		B9386BB015F7AD0C0037F493 /* BGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BAE15F7AD030037F493 /* BGBaseCell.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
@@ -122,6 +124,8 @@
 		B9386BA715F7A4B00037F493 /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button@2x.png"; path = "Resources/menu-button@2x.png"; sourceTree = "<group>"; };
 		B9386BA915F7AA090037F493 /* menu-button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button-highlighted.png"; path = "Resources/menu-button-highlighted.png"; sourceTree = "<group>"; };
 		B9386BAA15F7AA090037F493 /* menu-button-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button-highlighted@2x.png"; path = "Resources/menu-button-highlighted@2x.png"; sourceTree = "<group>"; };
+		B9386BAD15F7AD030037F493 /* BGBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBaseCell.h; sourceTree = "<group>"; };
+		B9386BAE15F7AD030037F493 /* BGBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBaseCell.m; sourceTree = "<group>"; };
 		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -342,6 +346,8 @@
 				B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */,
 				B9BD473B15EF338100DBAA04 /* BGFeedEntryCell.h */,
 				B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */,
+				B9386BAD15F7AD030037F493 /* BGBaseCell.h */,
+				B9386BAE15F7AD030037F493 /* BGBaseCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -787,6 +793,7 @@
 				B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
 				B98B806015F44BEE00583C39 /* BGAuthenticationManagerSpec.m in Sources */,
 				B98B809C15F5D47600583C39 /* BGEventManagerSpec.m in Sources */,
+				B9386BB015F7AD0C0037F493 /* BGBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +821,7 @@
 				B98B803815F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B98B803C15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
 				B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
+				B9386BAF15F7AD030037F493 /* BGBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

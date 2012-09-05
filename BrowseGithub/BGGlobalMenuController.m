@@ -8,6 +8,7 @@
 
 #import "BGGlobalMenuController.h"
 #import "BGGlobalMenuContentCell.h"
+#import "UIColor+BrowseGithub.h"
 
 @interface BGGlobalMenuController ()
 
@@ -32,6 +33,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.tableView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
+    self.tableView.separatorColor = [UIColor clearColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)viewDidUnload

@@ -10,26 +10,36 @@
 
 @implementation UIColor (BrowseGithub)
 
-
 #pragma mark - Base texts
 + (UIColor *)githubTextColor {
     return [UIColor colorWithWhite:0.15 alpha:1.0];
 }
-//+ (UIColor *)githubLightTextColor;
 
-#pragma mark - Base backgrounds
-+ (UIColor *)githubNavigationColor
-{
-    return [UIColor colorWithRed:0.92 green:0.92 blue:0.94 alpha:1.0];
++ (UIColor *)githubLightTextColor {
+    return [UIColor colorWithWhite:0.35 alpha:1.0f];
 }
 
+#pragma mark - Base backgrounds
 + (UIColor *)githubBackgroundColor {
     return [UIColor colorWithWhite:0.95 alpha:1.0];
 }
-/*
-+ (UIColor *)githubGlobalMenuBacbkgroundColor;
-+ (UIColor *)githubSectionBbackgroundColor;
-*/
+
++ (UIColor *)githubHightlightedBackgroundColor {
+    return [UIColor colorWithWhite:0.90 alpha:1.0];
+}
+
++ (UIColor *)githubGlobalMenuBackgroundColor {
+    return [UIColor colorWithWhite:0.12 alpha:1.0];
+}
+
++ (UIColor *)githubHightlightedGlobalMenuBackgroundColor {
+    return [UIColor colorWithWhite:0.08 alpha:1.0];
+}
+
++ (UIColor *)githubSectionBackgroundColor {
+    return [UIColor colorWithWhite:0.06 alpha:1.0];
+}
+
 #pragma mark - Colors
 + (UIColor *)githubPrimaryColor {
     return [UIColor colorWithRed:255.0/255.0 green:184.0/255.0 blue:0.0/255.0 alpha:1.0f];
@@ -63,10 +73,21 @@
     return [UIColor colorWithRed:8.0/255.0 green:20.0/255.0 blue:114.0/255.0 alpha:1.0f];
 }
 
-/*
 #pragma mark - Decorations
-+ (UIColor *)githubHightlightedBackgroundColor;
-+ (UIColor *)githubHightlightColor;
-+ (UIColor *)githubSeparatorColor;
-*/
++ (UIColor *)githubHightlightColor {
+    return [UIColor colorWithWhite:0.92 alpha:1.0];
+}
+
++ (UIColor *)githubSeparatorColor {
+    return [UIColor colorWithWhite:0.88 alpha:1.0];
+}
+
++ (UIColor *)githubGlobalMenuHightlightColor {
+    return [UIColor colorWithWhite:0.14 alpha:1.0];
+}
+
++ (UIColor *)githubGlobalMenuSeparatorColor {
+    
+    return [UIColor colorWithWhite:0.10 alpha:1.0];
+}
 @end
