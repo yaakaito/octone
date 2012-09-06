@@ -8,6 +8,7 @@
 
 #import "BGNavigationController.h"
 #import "UIColor+BrowseGithub.h"
+#import "UIFont+BrowseGithub.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface BGNavigationController()
@@ -24,6 +25,9 @@
         // Custom initialization
 //        self.navigationBar.barStyle = UIBarStyleDefault;
         [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-background"] forBarMetrics:UIBarMetricsDefault];
+        self.navigationBar.titleTextAttributes = @{ UITextAttributeTextColor : [UIColor githubTextColor]
+        , UITextAttributeFont : [UIFont boldOpenSansFontOfSize:18]
+        , UITextAttributeTextShadowColor : [UIColor githubHightlightColor]};
     }
     return self;
 }
