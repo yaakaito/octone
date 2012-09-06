@@ -39,6 +39,9 @@
 		B9386BD415F7BD870037F493 /* BGStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BD215F7BD860037F493 /* BGStarsController.m */; };
 		B9386BD715F7C48F0037F493 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BD615F7C48E0037F493 /* BGEventsController.m */; };
 		B9386BD815F7C48F0037F493 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BD615F7C48E0037F493 /* BGEventsController.m */; };
+		B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
+		B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
+		B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
@@ -150,6 +153,9 @@
 		B9386BD215F7BD860037F493 /* BGStarsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGStarsController.m; sourceTree = "<group>"; };
 		B9386BD515F7C48D0037F493 /* BGEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventsController.h; sourceTree = "<group>"; };
 		B9386BD615F7C48E0037F493 /* BGEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsController.m; sourceTree = "<group>"; };
+		B9386BD915F7CF8A0037F493 /* BGGithubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGithubResource.h; sourceTree = "<group>"; };
+		B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResource.m; sourceTree = "<group>"; };
+		B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResourceSpec.m; sourceTree = "<group>"; };
 		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -296,6 +302,22 @@
 				B9BD471515EC957900DBAA04 /* Parser */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B9386BDD15F7CF940037F493 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9386BDE15F7CFA50037F493 /* Github */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B9386BDE15F7CFA50037F493 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */,
+			);
+			name = Github;
 			sourceTree = "<group>";
 		};
 		B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */ = {
@@ -488,6 +510,8 @@
 			children = (
 				B9BD471115EC955800DBAA04 /* BGFeedEntry.h */,
 				B9BD471215EC955800DBAA04 /* BGFeedEntry.m */,
+				B9386BD915F7CF8A0037F493 /* BGGithubResource.h */,
+				B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -548,6 +572,7 @@
 		B9BD473815EDE82B00DBAA04 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				B9386BDD15F7CF940037F493 /* Model */,
 				B98B809A15F5D42100583C39 /* Repository */,
 				B9BD474515EF3C7800DBAA04 /* Event */,
 			);
@@ -836,6 +861,8 @@
 				B9386BD015F7B7BB0037F493 /* BGPullRequestsController.m in Sources */,
 				B9386BD415F7BD870037F493 /* BGStarsController.m in Sources */,
 				B9386BD815F7C48F0037F493 /* BGEventsController.m in Sources */,
+				B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
+				B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,6 +897,7 @@
 				B9386BCF15F7B7BB0037F493 /* BGPullRequestsController.m in Sources */,
 				B9386BD315F7BD870037F493 /* BGStarsController.m in Sources */,
 				B9386BD715F7C48F0037F493 /* BGEventsController.m in Sources */,
+				B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
