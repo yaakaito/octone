@@ -7,6 +7,7 @@
 //
 
 #import "BGAuthenticationManager.h"
+#import "BGSecretKeys.h"
 
 NSString *kBGAuthenticationManagerDidOAuthSuccessNotification = @"BGAuthenticationManagerDidOAuthSuccessNotification";
 NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticationManagerDidOAuthFailureNotification";
@@ -24,5 +25,9 @@ NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticati
         _sharedObject = [[self alloc] init];
     });
     return _sharedObject;    
+}
+
+- (NSString *)accessToken {
+    return kDebugAccessKey;
 }
 @end
