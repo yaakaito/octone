@@ -9,7 +9,7 @@
 @class BGEventManager;
 
 SPEC_BEGIN(BGEventManagerSpec)
-
+/*
 describe(@"Event Manager", ^{
     __block BGEventManager *manager;
     context(@"がユーザーのプライベートライムラインを取得したとき", ^{
@@ -35,5 +35,5 @@ describe(@"Event Manager", ^{
     });
 
 });
-
+*/
 SPEC_END
