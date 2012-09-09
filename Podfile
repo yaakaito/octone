@@ -1,5 +1,5 @@
 platform :ios, '5.0'
-pod 'Kiwi'
+pod 'Kiwi', '1.1.0'
 pod 'GHUnitIOS'
 pod 'OCMock'
 pod 'NLTHTTPStubServer', '0.1.4'
