@@ -19,6 +19,8 @@
 		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
 		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
+		B91CF3AE15F9C56800D647A1 /* resource.json in Resources */ = {isa = PBXBuildFile; fileRef = B91CF3AD15F9C56800D647A1 /* resource.json */; };
+		B91CF3B815FA46D000D647A1 /* FakeNotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B91CF3B715FA46D000D647A1 /* FakeNotificationReceiver.m */; };
 		B9386BA215F79F9C0037F493 /* navigation-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA015F79F9C0037F493 /* navigation-background.png */; };
 		B9386BA315F79F9C0037F493 /* navigation-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA115F79F9C0037F493 /* navigation-background@2x.png */; };
 		B9386BA615F7A4A40037F493 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA515F7A4A40037F493 /* menu-button.png */; };
@@ -42,6 +44,8 @@
 		B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
 		B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
 		B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */; };
+		B9386C2B15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
+		B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
 		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
@@ -49,7 +53,6 @@
 		B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 		B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
-		B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */; };
 		B948A2CC15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B948A2CD15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B948A2D315E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D215E74AC400712CB0 /* BGGlobalMenuContentCell.m */; };
@@ -58,6 +61,7 @@
 		B948A2D915E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */; };
 		B948A2DD15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
 		B948A2DE15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
+		B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F215FC94C300D2557B /* AsyncSupporter.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
@@ -70,12 +74,9 @@
 		B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */; };
 		B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
-		B98B806015F44BEE00583C39 /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */; };
-		B98B809C15F5D47600583C39 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B809B15F5D47600583C39 /* BGEventManagerSpec.m */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
 		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
-		B9BD470F15EC94D300DBAA04 /* BGGithubFeedSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD470E15EC94D300DBAA04 /* BGGithubFeedSpec.m */; };
 		B9BD471315EC955800DBAA04 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471215EC955800DBAA04 /* BGFeedEntry.m */; };
 		B9BD471415EC955800DBAA04 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471215EC955800DBAA04 /* BGFeedEntry.m */; };
 		B9BD471815EC959D00DBAA04 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471715EC959D00DBAA04 /* BGFeedParser.m */; };
@@ -85,12 +86,10 @@
 		B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */; };
 		B9BD472715ED17AD00DBAA04 /* user.private.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472515ED17AD00DBAA04 /* user.private.atom */; };
 		B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9BD472615ED17AD00DBAA04 /* user.private.short.atom */; };
-		B9BD473A15EDE87500DBAA04 /* BGFeedEntryTypeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473915EDE87500DBAA04 /* BGFeedEntryTypeSpec.m */; };
 		B9BD473D15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */; };
 		B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD473C15EF338100DBAA04 /* BGFeedEntryCell.m */; };
 		B9BD474115EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
 		B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474015EF340600DBAA04 /* BGGravatarImageView.m */; };
-		B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD474315EF3A6600DBAA04 /* BGFeedParserSpec.m */; };
 		B9BD47D915F2334100DBAA04 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47D815F2334000DBAA04 /* iPhone.png */; };
 		B9BD47DB15F2336600DBAA04 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47DA15F2336500DBAA04 /* iPhone@2x.png */; };
 		B9BD47E115F2393100DBAA04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BD47E015F2392F00DBAA04 /* Default.png */; };
@@ -133,6 +132,9 @@
 		B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuController.h; sourceTree = "<group>"; };
 		B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuController.m; sourceTree = "<group>"; };
 		B9075E0F15E67B4000DADA73 /* BGGlobalMenuControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuControllerDelegate.h; sourceTree = "<group>"; };
+		B91CF3AD15F9C56800D647A1 /* resource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resource.json; sourceTree = "<group>"; };
+		B91CF3B415FA459B00D647A1 /* FakeNotificationReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationReceiver.h; sourceTree = "<group>"; };
+		B91CF3B715FA46D000D647A1 /* FakeNotificationReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationReceiver.m; sourceTree = "<group>"; };
 		B9386BA015F79F9C0037F493 /* navigation-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation-background.png"; path = "Resources/navigation-background.png"; sourceTree = "<group>"; };
 		B9386BA115F79F9C0037F493 /* navigation-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation-background@2x.png"; path = "Resources/navigation-background@2x.png"; sourceTree = "<group>"; };
 		B9386BA515F7A4A40037F493 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-button.png"; path = "Resources/menu-button.png"; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 		B9386BD915F7CF8A0037F493 /* BGGithubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGithubResource.h; sourceTree = "<group>"; };
 		B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResource.m; sourceTree = "<group>"; };
 		B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResourceSpec.m; sourceTree = "<group>"; };
+		B9386C2915F859160037F493 /* NSURL+GithubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GithubResource.h"; sourceTree = "<group>"; };
+		B9386C2A15F859170037F493 /* NSURL+GithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GithubResource.m"; sourceTree = "<group>"; };
 		B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B948A2A715E6C26700712CB0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B948A2AD15E6C26700712CB0 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		B948A2D715E74C7300712CB0 /* UIColor+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrowseGithub.m"; sourceTree = "<group>"; };
 		B948A2DB15E74DC500712CB0 /* BGGlobalMenuUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuUserView.h; sourceTree = "<group>"; };
 		B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserView.m; sourceTree = "<group>"; };
+		B949C2F115FC94C300D2557B /* AsyncSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSupporter.h; sourceTree = "<group>"; };
+		B949C2F215FC94C300D2557B /* AsyncSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSupporter.m; sourceTree = "<group>"; };
 		B98B801F15F3669C00583C39 /* BGAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationView.h; sourceTree = "<group>"; };
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
 		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -304,6 +310,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		B91CF3AF15FA44CB00D647A1 /* Mocks, Stubs and Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				B91CF3B415FA459B00D647A1 /* FakeNotificationReceiver.h */,
+				B91CF3B715FA46D000D647A1 /* FakeNotificationReceiver.m */,
+			);
+			name = "Mocks, Stubs and Fakes";
+			sourceTree = "<group>";
+		};
 		B9386BDD15F7CF940037F493 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +442,8 @@
 				B98B803B15F37D4B00583C39 /* UIFont+BrowseGithub.m */,
 				B98B803615F37C6D00583C39 /* UIGlossyButton+BrowseGithub.h */,
 				B98B803715F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m */,
+				B9386C2915F859160037F493 /* NSURL+GithubResource.h */,
+				B9386C2A15F859170037F493 /* NSURL+GithubResource.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -547,6 +564,8 @@
 			children = (
 				B9BD471F15ED140400DBAA04 /* NSBundle+Specs.h */,
 				B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */,
+				B949C2F115FC94C300D2557B /* AsyncSupporter.h */,
+				B949C2F215FC94C300D2557B /* AsyncSupporter.m */,
 			);
 			name = "Supporting Extensions";
 			sourceTree = "<group>";
@@ -564,6 +583,7 @@
 			children = (
 				B9BD472515ED17AD00DBAA04 /* user.private.atom */,
 				B9BD472615ED17AD00DBAA04 /* user.private.short.atom */,
+				B91CF3AD15F9C56800D647A1 /* resource.json */,
 			);
 			name = Mocks;
 			path = Resouces/Mocks;
@@ -572,6 +592,7 @@
 		B9BD473815EDE82B00DBAA04 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				B91CF3AF15FA44CB00D647A1 /* Mocks, Stubs and Fakes */,
 				B9386BDD15F7CF940037F493 /* Model */,
 				B98B809A15F5D42100583C39 /* Repository */,
 				B9BD474515EF3C7800DBAA04 /* Event */,
@@ -754,6 +775,7 @@
 				B9BD472815ED17AD00DBAA04 /* user.private.short.atom in Resources */,
 				B98B802F15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
 				B98B803115F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
+				B91CF3AE15F9C56800D647A1 /* resource.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,20 +853,16 @@
 				B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */,
 				B948A2C315E745F300712CB0 /* BGNavigationController.m in Sources */,
 				B948A2C415E745F300712CB0 /* BGGlobalMenuController.m in Sources */,
-				B948A2C715E7461500712CB0 /* BGGlobalMenuControllerSpec.m in Sources */,
 				B948A2CD15E748AA00712CB0 /* PatchedJASidePanelController.m in Sources */,
 				B948A2D415E74AC400712CB0 /* BGGlobalMenuContentCell.m in Sources */,
 				B948A2D915E74C7300712CB0 /* UIColor+BrowseGithub.m in Sources */,
 				B948A2DE15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */,
-				B9BD470F15EC94D300DBAA04 /* BGGithubFeedSpec.m in Sources */,
 				B9BD471415EC955800DBAA04 /* BGFeedEntry.m in Sources */,
 				B9BD471915EC959D00DBAA04 /* BGFeedParser.m in Sources */,
 				B9BD471E15ED122600DBAA04 /* BGFeedEntryManager.m in Sources */,
 				B9BD472115ED140400DBAA04 /* NSBundle+Specs.m in Sources */,
-				B9BD473A15EDE87500DBAA04 /* BGFeedEntryTypeSpec.m in Sources */,
 				B9BD473E15EF338100DBAA04 /* BGFeedEntryCell.m in Sources */,
 				B9BD474215EF340700DBAA04 /* BGGravatarImageView.m in Sources */,
-				B9BD474415EF3A6600DBAA04 /* BGFeedParserSpec.m in Sources */,
 				B9BD47EF15F23C0600DBAA04 /* BrowseGithub.m in Sources */,
 				B9BD47F315F23E4300DBAA04 /* BGAuthenticationController.m in Sources */,
 				B9BD47F715F23E7800DBAA04 /* BGRootController.m in Sources */,
@@ -852,8 +870,6 @@
 				B98B803915F37C6D00583C39 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B98B803D15F37D4B00583C39 /* UIFont+BrowseGithub.m in Sources */,
 				B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */,
-				B98B806015F44BEE00583C39 /* BGAuthenticationManagerSpec.m in Sources */,
-				B98B809C15F5D47600583C39 /* BGEventManagerSpec.m in Sources */,
 				B9386BB015F7AD0C0037F493 /* BGBaseCell.m in Sources */,
 				B9386BB415F7B5190037F493 /* BGGlobalMenuContents.m in Sources */,
 				B9386BC015F7B7300037F493 /* BGIssuesController.m in Sources */,
@@ -863,6 +879,9 @@
 				B9386BD815F7C48F0037F493 /* BGEventsController.m in Sources */,
 				B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
 				B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */,
+				B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */,
+				B91CF3B815FA46D000D647A1 /* FakeNotificationReceiver.m in Sources */,
+				B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +917,7 @@
 				B9386BD315F7BD870037F493 /* BGStarsController.m in Sources */,
 				B9386BD715F7C48F0037F493 /* BGEventsController.m in Sources */,
 				B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
+				B9386C2B15F859170037F493 /* NSURL+GithubResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
