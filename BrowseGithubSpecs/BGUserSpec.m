@@ -85,6 +85,10 @@ describe(@"Github User", ^{
             [[user.login should] equal:@"yaakaito"];
         });
         
+        it(@"はユーザー名を持つ", ^{
+            [[user.name should] equal:@"KAZUMA Ukyo"];
+        });
+        
         it(@"はメールアドレスを持つ", ^{
             [[user.email should] equal:@"yaakaito@gmail.com"];
         });

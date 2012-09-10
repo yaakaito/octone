@@ -11,6 +11,7 @@
 @interface BGUser : BGGithubResource
 
 @property (nonatomic, strong) NSString *login;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic) NSInteger followers;
 @property (nonatomic) NSInteger following;

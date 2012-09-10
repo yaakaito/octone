@@ -38,6 +38,7 @@
     NSDictionary *jsonDic = json;
     
     self.login = [jsonDic objectForKey:@"login"];
+    self.name = [jsonDic objectForKey:@"name"];
     self.email = [jsonDic objectForKey:@"email"];
     self.followers = [[jsonDic objectForKey:@"followers"] intValue];
     self.following = [[jsonDic objectForKey:@"following"] intValue];
