@@ -62,6 +62,9 @@
 		B948A2DD15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
 		B948A2DE15E74DC500712CB0 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */; };
 		B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F215FC94C300D2557B /* AsyncSupporter.m */; };
+		B949C2F615FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
+		B949C2F715FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
+		B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F815FDABDE00D2557B /* BGUserSpec.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
@@ -176,6 +179,9 @@
 		B948A2DC15E74DC500712CB0 /* BGGlobalMenuUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserView.m; sourceTree = "<group>"; };
 		B949C2F115FC94C300D2557B /* AsyncSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSupporter.h; sourceTree = "<group>"; };
 		B949C2F215FC94C300D2557B /* AsyncSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSupporter.m; sourceTree = "<group>"; };
+		B949C2F415FDAB7600D2557B /* BGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUser.h; sourceTree = "<group>"; };
+		B949C2F515FDAB7600D2557B /* BGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUser.m; sourceTree = "<group>"; };
+		B949C2F815FDABDE00D2557B /* BGUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUserSpec.m; sourceTree = "<group>"; };
 		B98B801F15F3669C00583C39 /* BGAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationView.h; sourceTree = "<group>"; };
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
 		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -331,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */,
+				B949C2F815FDABDE00D2557B /* BGUserSpec.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -525,10 +532,12 @@
 		B9BD470C15EC949B00DBAA04 /* Github */ = {
 			isa = PBXGroup;
 			children = (
-				B9BD471115EC955800DBAA04 /* BGFeedEntry.h */,
-				B9BD471215EC955800DBAA04 /* BGFeedEntry.m */,
 				B9386BD915F7CF8A0037F493 /* BGGithubResource.h */,
 				B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */,
+				B949C2F415FDAB7600D2557B /* BGUser.h */,
+				B949C2F515FDAB7600D2557B /* BGUser.m */,
+				B9BD471115EC955800DBAA04 /* BGFeedEntry.h */,
+				B9BD471215EC955800DBAA04 /* BGFeedEntry.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -882,6 +891,8 @@
 				B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */,
 				B91CF3B815FA46D000D647A1 /* FakeNotificationReceiver.m in Sources */,
 				B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */,
+				B949C2F715FDAB7600D2557B /* BGUser.m in Sources */,
+				B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,6 +929,7 @@
 				B9386BD715F7C48F0037F493 /* BGEventsController.m in Sources */,
 				B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
 				B9386C2B15F859170037F493 /* NSURL+GithubResource.m in Sources */,
+				B949C2F615FDAB7600D2557B /* BGUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
