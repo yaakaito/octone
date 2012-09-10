@@ -29,4 +29,20 @@
     
     return self;
 }
+
+- (void)setValuesFromJSON:(id)json {
+    
+    if(![json isKindOfClass:[NSDictionary class]]) {
+        return;
+    }
+    NSDictionary *jsonDic = json;
+    
+    self.login = [jsonDic objectForKey:@"login"];
+    self.email = [jsonDic objectForKey:@"email"];
+    self.followers = [[jsonDic objectForKey:@"followers"] intValue];
+    self.following = [[jsonDic objectForKey:@"following"] intValue];
+    self.publicRepos = [[jsonDic objectForKey:@"public_repos"] intValue];
+    self.gravatarUrl = [NSURL URLWithString:[jsonDic objectForKey:@"avatar_url"]];
+
+}
 @end

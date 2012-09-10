@@ -7,6 +7,7 @@
 
 #import <Kiwi/Kiwi.h>
 #import <NLTHTTPStubServer/NLTHTTPStubServer.h>
+#import "NLTHTTPStubServer+Specs.h"
 #import "BGGithubResource.h"
 #import "BGAuthenticationManager.h"
 #import "FakeNotificationReceiver.h"
@@ -56,8 +57,7 @@ describe(@"Github Resource", ^{
         __block AsyncSupporter *asyncSupporter;
         
         beforeAll(^{
-            server = [NLTHTTPStubServer stubServer];
-            [server startServer];
+            server = [NLTHTTPStubServer sharedSpecServer];
             asyncSupporter = [[AsyncSupporter alloc] init];
         });
         
@@ -156,7 +156,7 @@ describe(@"Github Resource", ^{
         });
         
         afterAll(^{
-            [server stopServer];
+            [server clear];
         });
     });
 

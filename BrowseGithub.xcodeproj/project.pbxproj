@@ -65,6 +65,8 @@
 		B949C2F615FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
 		B949C2F715FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
 		B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F815FDABDE00D2557B /* BGUserSpec.m */; };
+		B949C2FB15FDAEAA00D2557B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B949C2FA15FDAEAA00D2557B /* user.json */; };
+		B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
@@ -182,6 +184,9 @@
 		B949C2F415FDAB7600D2557B /* BGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUser.h; sourceTree = "<group>"; };
 		B949C2F515FDAB7600D2557B /* BGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUser.m; sourceTree = "<group>"; };
 		B949C2F815FDABDE00D2557B /* BGUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUserSpec.m; sourceTree = "<group>"; };
+		B949C2FA15FDAEAA00D2557B /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		B949C2FC15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NLTHTTPStubServer+Specs.h"; sourceTree = "<group>"; };
+		B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NLTHTTPStubServer+Specs.m"; sourceTree = "<group>"; };
 		B98B801F15F3669C00583C39 /* BGAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationView.h; sourceTree = "<group>"; };
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
 		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -575,6 +580,8 @@
 				B9BD472015ED140400DBAA04 /* NSBundle+Specs.m */,
 				B949C2F115FC94C300D2557B /* AsyncSupporter.h */,
 				B949C2F215FC94C300D2557B /* AsyncSupporter.m */,
+				B949C2FC15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.h */,
+				B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */,
 			);
 			name = "Supporting Extensions";
 			sourceTree = "<group>";
@@ -590,6 +597,7 @@
 		B9BD472415ED17AD00DBAA04 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				B949C2FA15FDAEAA00D2557B /* user.json */,
 				B9BD472515ED17AD00DBAA04 /* user.private.atom */,
 				B9BD472615ED17AD00DBAA04 /* user.private.short.atom */,
 				B91CF3AD15F9C56800D647A1 /* resource.json */,
@@ -785,6 +793,7 @@
 				B98B802F15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */,
 				B98B803115F3792B00583C39 /* OpenSans-Regular.ttf in Resources */,
 				B91CF3AE15F9C56800D647A1 /* resource.json in Resources */,
+				B949C2FB15FDAEAA00D2557B /* user.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,6 +902,7 @@
 				B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */,
 				B949C2F715FDAB7600D2557B /* BGUser.m in Sources */,
 				B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */,
+				B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
