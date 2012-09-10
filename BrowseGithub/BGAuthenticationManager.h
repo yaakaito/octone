@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BGUser.h"
 
 extern NSString *kBGAuthenticationManagerDidOAuthSuccessNotification;
 extern NSString *kBGAuthenticationManagerDidOAuthFailureNotification;
@@ -19,4 +20,5 @@ extern NSString *kBGAuthenticationManagerDidOAuthFailureNotification;
 - (NSString *)accessToken;
 - (void)startGithubOAuth;
 - (void)githubOAuthWithCallbackURL:(NSURL*)url;
+- (BGUser*)loginUser;
 @end

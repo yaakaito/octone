@@ -8,7 +8,8 @@
 #import "Kiwi.h"
 #import "BGAuthenticationManager.h"
 #import "BGSecretKeys.h"
-/*
+#import "UIApplication+Spec.h"
+
 SPEC_BEGIN(BGAuthenticationManagerSpec)
 
 describe(@"Authentication Manager", ^{
@@ -31,6 +32,7 @@ describe(@"Authentication Manager", ^{
         context(@"OAuthを開始したとき", ^{
             beforeAll(^{
                 // ヘルパーでUIApplicationをモック
+                [[UIApplication sharedApplication] swapOpenURL];
             });
             
             beforeEach(^{
@@ -38,7 +40,11 @@ describe(@"Authentication Manager", ^{
             });
             
             it(@"SafariへClient_IDとstateを持ってリダイレクトされる", ^{
-                ;
+                [manager startGithubOAuth];
+                NSURL *openedURL = [[UIApplication sharedApplication] openedURL];
+                [openedURL shouldNotBeNil];
+                //NSString *githubURL = [NSString stringWithFormat:@"https://github.com/login/oauth/authorize?client_id=%@&scope=%@&state=%@"]
+                //[[[openedURL absoluteString] should] equal:githubURL];
             });
             
             it(@"timeoutIntervalを超える時間があくと、OAuthは強制的に失敗する", ^{
@@ -47,6 +53,7 @@ describe(@"Authentication Manager", ^{
             
             afterAll(^{
                 // ヘルパーを元に戻す
+                [[UIApplication sharedApplication] swapOpenURL];
             });
         });
     });
@@ -64,8 +71,14 @@ describe(@"Authentication Manager", ^{
         it(@"は、何らかのアクセストークンを持っている", ^{
             [[[manager accessToken] should] equal:kDebugAccessKey];
         });
+        
+        it(@"は、ログインユーザーの情報を取得できる", ^{
+            [[manager loginUser] shouldNotBeNil];
+            BGUser *user = [manager loginUser];
+            [[user.login should] equal:@"yaakaito"];
+        });
     });
 });
 
 SPEC_END
- */
+ 

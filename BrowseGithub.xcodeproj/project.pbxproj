@@ -47,7 +47,6 @@
 		B9386C2B15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
 		B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
-		B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
 		B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
 		B948A2B015E6C26700712CB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B948A2AE15E6C26700712CB0 /* InfoPlist.strings */; };
 		B948A2C215E745F300712CB0 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
@@ -67,6 +66,9 @@
 		B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F815FDABDE00D2557B /* BGUserSpec.m */; };
 		B949C2FB15FDAEAA00D2557B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B949C2FA15FDAEAA00D2557B /* user.json */; };
 		B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */; };
+		B949C30915FE3D8900D2557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
+		B949C30A15FE660700D2557B /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */; };
+		B949C30D15FE675D00D2557B /* UIApplication+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C30C15FE675D00D2557B /* UIApplication+Spec.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802E15F3792B00583C39 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */; };
@@ -187,6 +189,8 @@
 		B949C2FA15FDAEAA00D2557B /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		B949C2FC15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NLTHTTPStubServer+Specs.h"; sourceTree = "<group>"; };
 		B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NLTHTTPStubServer+Specs.m"; sourceTree = "<group>"; };
+		B949C30B15FE675D00D2557B /* UIApplication+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Spec.h"; sourceTree = "<group>"; };
+		B949C30C15FE675D00D2557B /* UIApplication+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Spec.m"; sourceTree = "<group>"; };
 		B98B801F15F3669C00583C39 /* BGAuthenticationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationView.h; sourceTree = "<group>"; };
 		B98B802015F3669C00583C39 /* BGAuthenticationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationView.m; sourceTree = "<group>"; };
 		B98B802C15F3792B00583C39 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -259,10 +263,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */,
-				B948A2A915E6C26700712CB0 /* UIKit.framework in Frameworks */,
 				B948A2AA15E6C26700712CB0 /* Foundation.framework in Frameworks */,
 				B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */,
 				B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */,
+				B949C30915FE3D8900D2557B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +330,8 @@
 			children = (
 				B91CF3B415FA459B00D647A1 /* FakeNotificationReceiver.h */,
 				B91CF3B715FA46D000D647A1 /* FakeNotificationReceiver.m */,
+				B949C30B15FE675D00D2557B /* UIApplication+Spec.h */,
+				B949C30C15FE675D00D2557B /* UIApplication+Spec.m */,
 			);
 			name = "Mocks, Stubs and Fakes";
 			sourceTree = "<group>";
@@ -903,6 +909,8 @@
 				B949C2F715FDAB7600D2557B /* BGUser.m in Sources */,
 				B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */,
 				B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */,
+				B949C30A15FE660700D2557B /* BGAuthenticationManagerSpec.m in Sources */,
+				B949C30D15FE675D00D2557B /* UIApplication+Spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

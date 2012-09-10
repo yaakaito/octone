@@ -30,4 +30,15 @@ NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticati
 - (NSString *)accessToken {
     return kDebugAccessKey;
 }
+
+- (BGUser *)loginUser {
+    
+    BGUser *user = [[BGUser alloc] initWithLoginUser];
+    user.login = @"yaakaito";
+    user.name = @"KAZUMA Ukyo";
+    user.email = @"yaakaito@gmail.com";
+    
+    return user;
+}
+
 @end
