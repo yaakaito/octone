@@ -8,17 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AEADA0C5799C4066BE6D60F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
-		B9075DE715E5EE3700DADA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
-		B9075DE815E5EE3700DADA73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6015B7C24200BC79D6 /* Foundation.framework */; };
-		B9075DE915E5EE3700DADA73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
-		B9075DEF15E5EE3700DADA73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9075DED15E5EE3700DADA73 /* InfoPlist.strings */; };
-		B9075DF115E5EE3700DADA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DF015E5EE3700DADA73 /* main.m */; };
-		B9075DFA15E5EEF400DADA73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
-		B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE7C6E15B7C24200BC79D6 /* BGAppDelegate.m */; };
 		B9075E0015E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
-		B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075DFF15E5F69000DADA73 /* BGNavigationController.m */; };
 		B9075E0B15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
-		B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9075E0A15E67A0D00DADA73 /* BGGlobalMenuController.m */; };
 		B91CF3AE15F9C56800D647A1 /* resource.json in Resources */ = {isa = PBXBuildFile; fileRef = B91CF3AD15F9C56800D647A1 /* resource.json */; };
 		B91CF3B815FA46D000D647A1 /* FakeNotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B91CF3B715FA46D000D647A1 /* FakeNotificationReceiver.m */; };
 		B9386BA215F79F9C0037F493 /* navigation-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9386BA015F79F9C0037F493 /* navigation-background.png */; };
@@ -43,7 +34,6 @@
 		B9386BD815F7C48F0037F493 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BD615F7C48E0037F493 /* BGEventsController.m */; };
 		B9386BDB15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
 		B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDA15F7CF8A0037F493 /* BGGithubResource.m */; };
-		B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */; };
 		B9386C2B15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
 		B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386C2A15F859170037F493 /* NSURL+GithubResource.m */; };
 		B948A2A815E6C26700712CB0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B948A2A715E6C26700712CB0 /* SenTestingKit.framework */; };
@@ -63,11 +53,9 @@
 		B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F215FC94C300D2557B /* AsyncSupporter.m */; };
 		B949C2F615FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
 		B949C2F715FDAB7600D2557B /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F515FDAB7600D2557B /* BGUser.m */; };
-		B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F815FDABDE00D2557B /* BGUserSpec.m */; };
 		B949C2FB15FDAEAA00D2557B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B949C2FA15FDAEAA00D2557B /* user.json */; };
 		B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2FD15FDFFBC00D2557B /* NLTHTTPStubServer+Specs.m */; };
 		B949C30915FE3D8900D2557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C5E15B7C24200BC79D6 /* UIKit.framework */; };
-		B949C30A15FE660700D2557B /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */; };
 		B949C30D15FE675D00D2557B /* UIApplication+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C30C15FE675D00D2557B /* UIApplication+Spec.m */; };
 		B98B802115F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
 		B98B802215F3669C00583C39 /* BGAuthenticationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B802015F3669C00583C39 /* BGAuthenticationView.m */; };
@@ -82,8 +70,11 @@
 		B98B805C15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B98B805D15F4492700583C39 /* BGAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805B15F4492700583C39 /* BGAuthenticationManager.m */; };
 		B99D7AEC15EBC097006543D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB0973B50B04429AE388A5D /* libPods.a */; };
-		B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2CB15E748AA00712CB0 /* PatchedJASidePanelController.m */; };
 		B99D7AEE15EBC0C3006543D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EE7C6215B7C24200BC79D6 /* CoreGraphics.framework */; };
+		B9B123B415FE7855001F801C /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C2F815FDABDE00D2557B /* BGUserSpec.m */; };
+		B9B123B515FE7858001F801C /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9386BDF15F7CFB90037F493 /* BGGithubResourceSpec.m */; };
+		B9B123B615FE7870001F801C /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B98B805F15F44BEE00583C39 /* BGAuthenticationManagerSpec.m */; };
+		B9B123B715FE7872001F801C /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B948A2C615E7461500712CB0 /* BGGlobalMenuControllerSpec.m */; };
 		B9BD471315EC955800DBAA04 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471215EC955800DBAA04 /* BGFeedEntry.m */; };
 		B9BD471415EC955800DBAA04 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471215EC955800DBAA04 /* BGFeedEntry.m */; };
 		B9BD471815EC959D00DBAA04 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BD471715EC959D00DBAA04 /* BGFeedParser.m */; };
@@ -129,11 +120,6 @@
 
 /* Begin PBXFileReference section */
 		97B639BC8EB943CD8994A6BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		B9075DE515E5EE3700DADA73 /* BrowseGithubTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithubTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9075DEC15E5EE3700DADA73 /* BrowseGithubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubTests-Info.plist"; sourceTree = "<group>"; };
-		B9075DEE15E5EE3700DADA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9075DF015E5EE3700DADA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9075DF215E5EE3700DADA73 /* BrowseGithubTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubTests-Prefix.pch"; sourceTree = "<group>"; };
 		B9075DFE15E5F69000DADA73 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
 		B9075DFF15E5F69000DADA73 /* BGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationController.m; sourceTree = "<group>"; };
 		B9075E0915E67A0D00DADA73 /* BGGlobalMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuController.h; sourceTree = "<group>"; };
@@ -247,17 +233,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B9075DE215E5EE3700DADA73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9075DE715E5EE3700DADA73 /* UIKit.framework in Frameworks */,
-				B9075DE815E5EE3700DADA73 /* Foundation.framework in Frameworks */,
-				B9075DE915E5EE3700DADA73 /* CoreGraphics.framework in Frameworks */,
-				B9075DFA15E5EEF400DADA73 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B948A2A215E6C26700712CB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,25 +259,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9075DEA15E5EE3700DADA73 /* BrowseGithubTests */ = {
-			isa = PBXGroup;
-			children = (
-				B9075DEB15E5EE3700DADA73 /* Supporting Files */,
-			);
-			path = BrowseGithubTests;
-			sourceTree = "<group>";
-		};
-		B9075DEB15E5EE3700DADA73 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B9075DEC15E5EE3700DADA73 /* BrowseGithubTests-Info.plist */,
-				B9075DED15E5EE3700DADA73 /* InfoPlist.strings */,
-				B9075DF015E5EE3700DADA73 /* main.m */,
-				B9075DF215E5EE3700DADA73 /* BrowseGithubTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		B9075E0D15E67A1700DADA73 /* Roots */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,7 +594,6 @@
 			children = (
 				B9EE7C6415B7C24200BC79D6 /* BrowseGithub */,
 				B948A2AB15E6C26700712CB0 /* BrowseGithubSpecs */,
-				B9075DEA15E5EE3700DADA73 /* BrowseGithubTests */,
 				B9EE7C5D15B7C24200BC79D6 /* Frameworks */,
 				B9EE7C5B15B7C24200BC79D6 /* Products */,
 				97B639BC8EB943CD8994A6BC /* Pods.xcconfig */,
@@ -649,7 +604,6 @@
 			isa = PBXGroup;
 			children = (
 				B9EE7C5A15B7C24200BC79D6 /* BrowseGithub.app */,
-				B9075DE515E5EE3700DADA73 /* BrowseGithubTests.app */,
 				B948A2A615E6C26700712CB0 /* BrowseGithubSpecs.octest */,
 			);
 			name = Products;
@@ -698,23 +652,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9075DE415E5EE3700DADA73 /* BrowseGithubTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B9075DF815E5EE3700DADA73 /* Build configuration list for PBXNativeTarget "BrowseGithubTests" */;
-			buildPhases = (
-				B9075DE115E5EE3700DADA73 /* Sources */,
-				B9075DE215E5EE3700DADA73 /* Frameworks */,
-				B9075DE315E5EE3700DADA73 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BrowseGithubTests;
-			productName = BrowseGithubTests;
-			productReference = B9075DE515E5EE3700DADA73 /* BrowseGithubTests.app */;
-			productType = "com.apple.product-type.application";
-		};
 		B948A2A515E6C26700712CB0 /* BrowseGithubSpecs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B948A2B715E6C26700712CB0 /* Build configuration list for PBXNativeTarget "BrowseGithubSpecs" */;
@@ -774,21 +711,12 @@
 			projectRoot = "";
 			targets = (
 				B9EE7C5915B7C24200BC79D6 /* BrowseGithub */,
-				B9075DE415E5EE3700DADA73 /* BrowseGithubTests */,
 				B948A2A515E6C26700712CB0 /* BrowseGithubSpecs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B9075DE315E5EE3700DADA73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9075DEF15E5EE3700DADA73 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B948A2A315E6C26700712CB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -858,18 +786,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B9075DE115E5EE3700DADA73 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9075DF115E5EE3700DADA73 /* main.m in Sources */,
-				B9075DFD15E5F14600DADA73 /* BGAppDelegate.m in Sources */,
-				B9075E0115E5F69000DADA73 /* BGNavigationController.m in Sources */,
-				B9075E0C15E67A0D00DADA73 /* BGGlobalMenuController.m in Sources */,
-				B99D7AED15EBC0B2006543D1 /* PatchedJASidePanelController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B948A2A115E6C26700712CB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -902,15 +818,16 @@
 				B9386BD415F7BD870037F493 /* BGStarsController.m in Sources */,
 				B9386BD815F7C48F0037F493 /* BGEventsController.m in Sources */,
 				B9386BDC15F7CF8A0037F493 /* BGGithubResource.m in Sources */,
-				B9386BE015F7CFB90037F493 /* BGGithubResourceSpec.m in Sources */,
 				B9386C2C15F859170037F493 /* NSURL+GithubResource.m in Sources */,
 				B91CF3B815FA46D000D647A1 /* FakeNotificationReceiver.m in Sources */,
 				B949C2F315FC94C300D2557B /* AsyncSupporter.m in Sources */,
 				B949C2F715FDAB7600D2557B /* BGUser.m in Sources */,
-				B949C2F915FDABDE00D2557B /* BGUserSpec.m in Sources */,
 				B949C2FE15FDFFBD00D2557B /* NLTHTTPStubServer+Specs.m in Sources */,
-				B949C30A15FE660700D2557B /* BGAuthenticationManagerSpec.m in Sources */,
 				B949C30D15FE675D00D2557B /* UIApplication+Spec.m in Sources */,
+				B9B123B415FE7855001F801C /* BGUserSpec.m in Sources */,
+				B9B123B515FE7858001F801C /* BGGithubResourceSpec.m in Sources */,
+				B9B123B615FE7870001F801C /* BGAuthenticationManagerSpec.m in Sources */,
+				B9B123B715FE7872001F801C /* BGGlobalMenuControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,14 +879,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9075DED15E5EE3700DADA73 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9075DEE15E5EE3700DADA73 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B948A2AE15E6C26700712CB0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -989,87 +898,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B9075DF615E5EE3700DADA73 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrowseGithubTests/BrowseGithubTests-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/include/libxml2",
-					"${PODS_HEADERS_SEARCH_PATHS}",
-				);
-				INFOPLIST_FILE = "BrowseGithubTests/BrowseGithubTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lxml2",
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreData,
-					"-framework",
-					CoreLocation,
-					"-framework",
-					CoreText,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					SystemConfiguration,
-				);
-				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
-				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
-				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		B9075DF715E5EE3700DADA73 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrowseGithubTests/BrowseGithubTests-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/include/libxml2",
-					"${PODS_HEADERS_SEARCH_PATHS}",
-				);
-				INFOPLIST_FILE = "BrowseGithubTests/BrowseGithubTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lxml2",
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreData,
-					"-framework",
-					CoreLocation,
-					"-framework",
-					CoreText,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					SystemConfiguration,
-				);
-				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/AFNetworking\" \"${PODS_ROOT}/BuildHeaders/AFOAuth2Client\" \"${PODS_ROOT}/BuildHeaders/CocoaAsyncSocket\" \"${PODS_ROOT}/BuildHeaders/CocoaHTTPServer\" \"${PODS_ROOT}/BuildHeaders/CocoaLumberjack\" \"${PODS_ROOT}/BuildHeaders/GHUnitIOS\" \"${PODS_ROOT}/BuildHeaders/JASidePanels\" \"${PODS_ROOT}/BuildHeaders/MagicalRecord\" \"${PODS_ROOT}/BuildHeaders/NLTHTTPStubServer\" \"${PODS_ROOT}/BuildHeaders/OCMock\" \"${PODS_ROOT}/BuildHeaders/TTTAttributedLabel\"";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
-				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
-				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		B948A2B515E6C26700712CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -1106,6 +939,8 @@
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -1113,6 +948,7 @@
 		B948A2B615E6C26700712CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -1149,6 +985,7 @@
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/AFOAuth2Client\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/GHUnitIOS\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/OCMock\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -1231,15 +1068,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9075DF815E5EE3700DADA73 /* Build configuration list for PBXNativeTarget "BrowseGithubTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9075DF615E5EE3700DADA73 /* Debug */,
-				B9075DF715E5EE3700DADA73 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B948A2B715E6C26700712CB0 /* Build configuration list for PBXNativeTarget "BrowseGithubSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
