@@ -17,8 +17,13 @@
 
 @implementation NSBundle (Specs)
 
-+ (NSData *)atomForResouceName:(NSString *)resouceName {
++ (NSData *)atomForResourceName:(NSString *)resourceName {
     
-    return [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[BGBundle class]] pathForResource:resouceName ofType:@"atom"]];
+    return [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[BGBundle class]] pathForResource:resourceName ofType:@"atom"]];
+}
+
++(NSData *)jsonForResourceName:(NSString *)resourceName {
+    
+    return [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[BGBundle class]] pathForResource:resourceName ofType:@"json"]];
 }
 @end

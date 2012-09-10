@@ -24,10 +24,6 @@
 @end
 
 
-void(^initView)(void) = ^(void) {
-    UILabel *label = [[UILabel alloc] init];
-};
-
 SPEC_BEGIN(BGGlobalMenuControllerSpec)
 
 describe(@"Global Menu Controller", ^{
@@ -49,13 +45,11 @@ describe(@"Global Menu Controller", ^{
             NSInteger rows = [globalMenuController tableView:nil numberOfRowsInSection:0];
             [[theValue(rows) should] equal:theValue([contents numberOfContents])];
             for(NSUInteger i = 0; i < rows; i++) {
-               /* BGGlobalMenuContentCell *cell = (BGGlobalMenuContentCell*)[globalMenuController tableView:nil
+                BGGlobalMenuContentCell *cell = (BGGlobalMenuContentCell*)[globalMenuController tableView:nil
                                                                                     cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i
                                                                                                                              inSection:0]];
                 NSString *title = [contents contentsTitleForIndex:i];
                 [[cell.textLabel.text should] equal:title];
-                */
-                initView();
             }
         });
     });

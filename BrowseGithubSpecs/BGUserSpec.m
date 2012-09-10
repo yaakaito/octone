@@ -11,6 +11,7 @@
 #import <NLTHTTPStubServer/NLTHTTPStubServer.h>
 #import "NLTHTTPStubServer+Specs.h"
 #import "AsyncSupporter.h"
+#import "NSBundle+Specs.h"
 
 SPEC_BEGIN(BGUserSpec)
 
@@ -44,7 +45,8 @@ describe(@"Github User", ^{
             
             asyncSupporter = [[AsyncSupporter alloc] init];
             [asyncSupporter prepare];
-            [[[server stub] forPath:@"/user"] andJSONResponseResource:@"user" ofType:@"json"];
+            NSData *json = [NSBundle jsonForResourceName:@"user"];
+            [[[server stub] forPath:@"/user"] andJSONResponse:json];
             
             user = [[BGUser alloc] initWithLoginUser];
             user.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/user"];

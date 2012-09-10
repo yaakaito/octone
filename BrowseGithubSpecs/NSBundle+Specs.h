@@ -10,5 +10,6 @@
 
 @interface NSBundle (Specs)
 
-+ (NSData *)atomForResouceName:(NSString*)resouceName;
++ (NSData *)atomForResourceName:(NSString*)resourceName;
++ (NSData *)jsonForResourceName:(NSString*)resourceName;
 @end
