@@ -7,6 +7,8 @@
 
 #import "Kiwi.h"
 #import "BGGlobalMenuController.h"
+#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContentCell.h"
 
 @interface MockMenuDelegate : NSObject<BGGlobalMenuControllerDelegate>
 @property(nonatomic) BOOL calledDelegate;
@@ -22,18 +24,49 @@
 @end
 
 
+void(^initView)(void) = ^(void) {
+    UILabel *label = [[UILabel alloc] init];
+};
+
 SPEC_BEGIN(BGGlobalMenuControllerSpec)
 
 describe(@"Global Menu Controller", ^{
+    __block BGGlobalMenuController *globalMenuController;
+    
+    beforeEach(^{
+        globalMenuController = [[BGGlobalMenuController alloc] init];
+    });
+    
+    it(@"は、メニューとブックマークの2つのメニュー階層から構築される", ^{
+        NSInteger sections = [globalMenuController numberOfSectionsInTableView:nil];
+        [[theValue(sections) should] equal:theValue(2)];
+    });
+
+    context(@"のメニュー", ^{
+        BGGlobalMenuContents *contents = [BGGlobalMenuContents sharedContents];
+        
+        it(@"は、MenuContentsから構築される", ^{
+            NSInteger rows = [globalMenuController tableView:nil numberOfRowsInSection:0];
+            [[theValue(rows) should] equal:theValue([contents numberOfContents])];
+            for(NSUInteger i = 0; i < rows; i++) {
+               /* BGGlobalMenuContentCell *cell = (BGGlobalMenuContentCell*)[globalMenuController tableView:nil
+                                                                                    cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i
+                                                                                                                             inSection:0]];
+                NSString *title = [contents contentsTitleForIndex:i];
+                [[cell.textLabel.text should] equal:title];
+                */
+                initView();
+            }
+        });
+    });
+    
     context(@"のメニューを何かしら選択したとき", ^{
-        __block BGGlobalMenuController *globalMenuController;
         __block MockMenuDelegate *mockDelegate;
-        beforeEach(^{
-            globalMenuController = [[BGGlobalMenuController alloc] init];
+        beforeAll(^{
             mockDelegate= [[MockMenuDelegate alloc] init];
             globalMenuController.delegate = mockDelegate;
         });
-        
+
         it(@"は、delegateへ通知を送る", ^{
             [globalMenuController tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
             [[theValue(mockDelegate.calledDelegate) should] beYes];
