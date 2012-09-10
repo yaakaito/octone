@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGUser.h"
+
+#define kBGGlobalMenuUserViewDefaultSize    CGSizeMake(270, 44)
 
 @interface BGGlobalMenuUserView : UIView
-
+@property (nonatomic, strong) BGUser *user;
 @end

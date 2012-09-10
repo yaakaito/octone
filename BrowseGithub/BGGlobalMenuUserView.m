@@ -8,16 +8,34 @@
 
 #import "BGGlobalMenuUserView.h"
 
+@interface BGGlobalMenuUserView()
+@property (nonatomic, strong) UILabel *login;
+@property (nonatomic, strong) UILabel *name;
+@end
+
 @implementation BGGlobalMenuUserView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)init
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
         // Initialization code
         self.backgroundColor = [UIColor blackColor];
+        self.login = [[UILabel alloc] init];
+        [self addSubview:self.login];
+        
+        self.name = [[UILabel alloc] init];
+        [self addSubview:self.name];
     }
     return self;
+}
+
+- (void)setUser:(BGUser *)user {
+    if(_user != user) {
+        _user = user;
+        self.login.text = user.login;
+        self.name.text = user.name;
+    }
 }
 
 /*
