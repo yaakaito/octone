@@ -21,7 +21,7 @@
 
 #pragma mark - Base backgrounds
 + (UIColor *)githubBackgroundColor {
-    return [UIColor colorWithWhite:0.95 alpha:1.0];
+    return [UIColor colorWithWhite:0.92 alpha:1.0];
 }
 
 + (UIColor *)githubHightlightedBackgroundColor {
@@ -29,7 +29,7 @@
 }
 
 + (UIColor *)githubGlobalMenuBackgroundColor {
-    return [UIColor colorWithWhite:0.12 alpha:1.0];
+    return [UIColor colorWithWhite:0.18 alpha:1.0];
 }
 
 + (UIColor *)githubHightlightedGlobalMenuBackgroundColor {
@@ -75,19 +75,19 @@
 
 #pragma mark - Decorations
 + (UIColor *)githubHightlightColor {
-    return [UIColor colorWithWhite:0.92 alpha:1.0];
+    return [UIColor colorWithWhite:0.98 alpha:1.0];
 }
 
 + (UIColor *)githubSeparatorColor {
-    return [UIColor colorWithWhite:0.88 alpha:1.0];
+    return [UIColor colorWithWhite:0.84 alpha:1.0];
 }
 
 + (UIColor *)githubGlobalMenuHightlightColor {
-    return [UIColor colorWithWhite:0.14 alpha:1.0];
+    return [UIColor colorWithWhite:0.24 alpha:1.0];
 }
 
 + (UIColor *)githubGlobalMenuSeparatorColor {
     
-    return [UIColor colorWithWhite:0.10 alpha:1.0];
+    return [UIColor colorWithWhite:0.14 alpha:1.0];
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "BGEventsController.h"
+#import "BGBaseCell.h"
 
 @interface BGEventsController ()
 
@@ -38,6 +39,23 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+#pragma mark - UITableView
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 30;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BGBaseCell *cell = [[BGBaseCell alloc] init];
+    cell.textLabel.text = @"hごえー";
+    return cell;
 }
 
 @end
