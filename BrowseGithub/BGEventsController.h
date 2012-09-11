@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGListController.h"
 
-@interface BGEventsController : UIViewController
+@interface BGEventsController : BGListController
 
 @end

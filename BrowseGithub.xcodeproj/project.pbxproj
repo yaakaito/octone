@@ -127,6 +127,11 @@
 		B9B83F1015FFA92B0071F088 /* BGReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */; };
 		B9B83F1215FFA95B0071F088 /* BGReceivedEventsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */; };
 		B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83F1315FFAC7E0071F088 /* received_events.json */; };
+		B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1A15FFB5CD0071F088 /* BGTableView.m */; };
+		B9B83F1C15FFB5CE0071F088 /* BGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1A15FFB5CD0071F088 /* BGTableView.m */; };
+		B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
+		B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
+		B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +269,11 @@
 		B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGReceivedEvents.m; sourceTree = "<group>"; };
 		B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGReceivedEventsSpec.m; sourceTree = "<group>"; };
 		B9B83F1315FFAC7E0071F088 /* received_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = received_events.json; sourceTree = "<group>"; };
+		B9B83F1915FFB5CC0071F088 /* BGTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTableView.h; sourceTree = "<group>"; };
+		B9B83F1A15FFB5CD0071F088 /* BGTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTableView.m; sourceTree = "<group>"; };
+		B9B83F1D15FFB6A90071F088 /* BGListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGListController.h; sourceTree = "<group>"; };
+		B9B83F1E15FFB6AA0071F088 /* BGListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListController.m; sourceTree = "<group>"; };
+		B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListControllerSpec.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -331,6 +341,7 @@
 				B9B83EB215FE85F50071F088 /* Models */,
 				B9B83EAF15FE85B10071F088 /* Commons */,
 				B9B83EB015FE85B80071F088 /* Views */,
+				B9B83F2E15FFC2F10071F088 /* Cells */,
 				B9B83EAE15FE859E0071F088 /* Controllers */,
 				B9B83EB115FE85C60071F088 /* Managers */,
 				B9B83DF615FE81290071F088 /* Resources */,
@@ -420,6 +431,8 @@
 			children = (
 				B9B83DE915FE81290071F088 /* BGRootController.h */,
 				B9B83DEA15FE81290071F088 /* BGRootController.m */,
+				B9B83F1D15FFB6A90071F088 /* BGListController.h */,
+				B9B83F1E15FFB6AA0071F088 /* BGListController.m */,
 				B9B83DC215FE81290071F088 /* BGAuthenticationController.h */,
 				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
 				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
@@ -458,14 +471,10 @@
 		B9B83EB015FE85B80071F088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B9B83F1915FFB5CC0071F088 /* BGTableView.h */,
+				B9B83F1A15FFB5CD0071F088 /* BGTableView.m */,
 				B9B83DC615FE81290071F088 /* BGAuthenticationView.h */,
 				B9B83DC715FE81290071F088 /* BGAuthenticationView.m */,
-				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
-				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
-				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
-				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
-				B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */,
-				B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */,
 				B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */,
 				B9B83DE015FE81290071F088 /* BGGravatarImageView.m */,
 				B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */,
@@ -569,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */,
+				B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -646,6 +656,19 @@
 				B9B83EFF15FF9CC70071F088 /* BGEvent.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		B9B83F2E15FFC2F10071F088 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
+				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
+				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
+				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
+				B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */,
+				B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -837,6 +860,8 @@
 				B9B83E5715FE81290071F088 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B9B83F0015FF9CC70071F088 /* BGEvent.m in Sources */,
 				B9B83F0F15FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
+				B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */,
+				B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +913,9 @@
 				B9B83F0A15FF9DA40071F088 /* BGEventSpec.m in Sources */,
 				B9B83F1015FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
 				B9B83F1215FFA95B0071F088 /* BGReceivedEventsSpec.m in Sources */,
+				B9B83F1C15FFB5CE0071F088 /* BGTableView.m in Sources */,
+				B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */,
+				B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

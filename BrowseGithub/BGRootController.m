@@ -15,6 +15,7 @@
 #import "BGGlobalMenuController.h"
 #import "PatchedJASidePanelController.h"
 #import "UIColor+BrowseGithub.h"
+#import "BGEventsController.h"
 
 @interface BGRootController ()
 @property (nonatomic, strong) BGAuthenticationController *authenticationController;
@@ -48,8 +49,7 @@
     _appRootController = [[PatchedJASidePanelController alloc] init];
     _appRootController.view.frame = [self initialFrame];
     
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor githubBackgroundColor];
+    BGEventsController *vc = [[BGEventsController alloc] init];
     vc.title = @"News Feeds";
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
     BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
