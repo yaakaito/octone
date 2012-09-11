@@ -21,6 +21,7 @@
     if (self) {
         // Initialization code
         self.backgroundColor = [UIColor blackColor];
+        
         self.login = [[UILabel alloc] init];
         [self addSubview:self.login];
         

@@ -119,6 +119,7 @@
 		B9B83EC015FF03F60071F088 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBE15FF03F60071F088 /* iPhone.png */; };
 		B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBF15FF03F60071F088 /* iPhone@2x.png */; };
 		B9B83EC315FF056A0071F088 /* BGGlobalMenuContentsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EC215FF056A0071F088 /* BGGlobalMenuContentsSpec.m */; };
+		B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -248,6 +249,7 @@
 		B9B83EBE15FF03F60071F088 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = SOURCE_ROOT; };
 		B9B83EBF15FF03F60071F088 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = SOURCE_ROOT; };
 		B9B83EC215FF056A0071F088 /* BGGlobalMenuContentsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGlobalMenuContentsSpec.m; path = BrowseGithubSpecs/BGGlobalMenuContentsSpec.m; sourceTree = SOURCE_ROOT; };
+		B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserViewSpec.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83EB615FE86E60071F088 /* Models */,
+				B9B83ECB15FF21420071F088 /* Views */,
 				B9B83EB815FE870A0071F088 /* Managers */,
 				B9B83EB915FE871C0071F088 /* Controllers */,
 				B9B83EAD15FE85680071F088 /* Supports */,
@@ -586,6 +589,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		B9B83ECB15FF21420071F088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -818,6 +829,7 @@
 				B9B83EA315FE82B00071F088 /* FakeNotificationReceiver.m in Sources */,
 				B9B83EA415FE82BB0071F088 /* UIApplication+Spec.m in Sources */,
 				B9B83EC315FF056A0071F088 /* BGGlobalMenuContentsSpec.m in Sources */,
+				B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
