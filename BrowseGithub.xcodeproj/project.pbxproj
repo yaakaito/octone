@@ -271,7 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83D7315FE7DB50071F088 /* BrowseGithub */,
-				B9B83D9415FE7DB60071F088 /* BrowseGithubSpecS */,
+				B9B83D9415FE7DB60071F088 /* BrowseGithubSpecs */,
 				B9B83D6C15FE7DB50071F088 /* Frameworks */,
 				B9B83D6A15FE7DB50071F088 /* Products */,
 				E5411D6CA0834872913C9F00 /* Pods.xcconfig */,
@@ -302,67 +302,12 @@
 		B9B83D7315FE7DB50071F088 /* BrowseGithub */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83DC215FE81290071F088 /* BGAuthenticationController.h */,
-				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
-				B9B83DC415FE81290071F088 /* BGAuthenticationManager.h */,
-				B9B83DC515FE81290071F088 /* BGAuthenticationManager.m */,
-				B9B83DC615FE81290071F088 /* BGAuthenticationView.h */,
-				B9B83DC715FE81290071F088 /* BGAuthenticationView.m */,
-				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
-				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
-				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
-				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
-				B9B83DCC15FE81290071F088 /* BGFeedEntry.h */,
-				B9B83DCD15FE81290071F088 /* BGFeedEntry.m */,
-				B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */,
-				B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */,
-				B9B83DD015FE81290071F088 /* BGFeedEntryManager.h */,
-				B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */,
-				B9B83DD215FE81290071F088 /* BGFeedParser.h */,
-				B9B83DD315FE81290071F088 /* BGFeedParser.m */,
-				B9B83DD415FE81290071F088 /* BGGithubResource.h */,
-				B9B83DD515FE81290071F088 /* BGGithubResource.m */,
-				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
-				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
-				B9B83DD815FE81290071F088 /* BGGlobalMenuContents.h */,
-				B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */,
-				B9B83DDA15FE81290071F088 /* BGGlobalMenuController.h */,
-				B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */,
-				B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */,
-				B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */,
-				B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */,
-				B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */,
-				B9B83DE015FE81290071F088 /* BGGravatarImageView.m */,
-				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
-				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
-				B9B83DE315FE81290071F088 /* BGNavigationController.h */,
-				B9B83DE415FE81290071F088 /* BGNavigationController.m */,
-				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
-				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
-				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
-				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
-				B9B83DE915FE81290071F088 /* BGRootController.h */,
-				B9B83DEA15FE81290071F088 /* BGRootController.m */,
-				B9B83DEB15FE81290071F088 /* BGSecretKeys.h */,
-				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
-				B9B83DED15FE81290071F088 /* BGStarsController.m */,
-				B9B83DEE15FE81290071F088 /* BGUser.h */,
-				B9B83DEF15FE81290071F088 /* BGUser.m */,
-				B9B83DF015FE81290071F088 /* BrowseGithub.h */,
-				B9B83DF115FE81290071F088 /* BrowseGithub.m */,
-				B9B83DF215FE81290071F088 /* NSURL+GithubResource.h */,
-				B9B83DF315FE81290071F088 /* NSURL+GithubResource.m */,
-				B9B83DF415FE81290071F088 /* PatchedJASidePanelController.h */,
-				B9B83DF515FE81290071F088 /* PatchedJASidePanelController.m */,
+				B9B83EB215FE85F50071F088 /* Models */,
+				B9B83EAF15FE85B10071F088 /* Commons */,
+				B9B83EB015FE85B80071F088 /* Views */,
+				B9B83EAE15FE859E0071F088 /* Controllers */,
+				B9B83EB115FE85C60071F088 /* Managers */,
 				B9B83DF615FE81290071F088 /* Resources */,
-				B9B83E0315FE81290071F088 /* UIColor+BrowseGithub.h */,
-				B9B83E0415FE81290071F088 /* UIColor+BrowseGithub.m */,
-				B9B83E0515FE81290071F088 /* UIFont+BrowseGithub.h */,
-				B9B83E0615FE81290071F088 /* UIFont+BrowseGithub.m */,
-				B9B83E0715FE81290071F088 /* UIGlossyButton+BrowseGithub.h */,
-				B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */,
-				B9B83D7C15FE7DB50071F088 /* BGAppDelegate.h */,
-				B9B83D7D15FE7DB50071F088 /* BGAppDelegate.m */,
 				B9B83D7415FE7DB50071F088 /* Supporting Files */,
 			);
 			path = BrowseGithub;
@@ -379,34 +324,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B9B83D9415FE7DB60071F088 /* BrowseGithubSpecS */ = {
+		B9B83D9415FE7DB60071F088 /* BrowseGithubSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83E5915FE818F0071F088 /* AsyncSupporter.h */,
-				B9B83E5A15FE818F0071F088 /* AsyncSupporter.m */,
-				B9B83E5B15FE818F0071F088 /* BGAuthenticationManagerSpec.m */,
-				B9B83E5C15FE818F0071F088 /* BGEventManagerSpec.m */,
-				B9B83E5D15FE818F0071F088 /* BGFeedEntryTypeSpec.m */,
-				B9B83E5E15FE818F0071F088 /* BGFeedParserSpec.m */,
-				B9B83E5F15FE818F0071F088 /* BGGithubFeedSpec.m */,
-				B9B83E6015FE818F0071F088 /* BGGithubResourceSpec.m */,
-				B9B83E6115FE818F0071F088 /* BGGlobalMenuControllerSpec.m */,
-				B9B83E6215FE818F0071F088 /* BGUserSpec.m */,
+				B9B83EB615FE86E60071F088 /* Models */,
+				B9B83EB815FE870A0071F088 /* Managers */,
+				B9B83EB915FE871C0071F088 /* Controllers */,
+				B9B83EAD15FE85680071F088 /* Supports */,
 				B9B83E6315FE818F0071F088 /* BrowseGithubSpecs-Info.plist */,
 				B9B83E6415FE818F0071F088 /* BrowseGithubSpecs-Prefix.pch */,
 				B9B83E6515FE818F0071F088 /* en.lproj */,
-				B9B83E6815FE818F0071F088 /* FakeNotificationReceiver.h */,
-				B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */,
-				B9B83E6A15FE818F0071F088 /* NLTHTTPStubServer+Specs.h */,
-				B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */,
-				B9B83E6C15FE818F0071F088 /* NSBundle+Specs.h */,
-				B9B83E6D15FE818F0071F088 /* NSBundle+Specs.m */,
 				B9B83E6E15FE818F0071F088 /* Resouces */,
-				B9B83E7415FE818F0071F088 /* UIApplication+Spec.h */,
-				B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */,
 				B9B83D9515FE7DB60071F088 /* Supporting Files */,
 			);
-			name = BrowseGithubSpecS;
+			name = BrowseGithubSpecs;
 			path = BrowseGithubTests;
 			sourceTree = "<group>";
 		};
@@ -465,6 +396,179 @@
 				B9B83E7315FE818F0071F088 /* user.private.short.atom */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9B83EAD15FE85680071F088 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83E5915FE818F0071F088 /* AsyncSupporter.h */,
+				B9B83E5A15FE818F0071F088 /* AsyncSupporter.m */,
+				B9B83E6815FE818F0071F088 /* FakeNotificationReceiver.h */,
+				B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */,
+				B9B83E6A15FE818F0071F088 /* NLTHTTPStubServer+Specs.h */,
+				B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */,
+				B9B83E6C15FE818F0071F088 /* NSBundle+Specs.h */,
+				B9B83E6D15FE818F0071F088 /* NSBundle+Specs.m */,
+				B9B83E7415FE818F0071F088 /* UIApplication+Spec.h */,
+				B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */,
+			);
+			name = Supports;
+			sourceTree = "<group>";
+		};
+		B9B83EAE15FE859E0071F088 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DE915FE81290071F088 /* BGRootController.h */,
+				B9B83DEA15FE81290071F088 /* BGRootController.m */,
+				B9B83DC215FE81290071F088 /* BGAuthenticationController.h */,
+				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
+				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
+				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
+				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
+				B9B83DED15FE81290071F088 /* BGStarsController.m */,
+				B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */,
+				B9B83DDA15FE81290071F088 /* BGGlobalMenuController.h */,
+				B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */,
+				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
+				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
+				B9B83DE315FE81290071F088 /* BGNavigationController.h */,
+				B9B83DE415FE81290071F088 /* BGNavigationController.m */,
+				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
+				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
+				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
+				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B9B83EAF15FE85B10071F088 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EB515FE86C80071F088 /* Patches */,
+				B9B83EB415FE86630071F088 /* Extensions */,
+				B9B83DEB15FE81290071F088 /* BGSecretKeys.h */,
+				B9B83D7C15FE7DB50071F088 /* BGAppDelegate.h */,
+				B9B83D7D15FE7DB50071F088 /* BGAppDelegate.m */,
+				B9B83DF015FE81290071F088 /* BrowseGithub.h */,
+				B9B83DF115FE81290071F088 /* BrowseGithub.m */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		B9B83EB015FE85B80071F088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DC615FE81290071F088 /* BGAuthenticationView.h */,
+				B9B83DC715FE81290071F088 /* BGAuthenticationView.m */,
+				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
+				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
+				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
+				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
+				B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */,
+				B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */,
+				B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */,
+				B9B83DE015FE81290071F088 /* BGGravatarImageView.m */,
+				B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */,
+				B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B9B83EB115FE85C60071F088 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DC415FE81290071F088 /* BGAuthenticationManager.h */,
+				B9B83DC515FE81290071F088 /* BGAuthenticationManager.m */,
+				B9B83DD015FE81290071F088 /* BGFeedEntryManager.h */,
+				B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B9B83EB215FE85F50071F088 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EB315FE85FD0071F088 /* Github */,
+				B9B83DD415FE81290071F088 /* BGGithubResource.h */,
+				B9B83DD515FE81290071F088 /* BGGithubResource.m */,
+				B9B83DD815FE81290071F088 /* BGGlobalMenuContents.h */,
+				B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B9B83EB315FE85FD0071F088 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DEE15FE81290071F088 /* BGUser.h */,
+				B9B83DEF15FE81290071F088 /* BGUser.m */,
+				B9B83DCC15FE81290071F088 /* BGFeedEntry.h */,
+				B9B83DCD15FE81290071F088 /* BGFeedEntry.m */,
+				B9B83DD215FE81290071F088 /* BGFeedParser.h */,
+				B9B83DD315FE81290071F088 /* BGFeedParser.m */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		B9B83EB415FE86630071F088 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83E0315FE81290071F088 /* UIColor+BrowseGithub.h */,
+				B9B83E0415FE81290071F088 /* UIColor+BrowseGithub.m */,
+				B9B83E0515FE81290071F088 /* UIFont+BrowseGithub.h */,
+				B9B83E0615FE81290071F088 /* UIFont+BrowseGithub.m */,
+				B9B83E0715FE81290071F088 /* UIGlossyButton+BrowseGithub.h */,
+				B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */,
+				B9B83DF215FE81290071F088 /* NSURL+GithubResource.h */,
+				B9B83DF315FE81290071F088 /* NSURL+GithubResource.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B9B83EB515FE86C80071F088 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DF415FE81290071F088 /* PatchedJASidePanelController.h */,
+				B9B83DF515FE81290071F088 /* PatchedJASidePanelController.m */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		B9B83EB615FE86E60071F088 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EB715FE86ED0071F088 /* Github */,
+				B9B83E6015FE818F0071F088 /* BGGithubResourceSpec.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B9B83EB715FE86ED0071F088 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83E6215FE818F0071F088 /* BGUserSpec.m */,
+				B9B83E5D15FE818F0071F088 /* BGFeedEntryTypeSpec.m */,
+				B9B83E5E15FE818F0071F088 /* BGFeedParserSpec.m */,
+				B9B83E5F15FE818F0071F088 /* BGGithubFeedSpec.m */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		B9B83EB815FE870A0071F088 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83E5C15FE818F0071F088 /* BGEventManagerSpec.m */,
+				B9B83E5B15FE818F0071F088 /* BGAuthenticationManagerSpec.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		B9B83EB915FE871C0071F088 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83E6115FE818F0071F088 /* BGGlobalMenuControllerSpec.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
