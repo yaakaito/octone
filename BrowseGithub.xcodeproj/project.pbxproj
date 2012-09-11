@@ -114,6 +114,10 @@
 		B9B83EA215FE82AE0071F088 /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */; };
 		B9B83EA315FE82B00071F088 /* FakeNotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */; };
 		B9B83EA415FE82BB0071F088 /* UIApplication+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */; };
+		B9B83EBC15FF03EB0071F088 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBA15FF03EB0071F088 /* Default.png */; };
+		B9B83EBD15FF03EB0071F088 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBB15FF03EB0071F088 /* Default@2x.png */; };
+		B9B83EC015FF03F60071F088 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBE15FF03F60071F088 /* iPhone.png */; };
+		B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBF15FF03F60071F088 /* iPhone@2x.png */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +242,10 @@
 		B9B83E7315FE818F0071F088 /* user.private.short.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.short.atom; sourceTree = "<group>"; };
 		B9B83E7415FE818F0071F088 /* UIApplication+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Spec.h"; path = "BrowseGithubSpecs/UIApplication+Spec.h"; sourceTree = SOURCE_ROOT; };
 		B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Spec.m"; path = "BrowseGithubSpecs/UIApplication+Spec.m"; sourceTree = SOURCE_ROOT; };
+		B9B83EBA15FF03EB0071F088 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		B9B83EBB15FF03EB0071F088 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		B9B83EBE15FF03F60071F088 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = SOURCE_ROOT; };
+		B9B83EBF15FF03F60071F088 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = SOURCE_ROOT; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -353,6 +361,10 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9B83EBE15FF03F60071F088 /* iPhone.png */,
+				B9B83EBF15FF03F60071F088 /* iPhone@2x.png */,
+				B9B83EBA15FF03EB0071F088 /* Default.png */,
+				B9B83EBB15FF03EB0071F088 /* Default@2x.png */,
 				B9B83DF715FE81290071F088 /* AppStore.png */,
 				B9B83DF815FE81290071F088 /* AppStore@2x.png */,
 				B9B83DF915FE81290071F088 /* default-logo.png */,
@@ -658,6 +670,10 @@
 				B9B83E4F15FE81290071F088 /* OpenSans-Bold.ttf in Resources */,
 				B9B83E5115FE81290071F088 /* OpenSans-Regular.ttf in Resources */,
 				B9B83E8A15FE818F0071F088 /* InfoPlist.strings in Resources */,
+				B9B83EBC15FF03EB0071F088 /* Default.png in Resources */,
+				B9B83EBD15FF03EB0071F088 /* Default@2x.png in Resources */,
+				B9B83EC015FF03F60071F088 /* iPhone.png in Resources */,
+				B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,7 +913,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -909,7 +927,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
