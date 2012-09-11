@@ -26,4 +26,10 @@
     
     return [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[BGBundle class]] pathForResource:resourceName ofType:@"json"]];
 }
+
++ (id)jsonObjectForResourceName:(NSString *)resourceName {
+
+    NSData *jsonData = [self jsonForResourceName:resourceName];
+    return [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:NULL];
+}
 @end

@@ -12,4 +12,5 @@
 
 + (NSData *)atomForResourceName:(NSString*)resourceName;
 + (NSData *)jsonForResourceName:(NSString*)resourceName;
++ (id)jsonObjectForResourceName:(NSString*)resourceName;
 @end

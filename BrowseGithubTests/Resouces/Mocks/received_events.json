@@ -1,0 +1,1532 @@
+[
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 1,
+        "user": {
+          "login": "joshaber",
+          "avatar_url": "https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 13760,
+          "gravatar_id": "62e8c8bfaa8d755cab82accb48d335c8",
+          "url": "https://api.github.com/users/joshaber"
+        },
+        "state": "open",
+        "labels": [
+
+        ],
+        "updated_at": "2012-09-10T03:48:50Z",
+        "milestone": null,
+        "body": "`-sequenceMany:` is meant to make clear the difference between piping data through subscribables with `-selectMany:` vs. chaining a subscribable after another. It's the difference between `>>=` and `>>`.\n\nI'm not crazy on the name, but it was my favorite of the ones I came up with.",
+        "closed_at": null,
+        "number": 52,
+        "assignee": null,
+        "id": 6751756,
+        "url": "https://api.github.com/repos/github/ReactiveCocoa/issues/52",
+        "created_at": "2012-09-10T01:24:04Z",
+        "html_url": "https://github.com/github/ReactiveCocoa/issues/52",
+        "title": "Added -sequenceMany:",
+        "pull_request": {
+          "patch_url": "https://github.com/github/ReactiveCocoa/pull/52.patch",
+          "diff_url": "https://github.com/github/ReactiveCocoa/pull/52.diff",
+          "html_url": "https://github.com/github/ReactiveCocoa/pull/52"
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "jspahrsummers",
+          "avatar_url": "https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 432536,
+          "gravatar_id": "cac992bb300ed4f3ed5c2a6049e552f9",
+          "url": "https://api.github.com/users/jspahrsummers"
+        },
+        "updated_at": "2012-09-10T03:48:50Z",
+        "body": "It is analogous to `>>=` and `>>`, but it's not entirely clear to me how this would be used. Could you add a unit test that demonstrates some idiomatic usage?",
+        "id": 8413182,
+        "url": "https://api.github.com/repos/github/ReactiveCocoa/issues/comments/8413182",
+        "created_at": "2012-09-10T03:48:50Z"
+      }
+    },
+    "created_at": "2012-09-10T03:48:51Z",
+    "actor": {
+      "login": "jspahrsummers",
+      "avatar_url": "https://secure.gravatar.com/avatar/cac992bb300ed4f3ed5c2a6049e552f9?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/jspahrsummers",
+      "id": 432536,
+      "gravatar_id": "cac992bb300ed4f3ed5c2a6049e552f9"
+    },
+    "public": true,
+    "org": {
+      "login": "github",
+      "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/github",
+      "id": 9919,
+      "gravatar_id": "61024896f291303615bcd4f7a0dcfb74"
+    },
+    "id": "1595561726",
+    "repo": {
+      "url": "https://api.github.com/repos/github/ReactiveCocoa",
+      "name": "github/ReactiveCocoa",
+      "id": 3606624
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-10T02:25:27Z",
+    "actor": {
+      "login": "VoQn",
+      "avatar_url": "https://secure.gravatar.com/avatar/73889ae12e3dbade2478538fd20c072f?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/VoQn",
+      "id": 31357,
+      "gravatar_id": "73889ae12e3dbade2478538fd20c072f"
+    },
+    "public": true,
+    "id": "1595546744",
+    "repo": {
+      "url": "https://api.github.com/repos/gkz/LiveScript-style-guide",
+      "name": "gkz/LiveScript-style-guide",
+      "id": 5741252
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 1,
+        "user": {
+          "login": "aeosynth",
+          "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 75317,
+          "gravatar_id": "65bdf2442092d6c9c5ade711913317d5",
+          "url": "https://api.github.com/users/aeosynth"
+        },
+        "state": "open",
+        "updated_at": "2012-09-10T01:25:07Z",
+        "labels": [
+
+        ],
+        "milestone": null,
+        "body": "tweaked ajax.js to not silently fail",
+        "closed_at": null,
+        "number": 581,
+        "assignee": null,
+        "id": 6751462,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/581",
+        "html_url": "https://github.com/madrobby/zepto/issues/581",
+        "created_at": "2012-09-10T00:41:32Z",
+        "title": "ajax: better error handling",
+        "pull_request": {
+          "patch_url": "https://github.com/madrobby/zepto/pull/581.patch",
+          "diff_url": "https://github.com/madrobby/zepto/pull/581.diff",
+          "html_url": "https://github.com/madrobby/zepto/pull/581"
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "aeosynth",
+          "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 75317,
+          "gravatar_id": "65bdf2442092d6c9c5ade711913317d5",
+          "url": "https://api.github.com/users/aeosynth"
+        },
+        "updated_at": "2012-09-10T01:25:07Z",
+        "body": "hm, well I guess this pr fails, but the issue remains - zepto shouldn't silently fail. one ajax test fails because of this (see: #388).",
+        "id": 8411605,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/comments/8411605",
+        "created_at": "2012-09-10T01:25:07Z"
+      }
+    },
+    "created_at": "2012-09-10T01:25:07Z",
+    "actor": {
+      "login": "aeosynth",
+      "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/aeosynth",
+      "id": 75317,
+      "gravatar_id": "65bdf2442092d6c9c5ade711913317d5"
+    },
+    "public": true,
+    "id": "1595536179",
+    "repo": {
+      "url": "https://api.github.com/repos/madrobby/zepto",
+      "name": "madrobby/zepto",
+      "id": 924303
+    }
+  },
+  {
+    "type": "CreateEvent",
+    "payload": {
+      "description": "wiki-like application.",
+      "master_branch": "master",
+      "ref_type": "repository",
+      "ref": null
+    },
+    "created_at": "2012-09-10T01:25:03Z",
+    "actor": {
+      "login": "hogelog",
+      "avatar_url": "https://secure.gravatar.com/avatar/b82bcf2174eaaf31a46b41aadcf68ee6?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/hogelog",
+      "id": 50920,
+      "gravatar_id": "b82bcf2174eaaf31a46b41aadcf68ee6"
+    },
+    "public": true,
+    "id": "1595536168",
+    "repo": {
+      "url": "https://api.github.com/repos/hogelog/wiblos",
+      "name": "hogelog/wiblos",
+      "id": 5743462
+    }
+  },
+  {
+    "type": "PullRequestEvent",
+    "payload": {
+      "action": "opened",
+      "number": 52,
+      "pull_request": {
+        "_links": {
+          "comments": {
+            "href": "https://api.github.com/repos/github/ReactiveCocoa/issues/52/comments"
+          },
+          "html": {
+            "href": "https://github.com/github/ReactiveCocoa/pull/52"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/github/ReactiveCocoa/issues/52"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/github/ReactiveCocoa/pulls/52/comments"
+          },
+          "self": {
+            "href": "https://api.github.com/repos/github/ReactiveCocoa/pulls/52"
+          }
+        },
+        "comments": 0,
+        "user": {
+          "login": "joshaber",
+          "avatar_url": "https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 13760,
+          "gravatar_id": "62e8c8bfaa8d755cab82accb48d335c8",
+          "url": "https://api.github.com/users/joshaber"
+        },
+        "state": "open",
+        "patch_url": "https://github.com/github/ReactiveCocoa/pull/52.patch",
+        "mergeable": null,
+        "merged_by": null,
+        "updated_at": "2012-09-10T01:24:04Z",
+        "merged": false,
+        "milestone": null,
+        "body": "`-sequenceMany:` is meant to make clear the difference between piping data through subscribables with `-selectMany:` vs. sequencing a subscribable after another. It's the difference between `>>=` and `>>`.\n\nI'm not crazy on the name, but it was my favorite of the ones I came up with.",
+        "head": {
+          "user": {
+            "login": "github",
+            "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+            "id": 9919,
+            "gravatar_id": "61024896f291303615bcd4f7a0dcfb74",
+            "url": "https://api.github.com/users/github"
+          },
+          "label": "github:sequence-many",
+          "repo": {
+            "description": "A framework for composing and transforming sequences of values.",
+            "fork": false,
+            "forks_count": 45,
+            "full_name": "github/ReactiveCocoa",
+            "clone_url": "https://github.com/github/ReactiveCocoa.git",
+            "mirror_url": null,
+            "ssh_url": "git@github.com:github/ReactiveCocoa.git",
+            "svn_url": "https://github.com/github/ReactiveCocoa",
+            "updated_at": "2012-09-10T01:20:41Z",
+            "private": false,
+            "watchers": 664,
+            "has_downloads": true,
+            "has_wiki": true,
+            "pushed_at": "2012-09-10T01:20:36Z",
+            "name": "ReactiveCocoa",
+            "git_url": "git://github.com/github/ReactiveCocoa.git",
+            "homepage": "",
+            "open_issues_count": 5,
+            "open_issues": 5,
+            "id": 3606624,
+            "watchers_count": 664,
+            "has_issues": true,
+            "owner": {
+              "login": "github",
+              "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+              "id": 9919,
+              "gravatar_id": "61024896f291303615bcd4f7a0dcfb74",
+              "url": "https://api.github.com/users/github"
+            },
+            "forks": 45,
+            "url": "https://api.github.com/repos/github/ReactiveCocoa",
+            "size": 316,
+            "created_at": "2012-03-02T22:11:24Z",
+            "language": "Objective-C",
+            "html_url": "https://github.com/github/ReactiveCocoa"
+          },
+          "ref": "sequence-many",
+          "sha": "edd89e7ad64f5c6c138084bb3f9b033cfe286bb5"
+        },
+        "changed_files": 2,
+        "closed_at": null,
+        "issue_url": "https://github.com/github/ReactiveCocoa/issues/52",
+        "number": 52,
+        "merged_at": null,
+        "diff_url": "https://github.com/github/ReactiveCocoa/pull/52.diff",
+        "assignee": null,
+        "additions": 10,
+        "commits": 1,
+        "id": 2289234,
+        "deletions": 0,
+        "review_comments": 0,
+        "base": {
+          "user": {
+            "login": "github",
+            "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+            "id": 9919,
+            "gravatar_id": "61024896f291303615bcd4f7a0dcfb74",
+            "url": "https://api.github.com/users/github"
+          },
+          "label": "github:master",
+          "repo": {
+            "description": "A framework for composing and transforming sequences of values.",
+            "fork": false,
+            "forks_count": 45,
+            "full_name": "github/ReactiveCocoa",
+            "clone_url": "https://github.com/github/ReactiveCocoa.git",
+            "mirror_url": null,
+            "ssh_url": "git@github.com:github/ReactiveCocoa.git",
+            "svn_url": "https://github.com/github/ReactiveCocoa",
+            "updated_at": "2012-09-10T01:20:41Z",
+            "private": false,
+            "watchers": 664,
+            "has_downloads": true,
+            "has_wiki": true,
+            "pushed_at": "2012-09-10T01:20:36Z",
+            "name": "ReactiveCocoa",
+            "git_url": "git://github.com/github/ReactiveCocoa.git",
+            "homepage": "",
+            "open_issues_count": 5,
+            "open_issues": 5,
+            "id": 3606624,
+            "watchers_count": 664,
+            "has_issues": true,
+            "owner": {
+              "login": "github",
+              "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+              "id": 9919,
+              "gravatar_id": "61024896f291303615bcd4f7a0dcfb74",
+              "url": "https://api.github.com/users/github"
+            },
+            "forks": 45,
+            "url": "https://api.github.com/repos/github/ReactiveCocoa",
+            "size": 316,
+            "created_at": "2012-03-02T22:11:24Z",
+            "language": "Objective-C",
+            "html_url": "https://github.com/github/ReactiveCocoa"
+          },
+          "ref": "master",
+          "sha": "f02897985c675bf86b3f3328ecd95231117044d0"
+        },
+        "mergeable_state": "unknown",
+        "url": "https://api.github.com/repos/github/ReactiveCocoa/pulls/52",
+        "created_at": "2012-09-10T01:24:04Z",
+        "html_url": "https://github.com/github/ReactiveCocoa/pull/52",
+        "title": "Added -sequenceMany:"
+      }
+    },
+    "created_at": "2012-09-10T01:24:04Z",
+    "actor": {
+      "login": "joshaber",
+      "avatar_url": "https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/joshaber",
+      "id": 13760,
+      "gravatar_id": "62e8c8bfaa8d755cab82accb48d335c8"
+    },
+    "public": true,
+    "org": {
+      "login": "github",
+      "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/github",
+      "id": 9919,
+      "gravatar_id": "61024896f291303615bcd4f7a0dcfb74"
+    },
+    "id": "1595536017",
+    "repo": {
+      "url": "https://api.github.com/repos/github/ReactiveCocoa",
+      "name": "github/ReactiveCocoa",
+      "id": 3606624
+    }
+  },
+  {
+    "type": "CreateEvent",
+    "payload": {
+      "description": "A framework for composing and transforming sequences of values.",
+      "master_branch": "master",
+      "ref_type": "branch",
+      "ref": "sequence-many"
+    },
+    "created_at": "2012-09-10T01:20:38Z",
+    "actor": {
+      "login": "joshaber",
+      "avatar_url": "https://secure.gravatar.com/avatar/62e8c8bfaa8d755cab82accb48d335c8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/joshaber",
+      "id": 13760,
+      "gravatar_id": "62e8c8bfaa8d755cab82accb48d335c8"
+    },
+    "public": true,
+    "org": {
+      "login": "github",
+      "avatar_url": "https://secure.gravatar.com/avatar/61024896f291303615bcd4f7a0dcfb74?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/github",
+      "id": 9919,
+      "gravatar_id": "61024896f291303615bcd4f7a0dcfb74"
+    },
+    "id": "1595535443",
+    "repo": {
+      "url": "https://api.github.com/repos/github/ReactiveCocoa",
+      "name": "github/ReactiveCocoa",
+      "id": 3606624
+    }
+  },
+  {
+    "type": "FollowEvent",
+    "payload": {
+      "target": {
+        "public_gists": 11,
+        "login": "miio",
+        "bio": null,
+        "hireable": false,
+        "public_repos": 34,
+        "type": "User",
+        "avatar_url": "https://secure.gravatar.com/avatar/0ba46a270a113f5f303289240b868233?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "company": null,
+        "email": null,
+        "following": 14,
+        "name": "miio mitani",
+        "blog": null,
+        "id": 577928,
+        "html_url": "https://github.com/miio",
+        "gravatar_id": "0ba46a270a113f5f303289240b868233",
+        "created_at": "2011-01-22T12:14:36Z",
+        "url": "https://api.github.com/users/miio",
+        "followers": 13,
+        "location": null
+      }
+    },
+    "created_at": "2012-09-10T01:13:26Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595534271",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "FollowEvent",
+    "payload": {
+      "target": {
+        "public_gists": 3,
+        "bio": null,
+        "hireable": false,
+        "login": "d-aki",
+        "avatar_url": "https://secure.gravatar.com/avatar/714f7f6a12a47c5648bfbf7d96bac5af?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "public_repos": 3,
+        "type": "User",
+        "company": null,
+        "following": 16,
+        "email": null,
+        "blog": null,
+        "name": "d-aki",
+        "id": 423642,
+        "gravatar_id": "714f7f6a12a47c5648bfbf7d96bac5af",
+        "location": "",
+        "url": "https://api.github.com/users/d-aki",
+        "created_at": "2010-10-01T16:33:28Z",
+        "followers": 12,
+        "html_url": "https://github.com/d-aki"
+      }
+    },
+    "created_at": "2012-09-10T01:13:25Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595534267",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "FollowEvent",
+    "payload": {
+      "target": {
+        "public_gists": 1,
+        "bio": null,
+        "hireable": true,
+        "login": "hizuru",
+        "avatar_url": "https://secure.gravatar.com/avatar/0e6a18342b27c3b4540f53a237b7fdab?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "public_repos": 1,
+        "type": "User",
+        "company": null,
+        "following": 5,
+        "email": "totoadadoh@gmail.com",
+        "blog": "http://totoadad.hatenablog.com/",
+        "name": "Hizuru",
+        "id": 1993385,
+        "gravatar_id": "0e6a18342b27c3b4540f53a237b7fdab",
+        "location": "Nara,Japan",
+        "url": "https://api.github.com/users/hizuru",
+        "created_at": "2012-07-17T18:42:28Z",
+        "followers": 6,
+        "html_url": "https://github.com/hizuru"
+      }
+    },
+    "created_at": "2012-09-10T01:13:21Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595534259",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "FollowEvent",
+    "payload": {
+      "target": {
+        "public_gists": 4,
+        "login": "arc680",
+        "avatar_url": "https://secure.gravatar.com/avatar/fbfa22f7aa44af1017ba0e79d08b5ddf?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "public_repos": 4,
+        "type": "User",
+        "following": 10,
+        "id": 1674757,
+        "gravatar_id": "fbfa22f7aa44af1017ba0e79d08b5ddf",
+        "url": "https://api.github.com/users/arc680",
+        "html_url": "https://github.com/arc680",
+        "created_at": "2012-04-24T13:54:15Z",
+        "followers": 13
+      }
+    },
+    "created_at": "2012-09-10T01:13:21Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595534258",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "PullRequestEvent",
+    "payload": {
+      "action": "opened",
+      "number": 581,
+      "pull_request": {
+        "_links": {
+          "comments": {
+            "href": "https://api.github.com/repos/madrobby/zepto/issues/581/comments"
+          },
+          "html": {
+            "href": "https://github.com/madrobby/zepto/pull/581"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/madrobby/zepto/issues/581"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/madrobby/zepto/pulls/581/comments"
+          },
+          "self": {
+            "href": "https://api.github.com/repos/madrobby/zepto/pulls/581"
+          }
+        },
+        "comments": 0,
+        "user": {
+          "login": "aeosynth",
+          "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 75317,
+          "gravatar_id": "65bdf2442092d6c9c5ade711913317d5",
+          "url": "https://api.github.com/users/aeosynth"
+        },
+        "patch_url": "https://github.com/madrobby/zepto/pull/581.patch",
+        "mergeable": null,
+        "state": "open",
+        "updated_at": "2012-09-10T00:41:32Z",
+        "merged": false,
+        "milestone": null,
+        "merged_by": null,
+        "body": "tweaked ajax.js to not silently fail",
+        "head": {
+          "user": {
+            "login": "aeosynth",
+            "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 75317,
+            "gravatar_id": "65bdf2442092d6c9c5ade711913317d5",
+            "url": "https://api.github.com/users/aeosynth"
+          },
+          "label": "aeosynth:ajax",
+          "repo": {
+            "description": "Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible API",
+            "fork": true,
+            "forks_count": 0,
+            "full_name": "aeosynth/zepto",
+            "clone_url": "https://github.com/aeosynth/zepto.git",
+            "ssh_url": "git@github.com:aeosynth/zepto.git",
+            "mirror_url": null,
+            "svn_url": "https://github.com/aeosynth/zepto",
+            "updated_at": "2012-09-10T00:37:45Z",
+            "private": false,
+            "watchers": 0,
+            "has_downloads": true,
+            "has_wiki": true,
+            "pushed_at": "2012-09-10T00:37:45Z",
+            "name": "zepto",
+            "git_url": "git://github.com/aeosynth/zepto.git",
+            "homepage": "http://zeptojs.com",
+            "open_issues_count": 0,
+            "open_issues": 0,
+            "id": 5727667,
+            "watchers_count": 0,
+            "has_issues": false,
+            "owner": {
+              "login": "aeosynth",
+              "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+              "id": 75317,
+              "gravatar_id": "65bdf2442092d6c9c5ade711913317d5",
+              "url": "https://api.github.com/users/aeosynth"
+            },
+            "forks": 0,
+            "url": "https://api.github.com/repos/aeosynth/zepto",
+            "html_url": "https://github.com/aeosynth/zepto",
+            "size": 104,
+            "created_at": "2012-09-08T10:52:23Z",
+            "language": "JavaScript"
+          },
+          "ref": "ajax",
+          "sha": "d3ee7c93399afb9f1d360dc992f1f97d7e6e367f"
+        },
+        "changed_files": 1,
+        "closed_at": null,
+        "issue_url": "https://github.com/madrobby/zepto/issues/581",
+        "number": 581,
+        "merged_at": null,
+        "diff_url": "https://github.com/madrobby/zepto/pull/581.diff",
+        "assignee": null,
+        "additions": 9,
+        "commits": 1,
+        "id": 2289134,
+        "deletions": 9,
+        "review_comments": 0,
+        "base": {
+          "user": {
+            "login": "madrobby",
+            "avatar_url": "https://secure.gravatar.com/avatar/cf287bd57ec416f58baa2454fdd28e1e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 3390,
+            "gravatar_id": "cf287bd57ec416f58baa2454fdd28e1e",
+            "url": "https://api.github.com/users/madrobby"
+          },
+          "label": "madrobby:master",
+          "repo": {
+            "description": "Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible API",
+            "fork": false,
+            "forks_count": 463,
+            "full_name": "madrobby/zepto",
+            "clone_url": "https://github.com/madrobby/zepto.git",
+            "ssh_url": "git@github.com:madrobby/zepto.git",
+            "mirror_url": null,
+            "svn_url": "https://github.com/madrobby/zepto",
+            "updated_at": "2012-09-09T18:48:35Z",
+            "private": false,
+            "watchers": 3830,
+            "has_downloads": true,
+            "has_wiki": true,
+            "pushed_at": "2012-09-09T02:36:20Z",
+            "name": "zepto",
+            "git_url": "git://github.com/madrobby/zepto.git",
+            "homepage": "http://zeptojs.com",
+            "open_issues_count": 70,
+            "open_issues": 70,
+            "id": 924303,
+            "watchers_count": 3830,
+            "has_issues": true,
+            "owner": {
+              "login": "madrobby",
+              "avatar_url": "https://secure.gravatar.com/avatar/cf287bd57ec416f58baa2454fdd28e1e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+              "id": 3390,
+              "gravatar_id": "cf287bd57ec416f58baa2454fdd28e1e",
+              "url": "https://api.github.com/users/madrobby"
+            },
+            "forks": 463,
+            "url": "https://api.github.com/repos/madrobby/zepto",
+            "html_url": "https://github.com/madrobby/zepto",
+            "size": 392,
+            "created_at": "2010-09-20T07:57:57Z",
+            "language": "JavaScript"
+          },
+          "ref": "master",
+          "sha": "d86df6e4b0ea123d326238cc881a6c73eeab0076"
+        },
+        "mergeable_state": "unknown",
+        "url": "https://api.github.com/repos/madrobby/zepto/pulls/581",
+        "html_url": "https://github.com/madrobby/zepto/pull/581",
+        "created_at": "2012-09-10T00:41:32Z",
+        "title": "ajax: better error handling"
+      }
+    },
+    "created_at": "2012-09-10T00:41:33Z",
+    "actor": {
+      "login": "aeosynth",
+      "avatar_url": "https://secure.gravatar.com/avatar/65bdf2442092d6c9c5ade711913317d5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/aeosynth",
+      "id": 75317,
+      "gravatar_id": "65bdf2442092d6c9c5ade711913317d5"
+    },
+    "public": true,
+    "id": "1595529666",
+    "repo": {
+      "url": "https://api.github.com/repos/madrobby/zepto",
+      "name": "madrobby/zepto",
+      "id": 924303
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 3,
+        "user": {
+          "login": "alain57",
+          "avatar_url": "https://secure.gravatar.com/avatar/11752cb59f9f1ddb7c1c48672f71bc77?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 316413,
+          "url": "https://api.github.com/users/alain57",
+          "gravatar_id": "11752cb59f9f1ddb7c1c48672f71bc77"
+        },
+        "state": "open",
+        "milestone": null,
+        "labels": [
+
+        ],
+        "updated_at": "2012-09-09T20:36:32Z",
+        "body": "Hi,\n\ni changed the project to enable building IPA for ad-hoc distribution.\nI simply set the skip install to YES, and moved the headers from public to project\n\nnow you can build an IPA when choosing \"build for archive\" in the xcode menu",
+        "closed_at": null,
+        "number": 15,
+        "assignee": null,
+        "id": 6690745,
+        "url": "https://api.github.com/repos/square/PonyDebugger/issues/15",
+        "html_url": "https://github.com/square/PonyDebugger/issues/15",
+        "pull_request": {
+          "patch_url": "https://github.com/square/PonyDebugger/pull/15.patch",
+          "diff_url": "https://github.com/square/PonyDebugger/pull/15.diff",
+          "html_url": "https://github.com/square/PonyDebugger/pull/15"
+        },
+        "title": "the librairy was blocking the build archive in xcode",
+        "created_at": "2012-09-06T15:19:37Z"
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "mikelikespie",
+          "avatar_url": "https://secure.gravatar.com/avatar/2250d6c1b0ce837a63362ffd21e73176?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 21435,
+          "url": "https://api.github.com/users/mikelikespie",
+          "gravatar_id": "2250d6c1b0ce837a63362ffd21e73176"
+        },
+        "updated_at": "2012-09-09T20:36:32Z",
+        "body": "I am going to have to look into this.  I think I may have overlooked this bug for two reasons.\n\n* Never archived PDTwitterTest\n* Square's codebase has build step that removes the headers when we archive.\n\nThe reason we mark these as Public is to make it so header inclusion is really easy (all the external libraries's headers are copied into the build products directory and you don't need to explicitly include every dependency).",
+        "id": 8409029,
+        "url": "https://api.github.com/repos/square/PonyDebugger/issues/comments/8409029",
+        "created_at": "2012-09-09T20:36:32Z"
+      }
+    },
+    "created_at": "2012-09-09T20:36:33Z",
+    "actor": {
+      "login": "mikelikespie",
+      "avatar_url": "https://secure.gravatar.com/avatar/2250d6c1b0ce837a63362ffd21e73176?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/mikelikespie",
+      "id": 21435,
+      "gravatar_id": "2250d6c1b0ce837a63362ffd21e73176"
+    },
+    "public": true,
+    "org": {
+      "login": "square",
+      "avatar_url": "https://secure.gravatar.com/avatar/d87fe401b5fc9a4fc9bfd75febcab7c7?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/square",
+      "id": 82592,
+      "gravatar_id": "d87fe401b5fc9a4fc9bfd75febcab7c7"
+    },
+    "id": "1595491109",
+    "repo": {
+      "url": "https://api.github.com/repos/square/PonyDebugger",
+      "name": "square/PonyDebugger",
+      "id": 5499847
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T20:00:43Z",
+    "actor": {
+      "login": "VoQn",
+      "avatar_url": "https://secure.gravatar.com/avatar/73889ae12e3dbade2478538fd20c072f?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/VoQn",
+      "id": 31357,
+      "gravatar_id": "73889ae12e3dbade2478538fd20c072f"
+    },
+    "public": true,
+    "org": {
+      "login": "twitter",
+      "avatar_url": "https://secure.gravatar.com/avatar/2f4a8254d032a8ec5e4c48d461e54fcc?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/twitter",
+      "id": 50278,
+      "gravatar_id": "2f4a8254d032a8ec5e4c48d461e54fcc"
+    },
+    "id": "1595484583",
+    "repo": {
+      "url": "https://api.github.com/repos/twitter/bower",
+      "name": "twitter/bower",
+      "id": 5710341
+    }
+  },
+  {
+    "type": "CreateEvent",
+    "payload": {
+      "description": "simple helper for bootstrap",
+      "master_branch": "master",
+      "ref_type": "repository",
+      "ref": null
+    },
+    "created_at": "2012-09-09T19:49:10Z",
+    "actor": {
+      "login": "masarakki",
+      "avatar_url": "https://secure.gravatar.com/avatar/d52c8b0a24dfaec053feba8ba4125ac5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/masarakki",
+      "id": 26023,
+      "gravatar_id": "d52c8b0a24dfaec053feba8ba4125ac5"
+    },
+    "public": true,
+    "id": "1595482516",
+    "repo": {
+      "url": "https://api.github.com/repos/masarakki/simple_bootstrap_helper",
+      "name": "masarakki/simple_bootstrap_helper",
+      "id": 5741028
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 5,
+        "user": {
+          "login": "baccigalupi",
+          "avatar_url": "https://secure.gravatar.com/avatar/9714192a75643df8d15bf9f009bdb74c?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 2471,
+          "gravatar_id": "9714192a75643df8d15bf9f009bdb74c",
+          "url": "https://api.github.com/users/baccigalupi"
+        },
+        "state": "closed",
+        "updated_at": "2012-09-09T17:27:37Z",
+        "milestone": null,
+        "labels": [
+
+        ],
+        "body": "The css if test for removing a style is `value ==''` which of course will test positive for 0 values. This has implications for other kinds of styles. For example, if the border-width is set in an element to a non-zero value in the css file and we need to use the css function to add a 0 width on the element in some circumstance, this passes through.",
+        "closed_at": "2012-09-07T16:27:23Z",
+        "number": 575,
+        "assignee": null,
+        "id": 6582555,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/575",
+        "title": "Setting css opacity to 0 will result in opacity style being removed",
+        "created_at": "2012-08-31T16:01:15Z",
+        "html_url": "https://github.com/madrobby/zepto/issues/575",
+        "pull_request": {
+          "patch_url": "https://github.com/madrobby/zepto/pull/575.patch",
+          "diff_url": "https://github.com/madrobby/zepto/pull/575.diff",
+          "html_url": "https://github.com/madrobby/zepto/pull/575"
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "baccigalupi",
+          "avatar_url": "https://secure.gravatar.com/avatar/9714192a75643df8d15bf9f009bdb74c?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 2471,
+          "gravatar_id": "9714192a75643df8d15bf9f009bdb74c",
+          "url": "https://api.github.com/users/baccigalupi"
+        },
+        "updated_at": "2012-09-09T17:27:37Z",
+        "body": "Awesome. Glad to have contributed to a great project",
+        "id": 8405658,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/comments/8405658",
+        "created_at": "2012-09-09T17:27:37Z"
+      }
+    },
+    "created_at": "2012-09-09T17:27:37Z",
+    "actor": {
+      "login": "baccigalupi",
+      "avatar_url": "https://secure.gravatar.com/avatar/9714192a75643df8d15bf9f009bdb74c?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/baccigalupi",
+      "id": 2471,
+      "gravatar_id": "9714192a75643df8d15bf9f009bdb74c"
+    },
+    "public": true,
+    "id": "1595456634",
+    "repo": {
+      "url": "https://api.github.com/repos/madrobby/zepto",
+      "name": "madrobby/zepto",
+      "id": 924303
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 5,
+        "user": {
+          "login": "gabrielrinaldi",
+          "avatar_url": "https://secure.gravatar.com/avatar/8bcab75ac3d7b87eecb023b5fab78828?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 38957,
+          "gravatar_id": "8bcab75ac3d7b87eecb023b5fab78828",
+          "url": "https://api.github.com/users/gabrielrinaldi"
+        },
+        "state": "closed",
+        "updated_at": "2012-09-09T16:30:00Z",
+        "labels": [
+
+        ],
+        "milestone": null,
+        "body": "",
+        "closed_at": "2012-09-07T14:02:57Z",
+        "number": 483,
+        "assignee": null,
+        "id": 6701557,
+        "url": "https://api.github.com/repos/CocoaPods/Specs/issues/483",
+        "created_at": "2012-09-06T22:26:00Z",
+        "html_url": "https://github.com/CocoaPods/Specs/issues/483",
+        "title": "Added KJGridLayout",
+        "pull_request": {
+          "patch_url": "https://github.com/CocoaPods/Specs/pull/483.patch",
+          "diff_url": "https://github.com/CocoaPods/Specs/pull/483.diff",
+          "html_url": "https://github.com/CocoaPods/Specs/pull/483"
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "irrationalfab",
+          "avatar_url": "https://secure.gravatar.com/avatar/b6dde1a78e6215a592768c1e78a54adc?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 1048705,
+          "gravatar_id": "b6dde1a78e6215a592768c1e78a54adc",
+          "url": "https://api.github.com/users/irrationalfab"
+        },
+        "updated_at": "2012-09-09T16:30:00Z",
+        "body": "Welcome aboard!",
+        "id": 8405156,
+        "url": "https://api.github.com/repos/CocoaPods/Specs/issues/comments/8405156",
+        "created_at": "2012-09-09T16:30:00Z"
+      }
+    },
+    "created_at": "2012-09-09T16:30:01Z",
+    "actor": {
+      "login": "irrationalfab",
+      "avatar_url": "https://secure.gravatar.com/avatar/b6dde1a78e6215a592768c1e78a54adc?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/irrationalfab",
+      "id": 1048705,
+      "gravatar_id": "b6dde1a78e6215a592768c1e78a54adc"
+    },
+    "public": true,
+    "org": {
+      "login": "CocoaPods",
+      "avatar_url": "https://secure.gravatar.com/avatar/8b374a26ac900a5c7b83a8767faff333?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/CocoaPods",
+      "id": 1189714,
+      "gravatar_id": "8b374a26ac900a5c7b83a8767faff333"
+    },
+    "id": "1595446896",
+    "repo": {
+      "url": "https://api.github.com/repos/CocoaPods/Specs",
+      "name": "CocoaPods/Specs",
+      "id": 2365549
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T16:12:00Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595444186",
+    "repo": {
+      "url": "https://api.github.com/repos/kyubuns/favme",
+      "name": "kyubuns/favme",
+      "id": 5425416
+    }
+  },
+  {
+    "type": "FollowEvent",
+    "payload": {
+      "target": {
+        "public_gists": 1,
+        "login": "kyubuns",
+        "hireable": false,
+        "bio": "",
+        "type": "User",
+        "public_repos": 7,
+        "avatar_url": "https://secure.gravatar.com/avatar/3e3c87ebcc3974951f0799bc6594a31e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+        "company": null,
+        "email": null,
+        "following": 6,
+        "blog": null,
+        "name": "kyubuns",
+        "id": 961165,
+        "html_url": "https://github.com/kyubuns",
+        "followers": 23,
+        "created_at": "2011-08-05T12:34:38Z",
+        "url": "https://api.github.com/users/kyubuns",
+        "location": null,
+        "gravatar_id": "3e3c87ebcc3974951f0799bc6594a31e"
+      }
+    },
+    "created_at": "2012-09-09T16:11:48Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595444142",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T16:11:42Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595444109",
+    "repo": {
+      "url": "https://api.github.com/repos/kyubuns/js_ruby_chat",
+      "name": "kyubuns/js_ruby_chat",
+      "id": 5738977
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 13,
+        "user": {
+          "login": "DataTables",
+          "avatar_url": "https://secure.gravatar.com/avatar/8b1feb7f958da6bb957ed650fdb0fae0?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 278219,
+          "gravatar_id": "8b1feb7f958da6bb957ed650fdb0fae0",
+          "url": "https://api.github.com/users/DataTables"
+        },
+        "state": "closed",
+        "updated_at": "2012-09-09T16:00:34Z",
+        "milestone": {
+          "description": "Release candidate 2, mostly for known minor bugs that we should fix before 1.0",
+          "state": "open",
+          "creator": {
+            "login": "madrobby",
+            "avatar_url": "https://secure.gravatar.com/avatar/cf287bd57ec416f58baa2454fdd28e1e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 3390,
+            "gravatar_id": "cf287bd57ec416f58baa2454fdd28e1e",
+            "url": "https://api.github.com/users/madrobby"
+          },
+          "number": 3,
+          "open_issues": 7,
+          "id": 25470,
+          "url": "https://api.github.com/repos/madrobby/zepto/milestones/3",
+          "title": "v1.0rc2",
+          "created_at": "2011-08-01T18:02:47Z",
+          "due_on": null,
+          "closed_issues": 15
+        },
+        "labels": [
+
+        ],
+        "body": "I'm not sure if this is something that you want to include in zepto or not as it does add a little bit more code, but I've added the ability to do deep object copying as I've been using that a lot for configuration options in some of my projects.",
+        "closed_at": "2012-09-08T23:17:47Z",
+        "number": 356,
+        "assignee": null,
+        "id": 2520716,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/356",
+        "title": "Deep object copying",
+        "created_at": "2011-12-12T09:03:30Z",
+        "html_url": "https://github.com/madrobby/zepto/issues/356",
+        "pull_request": {
+          "patch_url": "https://github.com/madrobby/zepto/pull/356.patch",
+          "diff_url": "https://github.com/madrobby/zepto/pull/356.diff",
+          "html_url": "https://github.com/madrobby/zepto/pull/356"
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "mislav",
+          "avatar_url": "https://secure.gravatar.com/avatar/8f93a872e399bc1353cc8d4e791d5401?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 887,
+          "gravatar_id": "8f93a872e399bc1353cc8d4e791d5401",
+          "url": "https://api.github.com/users/mislav"
+        },
+        "updated_at": "2012-09-09T16:00:34Z",
+        "body": "No tools, just brain. The code in this pull request calls `$.extend` recursively which is very wasteful because of additional logic with argument handling and array.slice call. My version has a more lightweight function to call recursively while $.extend is just a single wrapper around all that.\n\nOtherwise I use runtime profiling in webkit dev tools",
+        "id": 8404896,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/comments/8404896",
+        "created_at": "2012-09-09T16:00:34Z"
+      }
+    },
+    "created_at": "2012-09-09T16:00:34Z",
+    "actor": {
+      "login": "mislav",
+      "avatar_url": "https://secure.gravatar.com/avatar/8f93a872e399bc1353cc8d4e791d5401?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/mislav",
+      "id": 887,
+      "gravatar_id": "8f93a872e399bc1353cc8d4e791d5401"
+    },
+    "public": true,
+    "id": "1595442437",
+    "repo": {
+      "url": "https://api.github.com/repos/madrobby/zepto",
+      "name": "madrobby/zepto",
+      "id": 924303
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 3,
+        "user": {
+          "login": "vfleurima",
+          "avatar_url": "https://secure.gravatar.com/avatar/f0c411f4383fa61b4bb6f2560ab0d386?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 437329,
+          "gravatar_id": "f0c411f4383fa61b4bb6f2560ab0d386",
+          "url": "https://api.github.com/users/vfleurima"
+        },
+        "state": "closed",
+        "labels": [
+
+        ],
+        "updated_at": "2012-09-09T15:22:08Z",
+        "milestone": null,
+        "body": "```\nPod::Spec.new do |s|\n  s.name     = 'SVProgressHUD'\n  s.version  = '0.7'\n  s.platform = :ios\n  s.license  = 'MIT'\n  s.summary  = 'A clean and lightweight progress HUD for your iOS app.'\n  s.homepage = 'http://samvermette.com/199'\n  s.author   = { 'Sam Vermette' => 'hello@samvermette.com' }\n  s.source   = { :git => 'https://github.com/samvermette/SVProgressHUD.git', :tag => '0.7' }\n\n  s.description = 'SVProgressHUD is an easy-to-use, clean and lightweight progress HUD for iOS. ' \\\n                  'It\\'s a simplified and prettified alternative to the popular MBProgressHUD. '  \\\n                  'Its fade in/out animations are highly inspired on Lauren Britcher\\'s HUD in '  \\\n                  'Tweetie for iOS. The success and error icons are from Glyphish.'\n\n  s.source_files = 'SVProgressHUD/*.{h,m}'\n\n  s.framework    = 'QuartzCore'\n  s.resources    = 'SVProgressHUD/SVProgressHUD.bundle'\n  s.requires_arc = true\nend\n```",
+        "closed_at": "2012-08-25T21:23:56Z",
+        "number": 424,
+        "assignee": null,
+        "id": 6454272,
+        "url": "https://api.github.com/repos/CocoaPods/Specs/issues/424",
+        "created_at": "2012-08-25T20:18:05Z",
+        "html_url": "https://github.com/CocoaPods/Specs/issues/424",
+        "title": "SVProgressHUD 0.7 needs s.requires_arc = true",
+        "pull_request": {
+          "patch_url": null,
+          "diff_url": null,
+          "html_url": null
+        }
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "vfleurima",
+          "avatar_url": "https://secure.gravatar.com/avatar/f0c411f4383fa61b4bb6f2560ab0d386?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 437329,
+          "gravatar_id": "f0c411f4383fa61b4bb6f2560ab0d386",
+          "url": "https://api.github.com/users/vfleurima"
+        },
+        "updated_at": "2012-09-09T15:22:08Z",
+        "body": "Ah, sorry, I didn't realize how old the tagged version was. I'll ask him to make a new version.",
+        "id": 8404574,
+        "url": "https://api.github.com/repos/CocoaPods/Specs/issues/comments/8404574",
+        "created_at": "2012-09-09T15:22:08Z"
+      }
+    },
+    "created_at": "2012-09-09T15:22:08Z",
+    "actor": {
+      "login": "vfleurima",
+      "avatar_url": "https://secure.gravatar.com/avatar/f0c411f4383fa61b4bb6f2560ab0d386?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/vfleurima",
+      "id": 437329,
+      "gravatar_id": "f0c411f4383fa61b4bb6f2560ab0d386"
+    },
+    "public": true,
+    "org": {
+      "login": "CocoaPods",
+      "avatar_url": "https://secure.gravatar.com/avatar/8b374a26ac900a5c7b83a8767faff333?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/CocoaPods",
+      "id": 1189714,
+      "gravatar_id": "8b374a26ac900a5c7b83a8767faff333"
+    },
+    "id": "1595436660",
+    "repo": {
+      "url": "https://api.github.com/repos/CocoaPods/Specs",
+      "name": "CocoaPods/Specs",
+      "id": 2365549
+    }
+  },
+  {
+    "type": "IssueCommentEvent",
+    "payload": {
+      "issue": {
+        "comments": 12,
+        "user": {
+          "login": "DataTables",
+          "avatar_url": "https://secure.gravatar.com/avatar/8b1feb7f958da6bb957ed650fdb0fae0?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 278219,
+          "url": "https://api.github.com/users/DataTables",
+          "gravatar_id": "8b1feb7f958da6bb957ed650fdb0fae0"
+        },
+        "state": "closed",
+        "milestone": {
+          "description": "Release candidate 2, mostly for known minor bugs that we should fix before 1.0",
+          "state": "open",
+          "creator": {
+            "login": "madrobby",
+            "avatar_url": "https://secure.gravatar.com/avatar/cf287bd57ec416f58baa2454fdd28e1e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+            "id": 3390,
+            "url": "https://api.github.com/users/madrobby",
+            "gravatar_id": "cf287bd57ec416f58baa2454fdd28e1e"
+          },
+          "number": 3,
+          "open_issues": 7,
+          "id": 25470,
+          "closed_issues": 15,
+          "url": "https://api.github.com/repos/madrobby/zepto/milestones/3",
+          "due_on": null,
+          "title": "v1.0rc2",
+          "created_at": "2011-08-01T18:02:47Z"
+        },
+        "labels": [
+
+        ],
+        "updated_at": "2012-09-09T14:25:41Z",
+        "body": "I'm not sure if this is something that you want to include in zepto or not as it does add a little bit more code, but I've added the ability to do deep object copying as I've been using that a lot for configuration options in some of my projects.",
+        "closed_at": "2012-09-08T23:17:47Z",
+        "number": 356,
+        "assignee": null,
+        "id": 2520716,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/356",
+        "html_url": "https://github.com/madrobby/zepto/issues/356",
+        "title": "Deep object copying",
+        "pull_request": {
+          "patch_url": "https://github.com/madrobby/zepto/pull/356.patch",
+          "diff_url": "https://github.com/madrobby/zepto/pull/356.diff",
+          "html_url": "https://github.com/madrobby/zepto/pull/356"
+        },
+        "created_at": "2011-12-12T09:03:30Z"
+      },
+      "action": "created",
+      "comment": {
+        "user": {
+          "login": "bnickel",
+          "avatar_url": "https://secure.gravatar.com/avatar/98aca67bf8a2e2470bc1beb84ce40beb?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 662837,
+          "url": "https://api.github.com/users/bnickel",
+          "gravatar_id": "98aca67bf8a2e2470bc1beb84ce40beb"
+        },
+        "updated_at": "2012-09-09T14:25:41Z",
+        "body": "@mislav Off topic but what tools are you using for performance testing?",
+        "id": 8404075,
+        "url": "https://api.github.com/repos/madrobby/zepto/issues/comments/8404075",
+        "created_at": "2012-09-09T14:25:41Z"
+      }
+    },
+    "created_at": "2012-09-09T14:25:41Z",
+    "actor": {
+      "login": "bnickel",
+      "avatar_url": "https://secure.gravatar.com/avatar/98aca67bf8a2e2470bc1beb84ce40beb?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/bnickel",
+      "id": 662837,
+      "gravatar_id": "98aca67bf8a2e2470bc1beb84ce40beb"
+    },
+    "public": true,
+    "id": "1595427055",
+    "repo": {
+      "url": "https://api.github.com/repos/madrobby/zepto",
+      "name": "madrobby/zepto",
+      "id": 924303
+    }
+  },
+  {
+    "type": "GistEvent",
+    "payload": {
+      "action": "create",
+      "gist": {
+        "comments": 0,
+        "user": {
+          "login": "sorah",
+          "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 29440,
+          "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8",
+          "url": "https://api.github.com/users/sorah"
+        },
+        "description": "",
+        "git_pull_url": "git://gist.github.com/3684663.git",
+        "updated_at": "2012-09-09T14:25:39Z",
+        "public": true,
+        "files": {
+
+        },
+        "id": "3684663",
+        "git_push_url": "git@gist.github.com:3684663.git",
+        "html_url": "https://gist.github.com/3684663",
+        "created_at": "2012-09-09T14:25:39Z",
+        "url": "https://api.github.com/gists/3684663"
+      }
+    },
+    "created_at": "2012-09-09T14:25:39Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595427049",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T14:19:44Z",
+    "actor": {
+      "login": "cutmail",
+      "avatar_url": "https://secure.gravatar.com/avatar/cb22bcbee04e5a2fb897d703e794ca8f?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/cutmail",
+      "id": 163344,
+      "gravatar_id": "cb22bcbee04e5a2fb897d703e794ca8f"
+    },
+    "public": true,
+    "id": "1595426113",
+    "repo": {
+      "url": "https://api.github.com/repos/inamiy/YISplashScreen",
+      "name": "inamiy/YISplashScreen",
+      "id": 4664831
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T13:02:24Z",
+    "actor": {
+      "login": "rosylilly",
+      "avatar_url": "https://secure.gravatar.com/avatar/2e7087b86608d4497c209eb9ba14d8f5?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/rosylilly",
+      "id": 29084,
+      "gravatar_id": "2e7087b86608d4497c209eb9ba14d8f5"
+    },
+    "public": true,
+    "id": "1595415902",
+    "repo": {
+      "url": "https://api.github.com/repos/coolwanglu/pdf2htmlEX",
+      "name": "coolwanglu/pdf2htmlEX",
+      "id": 5297437
+    }
+  },
+  {
+    "type": "CreateEvent",
+    "payload": {
+      "description": "github pages",
+      "ref_type": "repository",
+      "master_branch": "master",
+      "ref": null
+    },
+    "created_at": "2012-09-09T11:23:49Z",
+    "actor": {
+      "login": "conmame",
+      "avatar_url": "https://secure.gravatar.com/avatar/c786d7772602b488a7972c38c143f61c?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/conmame",
+      "id": 1277485,
+      "gravatar_id": "c786d7772602b488a7972c38c143f61c"
+    },
+    "public": true,
+    "id": "1595403282",
+    "repo": {
+      "url": "https://api.github.com/repos/conmame/conmame.github.com",
+      "name": "conmame/conmame.github.com",
+      "id": 5737012
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "payload": {
+      "action": "started"
+    },
+    "created_at": "2012-09-09T10:07:21Z",
+    "actor": {
+      "login": "laiso",
+      "avatar_url": "https://secure.gravatar.com/avatar/d107509659b6f023aa60e77aef1db237?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/laiso",
+      "id": 39830,
+      "gravatar_id": "d107509659b6f023aa60e77aef1db237"
+    },
+    "public": true,
+    "org": {
+      "login": "libgit2",
+      "avatar_url": "https://secure.gravatar.com/avatar/1c56acccc41c591705dc92da5f6ab603?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png",
+      "url": "https://api.github.com/orgs/libgit2",
+      "id": 394745,
+      "gravatar_id": "1c56acccc41c591705dc92da5f6ab603"
+    },
+    "id": "1595395363",
+    "repo": {
+      "url": "https://api.github.com/repos/libgit2/objective-git",
+      "name": "libgit2/objective-git",
+      "id": 1427977
+    }
+  },
+  {
+    "type": "GollumEvent",
+    "payload": {
+      "pages": [
+        {
+          "summary": null,
+          "action": "created",
+          "page_name": "Home",
+          "html_url": "https://github.com/VoQn/pp.js/wiki/Home",
+          "title": "Home",
+          "sha": "8626fb21ffcfb4dbd15a7f7a0fd1f2c39e216345"
+        }
+      ]
+    },
+    "created_at": "2012-09-09T09:41:13Z",
+    "actor": {
+      "login": "VoQn",
+      "avatar_url": "https://secure.gravatar.com/avatar/73889ae12e3dbade2478538fd20c072f?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/VoQn",
+      "id": 31357,
+      "gravatar_id": "73889ae12e3dbade2478538fd20c072f"
+    },
+    "public": true,
+    "id": "1595392674",
+    "repo": {
+      "url": "https://api.github.com/repos/VoQn/pp.js",
+      "name": "VoQn/pp.js",
+      "id": 5648090
+    }
+  },
+  {
+    "type": "GistEvent",
+    "payload": {
+      "action": "create",
+      "gist": {
+        "comments": 0,
+        "git_pull_url": "git://gist.github.com/3683328.git",
+        "user": {
+          "login": "shokos",
+          "avatar_url": "https://secure.gravatar.com/avatar/187ecab5f5b25f34afcc198e4d703e7a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+          "id": 642030,
+          "gravatar_id": "187ecab5f5b25f34afcc198e4d703e7a",
+          "url": "https://api.github.com/users/shokos"
+        },
+        "description": "第4回 スタートHaskell2 exercise8 エコー",
+        "updated_at": "2012-09-09T08:29:20Z",
+        "public": true,
+        "files": {
+
+        },
+        "id": "3683328",
+        "git_push_url": "git@gist.github.com:3683328.git",
+        "url": "https://api.github.com/gists/3683328",
+        "created_at": "2012-09-09T08:29:20Z",
+        "html_url": "https://gist.github.com/3683328"
+      }
+    },
+    "created_at": "2012-09-09T08:29:20Z",
+    "actor": {
+      "login": "shokos",
+      "avatar_url": "https://secure.gravatar.com/avatar/187ecab5f5b25f34afcc198e4d703e7a?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/shokos",
+      "id": 642030,
+      "gravatar_id": "187ecab5f5b25f34afcc198e4d703e7a"
+    },
+    "public": true,
+    "id": "1595385542",
+    "repo": {
+      "url": "https://api.github.com/repos//",
+      "name": "/"
+    }
+  },
+  {
+    "type": "CreateEvent",
+    "payload": {
+      "description": "use socket.io from Ruby",
+      "ref_type": "repository",
+      "master_branch": "master",
+      "ref": null
+    },
+    "created_at": "2012-09-09T08:00:11Z",
+    "actor": {
+      "login": "sorah",
+      "avatar_url": "https://secure.gravatar.com/avatar/626ca235e8dab778c5bad6fc10e94ad8?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "url": "https://api.github.com/users/sorah",
+      "id": 29440,
+      "gravatar_id": "626ca235e8dab778c5bad6fc10e94ad8"
+    },
+    "public": true,
+    "id": "1595382761",
+    "repo": {
+      "url": "https://api.github.com/repos/sorah/socketer",
+      "name": "sorah/socketer",
+      "id": 5735942
+    }
+  }
+]
