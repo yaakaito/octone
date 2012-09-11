@@ -97,29 +97,30 @@
 		B9B83E5615FE81290071F088 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0615FE81290071F088 /* UIFont+BrowseGithub.m */; };
 		B9B83E5715FE81290071F088 /* UIGlossyButton+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */; };
 		B9B83E5815FE81290071F088 /* UIGlossyButton+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */; };
-		B9B83E7715FE818F0071F088 /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E5A15FE818F0071F088 /* AsyncSupporter.m */; };
-		B9B83E7915FE818F0071F088 /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E5B15FE818F0071F088 /* BGAuthenticationManagerSpec.m */; };
-		B9B83E8315FE818F0071F088 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6015FE818F0071F088 /* BGGithubResourceSpec.m */; };
-		B9B83E8515FE818F0071F088 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6115FE818F0071F088 /* BGGlobalMenuControllerSpec.m */; };
-		B9B83E8715FE818F0071F088 /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6215FE818F0071F088 /* BGUserSpec.m */; };
-		B9B83E8915FE818F0071F088 /* BrowseGithubSpecs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E6315FE818F0071F088 /* BrowseGithubSpecs-Info.plist */; };
 		B9B83E8A15FE818F0071F088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E6615FE818F0071F088 /* InfoPlist.strings */; };
 		B9B83E8B15FE818F0071F088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E6615FE818F0071F088 /* InfoPlist.strings */; };
 		B9B83E9C15FE81E50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
-		B9B83E9D15FE829B0071F088 /* resource.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E7015FE818F0071F088 /* resource.json */; };
-		B9B83E9E15FE829B0071F088 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E7115FE818F0071F088 /* user.json */; };
-		B9B83E9F15FE829B0071F088 /* user.private.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E7215FE818F0071F088 /* user.private.atom */; };
-		B9B83EA015FE829B0071F088 /* user.private.short.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E7315FE818F0071F088 /* user.private.short.atom */; };
-		B9B83EA115FE82A90071F088 /* NSBundle+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6D15FE818F0071F088 /* NSBundle+Specs.m */; };
-		B9B83EA215FE82AE0071F088 /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */; };
-		B9B83EA315FE82B00071F088 /* FakeNotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */; };
-		B9B83EA415FE82BB0071F088 /* UIApplication+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */; };
 		B9B83EBC15FF03EB0071F088 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBA15FF03EB0071F088 /* Default.png */; };
 		B9B83EBD15FF03EB0071F088 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBB15FF03EB0071F088 /* Default@2x.png */; };
 		B9B83EC015FF03F60071F088 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBE15FF03F60071F088 /* iPhone.png */; };
 		B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EBF15FF03F60071F088 /* iPhone@2x.png */; };
-		B9B83EC315FF056A0071F088 /* BGGlobalMenuContentsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EC215FF056A0071F088 /* BGGlobalMenuContentsSpec.m */; };
 		B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */; };
+		B9B83EE915FF23980071F088 /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECD15FF23980071F088 /* AsyncSupporter.m */; };
+		B9B83EEA15FF23980071F088 /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */; };
+		B9B83EEB15FF23980071F088 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
+		B9B83EEF15FF23980071F088 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED315FF23980071F088 /* BGGithubResourceSpec.m */; };
+		B9B83EF015FF23980071F088 /* BGGlobalMenuContentsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED415FF23980071F088 /* BGGlobalMenuContentsSpec.m */; };
+		B9B83EF115FF23980071F088 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */; };
+		B9B83EF215FF23980071F088 /* BGUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED615FF23980071F088 /* BGUserSpec.m */; };
+		B9B83EF315FF23980071F088 /* BrowseGithubSpecs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9B83ED715FF23980071F088 /* BrowseGithubSpecs-Info.plist */; };
+		B9B83EF515FF23980071F088 /* FakeNotificationReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EDC15FF23980071F088 /* FakeNotificationReceiver.m */; };
+		B9B83EF615FF23980071F088 /* NLTHTTPStubServer+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EDE15FF23980071F088 /* NLTHTTPStubServer+Specs.m */; };
+		B9B83EF715FF23980071F088 /* NSBundle+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EE015FF23980071F088 /* NSBundle+Specs.m */; };
+		B9B83EF815FF23980071F088 /* resource.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EE315FF23980071F088 /* resource.json */; };
+		B9B83EF915FF23980071F088 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EE415FF23980071F088 /* user.json */; };
+		B9B83EFA15FF23980071F088 /* user.private.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EE515FF23980071F088 /* user.private.atom */; };
+		B9B83EFB15FF23980071F088 /* user.private.short.atom in Resources */ = {isa = PBXBuildFile; fileRef = B9B83EE615FF23980071F088 /* user.private.short.atom */; };
+		B9B83EFC15FF23980071F088 /* UIApplication+Spec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EE815FF23980071F088 /* UIApplication+Spec.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -219,37 +220,37 @@
 		B9B83E0615FE81290071F088 /* UIFont+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+BrowseGithub.m"; sourceTree = "<group>"; };
 		B9B83E0715FE81290071F088 /* UIGlossyButton+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGlossyButton+BrowseGithub.h"; sourceTree = "<group>"; };
 		B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGlossyButton+BrowseGithub.m"; sourceTree = "<group>"; };
-		B9B83E5915FE818F0071F088 /* AsyncSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSupporter.h; path = BrowseGithubSpecs/AsyncSupporter.h; sourceTree = SOURCE_ROOT; };
-		B9B83E5A15FE818F0071F088 /* AsyncSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSupporter.m; path = BrowseGithubSpecs/AsyncSupporter.m; sourceTree = SOURCE_ROOT; };
-		B9B83E5B15FE818F0071F088 /* BGAuthenticationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGAuthenticationManagerSpec.m; path = BrowseGithubSpecs/BGAuthenticationManagerSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E5C15FE818F0071F088 /* BGEventManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGEventManagerSpec.m; path = BrowseGithubSpecs/BGEventManagerSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E5D15FE818F0071F088 /* BGFeedEntryTypeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGFeedEntryTypeSpec.m; path = BrowseGithubSpecs/BGFeedEntryTypeSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E5E15FE818F0071F088 /* BGFeedParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGFeedParserSpec.m; path = BrowseGithubSpecs/BGFeedParserSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E5F15FE818F0071F088 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGithubFeedSpec.m; path = BrowseGithubSpecs/BGGithubFeedSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E6015FE818F0071F088 /* BGGithubResourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGithubResourceSpec.m; path = BrowseGithubSpecs/BGGithubResourceSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E6115FE818F0071F088 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGlobalMenuControllerSpec.m; path = BrowseGithubSpecs/BGGlobalMenuControllerSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E6215FE818F0071F088 /* BGUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGUserSpec.m; path = BrowseGithubSpecs/BGUserSpec.m; sourceTree = SOURCE_ROOT; };
-		B9B83E6315FE818F0071F088 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BrowseGithubSpecs-Info.plist"; path = "BrowseGithubSpecs/BrowseGithubSpecs-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B9B83E6415FE818F0071F088 /* BrowseGithubSpecs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BrowseGithubSpecs-Prefix.pch"; path = "BrowseGithubSpecs/BrowseGithubSpecs-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		B9B83E6715FE818F0071F088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		B9B83E6815FE818F0071F088 /* FakeNotificationReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeNotificationReceiver.h; path = BrowseGithubSpecs/FakeNotificationReceiver.h; sourceTree = SOURCE_ROOT; };
-		B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeNotificationReceiver.m; path = BrowseGithubSpecs/FakeNotificationReceiver.m; sourceTree = SOURCE_ROOT; };
-		B9B83E6A15FE818F0071F088 /* NLTHTTPStubServer+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NLTHTTPStubServer+Specs.h"; path = "BrowseGithubSpecs/NLTHTTPStubServer+Specs.h"; sourceTree = SOURCE_ROOT; };
-		B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NLTHTTPStubServer+Specs.m"; path = "BrowseGithubSpecs/NLTHTTPStubServer+Specs.m"; sourceTree = SOURCE_ROOT; };
-		B9B83E6C15FE818F0071F088 /* NSBundle+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Specs.h"; path = "BrowseGithubSpecs/NSBundle+Specs.h"; sourceTree = SOURCE_ROOT; };
-		B9B83E6D15FE818F0071F088 /* NSBundle+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Specs.m"; path = "BrowseGithubSpecs/NSBundle+Specs.m"; sourceTree = SOURCE_ROOT; };
-		B9B83E7015FE818F0071F088 /* resource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resource.json; sourceTree = "<group>"; };
-		B9B83E7115FE818F0071F088 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
-		B9B83E7215FE818F0071F088 /* user.private.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.atom; sourceTree = "<group>"; };
-		B9B83E7315FE818F0071F088 /* user.private.short.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.short.atom; sourceTree = "<group>"; };
-		B9B83E7415FE818F0071F088 /* UIApplication+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Spec.h"; path = "BrowseGithubSpecs/UIApplication+Spec.h"; sourceTree = SOURCE_ROOT; };
-		B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Spec.m"; path = "BrowseGithubSpecs/UIApplication+Spec.m"; sourceTree = SOURCE_ROOT; };
 		B9B83EBA15FF03EB0071F088 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		B9B83EBB15FF03EB0071F088 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B9B83EBE15FF03F60071F088 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = SOURCE_ROOT; };
 		B9B83EBF15FF03F60071F088 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = SOURCE_ROOT; };
-		B9B83EC215FF056A0071F088 /* BGGlobalMenuContentsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BGGlobalMenuContentsSpec.m; path = BrowseGithubSpecs/BGGlobalMenuContentsSpec.m; sourceTree = SOURCE_ROOT; };
 		B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserViewSpec.m; sourceTree = "<group>"; };
+		B9B83ECC15FF23970071F088 /* AsyncSupporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSupporter.h; sourceTree = "<group>"; };
+		B9B83ECD15FF23980071F088 /* AsyncSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSupporter.m; sourceTree = "<group>"; };
+		B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManagerSpec.m; sourceTree = "<group>"; };
+		B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManagerSpec.m; sourceTree = "<group>"; };
+		B9B83ED015FF23980071F088 /* BGFeedEntryTypeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryTypeSpec.m; sourceTree = "<group>"; };
+		B9B83ED115FF23980071F088 /* BGFeedParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParserSpec.m; sourceTree = "<group>"; };
+		B9B83ED215FF23980071F088 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
+		B9B83ED315FF23980071F088 /* BGGithubResourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResourceSpec.m; sourceTree = "<group>"; };
+		B9B83ED415FF23980071F088 /* BGGlobalMenuContentsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContentsSpec.m; sourceTree = "<group>"; };
+		B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuControllerSpec.m; sourceTree = "<group>"; };
+		B9B83ED615FF23980071F088 /* BGUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUserSpec.m; sourceTree = "<group>"; };
+		B9B83ED715FF23980071F088 /* BrowseGithubSpecs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BrowseGithubSpecs-Info.plist"; sourceTree = "<group>"; };
+		B9B83ED815FF23980071F088 /* BrowseGithubSpecs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrowseGithubSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		B9B83EDB15FF23980071F088 /* FakeNotificationReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationReceiver.h; sourceTree = "<group>"; };
+		B9B83EDC15FF23980071F088 /* FakeNotificationReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationReceiver.m; sourceTree = "<group>"; };
+		B9B83EDD15FF23980071F088 /* NLTHTTPStubServer+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NLTHTTPStubServer+Specs.h"; sourceTree = "<group>"; };
+		B9B83EDE15FF23980071F088 /* NLTHTTPStubServer+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NLTHTTPStubServer+Specs.m"; sourceTree = "<group>"; };
+		B9B83EDF15FF23980071F088 /* NSBundle+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Specs.h"; sourceTree = "<group>"; };
+		B9B83EE015FF23980071F088 /* NSBundle+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Specs.m"; sourceTree = "<group>"; };
+		B9B83EE315FF23980071F088 /* resource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resource.json; sourceTree = "<group>"; };
+		B9B83EE415FF23980071F088 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		B9B83EE515FF23980071F088 /* user.private.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.atom; sourceTree = "<group>"; };
+		B9B83EE615FF23980071F088 /* user.private.short.atom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = user.private.short.atom; sourceTree = "<group>"; };
+		B9B83EE715FF23980071F088 /* UIApplication+Spec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Spec.h"; sourceTree = "<group>"; };
+		B9B83EE815FF23980071F088 /* UIApplication+Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Spec.m"; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -344,10 +345,8 @@
 				B9B83EB815FE870A0071F088 /* Managers */,
 				B9B83EB915FE871C0071F088 /* Controllers */,
 				B9B83EAD15FE85680071F088 /* Supports */,
-				B9B83E6315FE818F0071F088 /* BrowseGithubSpecs-Info.plist */,
-				B9B83E6415FE818F0071F088 /* BrowseGithubSpecs-Prefix.pch */,
+				B9B83EE115FF23980071F088 /* Resouces */,
 				B9B83E6515FE818F0071F088 /* en.lproj */,
-				B9B83E6E15FE818F0071F088 /* Resouces */,
 				B9B83D9515FE7DB60071F088 /* Supporting Files */,
 			);
 			name = BrowseGithubSpecs;
@@ -357,6 +356,8 @@
 		B9B83D9515FE7DB60071F088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9B83ED715FF23980071F088 /* BrowseGithubSpecs-Info.plist */,
+				B9B83ED815FF23980071F088 /* BrowseGithubSpecs-Prefix.pch */,
 				B9B83D9615FE7DB60071F088 /* BrowseGithubTests-Info.plist */,
 				B9B83D9715FE7DB60071F088 /* InfoPlist.strings */,
 			);
@@ -395,39 +396,18 @@
 			path = BrowseGithubSpecs/en.lproj;
 			sourceTree = SOURCE_ROOT;
 		};
-		B9B83E6E15FE818F0071F088 /* Resouces */ = {
-			isa = PBXGroup;
-			children = (
-				B9B83E6F15FE818F0071F088 /* Mocks */,
-			);
-			name = Resouces;
-			path = BrowseGithubSpecs/Resouces;
-			sourceTree = SOURCE_ROOT;
-		};
-		B9B83E6F15FE818F0071F088 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				B9B83E7015FE818F0071F088 /* resource.json */,
-				B9B83E7115FE818F0071F088 /* user.json */,
-				B9B83E7215FE818F0071F088 /* user.private.atom */,
-				B9B83E7315FE818F0071F088 /* user.private.short.atom */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
 		B9B83EAD15FE85680071F088 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83E5915FE818F0071F088 /* AsyncSupporter.h */,
-				B9B83E5A15FE818F0071F088 /* AsyncSupporter.m */,
-				B9B83E6815FE818F0071F088 /* FakeNotificationReceiver.h */,
-				B9B83E6915FE818F0071F088 /* FakeNotificationReceiver.m */,
-				B9B83E6A15FE818F0071F088 /* NLTHTTPStubServer+Specs.h */,
-				B9B83E6B15FE818F0071F088 /* NLTHTTPStubServer+Specs.m */,
-				B9B83E6C15FE818F0071F088 /* NSBundle+Specs.h */,
-				B9B83E6D15FE818F0071F088 /* NSBundle+Specs.m */,
-				B9B83E7415FE818F0071F088 /* UIApplication+Spec.h */,
-				B9B83E7515FE818F0071F088 /* UIApplication+Spec.m */,
+				B9B83EFD15FF23C10071F088 /* Fakes */,
+				B9B83ECC15FF23970071F088 /* AsyncSupporter.h */,
+				B9B83ECD15FF23980071F088 /* AsyncSupporter.m */,
+				B9B83EDD15FF23980071F088 /* NLTHTTPStubServer+Specs.h */,
+				B9B83EDE15FF23980071F088 /* NLTHTTPStubServer+Specs.m */,
+				B9B83EDF15FF23980071F088 /* NSBundle+Specs.h */,
+				B9B83EE015FF23980071F088 /* NSBundle+Specs.m */,
+				B9B83EE715FF23980071F088 /* UIApplication+Spec.h */,
+				B9B83EE815FF23980071F088 /* UIApplication+Spec.m */,
 			);
 			name = Supports;
 			sourceTree = "<group>";
@@ -555,8 +535,8 @@
 			isa = PBXGroup;
 			children = (
 				B9B83EB715FE86ED0071F088 /* Github */,
-				B9B83E6015FE818F0071F088 /* BGGithubResourceSpec.m */,
-				B9B83EC215FF056A0071F088 /* BGGlobalMenuContentsSpec.m */,
+				B9B83ED415FF23980071F088 /* BGGlobalMenuContentsSpec.m */,
+				B9B83ED315FF23980071F088 /* BGGithubResourceSpec.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -564,10 +544,10 @@
 		B9B83EB715FE86ED0071F088 /* Github */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83E6215FE818F0071F088 /* BGUserSpec.m */,
-				B9B83E5D15FE818F0071F088 /* BGFeedEntryTypeSpec.m */,
-				B9B83E5E15FE818F0071F088 /* BGFeedParserSpec.m */,
-				B9B83E5F15FE818F0071F088 /* BGGithubFeedSpec.m */,
+				B9B83ED615FF23980071F088 /* BGUserSpec.m */,
+				B9B83ED015FF23980071F088 /* BGFeedEntryTypeSpec.m */,
+				B9B83ED115FF23980071F088 /* BGFeedParserSpec.m */,
+				B9B83ED215FF23980071F088 /* BGGithubFeedSpec.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -575,8 +555,8 @@
 		B9B83EB815FE870A0071F088 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83E5C15FE818F0071F088 /* BGEventManagerSpec.m */,
-				B9B83E5B15FE818F0071F088 /* BGAuthenticationManagerSpec.m */,
+				B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */,
+				B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -584,7 +564,7 @@
 		B9B83EB915FE871C0071F088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83E6115FE818F0071F088 /* BGGlobalMenuControllerSpec.m */,
+				B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -595,6 +575,34 @@
 				B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B9B83EE115FF23980071F088 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EE215FF23980071F088 /* Mocks */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		B9B83EE215FF23980071F088 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EE315FF23980071F088 /* resource.json */,
+				B9B83EE415FF23980071F088 /* user.json */,
+				B9B83EE515FF23980071F088 /* user.private.atom */,
+				B9B83EE615FF23980071F088 /* user.private.short.atom */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9B83EFD15FF23C10071F088 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83EDB15FF23980071F088 /* FakeNotificationReceiver.h */,
+				B9B83EDC15FF23980071F088 /* FakeNotificationReceiver.m */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -708,12 +716,12 @@
 				B9B83E4E15FE81290071F088 /* navigation-background@2x.png in Resources */,
 				B9B83E5015FE81290071F088 /* OpenSans-Bold.ttf in Resources */,
 				B9B83E5215FE81290071F088 /* OpenSans-Regular.ttf in Resources */,
-				B9B83E8915FE818F0071F088 /* BrowseGithubSpecs-Info.plist in Resources */,
 				B9B83E8B15FE818F0071F088 /* InfoPlist.strings in Resources */,
-				B9B83E9D15FE829B0071F088 /* resource.json in Resources */,
-				B9B83E9E15FE829B0071F088 /* user.json in Resources */,
-				B9B83E9F15FE829B0071F088 /* user.private.atom in Resources */,
-				B9B83EA015FE829B0071F088 /* user.private.short.atom in Resources */,
+				B9B83EF315FF23980071F088 /* BrowseGithubSpecs-Info.plist in Resources */,
+				B9B83EF815FF23980071F088 /* resource.json in Resources */,
+				B9B83EF915FF23980071F088 /* user.json in Resources */,
+				B9B83EFA15FF23980071F088 /* user.private.atom in Resources */,
+				B9B83EFB15FF23980071F088 /* user.private.short.atom in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,17 +827,18 @@
 				B9B83E5415FE81290071F088 /* UIColor+BrowseGithub.m in Sources */,
 				B9B83E5615FE81290071F088 /* UIFont+BrowseGithub.m in Sources */,
 				B9B83E5815FE81290071F088 /* UIGlossyButton+BrowseGithub.m in Sources */,
-				B9B83E7715FE818F0071F088 /* AsyncSupporter.m in Sources */,
-				B9B83E7915FE818F0071F088 /* BGAuthenticationManagerSpec.m in Sources */,
-				B9B83E8315FE818F0071F088 /* BGGithubResourceSpec.m in Sources */,
-				B9B83E8515FE818F0071F088 /* BGGlobalMenuControllerSpec.m in Sources */,
-				B9B83E8715FE818F0071F088 /* BGUserSpec.m in Sources */,
-				B9B83EA115FE82A90071F088 /* NSBundle+Specs.m in Sources */,
-				B9B83EA215FE82AE0071F088 /* NLTHTTPStubServer+Specs.m in Sources */,
-				B9B83EA315FE82B00071F088 /* FakeNotificationReceiver.m in Sources */,
-				B9B83EA415FE82BB0071F088 /* UIApplication+Spec.m in Sources */,
-				B9B83EC315FF056A0071F088 /* BGGlobalMenuContentsSpec.m in Sources */,
 				B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */,
+				B9B83EE915FF23980071F088 /* AsyncSupporter.m in Sources */,
+				B9B83EEA15FF23980071F088 /* BGAuthenticationManagerSpec.m in Sources */,
+				B9B83EEB15FF23980071F088 /* BGEventManagerSpec.m in Sources */,
+				B9B83EEF15FF23980071F088 /* BGGithubResourceSpec.m in Sources */,
+				B9B83EF015FF23980071F088 /* BGGlobalMenuContentsSpec.m in Sources */,
+				B9B83EF115FF23980071F088 /* BGGlobalMenuControllerSpec.m in Sources */,
+				B9B83EF215FF23980071F088 /* BGUserSpec.m in Sources */,
+				B9B83EF515FF23980071F088 /* FakeNotificationReceiver.m in Sources */,
+				B9B83EF615FF23980071F088 /* NLTHTTPStubServer+Specs.m in Sources */,
+				B9B83EF715FF23980071F088 /* NSBundle+Specs.m in Sources */,
+				B9B83EFC15FF23980071F088 /* UIApplication+Spec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
