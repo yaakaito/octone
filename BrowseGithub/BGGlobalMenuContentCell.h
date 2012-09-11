@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGBaseCell.h"
 
 #define kGlobalMenuContentCellReuseIdentifier (@"GlobalMenuContentCell")
 
-@interface BGGlobalMenuContentCell : UITableViewCell
+@interface BGGlobalMenuContentCell : BGBaseCell
 
 @end
