@@ -123,6 +123,10 @@
 		B9B83F0115FF9CC70071F088 /* BGEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EFF15FF9CC70071F088 /* BGEvent.m */; };
 		B9B83F0A15FF9DA40071F088 /* BGEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F0915FF9DA40071F088 /* BGEventSpec.m */; };
 		B9B83F0C15FFA5AB0071F088 /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83F0B15FFA5AB0071F088 /* event.json */; };
+		B9B83F0F15FFA92B0071F088 /* BGReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */; };
+		B9B83F1015FFA92B0071F088 /* BGReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */; };
+		B9B83F1215FFA95B0071F088 /* BGReceivedEventsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */; };
+		B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83F1315FFAC7E0071F088 /* received_events.json */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -256,6 +260,10 @@
 		B9B83EFF15FF9CC70071F088 /* BGEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEvent.m; sourceTree = "<group>"; };
 		B9B83F0915FF9DA40071F088 /* BGEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventSpec.m; sourceTree = "<group>"; };
 		B9B83F0B15FFA5AB0071F088 /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
+		B9B83F0D15FFA92B0071F088 /* BGReceivedEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGReceivedEvents.h; sourceTree = "<group>"; };
+		B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGReceivedEvents.m; sourceTree = "<group>"; };
+		B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGReceivedEventsSpec.m; sourceTree = "<group>"; };
+		B9B83F1315FFAC7E0071F088 /* received_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = received_events.json; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -493,7 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83F0615FF9D700071F088 /* Data */,
-				B9B83F0315FF9CE00071F088 /* Resources */,
+				B9B83F0315FF9CE00071F088 /* Resource */,
 				B9B83DCC15FE81290071F088 /* BGFeedEntry.h */,
 				B9B83DCD15FE81290071F088 /* BGFeedEntry.m */,
 				B9B83DD215FE81290071F088 /* BGFeedParser.h */,
@@ -540,7 +548,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83F0515FF9D640071F088 /* Data */,
-				B9B83F0415FF9CF50071F088 /* Resrouces */,
+				B9B83F0415FF9CF50071F088 /* Resrouce */,
 				B9B83ED015FF23980071F088 /* BGFeedEntryTypeSpec.m */,
 				B9B83ED115FF23980071F088 /* BGFeedParserSpec.m */,
 				B9B83ED215FF23980071F088 /* BGGithubFeedSpec.m */,
@@ -584,6 +592,7 @@
 		B9B83EE215FF23980071F088 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				B9B83F1315FFAC7E0071F088 /* received_events.json */,
 				B9B83F0B15FFA5AB0071F088 /* event.json */,
 				B9B83EE315FF23980071F088 /* resource.json */,
 				B9B83EE415FF23980071F088 /* user.json */,
@@ -602,21 +611,24 @@
 			name = Fakes;
 			sourceTree = "<group>";
 		};
-		B9B83F0315FF9CE00071F088 /* Resources */ = {
+		B9B83F0315FF9CE00071F088 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				B9B83DEE15FE81290071F088 /* BGUser.h */,
 				B9B83DEF15FE81290071F088 /* BGUser.m */,
+				B9B83F0D15FFA92B0071F088 /* BGReceivedEvents.h */,
+				B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */,
 			);
-			name = Resources;
+			name = Resource;
 			sourceTree = "<group>";
 		};
-		B9B83F0415FF9CF50071F088 /* Resrouces */ = {
+		B9B83F0415FF9CF50071F088 /* Resrouce */ = {
 			isa = PBXGroup;
 			children = (
 				B9B83ED615FF23980071F088 /* BGUserSpec.m */,
+				B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */,
 			);
-			name = Resrouces;
+			name = Resrouce;
 			sourceTree = "<group>";
 		};
 		B9B83F0515FF9D640071F088 /* Data */ = {
@@ -752,6 +764,7 @@
 				B9B83EFA15FF23980071F088 /* user.private.atom in Resources */,
 				B9B83EFB15FF23980071F088 /* user.private.short.atom in Resources */,
 				B9B83F0C15FFA5AB0071F088 /* event.json in Resources */,
+				B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +836,7 @@
 				B9B83E5515FE81290071F088 /* UIFont+BrowseGithub.m in Sources */,
 				B9B83E5715FE81290071F088 /* UIGlossyButton+BrowseGithub.m in Sources */,
 				B9B83F0015FF9CC70071F088 /* BGEvent.m in Sources */,
+				B9B83F0F15FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +886,8 @@
 				B9B83EFC15FF23980071F088 /* UIApplication+Spec.m in Sources */,
 				B9B83F0115FF9CC70071F088 /* BGEvent.m in Sources */,
 				B9B83F0A15FF9DA40071F088 /* BGEventSpec.m in Sources */,
+				B9B83F1015FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
+				B9B83F1215FFA95B0071F088 /* BGReceivedEventsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
