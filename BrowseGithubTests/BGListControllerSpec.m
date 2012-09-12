@@ -15,7 +15,7 @@ SPEC_BEGIN(BGListControllerSpec)
 describe(@"List Controller", ^{
     __block BGListController *controller;
 
-    context(@"が、が作られたとき", ^{
+    context(@"が、作られたとき", ^{
         beforeEach(^{
             controller = [[BGListController alloc] init];
             [controller loadView];
