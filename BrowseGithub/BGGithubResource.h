@@ -11,7 +11,7 @@
 #define kBGGithubResourceRequestFailureNotification  (@"BGGithubResourceRequestFailureNotification")
 
 @interface BGGithubResource : NSObject
-@property (nonatomic, strong) NSURL *resourceUrl;
+@property (nonatomic, strong, readonly) NSURL *resourceUrl;
 - (id)initWithPath:(NSString*)path;
 - (id)initWithAuthAndPath:(NSString*)path;
 - (void)loadDataWithComplete:(void (^)(void))complete

@@ -15,6 +15,9 @@
 #import "AsyncSupporter.h"
 #import "NSBundle+Specs.h"
 
+@interface BGGithubResource(Specs)
+@property (nonatomic, strong) NSURL *resourceUrl;
+@end
 
 SPEC_BEGIN(BGReceivedEventsSpec)
 

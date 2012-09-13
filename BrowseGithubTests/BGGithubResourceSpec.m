@@ -13,6 +13,11 @@
 #import "FakeNotificationReceiver.h"
 #import "AsyncSupporter.h"
 
+@interface BGGithubResource(Specs)
+@property (nonatomic, strong) NSURL *resourceUrl;
+@end
+
+
 SPEC_BEGIN(BGGithubResourceSpec)
 
 describe(@"Github Resource", ^{

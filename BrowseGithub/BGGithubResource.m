@@ -10,6 +10,10 @@
 #import "NSURL+GithubResource.h"
 #import <AFNetworking/AFNetworking.h>
 
+@interface BGGithubResource()
+@property (nonatomic, strong) NSURL *resourceUrl;
+@end
+
 @implementation BGGithubResource
 
 - (id)initWithPath:(NSString *)path auth:(BOOL)auth {
