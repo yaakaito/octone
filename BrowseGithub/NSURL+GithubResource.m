@@ -8,12 +8,13 @@
 
 #import "NSURL+GithubResource.h"
 #import "BGAuthenticationManager.h"
+#import "BrowseGithub.h"
 
 @implementation NSURL (GithubResource)
 
 + (id)githubApiURLWithPath:(NSString *)path auth:(BOOL)auth {
     
-    NSMutableString *urlString = [[NSMutableString alloc] initWithFormat:@"https://api.github.com%@", path];
+    NSMutableString *urlString = [[NSMutableString alloc] initWithFormat:@"%@%@", [BrowseGithub apiBaseUrlString], path];
 
     if (auth) {
         NSString *token = [[BGAuthenticationManager sharedManager] accessToken];

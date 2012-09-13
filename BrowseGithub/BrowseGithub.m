@@ -15,4 +15,8 @@
     return YES;
 }
 
++ (NSString *)apiBaseUrlString {
+    return @"https://api.github.com";
+}
+
 @end

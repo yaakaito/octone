@@ -11,5 +11,5 @@
 @interface BrowseGithub : NSObject
 
 + (BOOL)authenticated;
-
++ (NSString*)apiBaseUrlString;
 @end
