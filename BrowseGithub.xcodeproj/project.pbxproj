@@ -132,6 +132,8 @@
 		B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
 		B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
 		B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */; };
+		B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F301600D97F0071F088 /* BGEventManager.m */; };
+		B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F301600D97F0071F088 /* BGEventManager.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -274,6 +276,8 @@
 		B9B83F1D15FFB6A90071F088 /* BGListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGListController.h; sourceTree = "<group>"; };
 		B9B83F1E15FFB6AA0071F088 /* BGListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListController.m; sourceTree = "<group>"; };
 		B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListControllerSpec.m; sourceTree = "<group>"; };
+		B9B83F2F1600D97F0071F088 /* BGEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventManager.h; sourceTree = "<group>"; };
+		B9B83F301600D97F0071F088 /* BGEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManager.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -490,6 +494,8 @@
 				B9B83DC515FE81290071F088 /* BGAuthenticationManager.m */,
 				B9B83DD015FE81290071F088 /* BGFeedEntryManager.h */,
 				B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */,
+				B9B83F2F1600D97F0071F088 /* BGEventManager.h */,
+				B9B83F301600D97F0071F088 /* BGEventManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -568,8 +574,8 @@
 		B9B83EB815FE870A0071F088 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */,
 				B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */,
+				B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -862,6 +868,7 @@
 				B9B83F0F15FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
 				B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */,
 				B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */,
+				B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +923,7 @@
 				B9B83F1C15FFB5CE0071F088 /* BGTableView.m in Sources */,
 				B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */,
 				B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */,
+				B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

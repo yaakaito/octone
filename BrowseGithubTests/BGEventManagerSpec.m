@@ -6,34 +6,55 @@
 //
 
 #import "Kiwi.h"
-@class BGEventManager;
+#import "BGEventManager.h"
+
+@interface BGEventManager()
+@property (nonatomic, strong) NSArray *currentEvents;
+@end
 
 SPEC_BEGIN(BGEventManagerSpec)
-/*
+
 describe(@"Event Manager", ^{
     __block BGEventManager *manager;
-    context(@"がユーザーのプライベートライムラインを取得したとき", ^{
-        beforeAll(^{
-            manager = [[BGEventManager alloc] init];
-            [manager reloadUserPrivateTimeline];
+    
+    context(@"がログインユーザーが受け取ったイベントを取得するとき", ^{
+       
+        it(@"は、取得に成功したとき、コールバックをsuccess=YESで呼び出す", ^{
+            __block BOOL called;
+            [manager reloadLoginUserReceivedEvents:^(BOOL success){
+                [[theValue(success) should] beYes];
+                called = YES;
+            }];
+            [[theValue(called) should] beYes];
         });
         
-        it(@"は、30件のイベントリストを持つ", ^{
-            [[[manager should] have:30] userPrivateTimelines];
+        it(@"は、取得に失敗したとき、コールバックをsuccess=NOで呼び出す", ^{
+            __block BOOL called;
+            [manager reloadLoginUserReceivedEvents:^(BOOL success){
+                [[theValue(success) should] beNo];
+                called = YES;
+            }];
+            [[theValue(called) should] beYes];
         });
     });
-    
-    context(@"がタイムラインの表示するとき", ^{
-    
-        pending(@"に、フィルターを行ったとき", ^{
-            
-        });
 
-        pending(@"に、フィルターをしないとき", ^{
+    context(@"に、表示用のデータを要求したとき", ^{
+        __block NSArray *events;
+        beforeEach(^{
+            events = @[@"hoge", @"hoge", @"hoge"];
         });
-    
+        
+        it(@"は、イベントの件数を返す", ^{
+            [[theValue([manager numberOfEvents]) should] equal:theValue(3)];
+        });
+        
+        it(@"は、対象のインデックスのイベントオブジェクトを返す", ^{
+            for (NSUInteger i = 0; i < 3; i++) {
+                [manager eventFor]
+            }
+        });
     });
 
 });
-*/
+
 SPEC_END
