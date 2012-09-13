@@ -6,6 +6,7 @@
 //
 
 #import "Kiwi.h"
+#import "BGEvent.h"
 #import "BGEventManager.h"
 
 @interface BGEventManager()
@@ -50,7 +51,9 @@ describe(@"Event Manager", ^{
         
         it(@"は、対象のインデックスのイベントオブジェクトを返す", ^{
             for (NSUInteger i = 0; i < 3; i++) {
-                [manager eventFor]
+                BGEvent *actual = [manager eventAtIndex:i];
+                BGEvent *expected = [events objectAtIndex:i];
+                [[actual.typeString should] equal:expected.typeString];
             }
         });
     });
