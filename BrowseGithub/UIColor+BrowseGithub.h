@@ -37,4 +37,7 @@
 + (UIColor *)githubGlobalMenuHightlightColor;
 + (UIColor *)githubGlobalMenuSeparatorColor;
 
+#pragma mark - Refresh
++ (UIColor *)githubRefhreshControlColor;
+
 @end

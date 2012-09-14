@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99BD9D21602679F000AD406 /* Default-568h@2x.png */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -105,7 +106,6 @@
 		B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83EC815FF21140071F088 /* BGGlobalMenuUserViewSpec.m */; };
 		B9B83EE915FF23980071F088 /* AsyncSupporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECD15FF23980071F088 /* AsyncSupporter.m */; };
 		B9B83EEA15FF23980071F088 /* BGAuthenticationManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */; };
-		B9B83EEB15FF23980071F088 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
 		B9B83EEF15FF23980071F088 /* BGGithubResourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED315FF23980071F088 /* BGGithubResourceSpec.m */; };
 		B9B83EF015FF23980071F088 /* BGGlobalMenuContentsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED415FF23980071F088 /* BGGlobalMenuContentsSpec.m */; };
 		B9B83EF115FF23980071F088 /* BGGlobalMenuControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */; };
@@ -149,6 +149,7 @@
 
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99BD9D21602679F000AD406 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -394,6 +395,7 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B99BD9D21602679F000AD406 /* Default-568h@2x.png */,
 				B9B83EBE15FF03F60071F088 /* iPhone.png */,
 				B9B83EBF15FF03F60071F088 /* iPhone@2x.png */,
 				B9B83EBA15FF03EB0071F088 /* Default.png */,
@@ -767,6 +769,7 @@
 				B9B83EBD15FF03EB0071F088 /* Default@2x.png in Resources */,
 				B9B83EC015FF03F60071F088 /* iPhone.png in Resources */,
 				B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */,
+				B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +910,6 @@
 				B9B83EC915FF21140071F088 /* BGGlobalMenuUserViewSpec.m in Sources */,
 				B9B83EE915FF23980071F088 /* AsyncSupporter.m in Sources */,
 				B9B83EEA15FF23980071F088 /* BGAuthenticationManagerSpec.m in Sources */,
-				B9B83EEB15FF23980071F088 /* BGEventManagerSpec.m in Sources */,
 				B9B83EEF15FF23980071F088 /* BGGithubResourceSpec.m in Sources */,
 				B9B83EF015FF23980071F088 /* BGGlobalMenuContentsSpec.m in Sources */,
 				B9B83EF115FF23980071F088 /* BGGlobalMenuControllerSpec.m in Sources */,
@@ -979,7 +981,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1000,7 +1002,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1015,7 +1017,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1029,7 +1031,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
 				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

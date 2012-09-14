@@ -90,4 +90,8 @@
     
     return [UIColor colorWithWhite:0.14 alpha:1.0];
 }
+
++ (UIColor *)githubRefhreshControlColor {
+    return [UIColor colorWithWhite:0.35 alpha:1.0];
+}
 @end

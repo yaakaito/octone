@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BGListController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface BGListController : UITableViewController
 
 - (void)reloadData:(void(^)(void))complete;
 @end

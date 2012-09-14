@@ -8,7 +8,7 @@
 
 #import "BGListController.h"
 #import "BGTableView.h"
-#import <SVPullToRefresh/SVPullToRefresh.h>
+#import "UIColor+BrowseGithub.h"
 
 @interface BGListController ()
 
@@ -38,16 +38,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
-    __weak BGTableView *tableView = (BGTableView*)self.view;
-    [tableView addPullToRefreshWithActionHandler:^{
-        [self reloadData:^{
-            [tableView.pullToRefreshView performSelectorOnMainThread:@selector(stopAnimating)
-                                                          withObject:nil
-                                                       waitUntilDone:NO];
-        }];
-    }];
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    refreshControl.tintColor = [UIColor githubRefhreshControlColor];
+    [refreshControl addTarget:self
+                       action:@selector(refreshControlValueChanged:)
+             forControlEvents:UIControlEventValueChanged];
     
-    [tableView.pullToRefreshView triggerRefresh];
+    self.refreshControl = refreshControl;
 }
 
 - (void)viewDidUnload
@@ -59,6 +56,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)refreshControlValueChanged:(UIRefreshControl*)sender {
+
+    if(sender.refreshing) {
+        [self reloadData:^{
+            [sender endRefreshing];
+        }];
+    }
 }
 
 - (void)reloadData:(void (^)(void))complete {
