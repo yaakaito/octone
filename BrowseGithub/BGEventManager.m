@@ -7,8 +7,9 @@
 //
 
 #import "BGEventManager.h"
-#import "BGGithubResource.h"
+#import "BGReceivedEvents.h"
 #import "BGEvent.h"
+#import "BGAuthenticationManager.h"
 
 @interface BGEventManager()
 @property (nonatomic, strong) NSArray *currentEvents;
@@ -18,7 +19,8 @@
 @implementation BGEventManager
 
 - (void)prepareLoginUserReceivedEvents {
-    ;
+    
+    self.currentResource = [[BGReceivedEvents alloc] initWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
 }
 
 - (void)reloadCurrentResource:(void (^)(BOOL))callback {
@@ -29,6 +31,7 @@
     }
     
     [self.currentResource loadDataWithComplete:^{
+        self.currentEvents = ((BGReceivedEvents*)self.currentResource).events;
         callback(YES);
     } failure:^{
         callback(NO);
@@ -36,10 +39,10 @@
 }
 
 - (NSInteger)numberOfEvents {
-    return 0;
+    return [self.currentEvents count];
 }
 
 - (id)eventAtIndex:(NSInteger)index {
-    return nil;
+    return [self.currentEvents objectAtIndex:index];
 }
 @end
