@@ -23,7 +23,7 @@
                      failure:(void (^)(void))failure {
     
     if (self.success) {
-        [self setValuesFromJSON:[NSBundle jsonObjectForResourceName:@"recevie_events"]];
+        [self setValuesFromJSON:[NSBundle jsonObjectForResourceName:@"received_events"]];
         complete();
     }
     else {
