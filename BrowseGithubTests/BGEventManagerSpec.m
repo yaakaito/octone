@@ -19,7 +19,19 @@
 SPEC_BEGIN(BGEventManagerSpec)
 
 describe(@"Event Manager", ^{
-    __block BGEventManager *manager;
+
+    BGEventManager *manager = [[BGEventManager alloc] init];
+    
+    context(@"がprepareせずにreloadしたとき", ^{
+        it(@"は、コールバックをsuccess=NOで呼び出す", ^{
+            __block BOOL called;
+            [manager reloadCurrentResource:^(BOOL success){
+                [[theValue(success) should] beNo];
+                called = YES;
+            }];
+            [[theValue(called) should] beYes];
+        });
+    });
     
     context(@"がなんらかのイベントを取得するとき", ^{
         __block MockReceivedEvents *mock;
