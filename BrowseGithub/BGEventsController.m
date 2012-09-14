@@ -7,10 +7,12 @@
 //
 
 #import "BGEventsController.h"
+#import "BGEvent.h"
+#import "BGEventManager.h"
 #import "BGBaseCell.h"
 
 @interface BGEventsController ()
-
+@property (nonatomic, strong) BGEventManager *manager;
 @end
 
 @implementation BGEventsController
@@ -20,6 +22,7 @@
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         // Custom initialization
+        self.manager = [[BGEventManager alloc] init];
     }
     return self;
 }
@@ -41,6 +44,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)reloadData:(void (^)(void))complete {
+  
+    [self.manager prepareLoginUserReceivedEvents];
+    [self.manager reloadCurrentResource:^(BOOL success) {
+        complete();
+    }];
+}
+
 
 #pragma mark - UITableView
 
@@ -49,12 +60,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 30;
+    return [self.manager numberOfEvents];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BGBaseCell *cell = [[BGBaseCell alloc] init];
-    cell.textLabel.text = @"hごえー";
+    BGEvent *event = [self.manager eventAtIndex:indexPath.row];
+    cell.textLabel.text = [event message];
     return cell;
 }
 
