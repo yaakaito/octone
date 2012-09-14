@@ -8,9 +8,12 @@
 #import "Kiwi.h"
 #import "BGEvent.h"
 #import "BGEventManager.h"
+#import "BGGithubResource.h"
+#import "MockReceivedEvents.h"
 
 @interface BGEventManager()
 @property (nonatomic, strong) NSArray *currentEvents;
+@property (nonatomic, strong) BGGithubResource *currentResource;
 @end
 
 SPEC_BEGIN(BGEventManagerSpec)
@@ -18,11 +21,19 @@ SPEC_BEGIN(BGEventManagerSpec)
 describe(@"Event Manager", ^{
     __block BGEventManager *manager;
     
-    context(@"がログインユーザーが受け取ったイベントを取得するとき", ^{
+    context(@"がなんらかのイベントを取得するとき", ^{
+        __block MockReceivedEvents *mock;
+        beforeAll(^{
+            mock = [[MockReceivedEvents alloc] initWithSuccess:YES];
+            
+            [manager prepareLoginUserReceivedEvents];
+            manager.currentResource = mock;
+        });
        
         it(@"は、取得に成功したとき、コールバックをsuccess=YESで呼び出す", ^{
+            mock.success = YES;
             __block BOOL called;
-            [manager reloadLoginUserReceivedEvents:^(BOOL success){
+            [manager reloadCurrentResource:^(BOOL success){
                 [[theValue(success) should] beYes];
                 called = YES;
             }];
@@ -30,12 +41,21 @@ describe(@"Event Manager", ^{
         });
         
         it(@"は、取得に失敗したとき、コールバックをsuccess=NOで呼び出す", ^{
+            mock.success = NO;
             __block BOOL called;
-            [manager reloadLoginUserReceivedEvents:^(BOOL success){
+            [manager reloadCurrentResource:^(BOOL success){
                 [[theValue(success) should] beNo];
                 called = YES;
             }];
             [[theValue(called) should] beYes];
+        });
+    });
+    
+    context(@"がログインユーザーが受け取ったイベントを取得するとき", ^{
+       
+        xit(@"は、ログインユーザー用のリソースを利用する", ^{
+            [manager prepareLoginUserReceivedEvents];
+            
         });
     });
 
@@ -45,11 +65,11 @@ describe(@"Event Manager", ^{
             events = @[@"hoge", @"hoge", @"hoge"];
         });
         
-        it(@"は、イベントの件数を返す", ^{
+        xit(@"は、イベントの件数を返す", ^{
             [[theValue([manager numberOfEvents]) should] equal:theValue(3)];
         });
         
-        it(@"は、対象のインデックスのイベントオブジェクトを返す", ^{
+        xit(@"は、対象のインデックスのイベントオブジェクトを返す", ^{
             for (NSUInteger i = 0; i < 3; i++) {
                 BGEvent *actual = [manager eventAtIndex:i];
                 BGEvent *expected = [events objectAtIndex:i];

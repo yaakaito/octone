@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99BD9D21602679F000AD406 /* Default-568h@2x.png */; };
+		B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
+		B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -150,6 +152,8 @@
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99BD9D21602679F000AD406 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockReceivedEvents.h; sourceTree = "<group>"; };
+		B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockReceivedEvents.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -419,7 +423,7 @@
 		B9B83EAD15FE85680071F088 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83EFD15FF23C10071F088 /* Fakes */,
+				B9B83EFD15FF23C10071F088 /* Fakes, Stubs, Mocks */,
 				B9B83ECC15FF23970071F088 /* AsyncSupporter.h */,
 				B9B83ECD15FF23980071F088 /* AsyncSupporter.m */,
 				B9B83EDD15FF23980071F088 /* NLTHTTPStubServer+Specs.h */,
@@ -620,13 +624,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		B9B83EFD15FF23C10071F088 /* Fakes */ = {
+		B9B83EFD15FF23C10071F088 /* Fakes, Stubs, Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				B9B83EDB15FF23980071F088 /* FakeNotificationReceiver.h */,
 				B9B83EDC15FF23980071F088 /* FakeNotificationReceiver.m */,
+				B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */,
+				B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */,
 			);
-			name = Fakes;
+			name = "Fakes, Stubs, Mocks";
 			sourceTree = "<group>";
 		};
 		B9B83F0315FF9CE00071F088 /* Resource */ = {
@@ -926,6 +932,8 @@
 				B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */,
 				B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */,
 				B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */,
+				B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */,
+				B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
