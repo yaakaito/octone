@@ -45,6 +45,9 @@
              forControlEvents:UIControlEventValueChanged];
     
     self.refreshControl = refreshControl;
+    
+    [refreshControl beginRefreshing];
+    [self refreshControlValueChanged:refreshControl];
 }
 
 - (void)viewDidUnload
