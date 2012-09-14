@@ -67,6 +67,7 @@
     if(sender.refreshing) {
         [self reloadData:^{
             [sender endRefreshing];
+            [self.tableView reloadData];
         }];
     }
 }
