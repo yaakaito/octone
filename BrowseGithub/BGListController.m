@@ -27,10 +27,11 @@
 
 - (void)loadView {
 
+    [super loadView];
     BGTableView *tableView = [[BGTableView alloc] init];
     tableView.dataSource = self;
     tableView.delegate = self;
-    self.view = tableView;
+    self.tableView = tableView;
 }
 
 - (void)viewDidLoad
