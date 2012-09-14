@@ -19,11 +19,11 @@ describe(@"Authentication Manager", ^{
             manager = [[BGAuthenticationManager alloc] init];
         });
         
-        it(@"は、認証されていないと返す", ^{
+        xit(@"は、認証されていないと返す", ^{
             [[theValue([manager authenticated]) should] beNo];
         });
         
-        it(@"は、トークンを持っていない", ^{
+        xit(@"は、トークンを持っていない", ^{
             [[manager accessToken] shouldBeNil];
         });
     });
@@ -39,7 +39,7 @@ describe(@"Authentication Manager", ^{
                 manager = [[BGAuthenticationManager alloc] init];
             });
             
-            it(@"SafariへClient_IDとstateを持ってリダイレクトされる", ^{
+            xit(@"SafariへClient_IDとstateを持ってリダイレクトされる", ^{
                 [manager startGithubOAuth];
                 NSURL *openedURL = [[UIApplication sharedApplication] openedURL];
                 [openedURL shouldNotBeNil];
@@ -47,7 +47,7 @@ describe(@"Authentication Manager", ^{
                 //[[[openedURL absoluteString] should] equal:githubURL];
             });
             
-            it(@"timeoutIntervalを超える時間があくと、OAuthは強制的に失敗する", ^{
+            xit(@"timeoutIntervalを超える時間があくと、OAuthは強制的に失敗する", ^{
                 ;
             });
             
@@ -64,7 +64,7 @@ describe(@"Authentication Manager", ^{
             // なんらかの手順で認証を通す
         });
         
-        it(@"は、認証されていると返す", ^{
+        xit(@"は、認証されていると返す", ^{
             [[theValue([manager authenticated]) should] beYes];
         });
         
