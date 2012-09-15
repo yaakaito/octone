@@ -347,8 +347,8 @@
 		B9B83D7315FE7DB50071F088 /* BrowseGithub */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83EB215FE85F50071F088 /* Models */,
 				B9B83EAF15FE85B10071F088 /* Commons */,
+				B9B83EB215FE85F50071F088 /* Models */,
 				B9B83EB015FE85B80071F088 /* Views */,
 				B9B83F2E15FFC2F10071F088 /* Cells */,
 				B9B83EAE15FE859E0071F088 /* Controllers */,
