@@ -10,6 +10,10 @@
 #import "BGTableView.h"
 #import <SVPullToRefresh/SVPullToRefresh.h>
 
+@interface BGListController()
+- (void)refreshControlValueChanged:(UIRefreshControl*)sender;
+@end
+
 SPEC_BEGIN(BGListControllerSpec)
 
 describe(@"List Controller", ^{
@@ -25,9 +29,14 @@ describe(@"List Controller", ^{
             [[controller.view should] beKindOfClass:[BGTableView class]];
         });
         
-        xit(@"は、viewDidLoad後にreloadDataを呼び出す", ^{
+        it(@"は、viewDidLoad後にreloadDataを呼び出す", ^{
             [[controller should] receive:@selector(reloadData:) withCount:1];
             [controller viewDidLoad];
+        });
+    
+        it(@"は、refreshControlがセットされている", ^{
+            [controller viewDidLoad];
+            [controller.refreshControl shouldNotBeNil];
         });
     });
     
@@ -41,9 +50,11 @@ describe(@"List Controller", ^{
             [controller viewDidAppear:NO];
         });
         
-        xit(@"は、reloadDataを呼び出す", ^{
+        it(@"は、reloadDataを呼び出す", ^{
             [[controller should] receive:@selector(reloadData:) withCount:1];
-            [((BGTableView*)controller.view).pullToRefreshView triggerRefresh];
+            UIRefreshControl *refreshControl = controller.refreshControl;
+            [refreshControl beginRefreshing];
+            [controller refreshControlValueChanged:refreshControl];
         });
     });
 });
