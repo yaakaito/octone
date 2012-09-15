@@ -10,6 +10,8 @@
 		B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99BD9D21602679F000AD406 /* Default-568h@2x.png */; };
 		B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
 		B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */; };
+		B99BD9E016042CB9000AD406 /* BGEventsControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */; };
+		B99BD9E216042CDA000AD406 /* BGRootControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -154,6 +156,8 @@
 		B99BD9D21602679F000AD406 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockReceivedEvents.h; sourceTree = "<group>"; };
 		B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockReceivedEvents.m; sourceTree = "<group>"; };
+		B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsControllerSpec.m; sourceTree = "<group>"; };
+		B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRootControllerSpec.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -589,8 +593,10 @@
 		B9B83EB915FE871C0071F088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */,
 				B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */,
 				B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */,
+				B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -934,6 +940,8 @@
 				B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */,
 				B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */,
 				B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */,
+				B99BD9E016042CB9000AD406 /* BGEventsControllerSpec.m in Sources */,
+				B99BD9E216042CDA000AD406 /* BGRootControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
