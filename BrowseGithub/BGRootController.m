@@ -67,10 +67,7 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     // Do any additional setup after loading the view.
-//    [self addChildViewController:self.authenticationController];
     
-
-
     if(![BrowseGithub authenticated]) {
         [self addChildViewController:self.authenticationController];
         [self.view addSubview:self.authenticationController.view];
