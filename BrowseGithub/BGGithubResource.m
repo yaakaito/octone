@@ -35,7 +35,8 @@
 - (void)loadDataWithComplete:(void (^)(void))complete
                      failure:(void (^)(void))failure {
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:self.resourceUrl];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.resourceUrl];
+    [request setValue:@"BrowseGithub (github => https://github.com/yaakaito , email => yaakaito@gmail.com , web => http://yaakaito.org)" forHTTPHeaderField:@"User-Agent"];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                                                             [self setValuesFromJSON:JSON];
