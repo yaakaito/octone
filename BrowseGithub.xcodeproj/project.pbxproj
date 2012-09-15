@@ -16,6 +16,8 @@
 		B99BD9E61604FC80000AD406 /* BGRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E41604FC7F000AD406 /* BGRepository.m */; };
 		B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
 		B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
+		B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */; };
+		B99BD9EE1604FDC8000AD406 /* BGRepositoriesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -162,6 +164,8 @@
 		B99BD9E41604FC7F000AD406 /* BGRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepository.m; sourceTree = "<group>"; };
 		B99BD9E71604FC9C000AD406 /* BGRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositories.h; sourceTree = "<group>"; };
 		B99BD9E81604FC9D000AD406 /* BGRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositories.m; sourceTree = "<group>"; };
+		B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositorySpec.m; sourceTree = "<group>"; };
+		B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoriesSpec.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -657,6 +661,8 @@
 			children = (
 				B9B83ED615FF23980071F088 /* BGUserSpec.m */,
 				B9B83F1115FFA95B0071F088 /* BGReceivedEventsSpec.m */,
+				B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */,
+				B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */,
 			);
 			name = Resrouce;
 			sourceTree = "<group>";
@@ -942,6 +948,8 @@
 				B99BD9E216042CDA000AD406 /* BGRootControllerSpec.m in Sources */,
 				B99BD9E61604FC80000AD406 /* BGRepository.m in Sources */,
 				B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */,
+				B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */,
+				B99BD9EE1604FDC8000AD406 /* BGRepositoriesSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
