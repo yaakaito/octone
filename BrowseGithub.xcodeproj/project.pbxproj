@@ -12,6 +12,10 @@
 		B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */; };
 		B99BD9E016042CB9000AD406 /* BGEventsControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */; };
 		B99BD9E216042CDA000AD406 /* BGRootControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */; };
+		B99BD9E51604FC80000AD406 /* BGRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E41604FC7F000AD406 /* BGRepository.m */; };
+		B99BD9E61604FC80000AD406 /* BGRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E41604FC7F000AD406 /* BGRepository.m */; };
+		B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
+		B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -32,14 +36,10 @@
 		B9B83E1015FE81290071F088 /* BGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DC915FE81290071F088 /* BGBaseCell.m */; };
 		B9B83E1115FE81290071F088 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCB15FE81290071F088 /* BGEventsController.m */; };
 		B9B83E1215FE81290071F088 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCB15FE81290071F088 /* BGEventsController.m */; };
-		B9B83E1315FE81290071F088 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCD15FE81290071F088 /* BGFeedEntry.m */; };
-		B9B83E1415FE81290071F088 /* BGFeedEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCD15FE81290071F088 /* BGFeedEntry.m */; };
 		B9B83E1515FE81290071F088 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */; };
 		B9B83E1615FE81290071F088 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */; };
 		B9B83E1715FE81290071F088 /* BGFeedEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */; };
 		B9B83E1815FE81290071F088 /* BGFeedEntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */; };
-		B9B83E1915FE81290071F088 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD315FE81290071F088 /* BGFeedParser.m */; };
-		B9B83E1A15FE81290071F088 /* BGFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD315FE81290071F088 /* BGFeedParser.m */; };
 		B9B83E1B15FE81290071F088 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD515FE81290071F088 /* BGGithubResource.m */; };
 		B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD515FE81290071F088 /* BGGithubResource.m */; };
 		B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */; };
@@ -158,6 +158,10 @@
 		B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockReceivedEvents.m; sourceTree = "<group>"; };
 		B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsControllerSpec.m; sourceTree = "<group>"; };
 		B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRootControllerSpec.m; sourceTree = "<group>"; };
+		B99BD9E31604FC7E000AD406 /* BGRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepository.h; sourceTree = "<group>"; };
+		B99BD9E41604FC7F000AD406 /* BGRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepository.m; sourceTree = "<group>"; };
+		B99BD9E71604FC9C000AD406 /* BGRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositories.h; sourceTree = "<group>"; };
+		B99BD9E81604FC9D000AD406 /* BGRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositories.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,14 +186,10 @@
 		B9B83DC915FE81290071F088 /* BGBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBaseCell.m; sourceTree = "<group>"; };
 		B9B83DCA15FE81290071F088 /* BGEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventsController.h; sourceTree = "<group>"; };
 		B9B83DCB15FE81290071F088 /* BGEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsController.m; sourceTree = "<group>"; };
-		B9B83DCC15FE81290071F088 /* BGFeedEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntry.h; sourceTree = "<group>"; };
-		B9B83DCD15FE81290071F088 /* BGFeedEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntry.m; sourceTree = "<group>"; };
 		B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntryCell.h; sourceTree = "<group>"; };
 		B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryCell.m; sourceTree = "<group>"; };
 		B9B83DD015FE81290071F088 /* BGFeedEntryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntryManager.h; sourceTree = "<group>"; };
 		B9B83DD115FE81290071F088 /* BGFeedEntryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryManager.m; sourceTree = "<group>"; };
-		B9B83DD215FE81290071F088 /* BGFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedParser.h; sourceTree = "<group>"; };
-		B9B83DD315FE81290071F088 /* BGFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParser.m; sourceTree = "<group>"; };
 		B9B83DD415FE81290071F088 /* BGGithubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGithubResource.h; sourceTree = "<group>"; };
 		B9B83DD515FE81290071F088 /* BGGithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResource.m; sourceTree = "<group>"; };
 		B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContentCell.h; sourceTree = "<group>"; };
@@ -527,10 +527,6 @@
 			children = (
 				B9B83F0615FF9D700071F088 /* Data */,
 				B9B83F0315FF9CE00071F088 /* Resource */,
-				B9B83DCC15FE81290071F088 /* BGFeedEntry.h */,
-				B9B83DCD15FE81290071F088 /* BGFeedEntry.m */,
-				B9B83DD215FE81290071F088 /* BGFeedParser.h */,
-				B9B83DD315FE81290071F088 /* BGFeedParser.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -648,6 +644,10 @@
 				B9B83DEF15FE81290071F088 /* BGUser.m */,
 				B9B83F0D15FFA92B0071F088 /* BGReceivedEvents.h */,
 				B9B83F0E15FFA92B0071F088 /* BGReceivedEvents.m */,
+				B99BD9E31604FC7E000AD406 /* BGRepository.h */,
+				B99BD9E41604FC7F000AD406 /* BGRepository.m */,
+				B99BD9E71604FC9C000AD406 /* BGRepositories.h */,
+				B99BD9E81604FC9D000AD406 /* BGRepositories.m */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -856,10 +856,8 @@
 				B9B83E0D15FE81290071F088 /* BGAuthenticationView.m in Sources */,
 				B9B83E0F15FE81290071F088 /* BGBaseCell.m in Sources */,
 				B9B83E1115FE81290071F088 /* BGEventsController.m in Sources */,
-				B9B83E1315FE81290071F088 /* BGFeedEntry.m in Sources */,
 				B9B83E1515FE81290071F088 /* BGFeedEntryCell.m in Sources */,
 				B9B83E1715FE81290071F088 /* BGFeedEntryManager.m in Sources */,
-				B9B83E1915FE81290071F088 /* BGFeedParser.m in Sources */,
 				B9B83E1B15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
 				B9B83E1F15FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
@@ -884,6 +882,8 @@
 				B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */,
 				B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */,
 				B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */,
+				B99BD9E51604FC80000AD406 /* BGRepository.m in Sources */,
+				B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,10 +896,8 @@
 				B9B83E0E15FE81290071F088 /* BGAuthenticationView.m in Sources */,
 				B9B83E1015FE81290071F088 /* BGBaseCell.m in Sources */,
 				B9B83E1215FE81290071F088 /* BGEventsController.m in Sources */,
-				B9B83E1415FE81290071F088 /* BGFeedEntry.m in Sources */,
 				B9B83E1615FE81290071F088 /* BGFeedEntryCell.m in Sources */,
 				B9B83E1815FE81290071F088 /* BGFeedEntryManager.m in Sources */,
-				B9B83E1A15FE81290071F088 /* BGFeedParser.m in Sources */,
 				B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1E15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
 				B9B83E2015FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
@@ -942,6 +940,8 @@
 				B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */,
 				B99BD9E016042CB9000AD406 /* BGEventsControllerSpec.m in Sources */,
 				B99BD9E216042CDA000AD406 /* BGRootControllerSpec.m in Sources */,
+				B99BD9E61604FC80000AD406 /* BGRepository.m in Sources */,
+				B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
