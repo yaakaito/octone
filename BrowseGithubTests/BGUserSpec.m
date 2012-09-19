@@ -8,9 +8,6 @@
 #import "Kiwi.h"
 #import "BGUser.h"
 #import "BGAuthenticationManager.h"
-#import <NLTHTTPStubServer/NLTHTTPStubServer.h>
-#import "NLTHTTPStubServer+Specs.h"
-#import "AsyncSupporter.h"
 #import "NSBundle+Specs.h"
 
 @interface BGGithubResource(Specs)
@@ -40,26 +37,12 @@ describe(@"Github User", ^{
         });
     });
     
-    context(@"がAPIから受け取ったデータをパースしたとき", ^{
-        __block NLTHTTPStubServer *server;
-        __block AsyncSupporter *asyncSupporter;
+    context(@"がuser.jsonをパースしたとき", ^{
         
         beforeAll(^{
-            server = [NLTHTTPStubServer sharedSpecServer];
-            
-            asyncSupporter = [[AsyncSupporter alloc] init];
-            [asyncSupporter prepare];
-            NSData *json = [NSBundle jsonForResourceName:@"user"];
-            [[[server stub] forPath:@"/user"] andJSONResponse:json];
-            
-            user = [[BGUser alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/user"]];
-            [user loadDataWithComplete:^{
-                [asyncSupporter notify:kAsyncSupporterWaitStatusSuccess];
-            } failure:^{
-                [asyncSupporter notify:kAsyncSupporterWaitStatusFailure];
-            }];
-            
-            [asyncSupporter waitForTimeout:3];
+            id json = [NSBundle jsonObjectForResourceName:@"user"];
+            user = [[BGUser alloc] init];
+            [user setValuesFromJSON:json];
         });
         
         /*
@@ -114,11 +97,6 @@ describe(@"Github User", ^{
             [[[user.gravatarUrl absoluteString] should] equal:@"https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"];
         });
         
-                
-        afterAll(^{
-            [[theValue([server isStubEmpty]) should] beYes];
-            [server clear];
-        });
     });
 
 });

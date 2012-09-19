@@ -29,7 +29,7 @@
     }
     
     NSArray *jsonArray = json;
-    NSMutableArray *events = [NSMutableArray arrayWithCapacity:30];
+    NSMutableArray *events = [NSMutableArray array];
     for (id eventJson in jsonArray) {
         BGEvent *event = [[BGEvent alloc] initWithJSON:eventJson];
         [events addObject:event];

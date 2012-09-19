@@ -10,9 +10,6 @@
 #import "BGUser.h"
 #import "BGEvent.h"
 #import "BGAuthenticationManager.h"
-#import <NLTHTTPStubServer/NLTHTTPStubServer.h>
-#import "NLTHTTPStubServer+Specs.h"
-#import "AsyncSupporter.h"
 #import "NSBundle+Specs.h"
 
 
@@ -40,26 +37,12 @@ describe(@"Received Events", ^{
         
     });
     
-    context(@"がAPIから受け取ったデータをパースしたとき", ^{
-        __block NLTHTTPStubServer *server;
-        __block AsyncSupporter *asyncSupporter;
+    context(@"がreceived_events.jsonパースしたとき", ^{
         
         beforeAll(^{
-            server = [NLTHTTPStubServer sharedSpecServer];
-            
-            asyncSupporter = [[AsyncSupporter alloc] init];
-            [asyncSupporter prepare];
-            NSData *json = [NSBundle jsonForResourceName:@"received_events"];
-            [[[server stub] forPath:@"/received_events"] andJSONResponse:json];
-            
-            receivedEvents = [[BGReceivedEvents alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/received_events"]];
-            [receivedEvents loadDataWithComplete:^{
-                [asyncSupporter notify:kAsyncSupporterWaitStatusSuccess];
-            } failure:^{
-                [asyncSupporter notify:kAsyncSupporterWaitStatusFailure];
-            }];
-            
-            [asyncSupporter waitForTimeout:3];
+            receivedEvents = [[BGReceivedEvents alloc] init];
+            id json = [NSBundle jsonObjectForResourceName:@"received_events"];
+            [receivedEvents setValuesFromJSON:json];
         });
         
         it(@"は、30件のイベントを持つ", ^{
@@ -68,11 +51,6 @@ describe(@"Received Events", ^{
                 [event shouldNotBeNil];
                 [[event should] beKindOfClass:[BGEvent class]];
             }
-        });
-        
-        afterAll(^{
-            [[theValue([server isStubEmpty]) should] beYes];
-            [server clear];
         });
     });
 
