@@ -38,7 +38,7 @@
     NSArray *jsonArray = json;
     NSMutableArray *repositories = [NSMutableArray array];
     for (id repositoryJSON in jsonArray) {
-        BGRepository *repository = [[BGRepository alloc] initWithJSON:repositoryJSON];
+        BGRepository *repository = [BGRepository repositoryWithJSON:repositoryJSON];
         [repositories addObject:repository];
     }
     self.repositories = repositories;

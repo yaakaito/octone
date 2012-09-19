@@ -10,4 +10,8 @@
 
 @interface BGRepository : BGGithubResource
 
+@property (nonatomic, strong)
+
++ (id)repositoryWithJSON:(id)json;
++ (id)repositorywithFullName:(id)fullName;
 @end
