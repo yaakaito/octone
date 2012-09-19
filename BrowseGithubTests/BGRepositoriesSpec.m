@@ -41,7 +41,7 @@ describe(@"Repositories", ^{
     context(@"がuser.repos.jsonをパースしたとき", ^{
         
         beforeAll(^{
-            id json = [NSBundle jsonForResourceName:@"user.repos"];            
+            id json = [NSBundle jsonObjectForResourceName:@"user.repos"];
             repositories = [[BGRepositories alloc] init];
             [repositories setValuesFromJSON:json];
         });
@@ -51,7 +51,7 @@ describe(@"Repositories", ^{
             for (id repository in repositories.repositories) {
                 [repository shouldNotBeNil];
                 [[repository should] beKindOfClass:[BGRepository class]];
-                [repository.name shouldNotBeNil];
+                [((BGRepository*)repository).name shouldNotBeNil];
             }
         });
         

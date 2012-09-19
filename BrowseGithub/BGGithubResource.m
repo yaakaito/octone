@@ -16,10 +16,18 @@
 
 @implementation BGGithubResource
 
-- (id)initWithUrl:(NSURL*)url {
+- (id)initWithUrl:(NSURL *)url {
     self = [super init];
     if (self) {
         self.resourceUrl = url;
+    }
+    return self;
+}
+
+- (id)initWithUrl:(NSURL *)url JSON:(id)json {
+    self = [self initWithUrl:url];
+    if (self) {
+        [self setValuesFromJSON:json];
     }
     return self;
 }

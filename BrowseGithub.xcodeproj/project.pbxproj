@@ -18,6 +18,8 @@
 		B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
 		B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9E81604FC9D000AD406 /* BGRepositories.m */; };
 		B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */; };
+		B9A21E30160980BC006167BE /* repo.alertninja.json in Resources */ = {isa = PBXBuildFile; fileRef = B9A21E2F160980BC006167BE /* repo.alertninja.json */; };
+		B9A21E3316098C41006167BE /* user.repos.json in Resources */ = {isa = PBXBuildFile; fileRef = B9A21E3216098C41006167BE /* user.repos.json */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -164,6 +166,8 @@
 		B99BD9E81604FC9D000AD406 /* BGRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositories.m; sourceTree = "<group>"; };
 		B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositorySpec.m; sourceTree = "<group>"; };
 		B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoriesSpec.m; sourceTree = "<group>"; };
+		B9A21E2F160980BC006167BE /* repo.alertninja.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repo.alertninja.json; sourceTree = "<group>"; };
+		B9A21E3216098C41006167BE /* user.repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.repos.json; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -614,6 +618,8 @@
 		B9B83EE215FF23980071F088 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				B9A21E3216098C41006167BE /* user.repos.json */,
+				B9A21E2F160980BC006167BE /* repo.alertninja.json */,
 				B9B83F1315FFAC7E0071F088 /* received_events.json */,
 				B9B83F0B15FFA5AB0071F088 /* event.json */,
 				B9B83EE315FF23980071F088 /* resource.json */,
@@ -809,6 +815,8 @@
 				B9B83EFB15FF23980071F088 /* user.private.short.atom in Resources */,
 				B9B83F0C15FFA5AB0071F088 /* event.json in Resources */,
 				B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */,
+				B9A21E30160980BC006167BE /* repo.alertninja.json in Resources */,
+				B9A21E3316098C41006167BE /* user.repos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
