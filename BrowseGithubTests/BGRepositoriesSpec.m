@@ -21,12 +21,16 @@
 
 SPEC_BEGIN(BGRepositoriesSpec)
 
+
+// initWithPathで全部やって、
+// ゲッターでLoginUserとかやったほうが綺麗じゃね？
 describe(@"Repositories", ^{
     __block BGRepositories *repositories;
 
     NSString *accessToken = [[BGAuthenticationManager sharedManager] accessToken];
 
     context(@"をログインユーザーを対象に初期化するとき", ^{
+        // per page
         it(@"は、ログインユーザーを元にリポジトリのアドレスを構築する", ^{
             repositories = [[BGRepositories alloc] initWithLoginUser];
             NSString *url = [NSString stringWithFormat:@"https://api.github.com/user/repos?per_page=10&page=1&sort=pushed&access_token=%@", accessToken];
