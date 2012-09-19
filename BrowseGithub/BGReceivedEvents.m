@@ -17,7 +17,7 @@
 
 @implementation BGReceivedEvents
 
-+ (id)receviedEventsWithUser:(BGUser *)user {
++ (id)receivedEventsWithUser:(BGUser *)user {
     return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:[NSString stringWithFormat:@"/users/%@/received_events", user.login]
                                                             auth:YES]];
 }

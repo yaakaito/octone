@@ -13,5 +13,5 @@
 @interface BGReceivedEvents : BGGithubResource
 @property (nonatomic, strong, readonly) NSArray *events;
 
-+ (id)receviedEventsWithUser:(BGUser*)user;
++ (id)receivedEventsWithUser:(BGUser*)user;
 @end

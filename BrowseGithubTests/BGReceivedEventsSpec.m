@@ -30,7 +30,7 @@ describe(@"Received Events", ^{
 
     context(@"をUserによって初期化するとき", ^{
         beforeAll(^{
-            receivedEvents = [BGReceivedEvents receviedEventsWithUser:user];
+            receivedEvents = [BGReceivedEvents receivedEventsWithUser:user];
         });
         
         it(@"は、ユーザーのログイン名を元にアドレスを構築する", ^{
