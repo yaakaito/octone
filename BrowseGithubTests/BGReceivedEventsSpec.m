@@ -15,9 +15,6 @@
 #import "AsyncSupporter.h"
 #import "NSBundle+Specs.h"
 
-@interface BGGithubResource(Specs)
-@property (nonatomic, strong) NSURL *resourceUrl;
-@end
 
 SPEC_BEGIN(BGReceivedEventsSpec)
 
@@ -27,13 +24,13 @@ describe(@"Received Events", ^{
     NSString *accessToken = [[BGAuthenticationManager sharedManager] accessToken];
 
     beforeAll(^{
-        user = [[BGUser alloc] initWithLoginUser];
+        user = [[BGUser alloc] init];
         user.login = @"yaakaito";
     });
 
     context(@"をUserによって初期化するとき", ^{
         beforeAll(^{
-            receivedEvents = [[BGReceivedEvents alloc] initWithUser:user];
+            receivedEvents = [BGReceivedEvents receviedEventsWithUser:user];
         });
         
         it(@"は、ユーザーのログイン名を元にアドレスを構築する", ^{
@@ -55,8 +52,7 @@ describe(@"Received Events", ^{
             NSData *json = [NSBundle jsonForResourceName:@"received_events"];
             [[[server stub] forPath:@"/received_events"] andJSONResponse:json];
             
-            receivedEvents = [[BGReceivedEvents alloc] initWithUser:user];
-            receivedEvents.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/received_events"];
+            receivedEvents = [[BGReceivedEvents alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/received_events"]];
             [receivedEvents loadDataWithComplete:^{
                 [asyncSupporter notify:kAsyncSupporterWaitStatusSuccess];
             } failure:^{

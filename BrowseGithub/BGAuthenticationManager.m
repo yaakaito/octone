@@ -33,7 +33,7 @@ NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticati
 
 - (BGUser *)loginUser {
     
-    BGUser *user = [[BGUser alloc] initWithLoginUser];
+    BGUser *user = [BGUser userWithLoginUser];
     user.login = @"yaakaito";
     user.name = @"KAZUMA Ukyo";
     user.email = @"yaakaito@gmail.com";

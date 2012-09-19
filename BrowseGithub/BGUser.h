@@ -18,6 +18,6 @@
 @property (nonatomic) NSInteger publicRepos;
 @property (nonatomic, strong) NSURL *gravatarUrl;
 
-- (id)initWithUserName:(NSString*)userName;
-- (id)initWithLoginUser;
++ (id)userWithUserName:(NSString*)userName;
++ (id)userWithLoginUser;
 @end

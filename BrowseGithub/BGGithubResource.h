@@ -12,8 +12,7 @@
 
 @interface BGGithubResource : NSObject
 @property (nonatomic, strong, readonly) NSURL *resourceUrl;
-- (id)initWithPath:(NSString*)path;
-- (id)initWithAuthAndPath:(NSString*)path;
+- (id)initWithUrl:(NSURL*)url;
 - (void)loadDataWithComplete:(void (^)(void))complete
                      failure:(void (^)(void))failure;
 - (void)setValuesFromJSON:(id)json;

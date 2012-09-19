@@ -16,20 +16,12 @@
 
 @implementation BGGithubResource
 
-- (id)initWithPath:(NSString *)path auth:(BOOL)auth {
+- (id)initWithUrl:(NSURL*)url {
     self = [super init];
     if (self) {
-        self.resourceUrl = [NSURL githubApiURLWithPath:path auth:auth];
+        self.resourceUrl = url;
     }
     return self;
-}
-
-- (id)initWithPath:(NSString *)path {
-    return [self initWithPath:path auth:NO];
-}
-
-- (id)initWithAuthAndPath:(NSString *)path {
-    return [self initWithPath:path auth:YES];
 }
 
 - (void)loadDataWithComplete:(void (^)(void))complete

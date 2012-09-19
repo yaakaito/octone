@@ -9,6 +9,7 @@
 #import "BGReceivedEvents.h"
 #import "BGUser.h"
 #import "BGEvent.h"
+#import "NSURL+GithubResource.h"
 
 @interface BGReceivedEvents()
 @property (nonatomic, strong) NSArray *events;
@@ -16,13 +17,9 @@
 
 @implementation BGReceivedEvents
 
-- (id)initWithUser:(BGUser *)user {
-    
-    self = [super initWithAuthAndPath:[NSString stringWithFormat:@"/users/%@/received_events", user.login]];
-    if (self) {
-        ;
-    }
-    return self;
++ (id)receviedEventsWithUser:(BGUser *)user {
+    return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:[NSString stringWithFormat:@"/users/%@/received_events", user.login]
+                                                            auth:YES]];
 }
 
 - (void)setValuesFromJSON:(id)json {

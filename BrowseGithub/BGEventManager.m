@@ -20,7 +20,7 @@
 
 - (void)prepareLoginUserReceivedEvents {
     
-    self.currentResource = [[BGReceivedEvents alloc] initWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
+    self.currentResource = [BGReceivedEvents receviedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
 }
 
 - (void)reloadCurrentResource:(void (^)(BOOL))callback {

@@ -12,7 +12,7 @@
 @implementation MockReceivedEvents
 
 - (id)initWithSuccess:(BOOL)success {
-    self = [super initWithPath:@"/mock"];
+    self = [super initWithUrl:nil];
     if (self) {
         self.success = success;
     }

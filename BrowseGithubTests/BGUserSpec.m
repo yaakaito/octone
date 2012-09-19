@@ -29,12 +29,12 @@ describe(@"Github User", ^{
     
     context(@"を初期化するとき", ^{
         it(@"は、ユーザー名を元にアドレスを構築する", ^{
-            user = [[BGUser alloc] initWithUserName:@"yaakaito"];
+            user = [BGUser userWithUserName:@"yaakaito"];
             [[[user.resourceUrl absoluteString] should] equal:@"https://api.github.com/users/yaakaito"];
         });
         
         it(@"は、ログインユーザーの情報を取得するURLを構築する", ^{
-            user = [[BGUser alloc] initWithLoginUser];
+            user = [BGUser userWithLoginUser];
             NSString *url = [NSString stringWithFormat:@"https://api.github.com/user?access_token=%@", accessToken];
             [[[user.resourceUrl absoluteString] should] equal:url];
         });
@@ -52,8 +52,7 @@ describe(@"Github User", ^{
             NSData *json = [NSBundle jsonForResourceName:@"user"];
             [[[server stub] forPath:@"/user"] andJSONResponse:json];
             
-            user = [[BGUser alloc] initWithLoginUser];
-            user.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/user"];
+            user = [[BGUser alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/user"]];
             [user loadDataWithComplete:^{
                 [asyncSupporter notify:kAsyncSupporterWaitStatusSuccess];
             } failure:^{

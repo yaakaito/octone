@@ -20,7 +20,7 @@ describe(@"Global Menu User View", ^{
     BGGlobalMenuUserView *view = [[BGGlobalMenuUserView alloc] init];
     
     context(@"にユーザー情報をセットしたとき", ^{
-        BGUser *user = [[BGUser alloc] initWithLoginUser];
+        BGUser *user = [BGUser userWithLoginUser];
         beforeAll(^{
             user.login = @"yaakaito";
             user.name = @"KAZUMA Ukyo";

@@ -7,27 +7,18 @@
 //
 
 #import "BGUser.h"
+#import "NSURL+GithubResource.h"
 
 @implementation BGUser
 
-- (id)initWithUserName:(NSString *)userName {
-    
-    self = [super initWithPath:[NSString stringWithFormat:@"/users/%@", userName]];
-    if (self) {
-        
-    }
-    
-    return self;
++ (id)userWithUserName:(NSString *)userName {
+    return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:[NSString stringWithFormat:@"/users/%@", userName]
+                                                           auth:NO]];
 }
 
-- (id)initWithLoginUser {
-    
-    self = [super initWithAuthAndPath:@"/user"];
-    if (self) {
-        
-    }
-    
-    return self;
++ (id)userWithLoginUser {
+    return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:@"/user"
+                                                           auth:YES]];
 }
 
 - (void)setValuesFromJSON:(id)json {

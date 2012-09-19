@@ -30,30 +30,10 @@ describe(@"Github Resource", ^{
     
     context(@"を初期化するとき", ^{
         
-        it(@"は、APIパスを引数に受け取り、URLを構築する", ^{
-            githubResource = [[BGGithubResource alloc] initWithPath:@"/user"];
-            NSURL *url = githubResource.resourceUrl;
-            [[[url absoluteString] should] equal:@"https://api.github.com/user"];
-        });
-        
-        it(@"は、クエリ付きのAPIパスを引数に受け取り、URLを構築する", ^{
-            githubResource = [[BGGithubResource alloc] initWithPath:@"/user?page=1"];
-            NSURL *url = githubResource.resourceUrl;
-            [[[url absoluteString] should] equal:@"https://api.github.com/user?page=1"];
-        });
-        
-        it(@"は、APIパスを引数に受け取り、認可情報を付加したURLを構築する", ^{
-            githubResource = [[BGGithubResource alloc] initWithAuthAndPath:@"/user"];
-            NSURL *url = githubResource.resourceUrl;
-            NSString *urlString = [NSString stringWithFormat:@"https://api.github.com/user?access_token=%@", accessToken];
-            [[[url absoluteString] should] equal:urlString];
-        });
-        
-        it(@"は、クエリ付きのAPIパスを引数に受け取り、認可情報を付加したURLを構築する", ^{
-            githubResource = [[BGGithubResource alloc] initWithAuthAndPath:@"/user?page=1"];
-            NSURL *url = githubResource.resourceUrl;
-            NSString *urlString = [NSString stringWithFormat:@"https://api.github.com/user?page=1&access_token=%@", accessToken];
-            [[[url absoluteString] should] equal:urlString];
+        it(@"は、URLを引数に取ってURLをセットする", ^{
+            NSURL *url = [NSURL URLWithString:@"https://api.github.com/user"];
+            githubResource = [[BGGithubResource alloc] initWithUrl:url];
+            [[[githubResource.resourceUrl absoluteString] should] equal:[url absoluteString]];
         });
     });
     
@@ -72,8 +52,7 @@ describe(@"Github Resource", ^{
         
         it(@"は、自身のresourceUrlに対してリクエストを行う", ^{
             [[[server stub] forPath:@"/stub"] andJSONResponseResource:@"resource" ofType:@"json"];
-            githubResource = [[BGGithubResource alloc] initWithPath:@"/stub"];
-            githubResource.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/stub"]; // stub urls
+            githubResource = [[BGGithubResource alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/stub"]];
             [githubResource loadDataWithComplete:^{
                 [asyncSupporter notify:kAsyncSupporterWaitStatusSuccess];
             } failure:^{
@@ -87,8 +66,7 @@ describe(@"Github Resource", ^{
         context(@"リクエストに成功したら", ^{
             beforeEach(^{
                 [[[server stub] forPath:@"/stub"] andJSONResponseResource:@"resource" ofType:@"json"];
-                githubResource = [[BGGithubResource alloc] initWithPath:@"/stub"];
-                githubResource.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/stub"]; // stub url
+                githubResource = [[BGGithubResource alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/stub"]];
             });
             
             it(@"それは、結果をパースするために、自身のsetValuesFromJSON:を呼び出す", ^{
@@ -122,8 +100,7 @@ describe(@"Github Resource", ^{
         context(@"リクエストに失敗したら", ^{
             beforeEach(^{
                 [[[[server stub] forPath:@"/stub"] andJSONResponseResource:@"resource" ofType:@"json"] andStatusCode:404];
-                githubResource = [[BGGithubResource alloc] initWithPath:@"/stub"];
-                githubResource.resourceUrl = [NSURL URLWithString:@"http://localhost:12345/stub"]; // stub url
+                githubResource = [[BGGithubResource alloc] initWithUrl:[NSURL URLWithString:@"http://localhost:12345/stub"]];
             });
             
             
