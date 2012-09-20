@@ -22,6 +22,10 @@
 		B9A21E3316098C41006167BE /* user.repos.json in Resources */ = {isa = PBXBuildFile; fileRef = B9A21E3216098C41006167BE /* user.repos.json */; };
 		B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E351609D05E006167BE /* BGRepositoryManager.m */; };
 		B9A21E371609D05E006167BE /* BGRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E351609D05E006167BE /* BGRepositoryManager.m */; };
+		B9A21E3E160AEAD4006167BE /* BGResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E3D160AEAD3006167BE /* BGResourceManager.m */; };
+		B9A21E3F160AEAD4006167BE /* BGResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E3D160AEAD3006167BE /* BGResourceManager.m */; };
+		B9A21E41160AEB32006167BE /* BGResourceManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E40160AEB32006167BE /* BGResourceManagerSpec.m */; };
+		B9A21E44160AF96D006167BE /* MockResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E43160AF96D006167BE /* MockResource.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -172,6 +176,11 @@
 		B9A21E3216098C41006167BE /* user.repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.repos.json; sourceTree = "<group>"; };
 		B9A21E341609D05E006167BE /* BGRepositoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryManager.h; sourceTree = "<group>"; };
 		B9A21E351609D05E006167BE /* BGRepositoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryManager.m; sourceTree = "<group>"; };
+		B9A21E3C160AEAD3006167BE /* BGResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGResourceManager.h; sourceTree = "<group>"; };
+		B9A21E3D160AEAD3006167BE /* BGResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGResourceManager.m; sourceTree = "<group>"; };
+		B9A21E40160AEB32006167BE /* BGResourceManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGResourceManagerSpec.m; sourceTree = "<group>"; };
+		B9A21E42160AF96D006167BE /* MockResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockResource.h; sourceTree = "<group>"; };
+		B9A21E43160AF96D006167BE /* MockResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockResource.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -510,6 +519,8 @@
 			children = (
 				B9B83DC415FE81290071F088 /* BGAuthenticationManager.h */,
 				B9B83DC515FE81290071F088 /* BGAuthenticationManager.m */,
+				B9A21E3C160AEAD3006167BE /* BGResourceManager.h */,
+				B9A21E3D160AEAD3006167BE /* BGResourceManager.m */,
 				B9B83F2F1600D97F0071F088 /* BGEventManager.h */,
 				B9B83F301600D97F0071F088 /* BGEventManager.m */,
 				B9A21E341609D05E006167BE /* BGRepositoryManager.h */,
@@ -589,6 +600,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */,
+				B9A21E40160AEB32006167BE /* BGResourceManagerSpec.m */,
 				B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */,
 			);
 			name = Managers;
@@ -643,6 +655,8 @@
 				B9B83EDC15FF23980071F088 /* FakeNotificationReceiver.m */,
 				B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */,
 				B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */,
+				B9A21E42160AF96D006167BE /* MockResource.h */,
+				B9A21E43160AF96D006167BE /* MockResource.m */,
 			);
 			name = "Fakes, Stubs, Mocks";
 			sourceTree = "<group>";
@@ -898,6 +912,7 @@
 				B99BD9E51604FC80000AD406 /* BGRepository.m in Sources */,
 				B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */,
 				B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */,
+				B9A21E3E160AEAD4006167BE /* BGResourceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,6 +973,9 @@
 				B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */,
 				B98506E716097B8D00CA2F8D /* BGRepositoriesSpec.m in Sources */,
 				B9A21E371609D05E006167BE /* BGRepositoryManager.m in Sources */,
+				B9A21E3F160AEAD4006167BE /* BGResourceManager.m in Sources */,
+				B9A21E41160AEB32006167BE /* BGResourceManagerSpec.m in Sources */,
+				B9A21E44160AF96D006167BE /* MockResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
