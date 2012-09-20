@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BGResourceManager.h"
 
-@interface BGEventManager : NSObject
+@interface BGEventManager : BGResourceManager
 
-- (void)prepareLoginUserReceivedEvents;
-- (void)reloadCurrentResource:(void(^)(BOOL success))callback;
 - (NSInteger)numberOfEvents;
 - (id)eventAtIndex:(NSInteger)index;
 

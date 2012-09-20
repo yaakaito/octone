@@ -12,37 +12,28 @@
 #import "BGAuthenticationManager.h"
 
 @interface BGEventManager()
-@property (nonatomic, strong) NSArray *currentEvents;
-@property (nonatomic, strong) BGGithubResource *currentResource;
+@property (nonatomic, strong) NSMutableArray *events;
 @end
 
 @implementation BGEventManager
 
-- (void)prepareLoginUserReceivedEvents {
+- (void)setResourcesFromResource:(BGGithubResource *)resource reload:(BOOL)reload {
     
-    self.currentResource = [BGReceivedEvents receivedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
-}
-
-- (void)reloadCurrentResource:(void (^)(BOOL))callback {
-    
-    if (!self.currentResource) {
-        callback(NO);
-        return;
+    BGReceivedEvents *receivedEvent = (BGReceivedEvents*)resource;
+    if (reload) {
+        self.events = [receivedEvent.events mutableCopy];
     }
-    
-    [self.currentResource loadDataWithComplete:^{
-        self.currentEvents = ((BGReceivedEvents*)self.currentResource).events;
-        callback(YES);
-    } failure:^{
-        callback(NO);
-    }];
+    else {
+        [self.events addObjectsFromArray:receivedEvent.events];
+    }
 }
 
 - (NSInteger)numberOfEvents {
-    return [self.currentEvents count];
+    return [self.events count];
 }
 
 - (id)eventAtIndex:(NSInteger)index {
-    return [self.currentEvents objectAtIndex:index];
+    return [self.events objectAtIndex:index];
 }
+
 @end
