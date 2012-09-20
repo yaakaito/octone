@@ -127,7 +127,7 @@
 
     if(self.delegate && [self.delegate respondsToSelector:@selector(globalMenuController:didSelectNextViewController:)])
     {
-        [self.delegate globalMenuController:self didSelectNextViewController:nil];
+        [self.delegate globalMenuController:self didSelectNextViewController:[self.contents contentsControllerForIndex:indexPath.row]];
     }
 }
 

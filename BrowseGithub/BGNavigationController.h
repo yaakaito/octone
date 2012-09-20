@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BGGlobalMenuControllerDelegate.h"
 
+#define kBGNavigationControllerDidChangeControllerNotification  (@"BGNavigationControllerDidChangeControllerNotification")
+
 @interface BGNavigationController : UINavigationController<BGGlobalMenuControllerDelegate>
 
 @end

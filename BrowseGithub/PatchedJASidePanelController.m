@@ -7,6 +7,7 @@
 //
 
 #import "PatchedJASidePanelController.h"
+#import "BGNavigationController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation PatchedJASidePanelController
@@ -58,6 +59,24 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
+#pragma mark - Notifications
+
+- (void)startNotificationListener {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(navigationControllerDidChangeController)
+                                                 name:kBGNavigationControllerDidChangeControllerNotification
+                                               object:nil];
+}
+
+- (void)navigationControllerDidChangeController {
+    
+    [self showCenterPanel:YES];
+}
 
 @end

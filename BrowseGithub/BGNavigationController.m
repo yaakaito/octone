@@ -49,9 +49,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - BGGlobalMenuViewControllerDelegate
-- (void)globalMenuViewController:(id)sender didSelectNextViewController:(UIViewController *)viewController {
+#pragma mark - BGGlobalMenuControllerDelegate
+- (void)globalMenuController:(id)sender didSelectNextViewController:(UIViewController *)viewController {
     
-#warning wontfix
+    [self setViewControllers:@[viewController]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kBGNavigationControllerDidChangeControllerNotification object:self];
 }
 @end

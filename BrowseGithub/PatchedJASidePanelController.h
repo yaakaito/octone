@@ -10,5 +10,5 @@
 #import <JASidePanels/JASidePanelController.h>
 
 @interface PatchedJASidePanelController : JASidePanelController
-
+- (void)startNotificationListener;
 @end

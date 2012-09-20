@@ -10,6 +10,8 @@
 #import "BGEvent.h"
 #import "BGEventManager.h"
 #import "BGBaseCell.h"
+#import "BGReceivedEvents.h"
+#import "BGAuthenticationManager.h"
 
 @interface BGEventsController ()
 @property (nonatomic, strong) BGEventManager *manager;
@@ -46,10 +48,13 @@
 
 - (void)reloadData:(void (^)(void))complete {
   
-    [self.manager prepareLoginUserReceivedEvents];
-    [self.manager reloadCurrentResource:^(BOOL success) {
-        complete();
-    }];
+    BGReceivedEvents *receivedEvents = [BGReceivedEvents receivedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
+    [self.manager reloadResource:receivedEvents
+                        complete:^{
+                            complete();
+                        } failure:^{
+                            complete();
+                        }];
 }
 
 
