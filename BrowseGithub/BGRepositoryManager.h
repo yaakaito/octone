@@ -6,16 +6,12 @@
 //  Copyright (c) 2012年 yaakaito. All rights reserved.
 //
 
-#import "BGGithubResource.h"
+#import "BGResourceManager.h"
 
-@class BGUser;
+@class BGRepository;
 
-@interface BGRepositoryManager : BGGithubResource
+@interface BGRepositoryManager : BGResourceManager
 
-- (void)prepareLoginUserRepositroies;
-- (void)prepareWithUser:(BGUser*)user;
-- (void)reloadCurrentResource:(void(^)(BOOL success))callback;
-- (BOOL)loadNextPageResource:(void(^)(BOOL success))callback;
 - (NSInteger)numberOfRepositories;
-
+- (BGRepository*)repositoryAtIndex:(NSInteger)index;
 @end
