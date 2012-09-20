@@ -468,6 +468,8 @@
 				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
 				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
 				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
+				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
+				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
 				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
 				B9B83DED15FE81290071F088 /* BGStarsController.m */,
 				B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */,
@@ -479,8 +481,6 @@
 				B9B83DE415FE81290071F088 /* BGNavigationController.m */,
 				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
-				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
-				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
