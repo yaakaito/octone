@@ -29,23 +29,6 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (void)reloadData:(void (^)(void))complete {
   
     BGReceivedEvents *receivedEvents = [BGReceivedEvents receivedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
