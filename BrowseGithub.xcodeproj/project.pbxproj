@@ -20,6 +20,8 @@
 		B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9EB1604FDA2000AD406 /* BGRepositorySpec.m */; };
 		B9A21E30160980BC006167BE /* repo.alertninja.json in Resources */ = {isa = PBXBuildFile; fileRef = B9A21E2F160980BC006167BE /* repo.alertninja.json */; };
 		B9A21E3316098C41006167BE /* user.repos.json in Resources */ = {isa = PBXBuildFile; fileRef = B9A21E3216098C41006167BE /* user.repos.json */; };
+		B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E351609D05E006167BE /* BGRepositoryManager.m */; };
+		B9A21E371609D05E006167BE /* BGRepositoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E351609D05E006167BE /* BGRepositoryManager.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -168,6 +170,8 @@
 		B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoriesSpec.m; sourceTree = "<group>"; };
 		B9A21E2F160980BC006167BE /* repo.alertninja.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repo.alertninja.json; sourceTree = "<group>"; };
 		B9A21E3216098C41006167BE /* user.repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.repos.json; sourceTree = "<group>"; };
+		B9A21E341609D05E006167BE /* BGRepositoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryManager.h; sourceTree = "<group>"; };
+		B9A21E351609D05E006167BE /* BGRepositoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryManager.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -508,6 +512,8 @@
 				B9B83DC515FE81290071F088 /* BGAuthenticationManager.m */,
 				B9B83F2F1600D97F0071F088 /* BGEventManager.h */,
 				B9B83F301600D97F0071F088 /* BGEventManager.m */,
+				B9A21E341609D05E006167BE /* BGRepositoryManager.h */,
+				B9A21E351609D05E006167BE /* BGRepositoryManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -891,6 +897,7 @@
 				B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */,
 				B99BD9E51604FC80000AD406 /* BGRepository.m in Sources */,
 				B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */,
+				B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +957,7 @@
 				B99BD9EA1604FC9D000AD406 /* BGRepositories.m in Sources */,
 				B99BD9EC1604FDA2000AD406 /* BGRepositorySpec.m in Sources */,
 				B98506E716097B8D00CA2F8D /* BGRepositoriesSpec.m in Sources */,
+				B9A21E371609D05E006167BE /* BGRepositoryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

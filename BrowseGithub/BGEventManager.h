@@ -14,4 +14,5 @@
 - (void)reloadCurrentResource:(void(^)(BOOL success))callback;
 - (NSInteger)numberOfEvents;
 - (id)eventAtIndex:(NSInteger)index;
+
 @end
