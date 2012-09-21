@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
+		B97B3367160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
 		B98506E716097B8D00CA2F8D /* BGRepositoriesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */; };
 		B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99BD9D21602679F000AD406 /* Default-568h@2x.png */; };
 		B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
@@ -141,9 +143,9 @@
 		B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B83F1315FFAC7E0071F088 /* received_events.json */; };
 		B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1A15FFB5CD0071F088 /* BGTableView.m */; };
 		B9B83F1C15FFB5CE0071F088 /* BGTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1A15FFB5CD0071F088 /* BGTableView.m */; };
-		B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
-		B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGListController.m */; };
-		B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */; };
+		B9B83F1F15FFB6AB0071F088 /* BGTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGTableController.m */; };
+		B9B83F2015FFB6AB0071F088 /* BGTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F1E15FFB6AA0071F088 /* BGTableController.m */; };
+		B9B83F2D15FFBC090071F088 /* BGTableControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F2C15FFBC090071F088 /* BGTableControllerSpec.m */; };
 		B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F301600D97F0071F088 /* BGEventManager.m */; };
 		B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F301600D97F0071F088 /* BGEventManager.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
@@ -161,6 +163,8 @@
 
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97B3364160C3502000D8E6D /* BGRepositoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryController.h; sourceTree = "<group>"; };
+		B97B3365160C3502000D8E6D /* BGRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryController.m; sourceTree = "<group>"; };
 		B99BD9D21602679F000AD406 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockReceivedEvents.h; sourceTree = "<group>"; };
 		B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockReceivedEvents.m; sourceTree = "<group>"; };
@@ -299,9 +303,9 @@
 		B9B83F1315FFAC7E0071F088 /* received_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = received_events.json; sourceTree = "<group>"; };
 		B9B83F1915FFB5CC0071F088 /* BGTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTableView.h; sourceTree = "<group>"; };
 		B9B83F1A15FFB5CD0071F088 /* BGTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTableView.m; sourceTree = "<group>"; };
-		B9B83F1D15FFB6A90071F088 /* BGListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGListController.h; sourceTree = "<group>"; };
-		B9B83F1E15FFB6AA0071F088 /* BGListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListController.m; sourceTree = "<group>"; };
-		B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGListControllerSpec.m; sourceTree = "<group>"; };
+		B9B83F1D15FFB6A90071F088 /* BGTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTableController.h; sourceTree = "<group>"; };
+		B9B83F1E15FFB6AA0071F088 /* BGTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTableController.m; sourceTree = "<group>"; };
+		B9B83F2C15FFBC090071F088 /* BGTableControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTableControllerSpec.m; sourceTree = "<group>"; };
 		B9B83F2F1600D97F0071F088 /* BGEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventManager.h; sourceTree = "<group>"; };
 		B9B83F301600D97F0071F088 /* BGEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManager.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -462,8 +466,8 @@
 			children = (
 				B9B83DE915FE81290071F088 /* BGRootController.h */,
 				B9B83DEA15FE81290071F088 /* BGRootController.m */,
-				B9B83F1D15FFB6A90071F088 /* BGListController.h */,
-				B9B83F1E15FFB6AA0071F088 /* BGListController.m */,
+				B9B83F1D15FFB6A90071F088 /* BGTableController.h */,
+				B9B83F1E15FFB6AA0071F088 /* BGTableController.m */,
 				B9B83DC215FE81290071F088 /* BGAuthenticationController.h */,
 				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
 				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
@@ -481,6 +485,8 @@
 				B9B83DE415FE81290071F088 /* BGNavigationController.m */,
 				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
+				B97B3364160C3502000D8E6D /* BGRepositoryController.h */,
+				B97B3365160C3502000D8E6D /* BGRepositoryController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -611,7 +617,7 @@
 			children = (
 				B99BD9E116042CDA000AD406 /* BGRootControllerSpec.m */,
 				B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */,
-				B9B83F2C15FFBC090071F088 /* BGListControllerSpec.m */,
+				B9B83F2C15FFBC090071F088 /* BGTableControllerSpec.m */,
 				B99BD9DF16042CB9000AD406 /* BGEventsControllerSpec.m */,
 			);
 			name = Controllers;
@@ -907,12 +913,13 @@
 				B9B83F0015FF9CC70071F088 /* BGEvent.m in Sources */,
 				B9B83F0F15FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
 				B9B83F1B15FFB5CE0071F088 /* BGTableView.m in Sources */,
-				B9B83F1F15FFB6AB0071F088 /* BGListController.m in Sources */,
+				B9B83F1F15FFB6AB0071F088 /* BGTableController.m in Sources */,
 				B9B83F311600D97F0071F088 /* BGEventManager.m in Sources */,
 				B99BD9E51604FC80000AD406 /* BGRepository.m in Sources */,
 				B99BD9E91604FC9D000AD406 /* BGRepositories.m in Sources */,
 				B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */,
 				B9A21E3E160AEAD4006167BE /* BGResourceManager.m in Sources */,
+				B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,8 +968,8 @@
 				B9B83F1015FFA92B0071F088 /* BGReceivedEvents.m in Sources */,
 				B9B83F1215FFA95B0071F088 /* BGReceivedEventsSpec.m in Sources */,
 				B9B83F1C15FFB5CE0071F088 /* BGTableView.m in Sources */,
-				B9B83F2015FFB6AB0071F088 /* BGListController.m in Sources */,
-				B9B83F2D15FFBC090071F088 /* BGListControllerSpec.m in Sources */,
+				B9B83F2015FFB6AB0071F088 /* BGTableController.m in Sources */,
+				B9B83F2D15FFBC090071F088 /* BGTableControllerSpec.m in Sources */,
 				B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */,
 				B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */,
 				B99BD9DA1602FB6A000AD406 /* MockReceivedEvents.m in Sources */,
@@ -976,6 +983,7 @@
 				B9A21E3F160AEAD4006167BE /* BGResourceManager.m in Sources */,
 				B9A21E41160AEB32006167BE /* BGResourceManagerSpec.m in Sources */,
 				B9A21E44160AF96D006167BE /* MockResource.m in Sources */,
+				B97B3367160C3503000D8E6D /* BGRepositoryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

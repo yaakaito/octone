@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BGListController.h"
+#import "BGTableController.h"
 
-@interface BGRepositoriesController : BGListController
+@interface BGRepositoriesController : BGTableController
 
 @end

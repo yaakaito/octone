@@ -1,20 +1,20 @@
 //
-//  BGListController.m
+//  BGTableController.m
 //  BrowseGithub
 //
 //  Created by yaakaito on 12/09/12.
 //  Copyright (c) 2012年 yaakaito. All rights reserved.
 //
 
-#import "BGListController.h"
+#import "BGTableController.h"
 #import "BGTableView.h"
 #import "UIColor+BrowseGithub.h"
 
-@interface BGListController ()
+@interface BGTableController ()
 
 @end
 
-@implementation BGListController
+@implementation BGTableController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

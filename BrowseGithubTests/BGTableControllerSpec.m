@@ -6,22 +6,21 @@
 //
 
 #import "Kiwi.h"
-#import "BGListController.h"
+#import "BGTableController.h"
 #import "BGTableView.h"
-#import <SVPullToRefresh/SVPullToRefresh.h>
 
-@interface BGListController()
+@interface BGTableController()
 - (void)refreshControlValueChanged:(UIRefreshControl*)sender;
 @end
 
-SPEC_BEGIN(BGListControllerSpec)
+SPEC_BEGIN(BGTableControllerSpec)
 
-describe(@"List Controller", ^{
-    __block BGListController *controller;
+describe(@"Table Controller", ^{
+    __block BGTableController *controller;
 
     context(@"が、作られたとき", ^{
         beforeEach(^{
-            controller = [[BGListController alloc] init];
+            controller = [[BGTableController alloc] init];
             [controller loadView];
         });
         
@@ -43,7 +42,7 @@ describe(@"List Controller", ^{
     context(@"に、ユーザーがリフレッシュを要求したとき", ^{
         
         beforeEach(^{
-            controller = [[BGListController alloc] init];
+            controller = [[BGTableController alloc] init];
             [controller loadView];
             [controller viewDidLoad];
             [controller viewWillAppear:NO];

@@ -1,5 +1,5 @@
 //
-//  BGListController.h
+//  BGTableController.h
 //  BrowseGithub
 //
 //  Created by yaakaito on 12/09/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BGListController : UITableViewController
+@interface BGTableController : UITableViewController
 
 - (void)reloadData:(void(^)(void))complete;
 @end
