@@ -11,6 +11,7 @@
 #import "BGRepositories.h"
 #import "BGRepository.h"
 #import "BGBaseCell.h"
+#import "BGRepositoryController.h"
 
 @interface BGRepositoriesController ()
 @property (nonatomic, strong) BGRepositoryManager *manager;
@@ -52,6 +53,11 @@
     BGRepository *repository = [self.manager repositoryAtIndex:indexPath.row];
     cell.textLabel.text = repository.name;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BGRepositoryController *ctl = [[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:ctl animated:YES];
 }
 
 @end

@@ -8,6 +8,9 @@
 
 #import "BGTableController.h"
 
+@class BGRepository;
+
 @interface BGRepositoryController : BGTableController
 
+- (id)initWithRepository:(BGRepository*)repository;
 @end

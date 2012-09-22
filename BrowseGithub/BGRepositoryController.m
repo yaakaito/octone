@@ -7,18 +7,20 @@
 //
 
 #import "BGRepositoryController.h"
+#import "BGRepository.h"
+#import "BGBaseCell.h"
 
 @interface BGRepositoryController ()
-
+@property (nonatomic, strong) BGRepository *repository;
 @end
 
 @implementation BGRepositoryController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)initWithRepository:(BGRepository *)repository {
+    
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        // Custom initialization
+        self.repository = repository;
     }
     return self;
 }
@@ -33,6 +35,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BGBaseCell *cell = [[BGBaseCell alloc] init];
+    cell.textLabel.text = self.repository.name;
+    return cell;
 }
 
 @end
