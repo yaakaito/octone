@@ -13,8 +13,7 @@
 #import "BGAuthenticationManager.h"
 
 @interface BGEventManager()
-@property (nonatomic, strong) NSArray *currentEvents;
-@property (nonatomic, strong) BGGithubResource *currentResource;
+@property (nonatomic, strong) NSMutableArray *events;
 @end
 
 @interface BGEvent()
@@ -31,77 +30,33 @@ describe(@"Event Manager", ^{
 
     __block BGEventManager *manager;
     
-    context(@"がprepareせずにreloadしたとき", ^{
-        beforeAll(^{
-            manager = [[BGEventManager alloc] init];
-        });
-        
-        it(@"は、コールバックをsuccess=NOで呼び出す", ^{
-            __block BOOL called;
-            [manager reloadCurrentResource:^(BOOL success){
-                [[theValue(success) should] beNo];
-                called = YES;
-            }];
-            [[theValue(called) should] beYes];
-        });
-    });
     
-    context(@"がなんらかのイベントを取得するとき", ^{
+    context(@"がreceived_events.jsonを取得したとき", ^{
         __block MockReceivedEvents *mock;
         beforeAll(^{
             manager = [[BGEventManager alloc] init];
-            mock = [[MockReceivedEvents alloc] initWithSuccess:YES];
+            mock = [[MockReceivedEvents alloc] init];
+            mock.success = YES;
+            __block BOOL calledComplete;
+            [manager reloadResource:mock
+                           complete:^{
+                               calledComplete = YES;
+                           } failure:^{
+                               calledComplete = NO;
+                           }];
             
-            [manager prepareLoginUserReceivedEvents];
-            manager.currentResource = mock;
+            [[theValue(calledComplete) should] beYes];
         });
        
-        it(@"は、取得に成功したとき、コールバックをsuccess=YESで呼び出す", ^{
-            mock.success = YES;
-            __block BOOL called;
-            [manager reloadCurrentResource:^(BOOL success){
-                [[theValue(success) should] beYes];
-                called = YES;
-            }];
-            [[theValue(called) should] beYes];
-        });
-        
-        it(@"は、モックの取得に成功したとき、received_events.jsonをパースする", ^{
-            mock.success = YES;
-            __block BOOL called;
-            [manager reloadCurrentResource:^(BOOL success){
-                [[theValue(success) should] beYes];
-                called = YES;
-            }];
-            [[theValue(called) should] beYes];
-            [[[manager should] have:30] currentEvents];
-        });
-        
-        it(@"は、取得に失敗したとき、コールバックをsuccess=NOで呼び出す", ^{
-            mock.success = NO;
-            __block BOOL called;
-            [manager reloadCurrentResource:^(BOOL success){
-                [[theValue(success) should] beNo];
-                called = YES;
-            }];
-            [[theValue(called) should] beYes];
+        it(@"は、JSONをパースし、30件のEntryを取り出せる", ^{
+            [[[manager should] have:30] events];
+            for (id event in manager.events) {
+                [[event should] beKindOfClass:[BGEvent class]];
+            }
         });
     });
-    
-    context(@"がログインユーザーが受け取ったイベントを取得するとき", ^{
-       
-        it(@"は、ログインユーザー用のリソースを利用する", ^{
-            manager = [[BGEventManager alloc] init];
-            [manager prepareLoginUserReceivedEvents];
-            BGReceivedEvents *receivedEvents = (BGReceivedEvents*)manager.currentResource;
-            [[receivedEvents should] beKindOfClass:[BGReceivedEvents class]];
-            NSString *url = [NSString stringWithFormat:@"https://api.github.com/users/yaakaito/received_events?access_token=%@", [[BGAuthenticationManager sharedManager] accessToken]];
-            [[[receivedEvents.resourceUrl absoluteString] should] equal:url];
-        });
-    });
-    
-    
 
+    
     context(@"に、表示用のデータを要求したとき", ^{
         
         BGEvent*(^createEvent)(NSString*, NSString*, NSString*, NSString*) = ^(NSString* type, NSString* action, NSString* actorLogin, NSString* repositoryName) {
@@ -121,7 +76,7 @@ describe(@"Event Manager", ^{
             events = @[createEvent(@"hoge", @"hoge", @"hoge", @"hoge/hoge"),
                        createEvent(@"fuga", @"fuga", @"fuga", @"fuga/fuga"),
                        createEvent(@"piyo", @"piyo", @"piyo", @"piyo/piyo")];
-            manager.currentEvents = events;
+            manager.events = [events mutableCopy];
         });
         
         it(@"は、イベントの件数を返す", ^{
