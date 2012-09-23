@@ -14,6 +14,17 @@ SPEC_BEGIN(BGRepositorySpec)
 describe(@"Repository", ^{
     __block BGRepository *repository;
     
+    void(^checkRepositorySpecWithAlertNinja)(BGRepository *) = ^(BGRepository *repository) {
+        [[repository.name should] equal:@"AlertNinja"];
+        [[repository.fullName should] equal:@"yaakaito/AlertNinja"];
+        [[repository.language should] equal:@"Objective-C"];
+        [[repository.repositoryDescription should] equal:@"Invisible UIAlertView and spying."];
+        [[theValue(repository.watchers) should] equal:theValue(2)];
+        [[theValue(repository.forks) should] equal:theValue(1)];
+        [[theValue(repository.fork) should] beNo];
+        [[theValue(repository.openIssues) should] equal:theValue(1)];
+    };
+    
     context(@"をJSONから初期化したとき", ^{
         
         beforeAll(^{
@@ -21,42 +32,40 @@ describe(@"Repository", ^{
             repository = [BGRepository repositoryWithJSON:json];
         });
         
-        it(@"はresourceUrlがfull_nameから構築される", ^{
+        it(@"はresourceUrlをfull_nameから構築する", ^{
             NSString *urlString = @"https://api.github.com/repos/yaakaito/AlertNinja";
             [[[repository.resourceUrl absoluteString] should] equal:urlString];
         });
         
-        it(@"はnameにリポジトリ名を持つ", ^{
-            [[repository.name should] equal:@"AlertNinja"];
+        it(@"はリポジトリに表すのに必要な情報をセットできている", ^{
+            checkRepositorySpecWithAlertNinja(repository);
+        });
+
+    });
+    
+    context(@"をリポジトリ名から初期化したとき", ^{
+        beforeAll(^{
+            repository = [BGRepository repositoryWithFullName:@"yaakaito/AlertNinja"];
         });
         
-        it(@"はfullNameにリポジトリのユーザー名を含めた名前を持つ", ^{
-            [[repository.fullName should] equal:@"yaakaito/AlertNinja"];
+        
+        it(@"はresourceUrlがリポジトリ名から構築する", ^{
+            NSString *urlString = @"https://api.github.com/repos/yaakaito/AlertNinja";
+            [[[repository.resourceUrl absoluteString] should] equal:urlString];
+        });
+    });
+    
+    context(@"がrepo.alertninja.jsonをパースしたとき", ^{
+        beforeAll(^{
+            id json = [NSBundle jsonObjectForResourceName:@"repo.alertninja"];
+            repository = [BGRepository repositoryWithFullName:@"yaakaito/AlertNinja"];
+            [repository setValuesFromJSON:json];
         });
         
-        it(@"は言語情報を文字列で持つ", ^{
-            [[repository.language should] equal:@"Objective-C"];
+        it(@"はリポジトリに表すのに必要な情報をセットできている", ^{
+            checkRepositorySpecWithAlertNinja(repository);
         });
-        
-        it(@"はリポジトリの説明を持つ", ^{
-            [[repository.repositoryDescription should] equal:@"Invisible UIAlertView and spying."];
-        });
-        
-        it(@"はwatcher数(star数)を持つ", ^{
-            [[theValue(repository.watchers) should] equal:theValue(2)];
-        });
-        
-        it(@"はfork数を持つ", ^{
-            [[theValue(repository.forks) should] equal:theValue(1)];
-        });
-        
-        it(@"はforkされたリポジトリかを持つ", ^{
-            [[theValue(repository.fork) should] beNo];
-        });
-        
-        it(@"はオープンなissueの数を持つ", ^{
-            [[theValue(repository.openIssues) should] equal:theValue(1)];
-        });
+
     });
 });
 

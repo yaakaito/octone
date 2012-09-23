@@ -20,5 +20,5 @@
 @property (nonatomic, readonly) NSInteger openIssues;
 
 + (id)repositoryWithJSON:(id)json;
-+ (id)repositorywithFullName:(id)fullName;
++ (id)repositoryWithFullName:(id)fullName;
 @end

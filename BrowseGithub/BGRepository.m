@@ -30,7 +30,7 @@
 
 }
 
-+ (id)repositorywithFullName:(id)fullName {
++ (id)repositoryWithFullName:(id)fullName {
     NSString *path = [NSString stringWithFormat:@"/repos/%@", fullName];
     return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:path
                                                             auth:NO]];
