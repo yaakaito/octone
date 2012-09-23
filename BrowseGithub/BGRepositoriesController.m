@@ -12,6 +12,7 @@
 #import "BGRepository.h"
 #import "BGBaseCell.h"
 #import "BGRepositoryController.h"
+#import "UIViewController+BrowseGithub.h"
 
 @interface BGRepositoriesController ()
 @property (nonatomic, strong) BGRepositoryManager *manager;
@@ -56,8 +57,21 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BGRepositoryController *ctl = [[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
-    [self.navigationController pushViewController:ctl animated:YES];
+    
+    //UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back-button"]]];
+//    UIBarButtonItem *backBarButtonItem =
+//    [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-button"]
+//                                     style:UIBarButtonItemStyleBordered
+//                                    target:nil
+//                                    action:nil];
+//    [backBarButtonItem setBackgroundImage:[UIImage imageNamed:@"back-button"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//
+    BGRepositoryController *repositoryController = [[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
+    
+    [self assignBackBarButtonForTargetViewController:repositoryController];
+    [self.navigationController pushViewController:repositoryController animated:YES];
+    
+
 }
 
 @end

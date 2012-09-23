@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
 		B97B3367160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
+		B97B336B160DB700000D8E6D /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B97B3369160DB700000D8E6D /* back-button.png */; };
+		B97B336C160DB700000D8E6D /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B97B3369160DB700000D8E6D /* back-button.png */; };
+		B97B336D160DB700000D8E6D /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97B336A160DB700000D8E6D /* back-button@2x.png */; };
+		B97B336E160DB700000D8E6D /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97B336A160DB700000D8E6D /* back-button@2x.png */; };
+		B97B3371160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3370160E8D02000D8E6D /* UIViewController+BrowseGithub.m */; };
+		B97B3372160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3370160E8D02000D8E6D /* UIViewController+BrowseGithub.m */; };
 		B98506E716097B8D00CA2F8D /* BGRepositoriesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B99BD9ED1604FDC8000AD406 /* BGRepositoriesSpec.m */; };
 		B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B99BD9D21602679F000AD406 /* Default-568h@2x.png */; };
 		B99BD9D71602FA98000AD406 /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
@@ -165,6 +171,10 @@
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97B3364160C3502000D8E6D /* BGRepositoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryController.h; sourceTree = "<group>"; };
 		B97B3365160C3502000D8E6D /* BGRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryController.m; sourceTree = "<group>"; };
+		B97B3369160DB700000D8E6D /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
+		B97B336A160DB700000D8E6D /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
+		B97B336F160E8D02000D8E6D /* UIViewController+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BrowseGithub.h"; sourceTree = "<group>"; };
+		B97B3370160E8D02000D8E6D /* UIViewController+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BrowseGithub.m"; sourceTree = "<group>"; };
 		B99BD9D21602679F000AD406 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		B99BD9D81602FB6A000AD406 /* MockReceivedEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockReceivedEvents.h; sourceTree = "<group>"; };
 		B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockReceivedEvents.m; sourceTree = "<group>"; };
@@ -424,6 +434,8 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B97B3369160DB700000D8E6D /* back-button.png */,
+				B97B336A160DB700000D8E6D /* back-button@2x.png */,
 				B99BD9D21602679F000AD406 /* Default-568h@2x.png */,
 				B9B83EBE15FF03F60071F088 /* iPhone.png */,
 				B9B83EBF15FF03F60071F088 /* iPhone@2x.png */,
@@ -567,6 +579,8 @@
 				B9B83E0815FE81290071F088 /* UIGlossyButton+BrowseGithub.m */,
 				B9B83DF215FE81290071F088 /* NSURL+GithubResource.h */,
 				B9B83DF315FE81290071F088 /* NSURL+GithubResource.m */,
+				B97B336F160E8D02000D8E6D /* UIViewController+BrowseGithub.h */,
+				B97B3370160E8D02000D8E6D /* UIViewController+BrowseGithub.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -814,6 +828,8 @@
 				B9B83EC015FF03F60071F088 /* iPhone.png in Resources */,
 				B9B83EC115FF03F60071F088 /* iPhone@2x.png in Resources */,
 				B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */,
+				B97B336B160DB700000D8E6D /* back-button.png in Resources */,
+				B97B336D160DB700000D8E6D /* back-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +859,8 @@
 				B9B83F1415FFAC7E0071F088 /* received_events.json in Resources */,
 				B9A21E30160980BC006167BE /* repo.alertninja.json in Resources */,
 				B9A21E3316098C41006167BE /* user.repos.json in Resources */,
+				B97B336C160DB700000D8E6D /* back-button.png in Resources */,
+				B97B336E160DB700000D8E6D /* back-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +938,7 @@
 				B9A21E361609D05E006167BE /* BGRepositoryManager.m in Sources */,
 				B9A21E3E160AEAD4006167BE /* BGResourceManager.m in Sources */,
 				B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */,
+				B97B3371160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +1003,7 @@
 				B9A21E41160AEB32006167BE /* BGResourceManagerSpec.m in Sources */,
 				B9A21E44160AF96D006167BE /* MockResource.m in Sources */,
 				B97B3367160C3503000D8E6D /* BGRepositoryController.m in Sources */,
+				B97B3372160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
