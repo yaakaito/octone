@@ -53,6 +53,7 @@
     BGBaseCell *cell = [[BGBaseCell alloc] init];
     BGRepository *repository = [self.manager repositoryAtIndex:indexPath.row];
     cell.textLabel.text = repository.name;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
