@@ -7,6 +7,15 @@
 
 #import "Kiwi.h"
 #import "BGRootController.h"
+#import "BGAuthenticationController.h"
+#import <JASidePanels/JASidePanelController.h>
+#import "BGGithubResource.h"
+
+@interface BGRootController()
+@property (nonatomic, strong) BGAuthenticationController *authenticationController;
+@property (nonatomic, strong) JASidePanelController *appRootController;
+- (void)showNetworkError;
+@end
 
 SPEC_BEGIN(BGRootControllerSpec)
 
@@ -14,16 +23,19 @@ describe(@"Root Controller ", ^{
     __block BGRootController *controller;
     context(@"が初期されたとき", ^{
 
-        xit(@"は、エラー通知用のnotificationを受け取れる", ^{
-            ;
+        beforeEach(^{
+            controller = [[BGRootController alloc] init];
+            [controller loadView];
         });
         
         xit(@"は、OAuth用のコントローラーを生成できる", ^{
-            
+            [controller.authenticationController shouldNotBeNil];
+            [[controller.authenticationController should] beKindOfClass:[BGAuthenticationController class]];
         });
         
         xit(@"は、アプリケーションのコントローラーを生成できる", ^{
-            
+            [controller.appRootController shouldNotBeNil];
+            [[controller.appRootController should] beKindOfClass:[JASidePanelController class]];
         });
         
         
@@ -48,8 +60,17 @@ describe(@"Root Controller ", ^{
     
     context(@"がエラー通知を受け取ったとき", ^{
         
-        xit(@"は、ネットワークのエラーなら、connectionエラーを表示する", ^{
-            
+        beforeAll(^{
+            controller = [[BGRootController alloc] init];
+            [controller loadView];
+            [controller viewDidLoad];
+            [controller viewWillAppear:NO];
+            [controller viewDidAppear:NO];
+        });
+        
+        it(@"は、ネットワークのエラーなら、ネットワーク1エラーを表示する", ^{
+            [[controller should] receive:@selector(showNetworkError)];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kBGGithubResourceRequestFailureNotification];
         });
         
         xit(@"は、APIのエラーなら、APIエラーを表示する", ^{

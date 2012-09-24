@@ -16,6 +16,9 @@
 #import "PatchedJASidePanelController.h"
 #import "UIColor+BrowseGithub.h"
 #import "BGEventsController.h"
+#import "BGGithubResource.h"
+
+#import <EEHUDView/EEHUDView.h>
 
 @interface BGRootController ()
 @property (nonatomic, strong) BGAuthenticationController *authenticationController;
@@ -78,6 +81,24 @@
         [self.view addSubview:self.appRootController.view];
     }
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(githubResourceDidRequestFailure:)
+                                                 name:kBGGithubResourceRequestFailureNotification
+                                               object:nil];
+}
+
+- (void)showNetworkError
+{
+    [EEHUDView growlWithMessage:@"Network Error"
+                      showStyle:EEHUDViewShowStyleShake
+                      hideStyle:EEHUDViewHideStyleFadeOut
+                resultViewStyle:EEHUDResultViewStyleNG
+                       showTime:0.6f];
+}
+
+- (void)githubResourceDidRequestFailure:(NSNotification *)notification
+{
+    [self showNetworkError];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
