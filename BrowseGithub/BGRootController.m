@@ -53,11 +53,7 @@
     _appRootController = [[PatchedJASidePanelController alloc] init];
     _appRootController.view.frame = [self initialFrame];
     [(PatchedJASidePanelController*)_appRootController startNotificationListener];
-    
-    /*
-    BGEventsController *vc = [[BGEventsController alloc] init];
-    vc.title = @"News Feeds";
-    */
+
     UIViewController *firstController = [[BGGlobalMenuContents sharedContents] contentsControllerForIndex:0];
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
     BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:firstController];
