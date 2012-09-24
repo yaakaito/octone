@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B96ABC821610486500BF55A6 /* BGRepositoryManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */; };
+		B96ABC861610492B00BF55A6 /* MockRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC851610492A00BF55A6 /* MockRepositories.m */; };
 		B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
 		B97B3367160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
 		B97B336B160DB700000D8E6D /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B97B3369160DB700000D8E6D /* back-button.png */; };
@@ -171,6 +173,9 @@
 
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryManagerSpec.m; sourceTree = "<group>"; };
+		B96ABC841610492A00BF55A6 /* MockRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockRepositories.h; sourceTree = "<group>"; };
+		B96ABC851610492A00BF55A6 /* MockRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockRepositories.m; sourceTree = "<group>"; };
 		B97B3364160C3502000D8E6D /* BGRepositoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryController.h; sourceTree = "<group>"; };
 		B97B3365160C3502000D8E6D /* BGRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryController.m; sourceTree = "<group>"; };
 		B97B3369160DB700000D8E6D /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
@@ -626,6 +631,7 @@
 				B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */,
 				B9A21E40160AEB32006167BE /* BGResourceManagerSpec.m */,
 				B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */,
+				B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -681,6 +687,8 @@
 				B99BD9D91602FB6A000AD406 /* MockReceivedEvents.m */,
 				B9A21E42160AF96D006167BE /* MockResource.h */,
 				B9A21E43160AF96D006167BE /* MockResource.m */,
+				B96ABC841610492A00BF55A6 /* MockRepositories.h */,
+				B96ABC851610492A00BF55A6 /* MockRepositories.m */,
 			);
 			name = "Fakes, Stubs, Mocks";
 			sourceTree = "<group>";
@@ -1012,6 +1020,8 @@
 				B97B3372160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */,
 				B97B3376160EA9CE000D8E6D /* BGRepositoryCell.m in Sources */,
 				B9D5B208160F232900B6A69A /* BGEventManagerSpec.m in Sources */,
+				B96ABC821610486500BF55A6 /* BGRepositoryManagerSpec.m in Sources */,
+				B96ABC861610492B00BF55A6 /* MockRepositories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
