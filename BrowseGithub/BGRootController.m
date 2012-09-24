@@ -17,6 +17,7 @@
 #import "UIColor+BrowseGithub.h"
 #import "BGEventsController.h"
 #import "BGGithubResource.h"
+#import "BGGlobalMenuContents.h"
 
 #import <EEHUDView/EEHUDView.h>
 
@@ -53,14 +54,16 @@
     _appRootController.view.frame = [self initialFrame];
     [(PatchedJASidePanelController*)_appRootController startNotificationListener];
     
+    /*
     BGEventsController *vc = [[BGEventsController alloc] init];
     vc.title = @"News Feeds";
+    */
+    UIViewController *firstController = [[BGGlobalMenuContents sharedContents] contentsControllerForIndex:0];
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
-    BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:vc];
+    BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:firstController];
     globalMenuController.delegate = navigationController;
     _appRootController.centerPanel = navigationController;
     _appRootController.leftPanel = globalMenuController;
-    
     return _appRootController;
 }
 

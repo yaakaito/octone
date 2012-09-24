@@ -38,7 +38,6 @@
     self.tableView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
 }
 
 - (void)viewDidUnload
