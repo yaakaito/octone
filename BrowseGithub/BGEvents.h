@@ -1,5 +1,5 @@
 //
-//  BGReceivedEvents.h
+//  BGEvents.h
 //  BrowseGithub
 //
 //  Created by yaakaito on 12/09/12.
@@ -10,7 +10,7 @@
 
 @class BGUser;
 
-@interface BGReceivedEvents : BGGithubResource
+@interface BGEvents : BGGithubResource
 @property (nonatomic, strong, readonly) NSArray *events;
 
 + (id)receivedEventsWithUser:(BGUser*)user;

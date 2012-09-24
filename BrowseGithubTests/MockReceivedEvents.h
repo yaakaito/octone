@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 yaakaito. All rights reserved.
 //
 
-#import "BGReceivedEvents.h"
+#import "BGEvents.h"
 
-@interface MockReceivedEvents : BGReceivedEvents
+@interface MockReceivedEvents : BGEvents
 
 @property (nonatomic) BOOL success;
 

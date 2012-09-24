@@ -7,7 +7,7 @@
 //
 
 #import "BGEventManager.h"
-#import "BGReceivedEvents.h"
+#import "BGEvents.h"
 #import "BGEvent.h"
 #import "BGAuthenticationManager.h"
 
@@ -19,7 +19,7 @@
 
 - (void)setResourcesFromResource:(BGGithubResource *)resource reload:(BOOL)reload {
     
-    BGReceivedEvents *receivedEvent = (BGReceivedEvents*)resource;
+    BGEvents *receivedEvent = (BGEvents*)resource;
     if (reload) {
         self.events = [receivedEvent.events mutableCopy];
     }

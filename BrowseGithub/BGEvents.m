@@ -1,21 +1,21 @@
 //
-//  BGReceivedEvents.m
+//  BGEvents.m
 //  BrowseGithub
 //
 //  Created by yaakaito on 12/09/12.
 //  Copyright (c) 2012年 yaakaito. All rights reserved.
 //
 
-#import "BGReceivedEvents.h"
+#import "BGEvents.h"
 #import "BGUser.h"
 #import "BGEvent.h"
 #import "NSURL+GithubResource.h"
 
-@interface BGReceivedEvents()
+@interface BGEvents()
 @property (nonatomic, strong) NSArray *events;
 @end
 
-@implementation BGReceivedEvents
+@implementation BGEvents
 
 + (id)receivedEventsWithUser:(BGUser *)user {
     return [[self alloc] initWithUrl:[NSURL githubApiURLWithPath:[NSString stringWithFormat:@"/users/%@/received_events", user.login]

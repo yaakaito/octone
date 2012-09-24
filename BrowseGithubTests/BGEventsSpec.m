@@ -1,22 +1,22 @@
 //
-//  BrowseGithub - BGReceivedEventsSpec.m
+//  BrowseGithub - BGEventsSpec.m
 //  Copyright 2012年 yaakaito. All rights reserved.
 //
 //  Created by: yaakaito
 //
 
 #import "Kiwi.h"
-#import "BGReceivedEvents.h"
+#import "BGEvents.h"
 #import "BGUser.h"
 #import "BGEvent.h"
 #import "BGAuthenticationManager.h"
 #import "NSBundle+Specs.h"
 
 
-SPEC_BEGIN(BGReceivedEventsSpec)
+SPEC_BEGIN(BGEventsSpec)
 
-describe(@"Received Events", ^{
-    __block BGReceivedEvents *receivedEvents;
+describe(@"Events", ^{
+    __block BGEvents *receivedEvents;
     __block BGUser *user;
     NSString *accessToken = [[BGAuthenticationManager sharedManager] accessToken];
 
@@ -27,7 +27,7 @@ describe(@"Received Events", ^{
 
     context(@"をUserによって初期化するとき", ^{
         beforeAll(^{
-            receivedEvents = [BGReceivedEvents receivedEventsWithUser:user];
+            receivedEvents = [BGEvents receivedEventsWithUser:user];
         });
         
         it(@"は、ユーザーのログイン名を元にアドレスを構築する", ^{
@@ -40,7 +40,7 @@ describe(@"Received Events", ^{
     context(@"がreceived_events.jsonパースしたとき", ^{
         
         beforeAll(^{
-            receivedEvents = [[BGReceivedEvents alloc] init];
+            receivedEvents = [[BGEvents alloc] init];
             id json = [NSBundle jsonObjectForResourceName:@"received_events"];
             [receivedEvents setValuesFromJSON:json];
         });

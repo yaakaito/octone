@@ -10,7 +10,7 @@
 #import "BGEvent.h"
 #import "BGEventManager.h"
 #import "BGBaseCell.h"
-#import "BGReceivedEvents.h"
+#import "BGEvents.h"
 #import "BGAuthenticationManager.h"
 
 @interface BGEventsController ()
@@ -31,7 +31,7 @@
 
 - (void)reloadData:(void (^)(void))complete {
   
-    BGReceivedEvents *receivedEvents = [BGReceivedEvents receivedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
+    BGEvents *receivedEvents = [BGEvents receivedEventsWithUser:[[BGAuthenticationManager sharedManager] loginUser]];
     [self.manager reloadResource:receivedEvents
                         complete:^{
                             complete();
