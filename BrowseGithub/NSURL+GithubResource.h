@@ -10,4 +10,5 @@
 
 @interface NSURL (GithubResource)
 + (id)githubApiURLWithPath:(NSString*)path auth:(BOOL)auth;
+- (NSString*)threadId;
 @end

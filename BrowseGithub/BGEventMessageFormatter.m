@@ -9,6 +9,7 @@
 #import "BGEventMessageFormatter.h"
 #import "BGEvent.h"
 #import "UIColor+BrowseGithub.h"
+#import "NSURL+GithubResource.h"
 
 @implementation BGEventMessageFormatter
 
@@ -28,6 +29,12 @@
     }
     else if ([event.typeString isEqualToString:@"GollumEvent"]) {
         return [self gollumEventMessageWithEvent:event];
+    }
+    else if ([event.typeString isEqualToString:@"PullRequestEvent"]) {
+        return [self pullRequestEventMessageWithEvent:event];
+    }
+    else if ([event.typeString isEqualToString:@"PullRequestReviewCommentEvent"]) {
+        return [self pullRequestReviewCommentEventMessageWithEvent:event];
     }
     else if ([event.typeString isEqualToString:@"PushEvent"]) {
         return [self pushEventMessageWithEvent:event];
@@ -108,6 +115,31 @@
     return message;
 }
 
++ (NSAttributedString *)pullRequestEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ pull request ", event.payload[@"action"]]];
+    NSAttributedString *idSuffix = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"#%@", event.payload[@"pull_request"][@"number"]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    [message appendAttributedString:idSuffix];
+    
+    return message;
+}
+
++ (NSAttributedString *)pullRequestReviewCommentEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" commented on pull request "];
+    NSURL *targetUrl = [NSURL URLWithString:event.payload[@"comment"][@"_links"][@"pull_request"][@"href"]];
+    NSAttributedString *idSuffix = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"#%@", [targetUrl threadId]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    [message appendAttributedString:idSuffix];
+    
+    return message;
+}
+
 + (NSAttributedString *)pushEventMessageWithEvent:(BGEvent *)event {
     
     NSString *branch = [event.payload[@"ref"] substringFromIndex:[@"refs/heads/" length]];
@@ -132,6 +164,12 @@
 + (NSString *)descriptionWithEvent:(BGEvent *)event {
     
     if ([event.typeString isEqualToString:@"CommitCommentEvent"]) {
+        return event.payload[@"comment"][@"body"];
+    }
+    else if ([event.typeString isEqualToString:@"PullRequestEvent"]) {
+        return event.payload[@"pull_request"][@"title"];
+    }
+    else if ([event.typeString isEqualToString:@"PullRequestReviewCommentEvent"]) {
         return event.payload[@"comment"][@"body"];
     }
     return nil;

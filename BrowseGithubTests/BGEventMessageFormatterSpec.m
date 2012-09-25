@@ -197,36 +197,38 @@ describe(@"Event Message Formatter", ^{
     
     context(@"PullRequestEventをフォーマットするとき", ^{
         // payload.pull_request._links.self.href https://api.github.com/repos/CocoaPods/Specs/pulls/538
-        it(@"は、メッセージは'$actorLogin $payload.action pull request $repositoryName#65'", ^{
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload( @"PullRequestEvent",  @{ @"action" : @"closed" , @"pull_request" : @{ @"number" : @65 , @"title" : @"あとでやる",}} );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
+        
+        it(@"は、メッセージは'$actorLogin $payload.action pull request $repositoryName#number'", ^{
             [[[message string] should] equal:@"yaakaito closed pull request yaakaito/Repository#65"];
         });
         
-        it(@"は、詳細は$payload.comment.body", ^{
+        it(@"は、詳細は$payload.pull_reqeust.title", ^{
             [[description should] equal:@"あとでやる"];
         });
     });
     
     context(@"PullRequestReviewCommentEventをフォーマットするとき", ^{
-        //    comment: {
-        //    position: 13,
-        //    commit_id: "5a6ed54fd8402ac3e1e882e17b7e1746bf1aa4df",
-        //    url: "https://api.github.com/repos/github/ReactiveCocoa/pulls/comments/1680920",
-        //    original_commit_id: "5a6ed54fd8402ac3e1e882e17b7e1746bf1aa4df",
-        //    updated_at: "2012-09-25T06:41:51Z",
-        //    _links: {
-        //        self: {
-        //        href: "https://api.github.com/repos/github/ReactiveCocoa/pulls/comments/1680920"
-        //        },
-        //    pull_request: {
-        //    href: "https://api.github.com/repos/github/ReactiveCocoa/pulls/65"
-        //    },
-        
         // payload.comment._links.pull_request.href :
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload( @"PullRequestReviewCommentEvent",  @{ @"comment" : @{ @"body" : @"あとでやる", @"_links" : @{ @"pull_request" : @{ @"href" : @"https://api.github.com/repos/yaakaito/Repository/pulls/65"}}}} );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
+        
         it(@"は、メッセージは'$actorLogin commented on pull request $repositoryName#65'", ^{
             [[[message string] should] equal:@"yaakaito commented on pull request yaakaito/Repository#65"];
         });
         
-        it(@"は、詳細は$payload.pull_reqeust.title", ^{
+        it(@"は、詳細は$payload.comment.body", ^{
             [[description should] equal:@"あとでやる"];
         });
         

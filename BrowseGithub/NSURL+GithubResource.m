@@ -30,4 +30,10 @@
     return [NSURL URLWithString:urlString];
 }
 
+- (NSString *)threadId {
+    
+    return [[[self relativePath] componentsSeparatedByString:@"/"] lastObject];
+}
+
+
 @end
