@@ -24,13 +24,19 @@ describe(@"Event Message Formatter", ^{
     __block NSAttributedString *message;
     __block NSString *description;
     
+    BGEvent*(^eventWithPayload)(NSDictionary *) = ^(NSDictionary *payload) {
+        
+        BGEvent *event = [[BGEvent alloc] init];
+        event.typeString = @"CommitCommentEvent";
+        event.repositoryName = @"yaakaito/Repository";
+        event.actorLogin = @"yaakaito";
+        event.payload = payload;
+        return event;
+    };
+    
     context(@"CommitCommentEventをフォーマットするとき", ^{
         beforeAll(^{
-            event = [[BGEvent alloc] init];
-            event.typeString = @"CommitCommentEvent";
-            event.repositoryName = @"yaakaito/Repository";
-            event.actorLogin = @"yaakaito";
-            event.payload = @{ @"comment" : @{ @"body" : @"あとでやる" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} };
+            event = eventWithPayload(@{ @"comment" : @{ @"body" : @"あとでやる" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} });
             message = [BGEventMessageFormatter messageWithEvent:event];
             description = [BGEventMessageFormatter descriptionWithEvent:event];
 
@@ -48,11 +54,7 @@ describe(@"Event Message Formatter", ^{
     context(@"CreateEventをフォーマットするとき", ^{
         context(@"にリポジトリを作った場合", ^{
             beforeAll(^{
-                event = [[BGEvent alloc] init];
-                event.typeString = @"CreateEvent";
-                event.repositoryName = @"yaakaito/Repository";
-                event.actorLogin = @"yaakaito";
-                event.payload = @{ @"ref_type" : @"repository"};
+                event = eventWithPayload( @{ @"ref_type" : @"repository"} );
                 message = [BGEventMessageFormatter messageWithEvent:event];
                 description = [BGEventMessageFormatter descriptionWithEvent:event];
             });
@@ -70,11 +72,7 @@ describe(@"Event Message Formatter", ^{
         
         context(@"にリポジトリ以外を作った場合", ^{
             beforeAll(^{
-                event = [[BGEvent alloc] init];
-                event.typeString = @"CreateEvent";
-                event.repositoryName = @"yaakaito/Repository";
-                event.actorLogin = @"yaakaito";
-                event.payload = @{ @"ref_type" : @"branch" , @"ref" : @"hoge" };
+                event = eventWithPayload( @{ @"ref_type" : @"branch" , @"ref" : @"hoge" } );
                 message = [BGEventMessageFormatter messageWithEvent:event];
                 description = [BGEventMessageFormatter descriptionWithEvent:event];
             });
@@ -86,7 +84,7 @@ describe(@"Event Message Formatter", ^{
             it(@"は、詳細情報はなし", ^{
                 [description shouldBeNil];
             });
-
+            
         });
     });
     
@@ -202,7 +200,7 @@ describe(@"Event Message Formatter", ^{
         //    href: "https://api.github.com/repos/github/ReactiveCocoa/pulls/65"
         //    },
         
-        // payload.comment._links.pull_request.href : 
+        // payload.comment._links.pull_request.href :
         it(@"は、メッセージは'$actorLogin commented on pull request $repositoryName#65'", ^{
             [[[message string] should] equal:@"yaakaito commented on pull request yaakaito/Repository#65"];
         });
@@ -210,9 +208,9 @@ describe(@"Event Message Formatter", ^{
         it(@"は、詳細は$payload.pull_reqeust.title", ^{
             [[description should] equal:@"あとでやる"];
         });
-
+        
     });
-
+    
     context(@"PushEventをフォーマットするとき", ^{
         // payload.ref = "refs/heads/master"
         it(@"は、メッセージは'$actorLogin pushed to $payload.ref at $repositoryName'", ^{
@@ -231,7 +229,7 @@ describe(@"Event Message Formatter", ^{
     });
     
     context(@"WatchEventをフォーマットするとき", ^{
-
+        
         beforeAll(^{
             event = [[BGEvent alloc] init];
             event.typeString = @"WatchEvent";
