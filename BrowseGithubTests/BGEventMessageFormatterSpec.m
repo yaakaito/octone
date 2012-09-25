@@ -239,11 +239,7 @@ describe(@"Event Message Formatter", ^{
     context(@"WatchEventをフォーマットするとき", ^{
         
         beforeAll(^{
-            event = [[BGEvent alloc] init];
-            event.typeString = @"WatchEvent";
-            event.repositoryName = @"yaakaito/Repository";
-            event.actorLogin = @"yaakaito";
-            event.payload = @{ @"action" : @"started" };
+            event = eventWithTypeAndPayload( @"WatchEvent", @{ @"action" : @"started" } );
             message = [BGEventMessageFormatter messageWithEvent:event];
             description = [BGEventMessageFormatter descriptionWithEvent:event];
         });

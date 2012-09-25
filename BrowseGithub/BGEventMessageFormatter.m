@@ -23,17 +23,20 @@
     else if ([event.typeString isEqualToString:@"GistEvent"]) {
         return [self gistEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"WatchEvent"]) {
+        return [self watchEventMessageWithEvent:event];
+    }
     return nil;
 }
 
 + (NSAttributedString *)attributedActor:(NSString *)actor {
     
-    return [[NSAttributedString alloc] initWithString:actor attributes:@{NSForegroundColorAttributeName : [UIColor githubPrimaryColor]}];
+    return [[NSAttributedString alloc] initWithString:actor attributes:@{NSForegroundColorAttributeName : [UIColor githubSecondaryColorB]}];
 }
 
 + (NSAttributedString *)attributedRepository:(NSString*)repository {
     
-    return [[NSAttributedString alloc] initWithString:repository attributes:@{NSForegroundColorAttributeName : [UIColor githubPrimaryColor]}];
+    return [[NSAttributedString alloc] initWithString:repository attributes:@{NSForegroundColorAttributeName : [UIColor githubSecondaryColorB]}];
 }
 
 + (NSAttributedString *)commitCommentEventMessageWithEvent:(BGEvent *)event {
@@ -70,6 +73,16 @@
     NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ gist: %@", event.payload[@"action"], event.payload[@"gist"][@"id"]]];
     NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
     [message appendAttributedString:base];
+    
+    return message;
+}
+
++ (NSAttributedString *)watchEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" starred "];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;
 }
