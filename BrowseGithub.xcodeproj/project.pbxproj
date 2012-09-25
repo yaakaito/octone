@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
+		B90AE44216116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
+		B90AE478161181F2002D677E /* BGEventMessageFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */; };
 		B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
@@ -175,6 +178,9 @@
 
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventMessageFormatter.h; sourceTree = "<group>"; };
+		B90AE44016116D44002D677E /* BGEventMessageFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatter.m; sourceTree = "<group>"; };
+		B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatterSpec.m; sourceTree = "<group>"; };
 		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
 		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
 		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
@@ -359,6 +365,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B90AE47516117C00002D677E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
 		B9B83D5E15FE7DB50071F088 = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +434,7 @@
 		B9B83D9415FE7DB60071F088 /* BrowseGithubSpecs */ = {
 			isa = PBXGroup;
 			children = (
+				B90AE47516117C00002D677E /* Commons */,
 				B9B83EB615FE86E60071F088 /* Models */,
 				B9B83ECB15FF21420071F088 /* Views */,
 				B9B83EB815FE870A0071F088 /* Managers */,
@@ -526,6 +541,8 @@
 				B9B83D7D15FE7DB50071F088 /* BGAppDelegate.m */,
 				B9B83DF015FE81290071F088 /* BrowseGithub.h */,
 				B9B83DF115FE81290071F088 /* BrowseGithub.m */,
+				B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */,
+				B90AE44016116D44002D677E /* BGEventMessageFormatter.m */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -960,6 +977,7 @@
 				B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */,
 				B97B3371160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */,
 				B97B3375160EA9CE000D8E6D /* BGRepositoryCell.m in Sources */,
+				B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,6 +1046,8 @@
 				B96ABC821610486500BF55A6 /* BGRepositoryManagerSpec.m in Sources */,
 				B96ABC861610492B00BF55A6 /* MockRepositories.m in Sources */,
 				B9E6295B16105E4400C0142E /* BGEventsSpec.m in Sources */,
+				B90AE44216116D44002D677E /* BGEventMessageFormatter.m in Sources */,
+				B90AE478161181F2002D677E /* BGEventMessageFormatterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
