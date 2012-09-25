@@ -23,6 +23,9 @@
     else if ([event.typeString isEqualToString:@"GistEvent"]) {
         return [self gistEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"PushEvent"]) {
+        return [self pushEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"WatchEvent"]) {
         return [self watchEventMessageWithEvent:event];
     }
@@ -73,6 +76,17 @@
     NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ gist: %@", event.payload[@"action"], event.payload[@"gist"][@"id"]]];
     NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
     [message appendAttributedString:base];
+    
+    return message;
+}
+
++ (NSAttributedString *)pushEventMessageWithEvent:(BGEvent *)event {
+    
+    NSString *branch = [event.payload[@"ref"] substringFromIndex:[@"refs/heads/" length]];
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" pushed to %@ at ", branch]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;
 }

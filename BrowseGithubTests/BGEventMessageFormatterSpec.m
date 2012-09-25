@@ -220,7 +220,13 @@ describe(@"Event Message Formatter", ^{
     });
     
     context(@"PushEventをフォーマットするとき", ^{
-        // payload.ref = "refs/heads/master"
+
+        beforeAll(^{
+            event = eventWithTypeAndPayload( @"PushEvent", @{ @"ref" : @"refs/heads/master" } );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
         it(@"は、メッセージは'$actorLogin pushed to $payload.ref at $repositoryName'", ^{
             [[[message string] should] equal:@"yaakaito pushed to master at yaakaito/Repository"];
         });
