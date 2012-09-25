@@ -144,6 +144,13 @@ describe(@"Event Message Formatter", ^{
     });
     
     context(@"GollumEventをフォーマットするとき", ^{
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload(@"GollumEvent", @{ } );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
         it(@"は、メッセージは'$actorLogin edited the $repositoryName wiki'", ^{
             [[[message string] should] equal:@"yaakaito edited the yaakaito/Repository wiki"];
         });

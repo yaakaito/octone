@@ -26,6 +26,9 @@
     else if ([event.typeString isEqualToString:@"GistEvent"]) {
         return [self gistEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"GollumEvent"]) {
+        return [self gollumEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"PushEvent"]) {
         return [self pushEventMessageWithEvent:event];
     }
@@ -89,6 +92,18 @@
     NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ gist: %@", event.payload[@"action"], event.payload[@"gist"][@"id"]]];
     NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
     [message appendAttributedString:base];
+    
+    return message;
+}
+
++ (NSAttributedString *)gollumEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" edited the "];
+    NSAttributedString *wikiSuffix = [[NSAttributedString alloc] initWithString:@" wiki"];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    [message appendAttributedString:wikiSuffix];
     
     return message;
 }
