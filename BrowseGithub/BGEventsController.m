@@ -56,6 +56,8 @@
     BGBaseCell *cell = [[BGBaseCell alloc] init];
     BGEvent *event = [self.manager eventAtIndex:indexPath.row];
     cell.textLabel.attributedText = [BGEventMessageFormatter messageWithEvent:event];
+    cell.textLabel.lineBreakMode = UILineBreakModeCharacterWrap;
+    cell.textLabel.numberOfLines = 2;
     return cell;
 }
 
