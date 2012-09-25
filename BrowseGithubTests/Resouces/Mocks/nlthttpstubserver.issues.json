@@ -1,0 +1,160 @@
+[
+  {
+    "created_at": "2012-09-10T10:51:44Z",
+    "comments": 1,
+    "title": "StubServer側での非同期サポート",
+    "closed_at": null,
+    "assignee": null,
+    "state": "open",
+    "number": 32,
+    "html_url": "https://github.com/yaakaito/NLTHTTPStubServer/issues/32",
+    "updated_at": "2012-09-10T10:52:50Z",
+    "pull_request": {
+      "html_url": null,
+      "diff_url": null,
+      "patch_url": null
+    },
+    "body": "SenTestKitなどの元々非同期サポートないテストフレームワークや、フレームワークの提供するものとの相性が悪い場合に使える非同期テスト用のサポートを提供したい。\nメソッドの案としては以下の2つ\n\n```objective-c\n- (void)waitForNext;\n- (void)waitForEmpty;\n```\n\nこの2つのメソッドは、Nextは次のスタブが消費されるまで、Emptyはすべてのスタブが消化されるまで実行を止めてくれる。\n実装的にはGHUnitのAsyncTestCaseに近い感じ。\n\n",
+    "labels": [
+
+    ],
+    "user": {
+      "gravatar_id": "8ba73f340ca40f9aa49a521fdc9512ce",
+      "avatar_url": "https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "id": 283562,
+      "login": "yaakaito",
+      "url": "https://api.github.com/users/yaakaito"
+    },
+    "id": 6758708,
+    "milestone": null,
+    "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/issues/32"
+  },
+  {
+    "created_at": "2012-09-03T16:19:11Z",
+    "comments": 0,
+    "title": "NLTPathのNSURL対応",
+    "closed_at": null,
+    "assignee": null,
+    "state": "open",
+    "number": 31,
+    "html_url": "https://github.com/yaakaito/NLTHTTPStubServer/issues/31",
+    "updated_at": "2012-09-03T16:19:11Z",
+    "pull_request": {
+      "html_url": null,
+      "diff_url": null,
+      "patch_url": null
+    },
+    "body": "#30 より\n\n`NLTPath`の生成を`NSURL`からも行えるようにする。\n\n```objective-c\n[NLTPath pathWithURL:/* url */];\n```\n\n利用が想定されるケースとして考えているのは、外部からリダイレクト用のURLなどをもらったりするような状況です。",
+    "labels": [
+
+    ],
+    "user": {
+      "gravatar_id": "8ba73f340ca40f9aa49a521fdc9512ce",
+      "avatar_url": "https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "id": 283562,
+      "login": "yaakaito",
+      "url": "https://api.github.com/users/yaakaito"
+    },
+    "id": 6619101,
+    "milestone": null,
+    "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/issues/31"
+  },
+  {
+    "created_at": "2012-09-01T16:52:14Z",
+    "comments": 0,
+    "title": "Xcode4.4ベースのコードへの置き換え",
+    "closed_at": null,
+    "assignee": null,
+    "state": "open",
+    "number": 29,
+    "html_url": "https://github.com/yaakaito/NLTHTTPStubServer/issues/29",
+    "updated_at": "2012-09-01T16:52:14Z",
+    "pull_request": {
+      "html_url": null,
+      "diff_url": null,
+      "patch_url": null
+    },
+    "body": "コードの書き方が古くなってきているので、Xcode4.4ベースのものへ置き換えたい。\n\n* ARC対応(別でやった方が良いかも)\n* @synthesize の排除\n* プライベート変数は無名カテゴリで\n  * (テストの時は無名カテゴリでアクセスしてもよい)\n* 必要なときはリテラル使ってok",
+    "labels": [
+
+    ],
+    "user": {
+      "gravatar_id": "8ba73f340ca40f9aa49a521fdc9512ce",
+      "avatar_url": "https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "id": 283562,
+      "login": "yaakaito",
+      "url": "https://api.github.com/users/yaakaito"
+    },
+    "id": 6596636,
+    "milestone": null,
+    "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/issues/29"
+  },
+  {
+    "created_at": "2012-08-02T15:55:20Z",
+    "comments": 4,
+    "title": "v2作りたい",
+    "closed_at": null,
+    "assignee": null,
+    "state": "open",
+    "number": 26,
+    "html_url": "https://github.com/yaakaito/NLTHTTPStubServer/issues/26",
+    "updated_at": "2012-09-04T16:53:11Z",
+    "pull_request": {
+      "html_url": null,
+      "diff_url": null,
+      "patch_url": null
+    },
+    "body": "妄想仕様はこちら：https://github.com/yaakaito/NLTHTTPStubServer/wiki/v2-Sliver",
+    "labels": [
+      {
+        "color": "0b02e1",
+        "name": "v2",
+        "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/labels/v2"
+      }
+    ],
+    "user": {
+      "gravatar_id": "8ba73f340ca40f9aa49a521fdc9512ce",
+      "avatar_url": "https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "id": 283562,
+      "login": "yaakaito",
+      "url": "https://api.github.com/users/yaakaito"
+    },
+    "id": 5995522,
+    "milestone": null,
+    "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/issues/26"
+  },
+  {
+    "created_at": "2012-06-06T08:29:15Z",
+    "comments": 5,
+    "title": "starchat対応",
+    "closed_at": null,
+    "assignee": null,
+    "state": "open",
+    "number": 14,
+    "html_url": "https://github.com/yaakaito/NLTHTTPStubServer/issues/14",
+    "updated_at": "2012-08-26T19:28:58Z",
+    "pull_request": {
+      "html_url": null,
+      "diff_url": null,
+      "patch_url": null
+    },
+    "body": "？？？？？\n\nuser.streamのテストをしたいとのご要望です",
+    "labels": [
+      {
+        "color": "e10c02",
+        "name": "bug",
+        "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/labels/bug"
+      }
+    ],
+    "user": {
+      "gravatar_id": "8ba73f340ca40f9aa49a521fdc9512ce",
+      "avatar_url": "https://secure.gravatar.com/avatar/8ba73f340ca40f9aa49a521fdc9512ce?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "id": 283562,
+      "login": "yaakaito",
+      "url": "https://api.github.com/users/yaakaito"
+    },
+    "id": 4924840,
+    "milestone": null,
+    "url": "https://api.github.com/repos/yaakaito/NLTHTTPStubServer/issues/14"
+  }
+]
