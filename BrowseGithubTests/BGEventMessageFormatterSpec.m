@@ -90,8 +90,14 @@ describe(@"Event Message Formatter", ^{
     
     context(@"FollowEventをフォーマットするとき", ^{
         
+        beforeAll(^{
+            event = eventWithTypeAndPayload(@"FollowEvent", @{ @"target" : @{ @"login" : @"yaakaito2" } } );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
         it(@"は、メッセージは'$actorLogin started following $payload.target.login'", ^{
-            [[[message string] should] equal:@"yaakaito forked yaakaito2"];
+            [[[message string] should] equal:@"yaakaito started following yaakaito2"];
         });
         
         

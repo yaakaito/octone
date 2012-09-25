@@ -20,6 +20,9 @@
     else if ([event.typeString isEqualToString:@"CreateEvent"]) {
         return [self createEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"FollowEvent"]) {
+        return [self followEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"GistEvent"]) {
         return [self gistEventMessageWithEvent:event];
     }
@@ -69,6 +72,16 @@
     [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;    
+}
+
++ (NSAttributedString *)followEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" started following "];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedActor:event.payload[@"target"][@"login"]]];
+    
+    return message;
 }
 
 + (NSAttributedString *)gistEventMessageWithEvent:(BGEvent *)event {
