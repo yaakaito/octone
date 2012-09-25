@@ -12,6 +12,7 @@
 #import "BGBaseCell.h"
 #import "BGEvents.h"
 #import "BGAuthenticationManager.h"
+#import "BGEventMessageFormatter.h"
 
 @interface BGEventsController ()
 @property (nonatomic, strong) BGEventManager *manager;
@@ -54,7 +55,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BGBaseCell *cell = [[BGBaseCell alloc] init];
     BGEvent *event = [self.manager eventAtIndex:indexPath.row];
-    cell.textLabel.text = [event message];
+    cell.textLabel.attributedText = [BGEventMessageFormatter messageWithEvent:event];
     return cell;
 }
 
