@@ -20,6 +20,9 @@
     else if ([event.typeString isEqualToString:@"CreateEvent"]) {
         return [self createEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"GistEvent"]) {
+        return [self gistEventMessageWithEvent:event];
+    }
     return nil;
 }
 
@@ -48,7 +51,6 @@
 
 + (NSAttributedString *)createEventMessageWithEvent:(BGEvent *)event {
 
-    
     NSAttributedString *base;
     if([event.payload[@"ref_type"] isEqualToString:@"repository"]) {
         base = [[NSAttributedString alloc] initWithString:@" created repository "];
@@ -61,6 +63,15 @@
     [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;    
+}
+
++ (NSAttributedString *)gistEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ gist: %@", event.payload[@"action"], event.payload[@"gist"][@"id"]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    
+    return message;
 }
 
 + (NSString *)descriptionWithEvent:(BGEvent *)event {

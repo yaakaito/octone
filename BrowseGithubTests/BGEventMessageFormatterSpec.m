@@ -24,10 +24,10 @@ describe(@"Event Message Formatter", ^{
     __block NSAttributedString *message;
     __block NSString *description;
     
-    BGEvent*(^eventWithPayload)(NSDictionary *) = ^(NSDictionary *payload) {
+    BGEvent*(^eventWithTypeAndPayload)(NSString *, NSDictionary *) = ^(NSString *type, NSDictionary *payload) {
         
         BGEvent *event = [[BGEvent alloc] init];
-        event.typeString = @"CommitCommentEvent";
+        event.typeString = type;
         event.repositoryName = @"yaakaito/Repository";
         event.actorLogin = @"yaakaito";
         event.payload = payload;
@@ -36,7 +36,7 @@ describe(@"Event Message Formatter", ^{
     
     context(@"CommitCommentEventをフォーマットするとき", ^{
         beforeAll(^{
-            event = eventWithPayload(@{ @"comment" : @{ @"body" : @"あとでやる" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} });
+            event = eventWithTypeAndPayload(@"CommitCommentEvent", @{ @"comment" : @{ @"body" : @"あとでやる" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} });
             message = [BGEventMessageFormatter messageWithEvent:event];
             description = [BGEventMessageFormatter descriptionWithEvent:event];
 
@@ -54,7 +54,7 @@ describe(@"Event Message Formatter", ^{
     context(@"CreateEventをフォーマットするとき", ^{
         context(@"にリポジトリを作った場合", ^{
             beforeAll(^{
-                event = eventWithPayload( @{ @"ref_type" : @"repository"} );
+                event = eventWithTypeAndPayload(@"CreateEvent", @{ @"ref_type" : @"repository"} );
                 message = [BGEventMessageFormatter messageWithEvent:event];
                 description = [BGEventMessageFormatter descriptionWithEvent:event];
             });
@@ -72,7 +72,7 @@ describe(@"Event Message Formatter", ^{
         
         context(@"にリポジトリ以外を作った場合", ^{
             beforeAll(^{
-                event = eventWithPayload( @{ @"ref_type" : @"branch" , @"ref" : @"hoge" } );
+                event = eventWithTypeAndPayload(@"CreateEvent", @{ @"ref_type" : @"branch" , @"ref" : @"hoge" } );
                 message = [BGEventMessageFormatter messageWithEvent:event];
                 description = [BGEventMessageFormatter descriptionWithEvent:event];
             });
@@ -120,6 +120,14 @@ describe(@"Event Message Formatter", ^{
     });
     
     context(@"GistEventをフォーマットするとき", ^{
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload(@"GistEvent", @{ @"action" : @"created" , @"gist" : @{ @"id" : @"1000" } } );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
+        
         it(@"は、メッセージは'$actorLogin $payload.action gist: $payload.gist.id'", ^{
             [[[message string] should] equal:@"yaakaito created gist: 1000"];
         });
