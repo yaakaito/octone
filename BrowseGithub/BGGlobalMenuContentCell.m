@@ -28,7 +28,7 @@
         self.selectedBackgroundView.backgroundColor = [UIColor githubHightlightedGlobalMenuBackgroundColor];
         self.hightlighter.backgroundColor = [UIColor githubGlobalMenuHightlightColor];
         self.separator.backgroundColor = [UIColor githubGlobalMenuSeparatorColor];
-        self.textLabel.font = [UIFont boldOpenSansFontOfSize:14];
+        self.textLabel.font = [UIFont heavyDefaultFontOfSize:16];
         self.textLabel.textColor = [UIColor githubPrimaryColor];
     }
     return self;

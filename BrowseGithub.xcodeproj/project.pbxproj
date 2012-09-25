@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
+		B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
+		B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
+		B9497A9B16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
+		B9497A9C16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */; };
+		B9497A9D16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */; };
 		B96ABC821610486500BF55A6 /* BGRepositoryManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */; };
 		B96ABC861610492B00BF55A6 /* MockRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC851610492A00BF55A6 /* MockRepositories.m */; };
 		B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
@@ -111,10 +117,6 @@
 		B9B83E4C15FE81290071F088 /* navigation-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83DFF15FE81290071F088 /* navigation-background.png */; };
 		B9B83E4D15FE81290071F088 /* navigation-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0015FE81290071F088 /* navigation-background@2x.png */; };
 		B9B83E4E15FE81290071F088 /* navigation-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0015FE81290071F088 /* navigation-background@2x.png */; };
-		B9B83E4F15FE81290071F088 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0115FE81290071F088 /* OpenSans-Bold.ttf */; };
-		B9B83E5015FE81290071F088 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0115FE81290071F088 /* OpenSans-Bold.ttf */; };
-		B9B83E5115FE81290071F088 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0215FE81290071F088 /* OpenSans-Regular.ttf */; };
-		B9B83E5215FE81290071F088 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B83E0215FE81290071F088 /* OpenSans-Regular.ttf */; };
 		B9B83E5315FE81290071F088 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0415FE81290071F088 /* UIColor+BrowseGithub.m */; };
 		B9B83E5415FE81290071F088 /* UIColor+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0415FE81290071F088 /* UIColor+BrowseGithub.m */; };
 		B9B83E5515FE81290071F088 /* UIFont+BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83E0615FE81290071F088 /* UIFont+BrowseGithub.m */; };
@@ -173,6 +175,9 @@
 
 /* Begin PBXFileReference section */
 		43F191D7FD334108B3601B03 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
+		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
+		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
 		B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryManagerSpec.m; sourceTree = "<group>"; };
 		B96ABC841610492A00BF55A6 /* MockRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockRepositories.h; sourceTree = "<group>"; };
 		B96ABC851610492A00BF55A6 /* MockRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockRepositories.m; sourceTree = "<group>"; };
@@ -274,8 +279,6 @@
 		B9B83DFE15FE81290071F088 /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button@2x.png"; sourceTree = "<group>"; };
 		B9B83DFF15FE81290071F088 /* navigation-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-background.png"; sourceTree = "<group>"; };
 		B9B83E0015FE81290071F088 /* navigation-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-background@2x.png"; sourceTree = "<group>"; };
-		B9B83E0115FE81290071F088 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		B9B83E0215FE81290071F088 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B9B83E0315FE81290071F088 /* UIColor+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BrowseGithub.h"; sourceTree = "<group>"; };
 		B9B83E0415FE81290071F088 /* UIColor+BrowseGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrowseGithub.m"; sourceTree = "<group>"; };
 		B9B83E0515FE81290071F088 /* UIFont+BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+BrowseGithub.h"; sourceTree = "<group>"; };
@@ -443,6 +446,9 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */,
+				B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */,
+				B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */,
 				B97B3369160DB700000D8E6D /* back-button.png */,
 				B97B336A160DB700000D8E6D /* back-button@2x.png */,
 				B99BD9D21602679F000AD406 /* Default-568h@2x.png */,
@@ -460,8 +466,6 @@
 				B9B83DFE15FE81290071F088 /* menu-button@2x.png */,
 				B9B83DFF15FE81290071F088 /* navigation-background.png */,
 				B9B83E0015FE81290071F088 /* navigation-background@2x.png */,
-				B9B83E0115FE81290071F088 /* OpenSans-Bold.ttf */,
-				B9B83E0215FE81290071F088 /* OpenSans-Regular.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -835,8 +839,6 @@
 				B9B83E4915FE81290071F088 /* menu-button@2x.png in Resources */,
 				B9B83E4B15FE81290071F088 /* navigation-background.png in Resources */,
 				B9B83E4D15FE81290071F088 /* navigation-background@2x.png in Resources */,
-				B9B83E4F15FE81290071F088 /* OpenSans-Bold.ttf in Resources */,
-				B9B83E5115FE81290071F088 /* OpenSans-Regular.ttf in Resources */,
 				B9B83EBC15FF03EB0071F088 /* Default.png in Resources */,
 				B9B83EBD15FF03EB0071F088 /* Default@2x.png in Resources */,
 				B9B83EC015FF03F60071F088 /* iPhone.png in Resources */,
@@ -844,6 +846,9 @@
 				B99BD9D31602679F000AD406 /* Default-568h@2x.png in Resources */,
 				B97B336B160DB700000D8E6D /* back-button.png in Resources */,
 				B97B336D160DB700000D8E6D /* back-button@2x.png in Resources */,
+				B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */,
+				B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */,
+				B9497A9C16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,8 +867,6 @@
 				B9B83E4A15FE81290071F088 /* menu-button@2x.png in Resources */,
 				B9B83E4C15FE81290071F088 /* navigation-background.png in Resources */,
 				B9B83E4E15FE81290071F088 /* navigation-background@2x.png in Resources */,
-				B9B83E5015FE81290071F088 /* OpenSans-Bold.ttf in Resources */,
-				B9B83E5215FE81290071F088 /* OpenSans-Regular.ttf in Resources */,
 				B9B83EF315FF23980071F088 /* BrowseGithubSpecs-Info.plist in Resources */,
 				B9B83EF815FF23980071F088 /* resource.json in Resources */,
 				B9B83EF915FF23980071F088 /* user.json in Resources */,
@@ -875,6 +878,9 @@
 				B9A21E3316098C41006167BE /* user.repos.json in Resources */,
 				B97B336C160DB700000D8E6D /* back-button.png in Resources */,
 				B97B336E160DB700000D8E6D /* back-button@2x.png in Resources */,
+				B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */,
+				B9497A9B16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */,
+				B9497A9D16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

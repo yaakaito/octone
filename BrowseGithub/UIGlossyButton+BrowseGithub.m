@@ -20,7 +20,7 @@
     [button setStrokeType: kUIGlossyButtonStrokeTypeBevelUp];
     button.tintColor = color;
     button.borderColor = color;
-    button.titleLabel.font = [UIFont boldOpenSansFontOfSize:14];
+    button.titleLabel.font = [UIFont boldDefaultFontOfSize:14];
     button.titleLabel.textColor = [UIColor githubTextColor];
     [button setTitle:title forState:UIControlStateNormal];
     return button;

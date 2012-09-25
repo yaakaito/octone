@@ -10,12 +10,15 @@
 
 @implementation UIFont (BrowseGithub)
 
-+ (UIFont *)openSansFontOfSize:(CGFloat)size {
-    return [UIFont fontWithName:@"OpenSans" size:size];
++ (UIFont *)githubDefaultFontOfSize:(CGFloat)size {
+    return [UIFont fontWithName:@"mplus-2c-regular" size:size];
 }
 
-+ (UIFont *)boldOpenSansFontOfSize:(CGFloat)size {
-    return [UIFont fontWithName:@"OpenSans-Bold" size:size];
++ (UIFont *)boldDefaultFontOfSize:(CGFloat)size {
+    return [UIFont fontWithName:@"mplus-2c-bold" size:size];
 }
 
++ (UIFont *)heavyDefaultFontOfSize:(CGFloat)size {
+    return [UIFont fontWithName:@"mplus-2c-heavy" size:size];
+}
 @end

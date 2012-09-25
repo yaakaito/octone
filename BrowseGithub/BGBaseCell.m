@@ -27,7 +27,7 @@
         self.separator = [[UIView alloc] init];
         self.separator.backgroundColor = [UIColor githubSeparatorColor];
         [self addSubview:self.separator];
-        self.textLabel.font = [UIFont boldOpenSansFontOfSize:12];
+        self.textLabel.font = [UIFont boldDefaultFontOfSize:12];
         self.textLabel.textColor = [UIColor githubTextColor];
     }
     return self;

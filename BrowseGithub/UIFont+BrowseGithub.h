@@ -10,6 +10,7 @@
 
 @interface UIFont (BrowseGithub)
 
-+ (UIFont*)openSansFontOfSize:(CGFloat)size;
-+ (UIFont*)boldOpenSansFontOfSize:(CGFloat)size;
++ (UIFont*)githubDefaultFontOfSize:(CGFloat)size;
++ (UIFont*)boldDefaultFontOfSize:(CGFloat)size;
++ (UIFont*)heavyDefaultFontOfSize:(CGFloat)size;
 @end
