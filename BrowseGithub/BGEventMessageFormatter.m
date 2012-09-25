@@ -17,6 +17,9 @@
     if ([event.typeString isEqualToString:@"CommitCommentEvent"]) {
         return [self commitCommentEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"CreateEvent"]) {
+        return [self createEventMessageWithEvent:event];
+    }
     return nil;
 }
 
@@ -41,6 +44,23 @@
     [message appendAttributedString:attributedHash];
     
     return message;
+}
+
++ (NSAttributedString *)createEventMessageWithEvent:(BGEvent *)event {
+
+    
+    NSAttributedString *base;
+    if([event.payload[@"ref_type"] isEqualToString:@"repository"]) {
+        base = [[NSAttributedString alloc] initWithString:@" created repository "];
+    }
+    else {
+        base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" created %@ %@ at ", event.payload[@"ref_type"], event.payload[@"ref"]]];
+    }
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    
+    return message;    
 }
 
 + (NSString *)descriptionWithEvent:(BGEvent *)event {
