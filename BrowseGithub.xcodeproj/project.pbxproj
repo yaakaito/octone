@@ -66,8 +66,6 @@
 		B9B83E1015FE81290071F088 /* BGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DC915FE81290071F088 /* BGBaseCell.m */; };
 		B9B83E1115FE81290071F088 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCB15FE81290071F088 /* BGEventsController.m */; };
 		B9B83E1215FE81290071F088 /* BGEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCB15FE81290071F088 /* BGEventsController.m */; };
-		B9B83E1515FE81290071F088 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */; };
-		B9B83E1615FE81290071F088 /* BGFeedEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */; };
 		B9B83E1B15FE81290071F088 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD515FE81290071F088 /* BGGithubResource.m */; };
 		B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD515FE81290071F088 /* BGGithubResource.m */; };
 		B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */; };
@@ -163,6 +161,11 @@
 		B9B83F321600D97F0071F088 /* BGEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83F301600D97F0071F088 /* BGEventManager.m */; };
 		B9D5B208160F232900B6A69A /* BGEventManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */; };
 		B9E6295B16105E4400C0142E /* BGEventsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E6295A16105E4400C0142E /* BGEventsSpec.m */; };
+		B9ECACB61612A471000D3F90 /* BGEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACB51612A471000D3F90 /* BGEventCell.m */; };
+		B9ECACB71612A471000D3F90 /* BGEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACB51612A471000D3F90 /* BGEventCell.m */; };
+		B9ECACBD1612AB1B000D3F90 /* BGEventCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */; };
+		B9ECACC91612BBB6000D3F90 /* BGGravatarImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */; };
+		B9ECACCA1612BBB8000D3F90 /* BGGravatarImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -239,8 +242,6 @@
 		B9B83DC915FE81290071F088 /* BGBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBaseCell.m; sourceTree = "<group>"; };
 		B9B83DCA15FE81290071F088 /* BGEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventsController.h; sourceTree = "<group>"; };
 		B9B83DCB15FE81290071F088 /* BGEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsController.m; sourceTree = "<group>"; };
-		B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGFeedEntryCell.h; sourceTree = "<group>"; };
-		B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryCell.m; sourceTree = "<group>"; };
 		B9B83DD415FE81290071F088 /* BGGithubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGithubResource.h; sourceTree = "<group>"; };
 		B9B83DD515FE81290071F088 /* BGGithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResource.m; sourceTree = "<group>"; };
 		B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContentCell.h; sourceTree = "<group>"; };
@@ -336,6 +337,11 @@
 		B9B83F2F1600D97F0071F088 /* BGEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventManager.h; sourceTree = "<group>"; };
 		B9B83F301600D97F0071F088 /* BGEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManager.m; sourceTree = "<group>"; };
 		B9E6295A16105E4400C0142E /* BGEventsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventsSpec.m; sourceTree = "<group>"; };
+		B9ECACB41612A471000D3F90 /* BGEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventCell.h; sourceTree = "<group>"; };
+		B9ECACB51612A471000D3F90 /* BGEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventCell.m; sourceTree = "<group>"; };
+		B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventCellSpec.m; sourceTree = "<group>"; };
+		B9ECACBE1612B0CE000D3F90 /* BGGravatarImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageCache.h; sourceTree = "<group>"; };
+		B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageCache.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -437,6 +443,7 @@
 				B90AE47516117C00002D677E /* Commons */,
 				B9B83EB615FE86E60071F088 /* Models */,
 				B9B83ECB15FF21420071F088 /* Views */,
+				B9ECACBA1612AAE2000D3F90 /* Cells */,
 				B9B83EB815FE870A0071F088 /* Managers */,
 				B9B83EB915FE871C0071F088 /* Controllers */,
 				B9B83EAD15FE85680071F088 /* Supports */,
@@ -504,6 +511,7 @@
 		B9B83EAE15FE859E0071F088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B9ECACC41612B139000D3F90 /* _pending */,
 				B9B83DE915FE81290071F088 /* BGRootController.h */,
 				B9B83DEA15FE81290071F088 /* BGRootController.m */,
 				B9B83F1D15FFB6A90071F088 /* BGTableController.h */,
@@ -514,17 +522,11 @@
 				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
 				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
 				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
-				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
-				B9B83DED15FE81290071F088 /* BGStarsController.m */,
 				B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */,
 				B9B83DDA15FE81290071F088 /* BGGlobalMenuController.h */,
 				B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */,
-				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
-				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
 				B9B83DE315FE81290071F088 /* BGNavigationController.h */,
 				B9B83DE415FE81290071F088 /* BGNavigationController.m */,
-				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
-				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
 				B97B3364160C3502000D8E6D /* BGRepositoryController.h */,
 				B97B3365160C3502000D8E6D /* BGRepositoryController.m */,
 			);
@@ -543,6 +545,8 @@
 				B9B83DF115FE81290071F088 /* BrowseGithub.m */,
 				B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */,
 				B90AE44016116D44002D677E /* BGEventMessageFormatter.m */,
+				B9ECACBE1612B0CE000D3F90 /* BGGravatarImageCache.h */,
+				B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -760,16 +764,45 @@
 		B9B83F2E15FFC2F10071F088 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
-				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
+				B9ECACBB1612AAFA000D3F90 /* Base */,
 				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
 				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
-				B9B83DCE15FE81290071F088 /* BGFeedEntryCell.h */,
-				B9B83DCF15FE81290071F088 /* BGFeedEntryCell.m */,
 				B97B3373160EA9CE000D8E6D /* BGRepositoryCell.h */,
 				B97B3374160EA9CE000D8E6D /* BGRepositoryCell.m */,
+				B9ECACB41612A471000D3F90 /* BGEventCell.h */,
+				B9ECACB51612A471000D3F90 /* BGEventCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		B9ECACBA1612AAE2000D3F90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B9ECACBB1612AAFA000D3F90 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
+				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B9ECACC41612B139000D3F90 /* _pending */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
+				B9B83DED15FE81290071F088 /* BGStarsController.m */,
+				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
+				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
+				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
+				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
+			);
+			name = _pending;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -945,7 +978,6 @@
 				B9B83E0D15FE81290071F088 /* BGAuthenticationView.m in Sources */,
 				B9B83E0F15FE81290071F088 /* BGBaseCell.m in Sources */,
 				B9B83E1115FE81290071F088 /* BGEventsController.m in Sources */,
-				B9B83E1515FE81290071F088 /* BGFeedEntryCell.m in Sources */,
 				B9B83E1B15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
 				B9B83E1F15FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
@@ -978,6 +1010,8 @@
 				B97B3371160E8D02000D8E6D /* UIViewController+BrowseGithub.m in Sources */,
 				B97B3375160EA9CE000D8E6D /* BGRepositoryCell.m in Sources */,
 				B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */,
+				B9ECACB61612A471000D3F90 /* BGEventCell.m in Sources */,
+				B9ECACC91612BBB6000D3F90 /* BGGravatarImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,7 +1024,6 @@
 				B9B83E0E15FE81290071F088 /* BGAuthenticationView.m in Sources */,
 				B9B83E1015FE81290071F088 /* BGBaseCell.m in Sources */,
 				B9B83E1215FE81290071F088 /* BGEventsController.m in Sources */,
-				B9B83E1615FE81290071F088 /* BGFeedEntryCell.m in Sources */,
 				B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1E15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
 				B9B83E2015FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
@@ -1048,6 +1081,9 @@
 				B9E6295B16105E4400C0142E /* BGEventsSpec.m in Sources */,
 				B90AE44216116D44002D677E /* BGEventMessageFormatter.m in Sources */,
 				B90AE478161181F2002D677E /* BGEventMessageFormatterSpec.m in Sources */,
+				B9ECACB71612A471000D3F90 /* BGEventCell.m in Sources */,
+				B9ECACBD1612AB1B000D3F90 /* BGEventCellSpec.m in Sources */,
+				B9ECACCA1612BBB8000D3F90 /* BGGravatarImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

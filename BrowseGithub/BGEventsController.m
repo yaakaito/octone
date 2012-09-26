@@ -13,6 +13,7 @@
 #import "BGEvents.h"
 #import "BGAuthenticationManager.h"
 #import "BGEventMessageFormatter.h"
+#import "BGEventCell.h"
 
 @interface BGEventsController ()
 @property (nonatomic, strong) BGEventManager *manager;
@@ -41,6 +42,11 @@
                         }];
 }
 
+- (void)updateCell:(BGEventCell*)cell indexPath:(NSIndexPath*)indexPath {
+    
+    cell.event = [self.manager eventAtIndex:indexPath.row];
+}
+
 
 #pragma mark - UITableView
 
@@ -53,12 +59,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BGBaseCell *cell = [[BGBaseCell alloc] init];
-    BGEvent *event = [self.manager eventAtIndex:indexPath.row];
-    cell.textLabel.attributedText = [BGEventMessageFormatter messageWithEvent:event];
-    cell.textLabel.lineBreakMode = UILineBreakModeCharacterWrap;
-    cell.textLabel.numberOfLines = 2;
+
+    BGEventCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGEventCellReuseIdentifier];
+    if (!cell) {
+        cell = [[BGEventCell alloc] init];
+    }
+    
+    [self updateCell:cell indexPath:indexPath];
+
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kBGEventCellHeight;
 }
 
 @end

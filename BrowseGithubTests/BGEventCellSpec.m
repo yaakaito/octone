@@ -20,8 +20,8 @@
 
 @interface BGEventCell()
 @property (nonatomic, strong) BGGravatarImageView *gravatar;
-@property (nonatomic, strong) UILabel *summary;
 @property (nonatomic, strong) UILabel *message;
+@property (nonatomic, strong) UILabel *eventDescription;
 @end
 
 
@@ -37,17 +37,17 @@ describe(@"Event Cell", ^{
             cell = [[BGEventCell alloc] init];
         });
         
-        it(@"は、サマリーを表示するためのラベルを用意する", ^{
-            [cell.summary shouldNotBeNil];
-            [[[cell.summary superview] should] equal:cell.contentView];
-        });
-        
         it(@"は、メッセージを表示するためのラベルを用意する", ^{
             [cell.message shouldNotBeNil];
             [[[cell.message superview] should] equal:cell.contentView];
         });
         
-        it(@"は、Gravatarのアイコンを表示するためにビューを用意する", ^{
+        it(@"は、詳細を表示するためのラベルを用意する", ^{
+            [cell.eventDescription shouldNotBeNil];
+            [[[cell.eventDescription superview] should] equal:cell.contentView];
+        });
+        
+        xit(@"は、Gravatarのアイコンを表示するためにビューを用意する", ^{
             [cell.gravatar shouldNotBeNil];
             [[[cell.gravatar superview] should] equal:cell.contentView];
         });
@@ -55,13 +55,10 @@ describe(@"Event Cell", ^{
     
     context(@"にイベント情報をセットしたとき", ^{
         
-        beforeEach(^{
-            cell = [[BGEventCell alloc] init];
-        });
-        
         context(@"詳細付きのイベント", ^{
             
             beforeAll(^{
+                cell = [[BGEventCell alloc] init];
                 event = [[BGEvent alloc] init];
                 event.typeString = @"ForkEvent";
                 event.actorLogin = @"yaakaito";
@@ -70,46 +67,47 @@ describe(@"Event Cell", ^{
                 cell.event = event;
             });
             
-            it(@"は、summaryにフォーマットされた情報を表示する", ^{
-                [[[cell.summary.attributedText string] should] equal:@"yaakaito forked yaakaito/Repository"];
+            it(@"は、messageにフォーマットされた情報を表示する", ^{
+                [[[cell.message.attributedText string] should] equal:@"yaakaito forked yaakaito/Repository"];
             });
             
-            it(@"は、messageに何も表示しない", ^{
-                [cell.message.text shouldBeNil];
+            it(@"は、eventDescriptionに何も表示しない", ^{
+                [cell.eventDescription.text shouldBeNil];
             });
         });
         
         context(@"詳細なしのイベント", ^{
         
             beforeAll(^{
-                
+                cell = [[BGEventCell alloc] init];
                 event = [[BGEvent alloc] init];
                 event.typeString = @"CommitCommentEvent";
                 event.actorLogin = @"yaakaito";
-                event.payload    = @{ @"comment" : @{ @"body" : @"message" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} };
+                event.payload    = @{ @"comment" : @{ @"body" : @"description" , @"commit_id" : @"9367860fc2350c2adfa086034a91deab4fd6713a"} };
                 event.repositoryName = @"yaakaito/Repository";
                 cell.event = event;
             });
             
             
-            it(@"は、summaryにフォーマットされた情報を表示する", ^{
-                [[[cell.summary.attributedText string] should] equal:@"yaakaito commented on commit yaakaito/Repository@9367860fc"];
+            it(@"は、messageにフォーマットされた情報を表示する", ^{
+                [[[cell.message.attributedText string] should] equal:@"yaakaito commented on commit yaakaito/Repository@9367860fc"];
             });
             
-            it(@"は、messageにイベントの詳細を表示する", ^{
+            it(@"は、eventDescriptionにイベントの詳細を表示する", ^{
                 
-                [[cell.message.text should] equal:@"message"];
+                [[cell.eventDescription.text should] equal:@"description"];
             });
         });
         
         context(@"Gravatarのアイコン", ^{
             
             beforeAll(^{
+                cell = [[BGEventCell alloc] init];
                 event = [[BGEvent alloc] init];
                 event.actorGravatarUrl = [NSURL URLWithString:@"http://localhost/image"];
             });
             
-            it(@"は、イメージのロードを開始する", ^{
+            xit(@"は、イメージのロードを開始する", ^{
                 [[cell.gravatar should] receive:@selector(loadImage)];
                 cell.event = event;
             });
