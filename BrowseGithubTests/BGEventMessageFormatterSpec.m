@@ -87,6 +87,34 @@ describe(@"Event Message Formatter", ^{
             
         });
     });
+        
+    context(@"DeleteEventをフォーマットするとき", ^{
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload(@"DeleteEvent", @{ @"ref_type" : @"branch" , @"ref" : @"hoge"} );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
+        it(@"は、メッセージは'$actorLogin deleted $payload.ref_tye $payload.ref at $repositoryName'", ^{
+            [[[message string] should] equal:@"yaakaito deleted branch hoge at yaakaito/Repository"];
+        });
+        
+        
+        it(@"は、詳細情報はなし", ^{
+            [description shouldBeNil];
+        });
+        
+    });
+    
+    context(@"DownloadEventをフォーマットするとき", ^{
+        
+        xit(@"", ^{
+            
+        });
+        
+        
+    });
     
     context(@"FollowEventをフォーマットするとき", ^{
         
@@ -106,6 +134,7 @@ describe(@"Event Message Formatter", ^{
         });
         
     });
+    
     context(@"ForkEventをフォーマットするとき", ^{
         
         it(@"は、メッセージは'$actorLogin forked $repositoryName#65'", ^{

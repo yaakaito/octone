@@ -21,6 +21,9 @@
     else if ([event.typeString isEqualToString:@"CreateEvent"]) {
         return [self createEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"DeleteEvent"]) {
+        return [self deleteEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"FollowEvent"]) {
         return [self followEventMessageWithEvent:event];
     }
@@ -82,6 +85,17 @@
     [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;    
+}
+
+
++ (NSAttributedString *)deleteEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" deleted %@ %@ at ", event.payload[@"ref_type"], event.payload[@"ref"]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    
+    return message;
 }
 
 + (NSAttributedString *)followEventMessageWithEvent:(BGEvent *)event {
