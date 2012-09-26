@@ -137,8 +137,14 @@ describe(@"Event Message Formatter", ^{
     
     context(@"ForkEventをフォーマットするとき", ^{
         
-        it(@"は、メッセージは'$actorLogin forked $repositoryName#65'", ^{
-            [[[message string] should] equal:@"yaakaito forked yaakaito/Repository#65"];
+        beforeAll(^{
+            event = eventWithTypeAndPayload(@"ForkEvent", @{ } );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+
+        it(@"は、メッセージは'$actorLogin forked $repositoryName'", ^{
+            [[[message string] should] equal:@"yaakaito forked yaakaito/Repository"];
         });
         
         

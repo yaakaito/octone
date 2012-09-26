@@ -27,6 +27,9 @@
     else if ([event.typeString isEqualToString:@"FollowEvent"]) {
         return [self followEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"ForkEvent"]) {
+        return [self forkEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"GistEvent"]) {
         return [self gistEventMessageWithEvent:event];
     }
@@ -104,6 +107,16 @@
     NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
     [message appendAttributedString:base];
     [message appendAttributedString:[self attributedActor:event.payload[@"target"][@"login"]]];
+    
+    return message;
+}
+
++ (NSAttributedString *)forkEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" forked "];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
     
     return message;
 }
