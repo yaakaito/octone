@@ -197,6 +197,12 @@ describe(@"Event Message Formatter", ^{
     
     context(@"IssueCommentEventをフォーマットするとき", ^{
         
+        beforeAll(^{
+            event = eventWithTypeAndPayload( @"IssueCommentEvent",  @{ @"comment" : @{ @"body" : @"あとでやる"} , @"issue" : @{ @"number" : @64 }} );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
         // payload.issue.number
         it(@"は、メッセージは'$actorLogin comment on issue $repositoryName#64'", ^{
             [[[message string] should] equal:@"yaakaito comment on issue yaakaito/Repository#64"];
@@ -209,6 +215,14 @@ describe(@"Event Message Formatter", ^{
     
     
     context(@"IssuesEventをフォーマットするとき", ^{
+        
+        beforeAll(^{
+            event = eventWithTypeAndPayload( @"IssuesEvent",  @{ @"action" : @"opened" , @"issue" : @{ @"number" : @64 , @"title" : @"あとでやる"}} );
+            message = [BGEventMessageFormatter messageWithEvent:event];
+            description = [BGEventMessageFormatter descriptionWithEvent:event];
+        });
+        
+        
         it(@"は、メッセージは'$actorLogin $payload.action issue $repositoryName#64'", ^{
             [[[message string] should] equal:@"yaakaito opened issue yaakaito/Repository#64"];
         });
@@ -234,7 +248,7 @@ describe(@"Event Message Formatter", ^{
         // payload.pull_request._links.self.href https://api.github.com/repos/CocoaPods/Specs/pulls/538
         
         beforeAll(^{
-            event = eventWithTypeAndPayload( @"PullRequestEvent",  @{ @"action" : @"closed" , @"pull_request" : @{ @"number" : @65 , @"title" : @"あとでやる",}} );
+            event = eventWithTypeAndPayload( @"PullRequestEvent",  @{ @"action" : @"closed" , @"pull_request" : @{ @"number" : @65 , @"title" : @"あとでやる" }} );
             message = [BGEventMessageFormatter messageWithEvent:event];
             description = [BGEventMessageFormatter descriptionWithEvent:event];
         });

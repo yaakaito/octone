@@ -36,6 +36,12 @@
     else if ([event.typeString isEqualToString:@"GollumEvent"]) {
         return [self gollumEventMessageWithEvent:event];
     }
+    else if ([event.typeString isEqualToString:@"IssueCommentEvent"]) {
+        return [self issueCommentEventMessageWithEvent:event];
+    }
+    else if ([event.typeString isEqualToString:@"IssuesEvent"]) {
+        return [self issuesEventMessageWithEvent:event];
+    }
     else if ([event.typeString isEqualToString:@"PullRequestEvent"]) {
         return [self pullRequestEventMessageWithEvent:event];
     }
@@ -142,6 +148,30 @@
     return message;
 }
 
++ (NSAttributedString *)issueCommentEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:@" comment on issue "];
+    NSAttributedString *idSuffix = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"#%@", event.payload[@"issue"][@"number"]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    [message appendAttributedString:idSuffix];
+    
+    return message;
+}
+
++ (NSAttributedString *)issuesEventMessageWithEvent:(BGEvent *)event {
+    
+    NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ issue ", event.payload[@"action"]]];
+    NSAttributedString *idSuffix = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"#%@", event.payload[@"issue"][@"number"]]];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedActor:event.actorLogin]];
+    [message appendAttributedString:base];
+    [message appendAttributedString:[self attributedRepository:event.repositoryName]];
+    [message appendAttributedString:idSuffix];
+    
+    return message;
+}
+
 + (NSAttributedString *)pullRequestEventMessageWithEvent:(BGEvent *)event {
     
     NSAttributedString *base = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@ pull request ", event.payload[@"action"]]];
@@ -198,6 +228,12 @@
     }
     else if ([event.typeString isEqualToString:@"PullRequestReviewCommentEvent"]) {
         return event.payload[@"comment"][@"body"];
+    }
+    else if ([event.typeString isEqualToString:@"IssueCommentEvent"]) {
+        return event.payload[@"comment"][@"body"];
+    }
+    else if ([event.typeString isEqualToString:@"IssuesEvent"]) {
+        return event.payload[@"issue"][@"title"];
     }
     return nil;
 }
