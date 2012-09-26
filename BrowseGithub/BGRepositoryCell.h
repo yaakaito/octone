@@ -8,6 +8,9 @@
 
 #import "BGBaseCell.h"
 
+#define kBGRepositoryCellReuseIdentifier @"BGReposiryCellReuseIdentifier"
+#define kBGRepositoryCellHeight  80
+
 @class BGRepository;
 
 @interface BGRepositoryCell : BGBaseCell

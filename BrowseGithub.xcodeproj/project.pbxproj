@@ -166,6 +166,7 @@
 		B9ECACBD1612AB1B000D3F90 /* BGEventCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */; };
 		B9ECACC91612BBB6000D3F90 /* BGGravatarImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */; };
 		B9ECACCA1612BBB8000D3F90 /* BGGravatarImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */; };
+		B9ECACCC1612D31A000D3F90 /* BGRepositoryCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECACCB1612D31A000D3F90 /* BGRepositoryCellSpec.m */; };
 		EF51ACE753A54CAD8A8CBA6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F191D7FD334108B3601B03 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -342,6 +343,7 @@
 		B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventCellSpec.m; sourceTree = "<group>"; };
 		B9ECACBE1612B0CE000D3F90 /* BGGravatarImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageCache.h; sourceTree = "<group>"; };
 		B9ECACBF1612B0CE000D3F90 /* BGGravatarImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageCache.m; sourceTree = "<group>"; };
+		B9ECACCB1612D31A000D3F90 /* BGRepositoryCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryCellSpec.m; sourceTree = "<group>"; };
 		E5411D6CA0834872913C9F00 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -765,8 +767,6 @@
 			isa = PBXGroup;
 			children = (
 				B9ECACBB1612AAFA000D3F90 /* Base */,
-				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
-				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
 				B97B3373160EA9CE000D8E6D /* BGRepositoryCell.h */,
 				B97B3374160EA9CE000D8E6D /* BGRepositoryCell.m */,
 				B9ECACB41612A471000D3F90 /* BGEventCell.h */,
@@ -778,6 +778,7 @@
 		B9ECACBA1612AAE2000D3F90 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B9ECACCB1612D31A000D3F90 /* BGRepositoryCellSpec.m */,
 				B9ECACBC1612AB1B000D3F90 /* BGEventCellSpec.m */,
 			);
 			name = Cells;
@@ -788,6 +789,8 @@
 			children = (
 				B9B83DC815FE81290071F088 /* BGBaseCell.h */,
 				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
+				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
+				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1084,6 +1087,7 @@
 				B9ECACB71612A471000D3F90 /* BGEventCell.m in Sources */,
 				B9ECACBD1612AB1B000D3F90 /* BGEventCellSpec.m in Sources */,
 				B9ECACCA1612BBB8000D3F90 /* BGGravatarImageCache.m in Sources */,
+				B9ECACCC1612D31A000D3F90 /* BGRepositoryCellSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

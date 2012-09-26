@@ -10,7 +10,7 @@
 #import "BGRepositoryManager.h"
 #import "BGRepositories.h"
 #import "BGRepository.h"
-#import "BGBaseCell.h"
+#import "BGRepositoryCell.h"
 #import "BGRepositoryController.h"
 #import "UIViewController+BrowseGithub.h"
 
@@ -41,6 +41,14 @@
                         }];
 }
 
+- (void)updateCell:(BGRepositoryCell*)cell indexPath:(NSIndexPath*)indexPath {
+    
+    cell.repository = [self.manager repositoryAtIndex:indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
+
+#pragma mark - UITableView
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -50,10 +58,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BGBaseCell *cell = [[BGBaseCell alloc] init];
-    BGRepository *repository = [self.manager repositoryAtIndex:indexPath.row];
-    cell.textLabel.text = repository.name;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    BGRepositoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGRepositoryCellReuseIdentifier];
+    if (!cell) {
+        cell = [[BGRepositoryCell alloc] init];
+    }
+    
+    [self updateCell:cell indexPath:indexPath];
+    
     return cell;
 }
 
@@ -67,7 +79,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return kBGRepositoryCellHeight;
 }
 
 @end

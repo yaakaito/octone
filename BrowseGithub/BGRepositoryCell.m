@@ -7,20 +7,32 @@
 //
 
 #import "BGRepositoryCell.h"
+#import "BGRepository.h"
+#import "UIColor+BrowseGithub.h"
+#import "UIFont+BrowseGithub.h"
 
 @interface BGRepositoryCell()
-@property (nonatomic, strong) UILabel *title;
+@property (nonatomic, strong) UILabel *repositoryName;
 @property (nonatomic, strong) UILabel *repositoryDescription;
-@property (nonatomic, strong) UILabel *lastUpdateAt;
 @end
 
 @implementation BGRepositoryCell
 
-- (id)initWithFrame:(CGRect)frame
+- (id)init
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGRepositoryCellReuseIdentifier];
     if (self) {
-        // Initialization code
+        self.repositoryName = [[UILabel alloc] initWithFrame:CGRectZero];
+        self.repositoryName.font = [UIFont boldDefaultFontOfSize:16];
+        self.repositoryName.textColor = [UIColor githubTextColor];
+        self.repositoryName.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:self.repositoryName];
+    
+        self.repositoryDescription = [[UILabel alloc] initWithFrame:CGRectZero];
+        self.repositoryDescription.font = [UIFont githubDefaultFontOfSize:12];
+        self.repositoryDescription.textColor = [UIColor githubLightTextColor];
+        self.repositoryDescription.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:self.repositoryDescription];
     }
     return self;
 }
@@ -29,17 +41,17 @@
     
     if(_repository != repository) {
         _repository = repository;
-        
+        self.repositoryName.text = repository.name;
+        self.repositoryDescription.text = repository.repositoryDescription;
     }
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    self.repositoryName.frame = CGRectMake(10, 5, 300, 40);
+    self.repositoryDescription.frame = CGRectMake(15, 50, 290, 20);
 }
-*/
 
 @end
