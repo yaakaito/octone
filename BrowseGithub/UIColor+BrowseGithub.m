@@ -25,7 +25,7 @@
 }
 
 + (UIColor *)githubHightlightedBackgroundColor {
-    return [UIColor colorWithWhite:0.90 alpha:1.0];
+    return [UIColor colorWithWhite:0.88 alpha:1.0];
 }
 
 + (UIColor *)githubGlobalMenuBackgroundColor {
