@@ -23,7 +23,7 @@
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGEventCellReuseIdentifier];
     if (self) {
         
-        self.message = [[UILabel alloc] init];
+        self.message = [[UILabel alloc] initWithFrame:CGRectZero];
         self.message.numberOfLines = 2;
         self.message.lineBreakMode = NSLineBreakByCharWrapping;
         self.message.textColor = [UIColor githubTextColor];
@@ -31,7 +31,7 @@
         self.message.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.message];
         
-        self.eventDescription = [[UILabel alloc] init];
+        self.eventDescription = [[UILabel alloc] initWithFrame:CGRectZero];
         self.eventDescription.textColor = [UIColor githubLightTextColor];
         self.eventDescription.font = [UIFont githubDefaultFontOfSize:10];
         self.eventDescription.backgroundColor = [UIColor clearColor];
