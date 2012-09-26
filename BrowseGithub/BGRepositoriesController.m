@@ -13,9 +13,14 @@
 #import "BGRepositoryCell.h"
 #import "BGRepositoryController.h"
 #import "UIViewController+BrowseGithub.h"
+#import "BGPageLoadingCell.h"
+#import "BGAuthenticationManager.h"
 
 @interface BGRepositoriesController ()
 @property (nonatomic, strong) BGRepositoryManager *manager;
+@property (nonatomic) NSUInteger currentPage;
+@property (nonatomic) NSUInteger maximumPage;
+@property (nonatomic) BOOL loadingNextPage;
 @end
 
 @implementation BGRepositoriesController
@@ -26,12 +31,14 @@
     if (self) {
         // Custom initialization
         self.manager = [[BGRepositoryManager alloc] init];
+        self.maximumPage = [[BGAuthenticationManager sharedManager] loginUser].publicRepos / 20 + 1;
     }
     return self;
 }
 
 - (void)reloadData:(void (^)(void))complete {
 
+    self.currentPage = 1;
     BGRepositories *repositories = [BGRepositories repositoriesWithLoginUserPerPage:20 forPage:1];
     [self.manager reloadResource:repositories
                         complete:^{
@@ -39,6 +46,19 @@
                         } failure:^{
                             complete();
                         }];
+}
+
+- (void)loadNextPage {
+    
+    self.loadingNextPage = YES;
+    BGRepositories *repositories = [BGRepositories repositoriesWithLoginUserPerPage:20 forPage:++self.currentPage];
+    [self.manager addResource:repositories
+                     complete:^{
+                         self.loadingNextPage = NO;
+                         [self.tableView reloadData];
+                     } failure:^{
+                         self.loadingNextPage = NO;
+                     }];
 }
 
 - (void)updateCell:(BGRepositoryCell*)cell indexPath:(NSIndexPath*)indexPath {
@@ -54,19 +74,35 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.manager numberOfRepositories];
+    return [self.manager numberOfRepositories] + ( [self.manager numberOfRepositories] > 0 ? 1 : 0 );
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    BGRepositoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGRepositoryCellReuseIdentifier];
-    if (!cell) {
-        cell = [[BGRepositoryCell alloc] init];
+    if (indexPath.row < [self.manager numberOfRepositories]) {
+        BGRepositoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGRepositoryCellReuseIdentifier];
+        if (!cell) {
+            cell = [[BGRepositoryCell alloc] init];
+        }
+        
+        [self updateCell:cell indexPath:indexPath];
+        
+        return cell;
     }
-    
-    [self updateCell:cell indexPath:indexPath];
-    
-    return cell;
+    else {
+        BGPageLoadingCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGPageLoadingCellReuseIdentifier];
+        if (!cell) {
+            cell = [[BGPageLoadingCell alloc] init];
+        }
+        
+        if (!self.loadingNextPage && self.currentPage != self.maximumPage) {
+            
+            [self loadNextPage];
+        }
+        [cell startIndicator];
+        
+        return cell;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -66,7 +66,7 @@
     }
     
     [self updateCell:cell indexPath:indexPath];
-
+    
     return cell;
 }
 

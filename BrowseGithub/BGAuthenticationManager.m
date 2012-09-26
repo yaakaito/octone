@@ -37,6 +37,7 @@ NSString *kBGAuthenticationManagerDidOAuthFailureNotification = @"BGAuthenticati
     user.login = @"yaakaito";
     user.name = @"KAZUMA Ukyo";
     user.email = @"yaakaito@gmail.com";
+    user.publicRepos = 75;
     
     return user;
 }
