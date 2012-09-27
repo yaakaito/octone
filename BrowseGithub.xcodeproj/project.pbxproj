@@ -590,6 +590,7 @@
 		B9B83EB215FE85F50071F088 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B9ECACD11613DA17000D3F90 /* Bookmark */,
 				B9B83EB315FE85FD0071F088 /* Github */,
 				B9B83DD415FE81290071F088 /* BGGithubResource.h */,
 				B9B83DD515FE81290071F088 /* BGGithubResource.m */,
@@ -812,6 +813,13 @@
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
 			);
 			name = _pending;
+			sourceTree = "<group>";
+		};
+		B9ECACD11613DA17000D3F90 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Bookmark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
