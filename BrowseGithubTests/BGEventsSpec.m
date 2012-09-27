@@ -18,7 +18,6 @@ SPEC_BEGIN(BGEventsSpec)
 describe(@"Events", ^{
     __block BGEvents *receivedEvents;
     __block BGUser *user;
-    NSString *accessToken = [[BGAuthenticationManager sharedManager] accessToken];
 
     beforeAll(^{
         user = [[BGUser alloc] init];
@@ -27,12 +26,12 @@ describe(@"Events", ^{
 
     context(@"をUserによって初期化するとき", ^{
         beforeAll(^{
+            [[[BGAuthenticationManager sharedManager] should] receive:@selector(accessToken) andReturn:@"ACCESS_TOKEN"];
             receivedEvents = [BGEvents receivedEventsWithUser:user];
         });
         
         it(@"は、ユーザーのログイン名を元にアドレスを構築する", ^{
-            NSString *url = [NSString stringWithFormat:@"https://api.github.com/users/yaakaito/received_events?access_token=%@", accessToken];
-            [[[receivedEvents.resourceUrl absoluteString] should] equal:url];
+            [[[receivedEvents.resourceUrl absoluteString] should] equal:@"https://api.github.com/users/yaakaito/received_events?access_token=ACCESS_TOKEN"];
         });
         
     });

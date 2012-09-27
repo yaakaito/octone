@@ -18,11 +18,6 @@ SPEC_BEGIN(BGUserSpec)
 
 describe(@"Github User", ^{
     __block BGUser *user;
-    __block NSString *accessToken;
-    
-    beforeAll(^{
-        accessToken = [[BGAuthenticationManager sharedManager] accessToken];
-    });
     
     context(@"を初期化するとき", ^{
         it(@"は、ユーザー名を元にアドレスを構築する", ^{
@@ -31,9 +26,9 @@ describe(@"Github User", ^{
         });
         
         it(@"は、ログインユーザーの情報を取得するURLを構築する", ^{
+            [[[BGAuthenticationManager sharedManager] should] receive:@selector(accessToken) andReturn:@"ACCESS_TOKEN"];
             user = [BGUser userWithLoginUser];
-            NSString *url = [NSString stringWithFormat:@"https://api.github.com/user?access_token=%@", accessToken];
-            [[[user.resourceUrl absoluteString] should] equal:url];
+            [[[user.resourceUrl absoluteString] should] equal:@"https://api.github.com/user?access_token=ACCESS_TOKEN"];
         });
     });
     
