@@ -310,9 +310,6 @@
 		B9B83ECD15FF23980071F088 /* AsyncSupporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSupporter.m; sourceTree = "<group>"; };
 		B9B83ECE15FF23980071F088 /* BGAuthenticationManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationManagerSpec.m; sourceTree = "<group>"; };
 		B9B83ECF15FF23980071F088 /* BGEventManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventManagerSpec.m; sourceTree = "<group>"; };
-		B9B83ED015FF23980071F088 /* BGFeedEntryTypeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedEntryTypeSpec.m; sourceTree = "<group>"; };
-		B9B83ED115FF23980071F088 /* BGFeedParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGFeedParserSpec.m; sourceTree = "<group>"; };
-		B9B83ED215FF23980071F088 /* BGGithubFeedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubFeedSpec.m; sourceTree = "<group>"; };
 		B9B83ED315FF23980071F088 /* BGGithubResourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResourceSpec.m; sourceTree = "<group>"; };
 		B9B83ED415FF23980071F088 /* BGGlobalMenuContentsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContentsSpec.m; sourceTree = "<group>"; };
 		B9B83ED515FF23980071F088 /* BGGlobalMenuControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuControllerSpec.m; sourceTree = "<group>"; };
@@ -658,9 +655,6 @@
 			children = (
 				B9B83F0515FF9D640071F088 /* Data */,
 				B9B83F0415FF9CF50071F088 /* Resrouce */,
-				B9B83ED015FF23980071F088 /* BGFeedEntryTypeSpec.m */,
-				B9B83ED115FF23980071F088 /* BGFeedParserSpec.m */,
-				B9B83ED215FF23980071F088 /* BGGithubFeedSpec.m */,
 			);
 			name = Github;
 			sourceTree = "<group>";
