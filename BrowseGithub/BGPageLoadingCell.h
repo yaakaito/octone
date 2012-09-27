@@ -12,4 +12,5 @@
 
 @interface BGPageLoadingCell : BGBaseCell
 - (void)startIndicator;
+- (void)showComplete;
 @end

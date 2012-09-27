@@ -95,11 +95,15 @@
             cell = [[BGPageLoadingCell alloc] init];
         }
         
-        if (!self.loadingNextPage && self.currentPage != self.maximumPage) {
-            
-            [self loadNextPage];
+        if (self.currentPage != self.maximumPage) {
+            [cell startIndicator];
+            if (!self.loadingNextPage) {
+                [self loadNextPage];
+            }
         }
-        [cell startIndicator];
+        else {
+            [cell showComplete];
+        }
         
         return cell;
     }

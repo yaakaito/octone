@@ -11,6 +11,7 @@
 
 @interface BGPageLoadingCell()
 @property (nonatomic, strong) UIActivityIndicatorView *indicator;
+@property (nonatomic, strong) UIImageView *complete;
 @end
 
 @implementation BGPageLoadingCell
@@ -27,6 +28,11 @@
         self.indicator.hidden = NO;
         [self.contentView addSubview:self.indicator];
         
+        self.complete = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat"]];
+        self.complete.backgroundColor = [UIColor blackColor];
+        self.complete.contentMode = UIViewContentModeCenter;
+        self.complete.hidden = YES;
+        [self.contentView addSubview:self.complete];
     }
     return self;
 }
@@ -43,5 +49,11 @@
     if (!self.indicator.isAnimating) {
         [self.indicator startAnimating];
     }
+}
+
+- (void)showComplete {
+    
+    self.indicator.hidden = YES;
+    self.complete.hidden = NO;
 }
 @end

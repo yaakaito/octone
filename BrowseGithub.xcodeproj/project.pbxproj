@@ -16,6 +16,10 @@
 		B9497A9B16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
 		B9497A9C16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */; };
 		B9497A9D16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */; };
+		B9497AA51614270D0080F147 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B9497AA31614270D0080F147 /* cat.png */; };
+		B9497AA61614270D0080F147 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B9497AA31614270D0080F147 /* cat.png */; };
+		B9497AA71614270D0080F147 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9497AA41614270D0080F147 /* cat@2x.png */; };
+		B9497AA81614270D0080F147 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9497AA41614270D0080F147 /* cat@2x.png */; };
 		B96ABC821610486500BF55A6 /* BGRepositoryManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */; };
 		B96ABC861610492B00BF55A6 /* MockRepositories.m in Sources */ = {isa = PBXBuildFile; fileRef = B96ABC851610492A00BF55A6 /* MockRepositories.m */; };
 		B97B3366160C3503000D8E6D /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97B3365160C3502000D8E6D /* BGRepositoryController.m */; };
@@ -190,6 +194,8 @@
 		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
 		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
 		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
+		B9497AA31614270D0080F147 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		B9497AA41614270D0080F147 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
 		B96ABC811610486500BF55A6 /* BGRepositoryManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryManagerSpec.m; sourceTree = "<group>"; };
 		B96ABC841610492A00BF55A6 /* MockRepositories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockRepositories.h; sourceTree = "<group>"; };
 		B96ABC851610492A00BF55A6 /* MockRepositories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockRepositories.m; sourceTree = "<group>"; };
@@ -474,6 +480,8 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9497AA31614270D0080F147 /* cat.png */,
+				B9497AA41614270D0080F147 /* cat@2x.png */,
 				B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */,
 				B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */,
 				B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */,
@@ -916,6 +924,8 @@
 				B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */,
 				B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */,
 				B9497A9C16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */,
+				B9497AA51614270D0080F147 /* cat.png in Resources */,
+				B9497AA71614270D0080F147 /* cat@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +958,8 @@
 				B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */,
 				B9497A9B16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */,
 				B9497A9D16114C2F0080F147 /* mplus-2c-regular.ttf in Resources */,
+				B9497AA61614270D0080F147 /* cat.png in Resources */,
+				B9497AA81614270D0080F147 /* cat@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
