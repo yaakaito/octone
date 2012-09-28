@@ -82,18 +82,12 @@
 		B9B83E2415FE81290071F088 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */; };
 		B9B83E2515FE81290071F088 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE015FE81290071F088 /* BGGravatarImageView.m */; };
 		B9B83E2615FE81290071F088 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE015FE81290071F088 /* BGGravatarImageView.m */; };
-		B9B83E2715FE81290071F088 /* BGIssuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE215FE81290071F088 /* BGIssuesController.m */; };
-		B9B83E2815FE81290071F088 /* BGIssuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE215FE81290071F088 /* BGIssuesController.m */; };
 		B9B83E2915FE81290071F088 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE415FE81290071F088 /* BGNavigationController.m */; };
 		B9B83E2A15FE81290071F088 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE415FE81290071F088 /* BGNavigationController.m */; };
-		B9B83E2B15FE81290071F088 /* BGPullRequestsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE615FE81290071F088 /* BGPullRequestsController.m */; };
-		B9B83E2C15FE81290071F088 /* BGPullRequestsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE615FE81290071F088 /* BGPullRequestsController.m */; };
 		B9B83E2D15FE81290071F088 /* BGRepositoriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE815FE81290071F088 /* BGRepositoriesController.m */; };
 		B9B83E2E15FE81290071F088 /* BGRepositoriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE815FE81290071F088 /* BGRepositoriesController.m */; };
 		B9B83E2F15FE81290071F088 /* BGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEA15FE81290071F088 /* BGRootController.m */; };
 		B9B83E3015FE81290071F088 /* BGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEA15FE81290071F088 /* BGRootController.m */; };
-		B9B83E3115FE81290071F088 /* BGStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DED15FE81290071F088 /* BGStarsController.m */; };
-		B9B83E3215FE81290071F088 /* BGStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DED15FE81290071F088 /* BGStarsController.m */; };
 		B9B83E3315FE81290071F088 /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEF15FE81290071F088 /* BGUser.m */; };
 		B9B83E3415FE81290071F088 /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEF15FE81290071F088 /* BGUser.m */; };
 		B9B83E3515FE81290071F088 /* BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DF115FE81290071F088 /* BrowseGithub.m */; };
@@ -264,19 +258,13 @@
 		B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserView.m; sourceTree = "<group>"; };
 		B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageView.h; sourceTree = "<group>"; };
 		B9B83DE015FE81290071F088 /* BGGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageView.m; sourceTree = "<group>"; };
-		B9B83DE115FE81290071F088 /* BGIssuesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGIssuesController.h; sourceTree = "<group>"; };
-		B9B83DE215FE81290071F088 /* BGIssuesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGIssuesController.m; sourceTree = "<group>"; };
 		B9B83DE315FE81290071F088 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
 		B9B83DE415FE81290071F088 /* BGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationController.m; sourceTree = "<group>"; };
-		B9B83DE515FE81290071F088 /* BGPullRequestsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGPullRequestsController.h; sourceTree = "<group>"; };
-		B9B83DE615FE81290071F088 /* BGPullRequestsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGPullRequestsController.m; sourceTree = "<group>"; };
 		B9B83DE715FE81290071F088 /* BGRepositoriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoriesController.h; sourceTree = "<group>"; };
 		B9B83DE815FE81290071F088 /* BGRepositoriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoriesController.m; sourceTree = "<group>"; };
 		B9B83DE915FE81290071F088 /* BGRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRootController.h; sourceTree = "<group>"; };
 		B9B83DEA15FE81290071F088 /* BGRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRootController.m; sourceTree = "<group>"; };
 		B9B83DEB15FE81290071F088 /* BGSecretKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
-		B9B83DEC15FE81290071F088 /* BGStarsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGStarsController.h; sourceTree = "<group>"; };
-		B9B83DED15FE81290071F088 /* BGStarsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGStarsController.m; sourceTree = "<group>"; };
 		B9B83DEE15FE81290071F088 /* BGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUser.h; sourceTree = "<group>"; };
 		B9B83DEF15FE81290071F088 /* BGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUser.m; sourceTree = "<group>"; };
 		B9B83DF015FE81290071F088 /* BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseGithub.h; sourceTree = "<group>"; };
@@ -522,7 +510,6 @@
 		B9B83EAE15FE859E0071F088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B9ECACC41612B139000D3F90 /* _pending */,
 				B9B83DE915FE81290071F088 /* BGRootController.h */,
 				B9B83DEA15FE81290071F088 /* BGRootController.m */,
 				B9B83F1D15FFB6A90071F088 /* BGTableController.h */,
@@ -804,19 +791,6 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
-		B9ECACC41612B139000D3F90 /* _pending */ = {
-			isa = PBXGroup;
-			children = (
-				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
-				B9B83DED15FE81290071F088 /* BGStarsController.m */,
-				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
-				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
-				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
-				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
-			);
-			name = _pending;
-			sourceTree = "<group>";
-		};
 		B9ECACD11613DA17000D3F90 /* Bookmark */ = {
 			isa = PBXGroup;
 			children = (
@@ -1007,12 +981,9 @@
 				B9B83E2115FE81290071F088 /* BGGlobalMenuController.m in Sources */,
 				B9B83E2315FE81290071F088 /* BGGlobalMenuUserView.m in Sources */,
 				B9B83E2515FE81290071F088 /* BGGravatarImageView.m in Sources */,
-				B9B83E2715FE81290071F088 /* BGIssuesController.m in Sources */,
 				B9B83E2915FE81290071F088 /* BGNavigationController.m in Sources */,
-				B9B83E2B15FE81290071F088 /* BGPullRequestsController.m in Sources */,
 				B9B83E2D15FE81290071F088 /* BGRepositoriesController.m in Sources */,
 				B9B83E2F15FE81290071F088 /* BGRootController.m in Sources */,
-				B9B83E3115FE81290071F088 /* BGStarsController.m in Sources */,
 				B9B83E3315FE81290071F088 /* BGUser.m in Sources */,
 				B9B83E3515FE81290071F088 /* BrowseGithub.m in Sources */,
 				B9B83E3715FE81290071F088 /* NSURL+GithubResource.m in Sources */,
@@ -1054,12 +1025,9 @@
 				B9B83E2215FE81290071F088 /* BGGlobalMenuController.m in Sources */,
 				B9B83E2415FE81290071F088 /* BGGlobalMenuUserView.m in Sources */,
 				B9B83E2615FE81290071F088 /* BGGravatarImageView.m in Sources */,
-				B9B83E2815FE81290071F088 /* BGIssuesController.m in Sources */,
 				B9B83E2A15FE81290071F088 /* BGNavigationController.m in Sources */,
-				B9B83E2C15FE81290071F088 /* BGPullRequestsController.m in Sources */,
 				B9B83E2E15FE81290071F088 /* BGRepositoriesController.m in Sources */,
 				B9B83E3015FE81290071F088 /* BGRootController.m in Sources */,
-				B9B83E3215FE81290071F088 /* BGStarsController.m in Sources */,
 				B9B83E3415FE81290071F088 /* BGUser.m in Sources */,
 				B9B83E3615FE81290071F088 /* BrowseGithub.m in Sources */,
 				B9B83E3815FE81290071F088 /* NSURL+GithubResource.m in Sources */,
