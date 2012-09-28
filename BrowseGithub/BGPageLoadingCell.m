@@ -29,10 +29,9 @@
         [self.contentView addSubview:self.indicator];
         
         self.complete = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat"]];
-        self.complete.backgroundColor = [UIColor blackColor];
+        self.complete.backgroundColor = [UIColor clearColor];
         self.complete.contentMode = UIViewContentModeCenter;
         self.complete.hidden = YES;
-        [self.contentView addSubview:self.complete];
     }
     return self;
 }
@@ -42,6 +41,7 @@
     [super layoutSubviews];
     
     self.indicator.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self.complete.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
 }
 
 - (void)startIndicator {
@@ -54,6 +54,7 @@
 - (void)showComplete {
     
     self.indicator.hidden = YES;
+    [self.contentView addSubview:self.complete];
     self.complete.hidden = NO;
 }
 @end
