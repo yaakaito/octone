@@ -9,25 +9,16 @@
 #import "BGGlobalMenuContents.h"
 #import "BGEventsController.h"
 #import "BGRepositoriesController.h"
-#import "BGIssuesController.h"
-#import "BGPullRequestsController.h"
-#import "BGStarsController.h"
 
 enum Contents {
     kIndexOfNewsFeeds = 0,
     kIndexOfYourRepositories,
-    kIndexOfIssues,
-    kIndexOfPullRequests,
-    kIndexOfStarts,
     kNumberOfContents
 };
 
 @interface BGGlobalMenuContents()
 @property (nonatomic, strong) BGEventsController *newsFeedsController;
 @property (nonatomic, strong) BGRepositoriesController *yourRepositoriesController;
-@property (nonatomic, strong) BGIssuesController *issuesController;
-@property (nonatomic, strong) BGPullRequestsController *pullRequestsController;
-@property (nonatomic, strong) BGStarsController *starsController;
 @end
 
 @implementation BGGlobalMenuContents
@@ -52,12 +43,6 @@ enum Contents {
             return self.newsFeedsController;
         case kIndexOfYourRepositories:
             return self.yourRepositoriesController;
-        case kIndexOfIssues:
-            return self.issuesController;
-        case kIndexOfPullRequests:
-            return self.pullRequestsController;
-        case kIndexOfStarts:
-            return self.starsController;
     }
     return nil;
 }
@@ -80,29 +65,5 @@ enum Contents {
         _yourRepositoriesController.title = @"Your Repositories";
     }
     return _yourRepositoriesController;
-}
-
-- (BGIssuesController *)issuesController {
-    if(!_issuesController) {
-        _issuesController = [[BGIssuesController alloc] init];
-        _issuesController.title = @"Issues";
-    }
-    return _issuesController;
-}
-
-- (BGPullRequestsController *)pullRequestsController {
-    if(!_pullRequestsController) {
-        _pullRequestsController = [[BGPullRequestsController alloc] init];
-        _pullRequestsController.title = @"Pull Requests";
-    }
-    return _pullRequestsController;
-}
-
-- (BGStarsController *)starsController {
-    if(!_starsController) {
-        _starsController = [[BGStarsController alloc] init];
-        _starsController.title = @"Stars";
-    }
-    return _starsController;
 }
 @end
