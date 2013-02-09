@@ -27,6 +27,7 @@
         [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-background"] forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.titleTextAttributes = @{ UITextAttributeTextColor : [UIColor githubTextColor]
         , UITextAttributeFont : [UIFont heavyDefaultFontOfSize:18]
+        , UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(1.0,1.0)]
         , UITextAttributeTextShadowColor : [UIColor githubHightlightColor]};
     }
     return self;
