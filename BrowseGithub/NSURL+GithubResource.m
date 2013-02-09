@@ -15,7 +15,7 @@
 + (id)githubApiURLWithPath:(NSString *)path auth:(BOOL)auth {
     
     NSMutableString *urlString = [[NSMutableString alloc] initWithFormat:@"%@%@", [BrowseGithub apiBaseUrlString], path];
-
+    [[urlString substringFromIndex:[urlString length]-1] isEqualToString:@"?"];
     if (auth) {
         NSString *token = [[BGAuthenticationManager sharedManager] accessToken];
         NSURL *pathURL = [NSURL URLWithString:path];
