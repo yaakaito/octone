@@ -24,6 +24,10 @@
     return [UIColor colorWithWhite:0.92 alpha:1.0];
 }
 
++ (UIColor *)githubLightBackgroundColor {
+    return [UIColor colorWithRed:0.961 green:0.961 blue:0.961 alpha:1];
+}
+
 + (UIColor *)githubHightlightedBackgroundColor {
     return [UIColor colorWithWhite:0.88 alpha:1.0];
 }

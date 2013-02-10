@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+    <head>
+        <title>README</title>
+        <meta name="viewport" content="width = 320, initial-scale = 1.0, user-scalable = no" />
+        <style>
+            body {
+                font-family: 'mplus-2c-regular';
+                margin: 0;
+                padding: 10px;
+                font-size: 12pt;
+                width: 300px;
+                word-wrap: break-all;
+                word-break:break-all;
+                text-align: justify;
+                text-justify: auto;
+            }
+            
+            pre {
+                display: block;
+                width: 100%;
+                overflow: scroll;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            quotes, blockquote {
+                margin: 0 auto;
+                padding: 0;
+                width: 90%;
+                font-style: italic;
+            }
+            
+            ul, ol {
+                padding: 12px;
+                margin: 5px;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            </style>
+    </head>
+    <body>
+        <article>
+            <h1>
+                <a name="overline" class="anchor" href="#overline"><span class="mini-icon mini-icon-link"></span></a>Overline</h1>
+            
+            <p>Objective-C utilities and shorthands.</p>
+            
+            <p>Overline is not clone of other language features.
+            Simple and clean Objective-C.</p>
+            
+            <h2>
+                <a name="usage" class="anchor" href="#usage"><span class="mini-icon mini-icon-link"></span></a>Usage</h2>
+            
+            <p>setup with cocoapods.</p>
+            
+            <pre><code>pod 'Overline'
+            </code></pre>
+            
+            <p>import <code>Overline.h</code></p>
+            
+            <div class="highlight"><pre><span class="cp">#import "Overline.h"</span>
+            </pre></div>
+            
+            <h2>
+                <a name="features" class="anchor" href="#features"><span class="mini-icon mini-icon-link"></span></a>Features</h2>
+            
+            <h3>
+                <a name="nsarray" class="anchor" href="#nsarray"><span class="mini-icon mini-icon-link"></span></a>NSArray</h3>
+            
+            <h4>
+                <a name="nsarrayinitialize" class="anchor" href="#nsarrayinitialize"><span class="mini-icon mini-icon-link"></span></a>NSArray+Initialize</h4>
+            
+            <div class="highlight"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSArray</span> <span class="nl">arrayWithRangeFrom:</span><span class="mi">0</span> <span class="nl">to:</span><span class="mi">10</span><span class="p">];</span>
+                <span class="c1">// @[@0, @1, @2, @3, @4, @5, @6, @7, @8, @9]</span>
+                
+                <span class="n">NSArray</span> <span class="o">*</span><span class="n">array2</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSArray</span> <span class="nl">arrayWithRangeFrom:</span><span class="mi">0</span> <span class="nl">to:</span><span class="o">-</span><span class="mi">10</span> <span class="nl">step:</span><span class="mi">2</span><span class="p">];</span>
+                <span class="c1">// @[@0, @-2, @-4, @-6, @-8]</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>arrayWithRangeFrom:to:</code></li>
+                <li><code>arrayWithRangeFrom:to:step:</code></li>
+            </ul><h4>
+                <a name="nsarrayenumeration" class="anchor" href="#nsarrayenumeration"><span class="mini-icon mini-icon-link"></span></a>NSArray+Enumeration</h4>
+            
+            <div class="highlight"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">mapped</span> <span class="o">=</span> <span class="p">[</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">,</span><span class="err">@</span><span class="mi">3</span><span class="p">,</span><span class="err">@</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">5</span><span class="p">,</span><span class="err">@</span><span class="mi">6</span><span class="p">]</span> <span class="nl">mappedArrayUsingBlock:</span><span class="o">^</span><span class="kt">id</span><span class="p">(</span><span class="kt">id</span> <span class="n">obj</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">idx</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">([</span><span class="n">obj</span> <span class="n">integerValue</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">obj</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+                <span class="p">}];</span>
+                <span class="c1">// @[@2,@4,@6]</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>each</code></li>
+                <li>
+                    <code>map</code> <code>mappedArrayUsingBlock</code>
+                </li>
+                <li>
+                    <code>reduce</code> <code>reducedObjectByBlock</code>
+                </li>
+                <li>
+                    <code>find</code> <code>objectUsingBlock</code>
+                </li>
+                <li>
+                    <code>filter</code> <code>filteredArrayUsingBlock</code>
+                </li>
+                <li>
+                    <code>reject</code> <code>rejectedArrayUsingBlock</code>
+                </li>
+            </ul><h4>
+                <a name="nsarrayrandom" class="anchor" href="#nsarrayrandom"><span class="mini-icon mini-icon-link"></span></a>NSArray+Random</h4>
+            
+            <div class="highlight"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">shuffled</span> <span class="o">=</span> <span class="p">[</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">,</span><span class="err">@</span><span class="mi">3</span><span class="p">,</span><span class="err">@</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">5</span><span class="p">,</span><span class="err">@</span><span class="mi">6</span><span class="p">]</span> <span class="n">shuffledArray</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li>
+                    <code>shuffle</code> <code>shuffledArray</code>
+                </li>
+                <li><code>anyObject</code></li>
+            </ul><h4>
+                <a name="nsarrayreverse" class="anchor" href="#nsarrayreverse"><span class="mini-icon mini-icon-link"></span></a>NSArray+Reverse</h4>
+            
+            <div class="highlight"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">reversed</span> <span class="o">=</span> <span class="p">[</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">,</span><span class="err">@</span><span class="mi">3</span><span class="p">,</span><span class="err">@</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">5</span><span class="p">,</span><span class="err">@</span><span class="mi">6</span><span class="p">]</span> <span class="n">reversedArray</span><span class="p">];</span>
+                <span class="c1">// @[@6,@5,@4,@3,@2,@1]</span>
+            </pre></div>
+            
+            <ul>
+                <li>
+                    <code>reverse</code> <code>reversedArray</code>
+                </li>
+            </ul><h4>
+                <a name="nsarrayselector" class="anchor" href="#nsarrayselector"><span class="mini-icon mini-icon-link"></span></a>NSArray+Selector</h4>
+            
+            <ul>
+                <li><code>firstObject</code></li>
+            </ul><h4>
+                <a name="nsarraysubarray" class="anchor" href="#nsarraysubarray"><span class="mini-icon mini-icon-link"></span></a>NSArray+SubArray</h4>
+            
+            <ul>
+                <li><code>subarrayFromIndex:</code></li>
+                <li><code>subarrayFromIndex:length:</code></li>
+                <li><code>subarrayToIndex:</code></li>
+                <li><code>uniqueObjects</code></li>
+            </ul><h4>
+                <a name="nsarraydifference" class="anchor" href="#nsarraydifference"><span class="mini-icon mini-icon-link"></span></a>NSArray+Difference</h4>
+            
+            <ul>
+                <li>
+                    <code>difference</code> <code>arrayDifferenceWithArray</code>
+                </li>
+                <li>
+                    <code>unionise</code> <code>arrayByUnionisingArray</code>
+                </li>
+            </ul><h4>
+                <a name="nsarrayshorthand" class="anchor" href="#nsarrayshorthand"><span class="mini-icon mini-icon-link"></span></a>NSArray+Shorthand</h4>
+            
+            <ul>
+                <li><code>isEmpty</code></li>
+            </ul><h3>
+                <a name="nsmutablearray" class="anchor" href="#nsmutablearray"><span class="mini-icon mini-icon-link"></span></a>NSMutableArray</h3>
+            
+            <h4>
+                <a name="nsmutablearrayshorthands" class="anchor" href="#nsmutablearrayshorthands"><span class="mini-icon mini-icon-link"></span></a>NSMutableArray+Shorthands</h4>
+            
+            <div class="highlight"><pre><span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">marray</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableArray</span> <span class="nl">arrayWithArray:</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">,</span><span class="err">@</span><span class="mi">3</span><span class="p">]];</span>
+                <span class="p">[</span><span class="n">marray</span> <span class="nl">insertObjects:</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">5</span><span class="p">,</span><span class="err">@</span><span class="mi">6</span><span class="p">]</span> <span class="nl">atIndex:</span><span class="mi">1</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>insertObjects:atIndex:</code></li>
+            </ul><h3>
+                <a name="nsdictionary" class="anchor" href="#nsdictionary"><span class="mini-icon mini-icon-link"></span></a>NSDictionary</h3>
+            
+            <h4>
+                <a name="nsdicionaryenumeration" class="anchor" href="#nsdicionaryenumeration"><span class="mini-icon mini-icon-link"></span></a>NSDicionary+Enumeration</h4>
+            
+            <div class="highlight"><pre><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">dic</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span>
+                <span class="s">@"a"</span> <span class="o">:</span> <span class="err">@</span><span class="mi">1</span><span class="p">,</span>
+                <span class="s">@"b"</span> <span class="o">:</span> <span class="err">@</span><span class="mi">2</span><span class="p">,</span>
+                <span class="s">@"c"</span> <span class="o">:</span> <span class="err">@</span><span class="mi">3</span><span class="p">,</span>
+                <span class="s">@"d"</span> <span class="o">:</span> <span class="err">@</span><span class="mi">4</span>
+                <span class="p">};</span>
+                
+                <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">filtered</span> <span class="o">=</span> <span class="p">[</span><span class="n">dic</span> <span class="nl">dictionaryFilteredByKeyUsingBlock:</span><span class="o">^</span><span class="kt">BOOL</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">key</span> <span class="nl">isEqualToString:</span><span class="s">@"a"</span><span class="p">];</span>
+                <span class="p">}];</span> <span class="c1">// @{@"a":@1}</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>each:</code></li>
+                <li>
+                    <code>map</code> <code>mappedDictionaryUsingBlock</code>
+                </li>
+                <li>
+                    <code>filterKey</code> <code>dictionaryFilteredByKeyUsingBlock</code>
+                </li>
+                <li>
+                    <code>rejectKey</code> <code>dictionaryRejectedByKeyUsingBlock</code>
+                </li>
+                <li>
+                    <code>filterObject</code> <code>dictionaryFilteredByObjectUsingBlock</code>
+                </li>
+                <li>
+                    <code>rejectObject</code> <code>dictionaryRejectedByObjectUsingBlock</code>
+                </li>
+                <li>
+                    <code>merge</code> <code>dictionaryByMergingDictionary</code>
+                </li>
+                <li>
+                    <code>reduce:</code> <code>reducedObjectUsingBlock:memo:</code>
+                </li>
+                <li>
+                    <code>queryString</code> <code>stringByFormattingQuery</code>
+                </li>
+            </ul><h4>
+                <a name="nsdictionarypath" class="anchor" href="#nsdictionarypath"><span class="mini-icon mini-icon-link"></span></a>NSDictionary+Path</h4>
+            
+            <div class="highlight"><pre><span class="cm">/*</span>
+                <span class="cm">@{</span>
+                <span class="cm">    @"error" : @{</span>
+                <span class="cm">        @"message" : @"msg"</span>
+                <span class="cm">    }</span>
+                <span class="cm">}</span>
+                <span class="cm">*/</span>
+                <span class="n">NSString</span> <span class="o">*</span><span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="n">dic</span> <span class="nl">objectForPath:</span><span class="s">@"error.message"</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>objectForPath:</code></li>
+            </ul><h3>
+                <a name="nsset" class="anchor" href="#nsset"><span class="mini-icon mini-icon-link"></span></a>NSSet</h3>
+            
+            <h4>
+                <a name="nssetenumeration" class="anchor" href="#nssetenumeration"><span class="mini-icon mini-icon-link"></span></a>NSSet+Enumeration</h4>
+            
+            <div class="highlight"><pre><span class="n">NSSet</span> <span class="o">*</span><span class="n">set</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSSet</span> <span class="nl">setWithArray:</span><span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="mi">1</span><span class="p">,</span><span class="err">@</span><span class="mi">2</span><span class="p">,</span><span class="err">@</span><span class="mi">3</span><span class="p">,</span><span class="err">@</span><span class="mi">4</span><span class="p">,</span><span class="err">@</span><span class="mi">5</span><span class="p">,</span><span class="err">@</span><span class="mi">6</span><span class="p">]];</span>
+                <span class="n">NSSet</span> <span class="o">*</span><span class="n">mapped</span> <span class="o">=</span> <span class="p">[</span><span class="n">set</span> <span class="nl">mappedSetUsingBlock:</span><span class="o">^</span><span class="kt">id</span><span class="p">(</span><span class="kt">id</span> <span class="n">obj</span><span class="p">,</span> <span class="n">NSUInteger</span> <span class="n">idx</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">([</span><span class="n">obj</span> <span class="n">integerValue</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">obj</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+                <span class="p">}];</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>each</code></li>
+                <li>
+                    <code>map</code> <code>mappedSetUsingBlock</code>
+                </li>
+                <li>
+                    <code>reduce</code> <code>reducedObjectByBlock</code>
+                </li>
+                <li>
+                    <code>filter</code> <code>filteredSetUsingBlock</code>
+                </li>
+                <li>
+                    <code>reject</code> <code>rejectedSetUsingBlock</code>
+                </li>
+            </ul><h3>
+                <a name="nsstring" class="anchor" href="#nsstring"><span class="mini-icon mini-icon-link"></span></a>NSString</h3>
+            
+            <h4>
+                <a name="nsstringcomponents" class="anchor" href="#nsstringcomponents"><span class="mini-icon mini-icon-link"></span></a>NSString+Components</h4>
+            
+            <div class="highlight"><pre><span class="p">[</span><span class="s">@"hoge=fuga&amp;piyo=foo"</span> <span class="nl">componentsSeparatedByInnerString:</span><span class="s">@"="</span> <span class="nl">andOuterString:</span><span class="s">@"&amp;"</span><span class="p">];</span>
+                <span class="cm">/* </span>
+                <span class="cm">@{</span>
+                <span class="cm">    @"hoge" : @"fuga",</span>
+                <span class="cm">    @"piyo" : @"foo"</span>
+                <span class="cm">};</span>
+                <span class="cm">*/</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>componentsSeparatedByInnerString:andOuterString:</code></li>
+            </ul><h4>
+                <a name="nsstringregularexpression" class="anchor" href="#nsstringregularexpression"><span class="mini-icon mini-icon-link"></span></a>NSString+RegularExpression</h4>
+            
+            <div class="highlight"><pre><span class="p">[</span><span class="s">@"https?"</span> <span class="nl">testInString:</span><span class="n">urlString</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>rangeOfFirstMatchInString:</code></li>
+                <li><code>rangeOfFirstMatchInString:options:</code></li>
+                <li><code>matchesInString:</code></li>
+                <li><code>matchesInString:options:</code></li>
+                <li><code>testInString:</code></li>
+                <li><code>testInString:options:</code></li>
+            </ul><h4>
+                <a name="nsstringhash" class="anchor" href="#nsstringhash"><span class="mini-icon mini-icon-link"></span></a>NSString+Hash</h4>
+            
+            <div class="highlight"><pre><span class="p">[</span><span class="s">@"hoge"</span> <span class="n">md5</span><span class="p">];</span> <span class="c1">// @"ea703e7aa1efda0064eaa507d9e8ab7e"</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>sha256</code></li>
+                <li><code>stringByHashingSha256</code></li>
+                <li><code>md5</code></li>
+                <li><code>stringByHashingMD5</code></li>
+            </ul><h4>
+                <a name="nsstringurlencode" class="anchor" href="#nsstringurlencode"><span class="mini-icon mini-icon-link"></span></a>NSString+URLEncode</h4>
+            
+            <ul>
+                <li><code>URLEncode</code></li>
+                <li><code>stringByEncodingURL</code></li>
+                <li><code>URLDecode</code></li>
+                <li><code>stringByDecodingURL</code></li>
+            </ul><h4>
+                <a name="nsstringshorthand" class="anchor" href="#nsstringshorthand"><span class="mini-icon mini-icon-link"></span></a>NSString+Shorthand</h4>
+            
+            <ul>
+                <li><code>trim</code></li>
+            </ul><h4>
+                <a name="nsstringjson" class="anchor" href="#nsstringjson"><span class="mini-icon mini-icon-link"></span></a>NSString+JSON</h4>
+            
+            <div class="highlight"><pre><span class="n">NSString</span> <span class="o">*</span><span class="n">JSONString</span> <span class="o">=</span> <span class="s">@"{</span><span class="se">\"</span><span class="s">hoge</span><span class="se">\"</span><span class="s"> : </span><span class="se">\"</span><span class="s">fuga</span><span class="se">\"</span><span class="s"> }"</span><span class="p">;</span>
+                <span class="kt">id</span> <span class="n">json</span> <span class="o">=</span> <span class="p">[</span><span class="n">JSONString</span> <span class="n">jsonObject</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li>
+                    <code>JSON</code> <code>jsonObject</code>
+                </li>
+            </ul><h4>
+                <a name="nsstringbase64encode" class="anchor" href="#nsstringbase64encode"><span class="mini-icon mini-icon-link"></span></a>NSString+Base64Encode</h4>
+            
+            <div class="highlight"><pre><span class="p">[</span><span class="s">@"a"</span> <span class="n">stringByEncodingBase64</span><span class="p">];</span> <span class="c1">// @"YQ=="</span>
+                <span class="p">[</span><span class="s">@"YQ=="</span> <span class="n">stringByDecodingBase64</span><span class="p">];</span> <span class="c1">// @"a"</span>
+            </pre></div>
+            
+            <ul>
+                <li>
+                    <code>encodeBase64</code> <code>stringByEncodingBase64</code>
+                </li>
+                <li>
+                    <code>decodeBase64</code> <code>stringByDecodingBase64</code>
+                </li>
+                <li><code>dataUsingDecodingBase64</code></li>
+            </ul><h3>
+                <a name="nsdata" class="anchor" href="#nsdata"><span class="mini-icon mini-icon-link"></span></a>NSData</h3>
+            
+            <h4>
+                <a name="nsdatabase64encode" class="anchor" href="#nsdatabase64encode"><span class="mini-icon mini-icon-link"></span></a>NSData+Base64Encode</h4>
+            
+            <ul>
+                <li>
+                    <code>base64Encode</code> <code>stringUsingEncodingBase64</code>
+                </li>
+            </ul><h3>
+                <a name="nsurl" class="anchor" href="#nsurl"><span class="mini-icon mini-icon-link"></span></a>NSURL</h3>
+            
+            <h4>
+                <a name="nsurlcomponents" class="anchor" href="#nsurlcomponents"><span class="mini-icon mini-icon-link"></span></a>NSURL+Components</h4>
+            
+            <ul>
+                <li><code>queryComponents</code></li>
+            </ul><h3>
+                <a name="nsbundle" class="anchor" href="#nsbundle"><span class="mini-icon mini-icon-link"></span></a>NSBundle</h3>
+            
+            <h4>
+                <a name="nsbundleshorthand" class="anchor" href="#nsbundleshorthand"><span class="mini-icon mini-icon-link"></span></a>NSBundle+Shorthand</h4>
+            
+            <ul>
+                <li><code>JSONForResourceName</code></li>
+            </ul><h3>
+                <a name="nsnumber" class="anchor" href="#nsnumber"><span class="mini-icon mini-icon-link"></span></a>NSNumber</h3>
+            
+            <h4>
+                <a name="nsnumberequals" class="anchor" href="#nsnumberequals"><span class="mini-icon mini-icon-link"></span></a>NSNumber+Equals</h4>
+            
+            <div class="highlight"><pre><span class="p">[</span><span class="err">@</span><span class="mi">1</span> <span class="nl">isEqualToInteger:</span><span class="mi">1</span><span class="p">];</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>isEqualToInt:</code></li>
+                <li><code>isEqualToInteger:</code></li>
+                <li><code>isEqualToUnsignedInt:</code></li>
+                <li><code>isEqualToUnsignedInteger:</code></li>
+                <li><code>isEqualToLong:</code></li>
+                <li><code>isEqualToLongLong:</code></li>
+                <li><code>isEqualToUnsignedLong:</code></li>
+                <li><code>isEqualToUnsignedLongLong:</code></li>
+                <li><code>isEqualToDouble:</code></li>
+                <li><code>isEqualToFloat:</code></li>
+            </ul><h3>
+                <a name="nsobject" class="anchor" href="#nsobject"><span class="mini-icon mini-icon-link"></span></a>NSObject</h3>
+            
+            <h4>
+                <a name="nsobjectequals" class="anchor" href="#nsobjectequals"><span class="mini-icon mini-icon-link"></span></a>NSObject+Equals</h4>
+            
+            <div class="highlight"><pre><span class="p">[[</span><span class="n">NSNull</span> <span class="n">null</span><span class="p">]</span> <span class="n">isNullObject</span><span class="p">];</span> <span class="c1">// YES</span>
+                <span class="p">[[</span><span class="n">NSArray</span> <span class="n">array</span><span class="p">]</span> <span class="n">isNullObject</span><span class="p">];</span> <span class="c1">// NO</span>
+            </pre></div>
+            
+            <ul>
+                <li><code>isNullObject</code></li>
+                <li><code>isArray</code></li>
+                <li><code>isDictionary</code></li>
+                <li><code>isSet</code></li>
+                <li><code>isString</code></li>
+                <li><code>isNumber</code></li>
+            </ul><h3>
+                <a name="nsnull" class="anchor" href="#nsnull"><span class="mini-icon mini-icon-link"></span></a>NSNull</h3>
+            
+            <h4>
+                <a name="nsnullnatural" class="anchor" href="#nsnullnatural"><span class="mini-icon mini-icon-link"></span></a>NSNull+Natural</h4>
+            
+            <p>Provide <code>NSNull</code> like <code>nil</code></p>
+            
+            <div class="highlight"><pre><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">dic</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span>
+                <span class="s">@"null-key"</span> <span class="o">:</span> <span class="p">[</span><span class="n">NSNull</span> <span class="n">null</span><span class="p">]</span>
+                <span class="p">};</span>
+                <span class="p">[[</span><span class="n">dic</span> <span class="nl">objectForKey:</span><span class="s">@"null-key"</span><span class="p">]</span> <span class="nl">objectForKey:</span><span class="s">@"empty"</span><span class="p">];</span> <span class="c1">// nil</span>
+            </pre></div>
+            
+            <p>※ This feature disable on default. Define <code>OV_USE_NATURAL_NULL</code>, if use this feature.</p>
+            
+            <div class="highlight"><pre><span class="cp">#define OV_USE_NATURAL_NULL</span>
+                <span class="cp">#import "Overline.h"</span>
+            </pre></div>
+            
+            <h2>
+                <a name="for-contributers" class="anchor" href="#for-contributers"><span class="mini-icon mini-icon-link"></span></a>For contributers</h2>
+            
+            <p>Thanks contributes Overline.</p>
+            
+            <h3>
+                <a name="coding-rules" class="anchor" href="#coding-rules"><span class="mini-icon mini-icon-link"></span></a>Coding rules</h3>
+            
+            <ul>
+                <li>Write tests.</li>
+                <li>Objective-C style naming.
+                    
+                    <ul>
+                        <li>and shorthands.</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </body>
+</html>

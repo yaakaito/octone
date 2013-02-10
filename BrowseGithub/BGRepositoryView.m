@@ -7,6 +7,8 @@
 //
 
 #import "BGRepositoryView.h"
+#import "UIColor+BrowseGithub.h"
+#import "BGReadmeView.h"
 
 @implementation BGRepositoryView
 
@@ -24,7 +26,13 @@
     [super willMoveToSuperview:newSuperview];
     
     [self._superHeaderView addSubview:self.headerView];
+
     
+    self.backgroundColor = [UIColor githubBackgroundColor];
+    
+    
+    BGReadmeView *readme = [[BGReadmeView alloc] initWithFrame:self._bodyAreaView.bounds];
+    [self._bodyAreaView addSubview:readme];
 }
 
 /*

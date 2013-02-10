@@ -11,5 +11,6 @@
 @interface BGRepositoryView : UIView
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UIView *_superHeaderView;
+@property (weak, nonatomic) IBOutlet UIView *_bodyAreaView;
 
 @end

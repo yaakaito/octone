@@ -16,6 +16,7 @@
 
 #pragma mark - Base backgrounds
 + (UIColor *)githubBackgroundColor;
++ (UIColor *)githubLightBackgroundColor;
 + (UIColor *)githubHightlightedBackgroundColor;
 + (UIColor *)githubGlobalMenuBackgroundColor;
 + (UIColor *)githubHightlightedGlobalMenuBackgroundColor;

@@ -7,6 +7,8 @@
 //
 
 #import "BGRepositoryHeaderView.h"
+#import "UIColor+BrowseGithub.h"
+#import "UIFont+BrowseGithub.h"
 
 @implementation BGRepositoryHeaderView
 
@@ -23,7 +25,19 @@
 {
     [super willMoveToSuperview:newSuperview];
     
-    self.forks.text = @"10";
+    self.forks.text = @"4";
+    self.stars.text = @"112";
+    
+    self.language.font = [UIFont githubDefaultFontOfSize:12];
+    self.language.textColor = [UIColor githubLightTextColor];
+    
+    self.stars.font = [UIFont boldDefaultFontOfSize:12];
+    self.stars.textColor = [UIColor githubLightTextColor];
+    
+    self.forks.font = [UIFont boldDefaultFontOfSize:12];
+    self.forks.textColor = [UIColor githubLightTextColor];
+    
+    self.backgroundColor = [UIColor githubLightBackgroundColor];
 }
 
 /*

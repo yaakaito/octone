@@ -72,6 +72,8 @@
 		B9B7933316C804370085CC75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B7933216C804350085CC75 /* QuartzCore.framework */; };
 		B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */; };
 		B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933816C8184F0085CC75 /* BGRepositoryView.m */; };
+		B9B7933B16C823240085CC75 /* readme.html in Resources */ = {isa = PBXBuildFile; fileRef = B9B7933A16C823240085CC75 /* readme.html */; };
+		B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933D16C823E70085CC75 /* BGReadmeView.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -272,6 +274,9 @@
 		B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryHeaderView.m; sourceTree = "<group>"; };
 		B9B7933716C8184F0085CC75 /* BGRepositoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryView.h; sourceTree = "<group>"; };
 		B9B7933816C8184F0085CC75 /* BGRepositoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryView.m; sourceTree = "<group>"; };
+		B9B7933A16C823240085CC75 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
+		B9B7933C16C823E60085CC75 /* BGReadmeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGReadmeView.h; sourceTree = "<group>"; };
+		B9B7933D16C823E70085CC75 /* BGReadmeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGReadmeView.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -582,6 +587,7 @@
 				B9B83DFE15FE81290071F088 /* menu-button@2x.png */,
 				B9B83DFF15FE81290071F088 /* navigation-background.png */,
 				B9B83E0015FE81290071F088 /* navigation-background@2x.png */,
+				B9B7933A16C823240085CC75 /* readme.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -657,6 +663,8 @@
 				B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */,
 				B9B7933716C8184F0085CC75 /* BGRepositoryView.h */,
 				B9B7933816C8184F0085CC75 /* BGRepositoryView.m */,
+				B9B7933C16C823E60085CC75 /* BGReadmeView.h */,
+				B9B7933D16C823E70085CC75 /* BGReadmeView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1027,6 +1035,7 @@
 				B9B7932016C801810085CC75 /* LICENSE in Resources */,
 				B9B7932116C801810085CC75 /* README.md in Resources */,
 				B9B7932D16C801E50085CC75 /* BGRepositoryController.xib in Resources */,
+				B9B7933B16C823240085CC75 /* readme.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,6 +1154,7 @@
 				B9B7932C16C801E50085CC75 /* BGRepositoryController.m in Sources */,
 				B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */,
 				B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */,
+				B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BGRepositoryHeaderView : UIView
+@property (nonatomic, weak) IBOutlet UILabel *language;
 @property (nonatomic, weak) IBOutlet UILabel *stars;
 @property (nonatomic, weak) IBOutlet UILabel *forks;
 @end
