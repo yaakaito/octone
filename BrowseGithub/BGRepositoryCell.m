@@ -44,6 +44,12 @@
 
     self.repositoryDescription.font = [UIFont githubDefaultFontOfSize:12];
     self.repositoryDescription.textColor = [UIColor githubLightTextColor];
+    
+    self.stars.font = [UIFont boldDefaultFontOfSize:12];
+    self.stars.textColor = [UIColor githubLightTextColor];
+
+    self.forks.font = [UIFont boldDefaultFontOfSize:12];
+    self.forks.textColor = [UIColor githubLightTextColor];
 
 
 }

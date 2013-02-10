@@ -52,6 +52,10 @@
 		B9A21E44160AF96D006167BE /* MockResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A21E43160AF96D006167BE /* MockResource.m */; };
 		B9B792B516C6BE000085CC75 /* BGEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B792B416C6BE000085CC75 /* BGEventCell.xib */; };
 		B9B792D016C789410085CC75 /* BGRepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B792CF16C789410085CC75 /* BGRepositoryCell.xib */; };
+		B9B792D416C7A9800085CC75 /* fork.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792D216C7A9800085CC75 /* fork.png */; };
+		B9B792D516C7A9800085CC75 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792D316C7A9800085CC75 /* star.png */; };
+		B9B792E116C7AA4E0085CC75 /* fork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792DF16C7AA4E0085CC75 /* fork@2x.png */; };
+		B9B792E216C7AA4E0085CC75 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792E016C7AA4E0085CC75 /* star@2x.png */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -229,6 +233,10 @@
 		B9A21E43160AF96D006167BE /* MockResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockResource.m; sourceTree = "<group>"; };
 		B9B792B416C6BE000085CC75 /* BGEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGEventCell.xib; sourceTree = "<group>"; };
 		B9B792CF16C789410085CC75 /* BGRepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGRepositoryCell.xib; sourceTree = "<group>"; };
+		B9B792D216C7A9800085CC75 /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fork.png; path = mooicon/fork.png; sourceTree = "<group>"; };
+		B9B792D316C7A9800085CC75 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = mooicon/star.png; sourceTree = "<group>"; };
+		B9B792DF16C7AA4E0085CC75 /* fork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fork@2x.png"; path = "mooicon/fork@2x.png"; sourceTree = "<group>"; };
+		B9B792E016C7AA4E0085CC75 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "mooicon/star@2x.png"; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -388,6 +396,17 @@
 			name = Commons;
 			sourceTree = "<group>";
 		};
+		B9B792D116C7A9700085CC75 /* mooicon */ = {
+			isa = PBXGroup;
+			children = (
+				B9B792DF16C7AA4E0085CC75 /* fork@2x.png */,
+				B9B792E016C7AA4E0085CC75 /* star@2x.png */,
+				B9B792D216C7A9800085CC75 /* fork.png */,
+				B9B792D316C7A9800085CC75 /* star.png */,
+			);
+			name = mooicon;
+			sourceTree = "<group>";
+		};
 		B9B83D5E15FE7DB50071F088 = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +496,7 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9B792D116C7A9700085CC75 /* mooicon */,
 				B9497AA31614270D0080F147 /* cat.png */,
 				B9497AA41614270D0080F147 /* cat@2x.png */,
 				B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */,
@@ -922,6 +942,10 @@
 				B9497AA71614270D0080F147 /* cat@2x.png in Resources */,
 				B9B792B516C6BE000085CC75 /* BGEventCell.xib in Resources */,
 				B9B792D016C789410085CC75 /* BGRepositoryCell.xib in Resources */,
+				B9B792D416C7A9800085CC75 /* fork.png in Resources */,
+				B9B792D516C7A9800085CC75 /* star.png in Resources */,
+				B9B792E116C7AA4E0085CC75 /* fork@2x.png in Resources */,
+				B9B792E216C7AA4E0085CC75 /* star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
