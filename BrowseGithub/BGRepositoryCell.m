@@ -22,21 +22,6 @@
 
 @implementation BGRepositoryCell
 
-- (id)init
-{
-    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGRepositoryCellReuseIdentifier];
-    if (self) {
-        self.repositoryName = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.repositoryName.backgroundColor = [UIColor clearColor];
-        [self.contentView addSubview:self.repositoryName];
-    
-        self.repositoryDescription = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.repositoryDescription.backgroundColor = [UIColor clearColor];
-        [self.contentView addSubview:self.repositoryDescription];
-    }
-    return self;
-}
-
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     
     [super willMoveToSuperview:newSuperview];
