@@ -11,14 +11,12 @@
 #import "BGRepositoriesController.h"
 #import "BGIssuesController.h"
 #import "BGPullRequestsController.h"
-#import "BGStarsController.h"
 
 enum Contents {
     kIndexOfNewsFeeds = 0,
     kIndexOfYourRepositories,
     kIndexOfIssues,
     kIndexOfPullRequests,
-    kIndexOfStarts,
     kNumberOfContents
 };
 
@@ -27,7 +25,6 @@ enum Contents {
 @property (nonatomic, strong) BGRepositoriesController *yourRepositoriesController;
 @property (nonatomic, strong) BGIssuesController *issuesController;
 @property (nonatomic, strong) BGPullRequestsController *pullRequestsController;
-@property (nonatomic, strong) BGStarsController *starsController;
 @end
 
 @implementation BGGlobalMenuContext
@@ -62,8 +59,6 @@ enum Contents {
             return self.issuesController;
         case kIndexOfPullRequests:
             return self.pullRequestsController;
-        case kIndexOfStarts:
-            return self.starsController;
     }
     return nil;
 }
@@ -104,11 +99,4 @@ enum Contents {
     return _pullRequestsController;
 }
 
-- (BGStarsController *)starsController {
-    if(!_starsController) {
-        _starsController = [[BGStarsController alloc] init];
-        _starsController.title = @"Stars";
-    }
-    return _starsController;
-}
 @end

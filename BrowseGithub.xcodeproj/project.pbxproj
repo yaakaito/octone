@@ -118,8 +118,6 @@
 		B9B83E2E15FE81290071F088 /* BGRepositoriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE815FE81290071F088 /* BGRepositoriesController.m */; };
 		B9B83E2F15FE81290071F088 /* BGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEA15FE81290071F088 /* BGRootController.m */; };
 		B9B83E3015FE81290071F088 /* BGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEA15FE81290071F088 /* BGRootController.m */; };
-		B9B83E3115FE81290071F088 /* BGStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DED15FE81290071F088 /* BGStarsController.m */; };
-		B9B83E3215FE81290071F088 /* BGStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DED15FE81290071F088 /* BGStarsController.m */; };
 		B9B83E3315FE81290071F088 /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEF15FE81290071F088 /* BGUser.m */; };
 		B9B83E3415FE81290071F088 /* BGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DEF15FE81290071F088 /* BGUser.m */; };
 		B9B83E3515FE81290071F088 /* BrowseGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DF115FE81290071F088 /* BrowseGithub.m */; };
@@ -332,8 +330,6 @@
 		B9B83DE915FE81290071F088 /* BGRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRootController.h; sourceTree = "<group>"; };
 		B9B83DEA15FE81290071F088 /* BGRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRootController.m; sourceTree = "<group>"; };
 		B9B83DEB15FE81290071F088 /* BGSecretKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
-		B9B83DEC15FE81290071F088 /* BGStarsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGStarsController.h; sourceTree = "<group>"; };
-		B9B83DED15FE81290071F088 /* BGStarsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGStarsController.m; sourceTree = "<group>"; };
 		B9B83DEE15FE81290071F088 /* BGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUser.h; sourceTree = "<group>"; };
 		B9B83DEF15FE81290071F088 /* BGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUser.m; sourceTree = "<group>"; };
 		B9B83DF015FE81290071F088 /* BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseGithub.h; sourceTree = "<group>"; };
@@ -920,8 +916,6 @@
 		B9ECACC41612B139000D3F90 /* _pending */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83DEC15FE81290071F088 /* BGStarsController.h */,
-				B9B83DED15FE81290071F088 /* BGStarsController.m */,
 				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
 			);
@@ -1144,7 +1138,6 @@
 				B9B83E2B15FE81290071F088 /* BGPullRequestsController.m in Sources */,
 				B9B83E2D15FE81290071F088 /* BGRepositoriesController.m in Sources */,
 				B9B83E2F15FE81290071F088 /* BGRootController.m in Sources */,
-				B9B83E3115FE81290071F088 /* BGStarsController.m in Sources */,
 				B9B83E3315FE81290071F088 /* BGUser.m in Sources */,
 				B9B83E3515FE81290071F088 /* BrowseGithub.m in Sources */,
 				B9B83E3715FE81290071F088 /* NSURL+GithubResource.m in Sources */,
@@ -1195,7 +1188,6 @@
 				B9B83E2C15FE81290071F088 /* BGPullRequestsController.m in Sources */,
 				B9B83E2E15FE81290071F088 /* BGRepositoriesController.m in Sources */,
 				B9B83E3015FE81290071F088 /* BGRootController.m in Sources */,
-				B9B83E3215FE81290071F088 /* BGStarsController.m in Sources */,
 				B9B83E3415FE81290071F088 /* BGUser.m in Sources */,
 				B9B83E3615FE81290071F088 /* BrowseGithub.m in Sources */,
 				B9B83E3815FE81290071F088 /* NSURL+GithubResource.m in Sources */,
