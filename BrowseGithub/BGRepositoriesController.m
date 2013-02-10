@@ -112,7 +112,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    BGRepositoryController *repositoryController = [[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
+    BGRepositoryController *repositoryController = [[BGRepositoryController alloc] init];//[[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
     
     [self assignBackBarButtonForTargetViewController:repositoryController];
     [self.navigationController pushViewController:repositoryController animated:YES];
