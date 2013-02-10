@@ -7,11 +7,9 @@
 //
 
 #import "BGRepositoryController.h"
+#import "BGRepositoryView.h"
 
 @interface BGRepositoryController ()
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-@property (weak, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIView *_superHeaderView;
 @end
 
 @implementation BGRepositoryController
@@ -24,13 +22,12 @@
     }
     return self;
 }
-
-- (void)viewDidLoad
+/*
+- (void)loadView
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [self._superHeaderView addSubview:self.headerView];
+    self.view = [[BGRepositoryView alloc] initWithFrame:CGRectZero];
 }
+ */
 
 - (void)didReceiveMemoryWarning
 {

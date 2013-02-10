@@ -71,6 +71,7 @@
 		B9B7932D16C801E50085CC75 /* BGRepositoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B7932B16C801DB0085CC75 /* BGRepositoryController.xib */; };
 		B9B7933316C804370085CC75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B7933216C804350085CC75 /* QuartzCore.framework */; };
 		B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */; };
+		B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933816C8184F0085CC75 /* BGRepositoryView.m */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -269,6 +270,8 @@
 		B9B7933216C804350085CC75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B9B7933416C80D3B0085CC75 /* BGRepositoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryHeaderView.h; sourceTree = "<group>"; };
 		B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryHeaderView.m; sourceTree = "<group>"; };
+		B9B7933716C8184F0085CC75 /* BGRepositoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryView.h; sourceTree = "<group>"; };
+		B9B7933816C8184F0085CC75 /* BGRepositoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryView.m; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -652,6 +655,8 @@
 				B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */,
 				B9B7933416C80D3B0085CC75 /* BGRepositoryHeaderView.h */,
 				B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */,
+				B9B7933716C8184F0085CC75 /* BGRepositoryView.h */,
+				B9B7933816C8184F0085CC75 /* BGRepositoryView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1139,6 +1144,7 @@
 				B9B7932216C801810085CC75 /* SDSegmentedControl.m in Sources */,
 				B9B7932C16C801E50085CC75 /* BGRepositoryController.m in Sources */,
 				B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */,
+				B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
