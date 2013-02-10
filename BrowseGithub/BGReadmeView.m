@@ -7,7 +7,6 @@
 //
 
 #import "BGReadmeView.h"
-#import "UIColor+BrowseGithub.h"
 
 @interface BGReadmeView()
 @property (nonatomic, strong) UIWebView *webView;

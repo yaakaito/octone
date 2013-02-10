@@ -7,7 +7,6 @@
 //
 
 #import "BGPageLoadingCell.h"
-#import "UIColor+BrowseGithub.h"
 
 @interface BGPageLoadingCell()
 @property (nonatomic, strong) UIActivityIndicatorView *indicator;

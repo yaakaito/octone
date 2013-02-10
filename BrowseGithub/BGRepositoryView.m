@@ -7,7 +7,6 @@
 //
 
 #import "BGRepositoryView.h"
-#import "UIColor+BrowseGithub.h"
 #import "BGReadmeView.h"
 
 @implementation BGRepositoryView

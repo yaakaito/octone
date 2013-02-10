@@ -7,8 +7,6 @@
 //
 
 #import "BGBaseCell.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
 
 @implementation BGBaseCell
 

@@ -7,8 +7,6 @@
 //
 
 #import "BGGlobalMenuContentCell.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
 
 @interface BGGlobalMenuContentCell()
 @property (nonatomic, strong) IBOutlet UILabel *title;

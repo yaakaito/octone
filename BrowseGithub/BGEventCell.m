@@ -8,8 +8,6 @@
 
 #import "BGEventCell.h"
 #import "BGEventMessageFormatter.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
 #import "BGEvent.h"
 
 #import <QuartzCore/QuartzCore.h>

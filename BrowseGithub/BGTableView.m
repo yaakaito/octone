@@ -7,7 +7,6 @@
 //
 
 #import "BGTableView.h"
-#import "UIColor+BrowseGithub.h"
 
 @implementation BGTableView
 

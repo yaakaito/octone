@@ -7,8 +7,6 @@
 //
 
 #import "BGRepositoryHeaderView.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
 
 @implementation BGRepositoryHeaderView
 

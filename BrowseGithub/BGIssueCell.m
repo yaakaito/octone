@@ -7,9 +7,6 @@
 //
 
 #import "BGIssueCell.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
-
 
 @interface BGIssueCell ()
 @property (nonatomic, strong) IBOutlet UILabel *title;

@@ -8,8 +8,6 @@
 
 #import "BGRepositoryCell.h"
 #import "BGRepository.h"
-#import "UIColor+BrowseGithub.h"
-#import "UIFont+BrowseGithub.h"
 
 @interface BGRepositoryCell()
 @property (nonatomic, strong) IBOutlet UILabel *repositoryName;
