@@ -67,6 +67,12 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"BGRepositoryCell" bundle:nil] forCellReuseIdentifier:kBGRepositoryCellReuseIdentifier];
+}
+
 #pragma mark - UITableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -82,8 +88,7 @@
     if (indexPath.row < [self.manager numberOfRepositories]) {
         BGRepositoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGRepositoryCellReuseIdentifier];
         if (!cell) {
-            UINib *nib = [UINib nibWithNibName:@"BGRepositoryCell" bundle:nil];
-            cell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+            cell = [[BGRepositoryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGRepositoryCellReuseIdentifier];
         }
         
         [self updateCell:cell indexPath:indexPath];
