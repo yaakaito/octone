@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGTableController.h"
 
-@interface BGIssuesController : UIViewController
+@interface BGIssuesController : BGTableController
 
 @end
