@@ -17,23 +17,20 @@
 
 @implementation BGGlobalMenuContentCell
 
-- (id)init
-{
-    self = [super initWithStyle:UITableViewCellStyleDefault 
-                reuseIdentifier:kGlobalMenuContentCellReuseIdentifier];
-    if (self) {
-        // Initialization code
-        self.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
-        self.contentView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
-        self.selectedBackgroundView.backgroundColor = [UIColor githubHightlightedGlobalMenuBackgroundColor];
-        self.hightlighter.backgroundColor = [UIColor githubGlobalMenuHightlightColor];
-        self.separator.backgroundColor = [UIColor githubGlobalMenuSeparatorColor];
-        self.textLabel.font = [UIFont heavyDefaultFontOfSize:16];
-        self.textLabel.textColor = [UIColor githubPrimaryColor];
-    }
-    return self;
-}
 
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    
+    [super willMoveToSuperview:newSuperview];
+    
+    // Initialization code
+    self.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
+    self.contentView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
+    self.selectedBackgroundView.backgroundColor = [UIColor githubHightlightedGlobalMenuBackgroundColor];
+    self.hightlighter.backgroundColor = [UIColor githubGlobalMenuHightlightColor];
+    self.separator.backgroundColor = [UIColor githubGlobalMenuSeparatorColor];
+    self.textLabel.font = [UIFont heavyDefaultFontOfSize:16];
+    self.textLabel.textColor = [UIColor githubPrimaryColor];
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

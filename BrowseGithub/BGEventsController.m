@@ -62,7 +62,8 @@
 
     BGEventCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGEventCellReuseIdentifier];
     if (!cell) {
-        cell = [[BGEventCell alloc] init];
+        UINib *nib = [UINib nibWithNibName:@"BGEventCell" bundle:nil];
+        cell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
     }
     
     [self updateCell:cell indexPath:indexPath];

@@ -9,7 +9,7 @@
 #import "BGBaseCell.h"
 
 #define kBGEventCellReuseIdentifier @"BGEventCellReuseIdentifier"
-#define kBGEventCellHeight  65
+#define kBGEventCellHeight  64
 
 @class BGEvent;
 

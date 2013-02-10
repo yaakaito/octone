@@ -82,7 +82,8 @@
     if (indexPath.row < [self.manager numberOfRepositories]) {
         BGRepositoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGRepositoryCellReuseIdentifier];
         if (!cell) {
-            cell = [[BGRepositoryCell alloc] init];
+            UINib *nib = [UINib nibWithNibName:@"BGRepositoryCell" bundle:nil];
+            cell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
         }
         
         [self updateCell:cell indexPath:indexPath];
