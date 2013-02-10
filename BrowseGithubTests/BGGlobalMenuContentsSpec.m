@@ -6,7 +6,7 @@
 //
 
 #import "Kiwi.h"
-#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContext.h"
 #import "BGEventsController.h"
 #import "BGRepositoriesController.h"
 #import "BGIssuesController.h"
@@ -17,7 +17,7 @@ SPEC_BEGIN(BGGlobalMenuContentsSpec)
 
 describe(@"Global Menu Contents ", ^{
 
-    BGGlobalMenuContents *contents = [BGGlobalMenuContents sharedContents];
+    BGGlobalMenuContext *contents = [BGGlobalMenuContext sharedContents];
     context(@"の基本メニュー", ^{
         it(@"は5つ", ^{
             [[theValue([contents numberOfContents]) should] equal:theValue(5)];

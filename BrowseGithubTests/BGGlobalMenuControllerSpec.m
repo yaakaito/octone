@@ -7,7 +7,7 @@
 
 #import "Kiwi.h"
 #import "BGGlobalMenuController.h"
-#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContext.h"
 #import "BGGlobalMenuContentCell.h"
 
 @interface MockMenuDelegate : NSObject<BGGlobalMenuControllerDelegate>
@@ -39,7 +39,7 @@ describe(@"Global Menu Controller", ^{
     });
 
     context(@"のメニュー", ^{
-        BGGlobalMenuContents *contents = [BGGlobalMenuContents sharedContents];
+        BGGlobalMenuContext *contents = [BGGlobalMenuContext sharedContents];
         
         it(@"は、MenuContentsから構築される", ^{
             NSInteger rows = [globalMenuController tableView:nil numberOfRowsInSection:0];

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BGMenuContents.h"
 
-@interface BGGlobalMenuContents : NSObject
+@interface BGGlobalMenuContext : NSObject
 + (id)sharedContents;
-- (NSString*)contentsTitleForIndex:(NSInteger)index;
+- (BGMenuContents *)contentsForIndex:(NSInteger)index;
 - (id)contentsControllerForIndex:(NSInteger)index;
 - (NSInteger)numberOfContents;
 @end

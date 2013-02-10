@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContext.h"
 #import "BGEventsController.h"
 #import "BGRepositoriesController.h"
 #import "BGIssuesController.h"
@@ -22,7 +22,7 @@ enum Contents {
     kNumberOfContents
 };
 
-@interface BGGlobalMenuContents()
+@interface BGGlobalMenuContext()
 @property (nonatomic, strong) BGEventsController *newsFeedsController;
 @property (nonatomic, strong) BGRepositoriesController *yourRepositoriesController;
 @property (nonatomic, strong) BGIssuesController *issuesController;
@@ -30,7 +30,7 @@ enum Contents {
 @property (nonatomic, strong) BGStarsController *starsController;
 @end
 
-@implementation BGGlobalMenuContents
+@implementation BGGlobalMenuContext
 
 + (id)sharedContents {
     
@@ -42,8 +42,14 @@ enum Contents {
     return _sharedObject;    
 }
 
-- (NSString *)contentsTitleForIndex:(NSInteger)index {
-    return ((UIViewController*)[self contentsControllerForIndex:index]).title;
+
+
+- (BGMenuContents *)contentsForIndex:(NSInteger)index {
+    BGMenuContents *contents = [[BGMenuContents alloc] init];
+    contents.icon = [UIImage imageNamed:@"feed"];
+    contents.title = ((UIViewController*)[self contentsControllerForIndex:index]).title;
+    
+    return contents;
 }
 
 - (id)contentsControllerForIndex:(NSInteger)index {

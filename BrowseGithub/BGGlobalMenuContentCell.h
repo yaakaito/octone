@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BGBaseCell.h"
+#import "BGMenuContents.h"
 
 #define kGlobalMenuContentCellReuseIdentifier (@"GlobalMenuContentCell")
 
 @interface BGGlobalMenuContentCell : BGBaseCell
+
+@property BGMenuContents *menuContents;
 
 @end

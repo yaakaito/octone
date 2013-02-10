@@ -11,6 +11,8 @@
 #import "UIFont+BrowseGithub.h"
 
 @interface BGGlobalMenuContentCell()
+@property (nonatomic, strong) IBOutlet UILabel *title;
+@property (nonatomic, strong) IBOutlet UIImageView *icon;
 @property (nonatomic, strong) UIView *hightlighter;
 @property (nonatomic, strong) UIView *separator;
 @end
@@ -23,13 +25,25 @@
     [super willMoveToSuperview:newSuperview];
     
     // Initialization code
-    self.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
-    self.contentView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
+    self.backgroundColor = [UIColor clearColor];
+    self.contentView.backgroundColor = [UIColor clearColor];
     self.selectedBackgroundView.backgroundColor = [UIColor githubHightlightedGlobalMenuBackgroundColor];
     self.hightlighter.backgroundColor = [UIColor githubGlobalMenuHightlightColor];
     self.separator.backgroundColor = [UIColor githubGlobalMenuSeparatorColor];
-    self.textLabel.font = [UIFont heavyDefaultFontOfSize:16];
-    self.textLabel.textColor = [UIColor githubPrimaryColor];
+    
+    self.title.font = [UIFont heavyDefaultFontOfSize:16];
+    self.title.textColor = [UIColor githubPrimaryColor];
+    
+}
+
+- (void)setMenuContents:(BGMenuContents *)menuContents {
+
+    if (_menuContents != menuContents) {
+        _menuContents = menuContents;
+        
+        self.title.text = menuContents.title;
+        self.icon.image = menuContents.icon;
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

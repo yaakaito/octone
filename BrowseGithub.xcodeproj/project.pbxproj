@@ -56,6 +56,12 @@
 		B9B792D516C7A9800085CC75 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792D316C7A9800085CC75 /* star.png */; };
 		B9B792E116C7AA4E0085CC75 /* fork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792DF16C7AA4E0085CC75 /* fork@2x.png */; };
 		B9B792E216C7AA4E0085CC75 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792E016C7AA4E0085CC75 /* star@2x.png */; };
+		B9B792ED16C7B5E50085CC75 /* BGGlobalMenuContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B792EC16C7B5E50085CC75 /* BGGlobalMenuContentCell.xib */; };
+		B9B792F016C7B6DF0085CC75 /* BGMenuContents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B792EF16C7B6DF0085CC75 /* BGMenuContents.m */; };
+		B9B792F316C7B9FA0085CC75 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792F116C7B9FA0085CC75 /* feed.png */; };
+		B9B792F416C7B9FA0085CC75 /* feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792F216C7B9FA0085CC75 /* feed@2x.png */; };
+		B9B792FF16C7BD660085CC75 /* menu-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792FD16C7BD660085CC75 /* menu-background.png */; };
+		B9B7930016C7BD660085CC75 /* menu-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792FE16C7BD660085CC75 /* menu-background@2x.png */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -80,14 +86,12 @@
 		B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD515FE81290071F088 /* BGGithubResource.m */; };
 		B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */; };
 		B9B83E1E15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */; };
-		B9B83E1F15FE81290071F088 /* BGGlobalMenuContents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */; };
-		B9B83E2015FE81290071F088 /* BGGlobalMenuContents.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */; };
+		B9B83E1F15FE81290071F088 /* BGGlobalMenuContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD915FE81290071F088 /* BGGlobalMenuContext.m */; };
+		B9B83E2015FE81290071F088 /* BGGlobalMenuContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DD915FE81290071F088 /* BGGlobalMenuContext.m */; };
 		B9B83E2115FE81290071F088 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */; };
 		B9B83E2215FE81290071F088 /* BGGlobalMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */; };
 		B9B83E2315FE81290071F088 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */; };
 		B9B83E2415FE81290071F088 /* BGGlobalMenuUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */; };
-		B9B83E2515FE81290071F088 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE015FE81290071F088 /* BGGravatarImageView.m */; };
-		B9B83E2615FE81290071F088 /* BGGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE015FE81290071F088 /* BGGravatarImageView.m */; };
 		B9B83E2715FE81290071F088 /* BGIssuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE215FE81290071F088 /* BGIssuesController.m */; };
 		B9B83E2815FE81290071F088 /* BGIssuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE215FE81290071F088 /* BGIssuesController.m */; };
 		B9B83E2915FE81290071F088 /* BGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B83DE415FE81290071F088 /* BGNavigationController.m */; };
@@ -237,6 +241,13 @@
 		B9B792D316C7A9800085CC75 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = mooicon/star.png; sourceTree = "<group>"; };
 		B9B792DF16C7AA4E0085CC75 /* fork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fork@2x.png"; path = "mooicon/fork@2x.png"; sourceTree = "<group>"; };
 		B9B792E016C7AA4E0085CC75 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star@2x.png"; path = "mooicon/star@2x.png"; sourceTree = "<group>"; };
+		B9B792EC16C7B5E50085CC75 /* BGGlobalMenuContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGGlobalMenuContentCell.xib; sourceTree = "<group>"; };
+		B9B792EE16C7B6DF0085CC75 /* BGMenuContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGMenuContents.h; sourceTree = "<group>"; };
+		B9B792EF16C7B6DF0085CC75 /* BGMenuContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGMenuContents.m; sourceTree = "<group>"; };
+		B9B792F116C7B9FA0085CC75 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feed.png; path = mooicon/feed.png; sourceTree = "<group>"; };
+		B9B792F216C7B9FA0085CC75 /* feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "feed@2x.png"; path = "mooicon/feed@2x.png"; sourceTree = "<group>"; };
+		B9B792FD16C7BD660085CC75 /* menu-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background.png"; sourceTree = "<group>"; };
+		B9B792FE16C7BD660085CC75 /* menu-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background@2x.png"; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -265,15 +276,13 @@
 		B9B83DD515FE81290071F088 /* BGGithubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGithubResource.m; sourceTree = "<group>"; };
 		B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContentCell.h; sourceTree = "<group>"; };
 		B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContentCell.m; sourceTree = "<group>"; };
-		B9B83DD815FE81290071F088 /* BGGlobalMenuContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContents.h; sourceTree = "<group>"; };
-		B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContents.m; sourceTree = "<group>"; };
+		B9B83DD815FE81290071F088 /* BGGlobalMenuContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuContext.h; sourceTree = "<group>"; };
+		B9B83DD915FE81290071F088 /* BGGlobalMenuContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuContext.m; sourceTree = "<group>"; };
 		B9B83DDA15FE81290071F088 /* BGGlobalMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuController.h; sourceTree = "<group>"; };
 		B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuController.m; sourceTree = "<group>"; };
 		B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuControllerDelegate.h; sourceTree = "<group>"; };
 		B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGlobalMenuUserView.h; sourceTree = "<group>"; };
 		B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGlobalMenuUserView.m; sourceTree = "<group>"; };
-		B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGravatarImageView.h; sourceTree = "<group>"; };
-		B9B83DE015FE81290071F088 /* BGGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGravatarImageView.m; sourceTree = "<group>"; };
 		B9B83DE115FE81290071F088 /* BGIssuesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGIssuesController.h; sourceTree = "<group>"; };
 		B9B83DE215FE81290071F088 /* BGIssuesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGIssuesController.m; sourceTree = "<group>"; };
 		B9B83DE315FE81290071F088 /* BGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationController.h; sourceTree = "<group>"; };
@@ -399,6 +408,8 @@
 		B9B792D116C7A9700085CC75 /* mooicon */ = {
 			isa = PBXGroup;
 			children = (
+				B9B792F116C7B9FA0085CC75 /* feed.png */,
+				B9B792F216C7B9FA0085CC75 /* feed@2x.png */,
 				B9B792DF16C7AA4E0085CC75 /* fork@2x.png */,
 				B9B792E016C7AA4E0085CC75 /* star@2x.png */,
 				B9B792D216C7A9800085CC75 /* fork.png */,
@@ -496,6 +507,8 @@
 		B9B83DF615FE81290071F088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9B792FD16C7BD660085CC75 /* menu-background.png */,
+				B9B792FE16C7BD660085CC75 /* menu-background@2x.png */,
 				B9B792D116C7A9700085CC75 /* mooicon */,
 				B9497AA31614270D0080F147 /* cat.png */,
 				B9497AA41614270D0080F147 /* cat@2x.png */,
@@ -587,8 +600,6 @@
 				B9B83F1A15FFB5CD0071F088 /* BGTableView.m */,
 				B9B83DC615FE81290071F088 /* BGAuthenticationView.h */,
 				B9B83DC715FE81290071F088 /* BGAuthenticationView.m */,
-				B9B83DDF15FE81290071F088 /* BGGravatarImageView.h */,
-				B9B83DE015FE81290071F088 /* BGGravatarImageView.m */,
 				B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */,
 				B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */,
 			);
@@ -617,8 +628,10 @@
 				B9B83EB315FE85FD0071F088 /* Github */,
 				B9B83DD415FE81290071F088 /* BGGithubResource.h */,
 				B9B83DD515FE81290071F088 /* BGGithubResource.m */,
-				B9B83DD815FE81290071F088 /* BGGlobalMenuContents.h */,
-				B9B83DD915FE81290071F088 /* BGGlobalMenuContents.m */,
+				B9B83DD815FE81290071F088 /* BGGlobalMenuContext.h */,
+				B9B83DD915FE81290071F088 /* BGGlobalMenuContext.m */,
+				B9B792EE16C7B6DF0085CC75 /* BGMenuContents.h */,
+				B9B792EF16C7B6DF0085CC75 /* BGMenuContents.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -818,6 +831,7 @@
 				B9B83DC915FE81290071F088 /* BGBaseCell.m */,
 				B9B83DD615FE81290071F088 /* BGGlobalMenuContentCell.h */,
 				B9B83DD715FE81290071F088 /* BGGlobalMenuContentCell.m */,
+				B9B792EC16C7B5E50085CC75 /* BGGlobalMenuContentCell.xib */,
 				B9ECACCD16130015000D3F90 /* BGPageLoadingCell.h */,
 				B9ECACCE16130016000D3F90 /* BGPageLoadingCell.m */,
 			);
@@ -946,6 +960,11 @@
 				B9B792D516C7A9800085CC75 /* star.png in Resources */,
 				B9B792E116C7AA4E0085CC75 /* fork@2x.png in Resources */,
 				B9B792E216C7AA4E0085CC75 /* star@2x.png in Resources */,
+				B9B792ED16C7B5E50085CC75 /* BGGlobalMenuContentCell.xib in Resources */,
+				B9B792F316C7B9FA0085CC75 /* feed.png in Resources */,
+				B9B792F416C7B9FA0085CC75 /* feed@2x.png in Resources */,
+				B9B792FF16C7BD660085CC75 /* menu-background.png in Resources */,
+				B9B7930016C7BD660085CC75 /* menu-background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,10 +1048,9 @@
 				B9B83E1115FE81290071F088 /* BGEventsController.m in Sources */,
 				B9B83E1B15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1D15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
-				B9B83E1F15FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
+				B9B83E1F15FE81290071F088 /* BGGlobalMenuContext.m in Sources */,
 				B9B83E2115FE81290071F088 /* BGGlobalMenuController.m in Sources */,
 				B9B83E2315FE81290071F088 /* BGGlobalMenuUserView.m in Sources */,
-				B9B83E2515FE81290071F088 /* BGGravatarImageView.m in Sources */,
 				B9B83E2715FE81290071F088 /* BGIssuesController.m in Sources */,
 				B9B83E2915FE81290071F088 /* BGNavigationController.m in Sources */,
 				B9B83E2B15FE81290071F088 /* BGPullRequestsController.m in Sources */,
@@ -1061,6 +1079,7 @@
 				B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */,
 				B9ECACB61612A471000D3F90 /* BGEventCell.m in Sources */,
 				B9ECACCF16130016000D3F90 /* BGPageLoadingCell.m in Sources */,
+				B9B792F016C7B6DF0085CC75 /* BGMenuContents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1075,10 +1094,9 @@
 				B9B83E1215FE81290071F088 /* BGEventsController.m in Sources */,
 				B9B83E1C15FE81290071F088 /* BGGithubResource.m in Sources */,
 				B9B83E1E15FE81290071F088 /* BGGlobalMenuContentCell.m in Sources */,
-				B9B83E2015FE81290071F088 /* BGGlobalMenuContents.m in Sources */,
+				B9B83E2015FE81290071F088 /* BGGlobalMenuContext.m in Sources */,
 				B9B83E2215FE81290071F088 /* BGGlobalMenuController.m in Sources */,
 				B9B83E2415FE81290071F088 /* BGGlobalMenuUserView.m in Sources */,
-				B9B83E2615FE81290071F088 /* BGGravatarImageView.m in Sources */,
 				B9B83E2815FE81290071F088 /* BGIssuesController.m in Sources */,
 				B9B83E2A15FE81290071F088 /* BGNavigationController.m in Sources */,
 				B9B83E2C15FE81290071F088 /* BGPullRequestsController.m in Sources */,

@@ -17,7 +17,7 @@
 #import "UIColor+BrowseGithub.h"
 #import "BGEventsController.h"
 #import "BGGithubResource.h"
-#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContext.h"
 
 #import <EEHUDView/EEHUDView.h>
 
@@ -54,7 +54,7 @@
     _appRootController.view.frame = [self initialFrame];
     [(PatchedJASidePanelController*)_appRootController startNotificationListener];
 
-    UIViewController *firstController = [[BGGlobalMenuContents sharedContents] contentsControllerForIndex:0];
+    UIViewController *firstController = [[BGGlobalMenuContext sharedContents] contentsControllerForIndex:0];
     BGGlobalMenuController *globalMenuController = [[BGGlobalMenuController alloc] init];
     BGNavigationController *navigationController = [[BGNavigationController alloc] initWithRootViewController:firstController];
     globalMenuController.delegate = navigationController;

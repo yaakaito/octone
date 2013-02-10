@@ -9,10 +9,10 @@
 #import "BGGlobalMenuController.h"
 #import "BGGlobalMenuContentCell.h"
 #import "UIColor+BrowseGithub.h"
-#import "BGGlobalMenuContents.h"
+#import "BGGlobalMenuContext.h"
 
 @interface BGGlobalMenuController ()
-@property (nonatomic, weak) BGGlobalMenuContents *contents;
+@property (nonatomic, weak) BGGlobalMenuContext *contents;
 @end
 
 @implementation BGGlobalMenuController
@@ -20,7 +20,7 @@
 - (id)init {
     self = [super initWithStyle:UITableViewStylePlain];
     if(self) {
-        self.contents = [BGGlobalMenuContents sharedContents];
+        self.contents = [BGGlobalMenuContext sharedContents];
     }
     return self;
 }
@@ -32,6 +32,7 @@
     self.tableView.backgroundColor = [UIColor githubGlobalMenuBackgroundColor];
     self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menu-background"]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -53,17 +54,25 @@
     return [self.contents numberOfContents];
 }
 
+- (void)_updateCell:(BGGlobalMenuContentCell *)cell indexPath:(NSIndexPath *)indexPath
+{
+    BGMenuContents *contents = [self.contents contentsForIndex:indexPath.row];
+    cell.menuContents = contents;
+    
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = kGlobalMenuContentCellReuseIdentifier;
     BGGlobalMenuContentCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(!cell) {
-        cell = [[BGGlobalMenuContentCell alloc] init];
+        UINib *nib = [UINib nibWithNibName:@"BGGlobalMenuContentCell" bundle:nil];
+        cell = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
     }
     
     // Configure the cell...
-    cell.textLabel.text = [self.contents contentsTitleForIndex:indexPath.row];
+    [self _updateCell:cell indexPath:indexPath];
     return cell;
 }
 
@@ -115,6 +124,8 @@
     {
         [self.delegate globalMenuController:self didSelectNextViewController:[self.contents contentsControllerForIndex:indexPath.row]];
     }
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

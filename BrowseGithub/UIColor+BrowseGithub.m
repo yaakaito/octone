@@ -83,12 +83,12 @@
 }
 
 + (UIColor *)githubGlobalMenuHightlightColor {
-    return [UIColor colorWithWhite:0.24 alpha:1.0];
+    return [UIColor colorWithWhite:0.16 alpha:1.0];
 }
 
 + (UIColor *)githubGlobalMenuSeparatorColor {
     
-    return [UIColor colorWithWhite:0.14 alpha:1.0];
+    return [UIColor colorWithWhite:0.08 alpha:1.0];
 }
 
 + (UIColor *)githubRefhreshControlColor {
