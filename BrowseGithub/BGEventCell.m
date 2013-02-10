@@ -22,35 +22,7 @@
 @end
 
 @implementation BGEventCell
-/*
-- (id)init
-{
-    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGEventCellReuseIdentifier];
-    if (self) {
-        
-        self.message = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.message.numberOfLines = 2;
-        self.message.lineBreakMode = NSLineBreakByCharWrapping;
-        self.message.textColor = [UIColor githubTextColor];
-        self.message.backgroundColor = [UIColor clearColor];
-        [self.contentView addSubview:self.message];
-        
-        self.eventDescription = [[UILabel alloc] initWithFrame:CGRectZero];
-        self.eventDescription.textColor = [UIColor githubLightTextColor];
-        self.eventDescription.font = [UIFont githubDefaultFontOfSize:10];
-        self.eventDescription.backgroundColor = [UIColor clearColor];
-        [self.contentView addSubview:self.eventDescription];
 
-        
-        self.thumbnail = [[UIImageView alloc] initWithImage:nil];
-        self.thumbnail.layer.cornerRadius = 3.0f;
-        self.thumbnail.clipsToBounds = YES;
-        [self.contentView addSubview:self.thumbnail];
-        
-    }
-    return self;
-}
-*/
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
@@ -70,15 +42,6 @@
         [self.thumbnail setImageWithURL:event.actorGravatarUrl];
     }
 }
-/*
-- (void)layoutSubviews {
-    
-    [super layoutSubviews];
-    
-    self.message.frame = CGRectMake(self.contentView.frame.size.height - 8 + 10, 5, 240, 35);
-    self.eventDescription.frame = CGRectMake(15, 45, 290, 15);
-    self.thumbnail.frame = CGRectMake(4, 4, self.contentView.frame.size.height - 8, self.contentView.frame.size.height-8);
-}
- */
+
 
 @end
