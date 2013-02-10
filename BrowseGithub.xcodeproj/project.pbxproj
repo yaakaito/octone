@@ -62,6 +62,10 @@
 		B9B792F416C7B9FA0085CC75 /* feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792F216C7B9FA0085CC75 /* feed@2x.png */; };
 		B9B792FF16C7BD660085CC75 /* menu-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792FD16C7BD660085CC75 /* menu-background.png */; };
 		B9B7930016C7BD660085CC75 /* menu-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B792FE16C7BD660085CC75 /* menu-background@2x.png */; };
+		B9B7930516C7C9BB0085CC75 /* private.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7930116C7C9BB0085CC75 /* private.png */; };
+		B9B7930616C7C9BB0085CC75 /* private@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7930216C7C9BB0085CC75 /* private@2x.png */; };
+		B9B7930716C7C9BB0085CC75 /* repository.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7930316C7C9BB0085CC75 /* repository.png */; };
+		B9B7930816C7C9BB0085CC75 /* repository@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7930416C7C9BB0085CC75 /* repository@2x.png */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -248,6 +252,10 @@
 		B9B792F216C7B9FA0085CC75 /* feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "feed@2x.png"; path = "mooicon/feed@2x.png"; sourceTree = "<group>"; };
 		B9B792FD16C7BD660085CC75 /* menu-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background.png"; sourceTree = "<group>"; };
 		B9B792FE16C7BD660085CC75 /* menu-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-background@2x.png"; sourceTree = "<group>"; };
+		B9B7930116C7C9BB0085CC75 /* private.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = private.png; path = mooicon/private.png; sourceTree = "<group>"; };
+		B9B7930216C7C9BB0085CC75 /* private@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "private@2x.png"; path = "mooicon/private@2x.png"; sourceTree = "<group>"; };
+		B9B7930316C7C9BB0085CC75 /* repository.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = repository.png; path = mooicon/repository.png; sourceTree = "<group>"; };
+		B9B7930416C7C9BB0085CC75 /* repository@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "repository@2x.png"; path = "mooicon/repository@2x.png"; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -408,6 +416,10 @@
 		B9B792D116C7A9700085CC75 /* mooicon */ = {
 			isa = PBXGroup;
 			children = (
+				B9B7930116C7C9BB0085CC75 /* private.png */,
+				B9B7930216C7C9BB0085CC75 /* private@2x.png */,
+				B9B7930316C7C9BB0085CC75 /* repository.png */,
+				B9B7930416C7C9BB0085CC75 /* repository@2x.png */,
 				B9B792F116C7B9FA0085CC75 /* feed.png */,
 				B9B792F216C7B9FA0085CC75 /* feed@2x.png */,
 				B9B792DF16C7AA4E0085CC75 /* fork@2x.png */,
@@ -965,6 +977,10 @@
 				B9B792F416C7B9FA0085CC75 /* feed@2x.png in Resources */,
 				B9B792FF16C7BD660085CC75 /* menu-background.png in Resources */,
 				B9B7930016C7BD660085CC75 /* menu-background@2x.png in Resources */,
+				B9B7930516C7C9BB0085CC75 /* private.png in Resources */,
+				B9B7930616C7C9BB0085CC75 /* private@2x.png in Resources */,
+				B9B7930716C7C9BB0085CC75 /* repository.png in Resources */,
+				B9B7930816C7C9BB0085CC75 /* repository@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

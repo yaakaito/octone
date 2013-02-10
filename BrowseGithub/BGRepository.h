@@ -17,6 +17,7 @@
 @property (nonatomic, readonly) NSInteger watchers;
 @property (nonatomic, readonly) NSInteger forks;
 @property (nonatomic, readonly) BOOL fork;
+@property (nonatomic, readonly) BOOL isPrivate;
 @property (nonatomic, readonly) NSInteger openIssues;
 
 + (id)repositoryWithJSON:(id)json;

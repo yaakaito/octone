@@ -17,6 +17,7 @@
 @property (nonatomic) NSInteger watchers;
 @property (nonatomic) NSInteger forks;
 @property (nonatomic) BOOL fork;
+@property (nonatomic) BOOL isPrivate;
 @property (nonatomic) NSInteger openIssues;
 @end
 
@@ -51,6 +52,7 @@
     self.watchers = [[json objectForKey:@"watchers_count"] integerValue];
     self.forks = [[json objectForKey:@"forks_count"] integerValue];
     self.fork = [[json objectForKey:@"fork"] boolValue];
+    self.isPrivate = [[json objectForKey:@"private"] boolValue];
     self.openIssues = [[json objectForKey:@"open_issues_count"] integerValue];
     
 }
