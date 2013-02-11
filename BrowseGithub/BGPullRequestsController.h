@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGTableController.h"
 
-@interface BGPullRequestsController : UIViewController
+@interface BGPullRequestsController : BGTableController
 
 @end

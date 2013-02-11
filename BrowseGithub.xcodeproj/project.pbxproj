@@ -78,6 +78,12 @@
 		B9B7934316C8322A0085CC75 /* BGIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934216C8322A0085CC75 /* BGIssueCell.xib */; };
 		B9B7934616C832D10085CC75 /* issue.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934416C832D10085CC75 /* issue.png */; };
 		B9B7934716C832D10085CC75 /* issue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934516C832D10085CC75 /* issue@2x.png */; };
+		B9B7934B16C847120085CC75 /* BGPullRequestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7934A16C847110085CC75 /* BGPullRequestCell.m */; };
+		B9B7934D16C8472A0085CC75 /* BGPullRequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934C16C847290085CC75 /* BGPullRequestCell.xib */; };
+		B9B7935016C849980085CC75 /* pull-request.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934E16C849980085CC75 /* pull-request.png */; };
+		B9B7935116C849980085CC75 /* pull-request@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7934F16C849980085CC75 /* pull-request@2x.png */; };
+		B9B7935416C8F8970085CC75 /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7935216C8F8970085CC75 /* github.png */; };
+		B9B7935516C8F8970085CC75 /* github@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B7935316C8F8970085CC75 /* github@2x.png */; };
 		B9B83D6E15FE7DB50071F088 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6D15FE7DB50071F088 /* UIKit.framework */; };
 		B9B83D7015FE7DB50071F088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D6F15FE7DB50071F088 /* Foundation.framework */; };
 		B9B83D7215FE7DB50071F088 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */; };
@@ -284,6 +290,13 @@
 		B9B7934216C8322A0085CC75 /* BGIssueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGIssueCell.xib; sourceTree = "<group>"; };
 		B9B7934416C832D10085CC75 /* issue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = issue.png; path = mooicon/issue.png; sourceTree = "<group>"; };
 		B9B7934516C832D10085CC75 /* issue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "issue@2x.png"; path = "mooicon/issue@2x.png"; sourceTree = "<group>"; };
+		B9B7934916C847100085CC75 /* BGPullRequestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGPullRequestCell.h; sourceTree = "<group>"; };
+		B9B7934A16C847110085CC75 /* BGPullRequestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGPullRequestCell.m; sourceTree = "<group>"; };
+		B9B7934C16C847290085CC75 /* BGPullRequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGPullRequestCell.xib; sourceTree = "<group>"; };
+		B9B7934E16C849980085CC75 /* pull-request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pull-request.png"; path = "mooicon/pull-request.png"; sourceTree = "<group>"; };
+		B9B7934F16C849980085CC75 /* pull-request@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pull-request@2x.png"; path = "mooicon/pull-request@2x.png"; sourceTree = "<group>"; };
+		B9B7935216C8F8970085CC75 /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = github.png; path = mooicon/github.png; sourceTree = "<group>"; };
+		B9B7935316C8F8970085CC75 /* github@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "github@2x.png"; path = "mooicon/github@2x.png"; sourceTree = "<group>"; };
 		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -443,6 +456,10 @@
 		B9B792D116C7A9700085CC75 /* mooicon */ = {
 			isa = PBXGroup;
 			children = (
+				B9B7935216C8F8970085CC75 /* github.png */,
+				B9B7935316C8F8970085CC75 /* github@2x.png */,
+				B9B7934E16C849980085CC75 /* pull-request.png */,
+				B9B7934F16C849980085CC75 /* pull-request@2x.png */,
 				B9B7934416C832D10085CC75 /* issue.png */,
 				B9B7934516C832D10085CC75 /* issue@2x.png */,
 				B9B7930116C7C9BB0085CC75 /* private.png */,
@@ -476,6 +493,21 @@
 				B9B7931F16C801810085CC75 /* SDSegmentedControl.m */,
 			);
 			name = SDSegmentedControl;
+			sourceTree = "<group>";
+		};
+		B9B7934816C8460E0085CC75 /* Independent */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
+				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
+				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
+				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
+				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
+				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
+				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
+				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
+			);
+			name = Independent;
 			sourceTree = "<group>";
 		};
 		B9B83D5E15FE7DB50071F088 = {
@@ -618,6 +650,7 @@
 		B9B83EAE15FE859E0071F088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B9B7934816C8460E0085CC75 /* Independent */,
 				B9ECACC41612B139000D3F90 /* _pending */,
 				B9B83DE915FE81290071F088 /* BGRootController.h */,
 				B9B83DEA15FE81290071F088 /* BGRootController.m */,
@@ -625,12 +658,6 @@
 				B9B83F1E15FFB6AA0071F088 /* BGTableController.m */,
 				B9B83DC215FE81290071F088 /* BGAuthenticationController.h */,
 				B9B83DC315FE81290071F088 /* BGAuthenticationController.m */,
-				B9B83DCA15FE81290071F088 /* BGEventsController.h */,
-				B9B83DCB15FE81290071F088 /* BGEventsController.m */,
-				B9B83DE715FE81290071F088 /* BGRepositoriesController.h */,
-				B9B83DE815FE81290071F088 /* BGRepositoriesController.m */,
-				B9B83DE115FE81290071F088 /* BGIssuesController.h */,
-				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
 				B9B83DDC15FE81290071F088 /* BGGlobalMenuControllerDelegate.h */,
 				B9B83DDA15FE81290071F088 /* BGGlobalMenuController.h */,
 				B9B83DDB15FE81290071F088 /* BGGlobalMenuController.m */,
@@ -886,6 +913,9 @@
 				B9B7933F16C8320C0085CC75 /* BGIssueCell.h */,
 				B9B7934016C8320D0085CC75 /* BGIssueCell.m */,
 				B9B7934216C8322A0085CC75 /* BGIssueCell.xib */,
+				B9B7934916C847100085CC75 /* BGPullRequestCell.h */,
+				B9B7934A16C847110085CC75 /* BGPullRequestCell.m */,
+				B9B7934C16C847290085CC75 /* BGPullRequestCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -916,8 +946,6 @@
 		B9ECACC41612B139000D3F90 /* _pending */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
-				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
 			);
 			name = _pending;
 			sourceTree = "<group>";
@@ -1047,6 +1075,11 @@
 				B9B7934316C8322A0085CC75 /* BGIssueCell.xib in Resources */,
 				B9B7934616C832D10085CC75 /* issue.png in Resources */,
 				B9B7934716C832D10085CC75 /* issue@2x.png in Resources */,
+				B9B7934D16C8472A0085CC75 /* BGPullRequestCell.xib in Resources */,
+				B9B7935016C849980085CC75 /* pull-request.png in Resources */,
+				B9B7935116C849980085CC75 /* pull-request@2x.png in Resources */,
+				B9B7935416C8F8970085CC75 /* github.png in Resources */,
+				B9B7935516C8F8970085CC75 /* github@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,6 +1199,7 @@
 				B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */,
 				B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */,
 				B9B7934116C8320E0085CC75 /* BGIssueCell.m in Sources */,
+				B9B7934B16C847120085CC75 /* BGPullRequestCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "BGPullRequestsController.h"
+#import "BGPullRequestCell.h"
 
 @interface BGPullRequestsController ()
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.tableView registerNib:[UINib nibWithNibName:@"BGPullRequestCell" bundle:nil] forCellReuseIdentifier:kBGPullRequestCellReuseIdentifier];
+    
 }
 
 - (void)viewDidUnload
@@ -40,4 +43,45 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)_updateCell:(BGPullRequestCell *)cell indexPath:(NSIndexPath *)indexPath {
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+}
+
+#pragma mark - UITableView
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    BGPullRequestCell *cell = [tableView dequeueReusableCellWithIdentifier:kBGPullRequestCellReuseIdentifier];
+    if (!cell) {
+        cell = [[BGPullRequestCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kBGPullRequestCellReuseIdentifier];
+    }
+    
+    [self _updateCell:cell indexPath:indexPath];
+    
+    return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*
+     BGRepositoryController *repositoryController = [[BGRepositoryController alloc] init];//[[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
+     
+     [self assignBackBarButtonForTargetViewController:repositoryController];
+     [self.navigationController pushViewController:repositoryController animated:YES];
+     */
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kBGPullRequestCellHeight;
+}
 @end
