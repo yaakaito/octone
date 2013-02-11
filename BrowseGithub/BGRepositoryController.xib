@@ -228,7 +228,6 @@
 								<string key="NSFrameSize">{320, 335}</string>
 								<reference key="NSSuperview" ref="732759991"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">1</int>
@@ -290,7 +289,6 @@
 				<string key="NSFrameSize">{73, 176}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<bool key="IBUIOpaque">NO</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -330,14 +328,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">_bodyAreaView</string>
-						<reference key="source" ref="191373211"/>
-						<reference key="destination" ref="732759991"/>
-					</object>
-					<int key="connectionID">441</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">language</string>
 						<reference key="source" ref="191373211"/>
 						<reference key="destination" ref="943659513"/>
@@ -367,6 +357,23 @@
 						<reference key="destination" ref="53425260"/>
 					</object>
 					<int key="connectionID">744</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bodyArea</string>
+						<reference key="source" ref="191373211"/>
+						<reference key="destination" ref="732759991"/>
+					</object>
+					<int key="connectionID">745</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">selectedTabIndex:</string>
+						<reference key="source" ref="585818156"/>
+						<reference key="destination" ref="191373211"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">746</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1235,7 +1242,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">744</int>
+			<int key="maxID">746</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1284,19 +1291,14 @@
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">BGRepositoryView</string>
-					<string key="superclassName">UIView</string>
+					<string key="superclassName">BGTabView</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="_bodyAreaView">UIView</string>
 						<string key="forks">UILabel</string>
 						<string key="language">UILabel</string>
 						<string key="readmeView">BGReadmeView</string>
 						<string key="stars">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="_bodyAreaView">
-							<string key="name">_bodyAreaView</string>
-							<string key="candidateClassName">UIView</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="forks">
 							<string key="name">forks</string>
 							<string key="candidateClassName">UILabel</string>
@@ -1317,6 +1319,36 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/BGRepositoryView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">BGTabView</string>
+					<string key="superclassName">BGView</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="bodyArea">UIView</string>
+						<string key="tab">UISegmentedControl</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="bodyArea">
+							<string key="name">bodyArea</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="tab">
+							<string key="name">tab</string>
+							<string key="candidateClassName">UISegmentedControl</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/BGTabView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">BGView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/BGView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

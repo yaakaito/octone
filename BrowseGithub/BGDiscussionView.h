@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BGView.h"
+#import "BGTabView.h"
 
-@interface BGDiscussionView : BGView
+@interface BGDiscussionView : BGTabView
 @property (nonatomic, weak) IBOutlet UILabel *discussionId;
 @property (nonatomic, weak) IBOutlet UILabel *title;
 @end
