@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGReadmeView.h"
 
 @interface BGRepositoryView : UIView
-@property (weak, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIView *_superHeaderView;
-@property (weak, nonatomic) IBOutlet UIView *_bodyAreaView;
+@property (nonatomic, weak) IBOutlet UILabel *language;
+@property (nonatomic, weak) IBOutlet UILabel *stars;
+@property (nonatomic, weak) IBOutlet UILabel *forks;
+
+@property (nonatomic, weak) IBOutlet UIView *_bodyAreaView;
+
+@property (nonatomic, weak) IBOutlet BGReadmeView *readmeView;
 
 @end

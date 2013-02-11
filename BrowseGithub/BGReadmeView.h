@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BGReadmeView : UIView
+@interface BGReadmeView : UIWebView
 
-
+- (void)displayHTMLString:(NSString *)htmlString;
 @end
