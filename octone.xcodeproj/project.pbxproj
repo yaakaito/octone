@@ -297,19 +297,19 @@
 		B9B7934F16C849980085CC75 /* pull-request@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pull-request@2x.png"; path = "mooicon/pull-request@2x.png"; sourceTree = "<group>"; };
 		B9B7935216C8F8970085CC75 /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = github.png; path = mooicon/github.png; sourceTree = "<group>"; };
 		B9B7935316C8F8970085CC75 /* github@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "github@2x.png"; path = "mooicon/github@2x.png"; sourceTree = "<group>"; };
-		B9B83D6915FE7DB50071F088 /* BrowseGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B83D6915FE7DB50071F088 /* octone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = octone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D6D15FE7DB50071F088 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9B83D6F15FE7DB50071F088 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9B83D7115FE7DB50071F088 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B9B83D7515FE7DB50071F088 /* BrowseGithub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithub-Info.plist"; sourceTree = "<group>"; };
+		B9B83D7515FE7DB50071F088 /* octone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "octone-Info.plist"; sourceTree = "<group>"; };
 		B9B83D7715FE7DB50071F088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9B83D7915FE7DB50071F088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9B83D7B15FE7DB50071F088 /* BrowseGithub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseGithub-Prefix.pch"; sourceTree = "<group>"; };
+		B9B83D7B15FE7DB50071F088 /* octone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "octone-Prefix.pch"; sourceTree = "<group>"; };
 		B9B83D7C15FE7DB50071F088 /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
 		B9B83D7D15FE7DB50071F088 /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		B9B83D8D15FE7DB60071F088 /* BrowseGithubTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseGithubTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B83D8D15FE7DB60071F088 /* octoneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = octoneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B83D8E15FE7DB60071F088 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B9B83D9615FE7DB60071F088 /* BrowseGithubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrowseGithubTests-Info.plist"; sourceTree = "<group>"; };
+		B9B83D9615FE7DB60071F088 /* octoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "octoneTests-Info.plist"; sourceTree = "<group>"; };
 		B9B83D9815FE7DB60071F088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9B83DC215FE81290071F088 /* BGAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAuthenticationController.h; sourceTree = "<group>"; };
 		B9B83DC315FE81290071F088 /* BGAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAuthenticationController.m; sourceTree = "<group>"; };
@@ -525,8 +525,8 @@
 		B9B83D6A15FE7DB50071F088 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83D6915FE7DB50071F088 /* BrowseGithub.app */,
-				B9B83D8D15FE7DB60071F088 /* BrowseGithubTests.octest */,
+				B9B83D6915FE7DB50071F088 /* octone.app */,
+				B9B83D8D15FE7DB60071F088 /* octoneTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -562,10 +562,10 @@
 		B9B83D7415FE7DB50071F088 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83D7515FE7DB50071F088 /* BrowseGithub-Info.plist */,
+				B9B83D7515FE7DB50071F088 /* octone-Info.plist */,
 				B9B83D7615FE7DB50071F088 /* InfoPlist.strings */,
 				B9B83D7915FE7DB50071F088 /* main.m */,
-				B9B83D7B15FE7DB50071F088 /* BrowseGithub-Prefix.pch */,
+				B9B83D7B15FE7DB50071F088 /* octone-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -592,7 +592,7 @@
 			children = (
 				B9B83ED715FF23980071F088 /* BrowseGithubSpecs-Info.plist */,
 				B9B83ED815FF23980071F088 /* BrowseGithubSpecs-Prefix.pch */,
-				B9B83D9615FE7DB60071F088 /* BrowseGithubTests-Info.plist */,
+				B9B83D9615FE7DB60071F088 /* octoneTests-Info.plist */,
 				B9B83D9715FE7DB60071F088 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -960,9 +960,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9B83D6815FE7DB50071F088 /* BrowseGithub */ = {
+		B9B83D6815FE7DB50071F088 /* octone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9B83D9F15FE7DB60071F088 /* Build configuration list for PBXNativeTarget "BrowseGithub" */;
+			buildConfigurationList = B9B83D9F15FE7DB60071F088 /* Build configuration list for PBXNativeTarget "octone" */;
 			buildPhases = (
 				B9B83D6515FE7DB50071F088 /* Sources */,
 				B9B83D6615FE7DB50071F088 /* Frameworks */,
@@ -973,14 +973,14 @@
 			);
 			dependencies = (
 			);
-			name = BrowseGithub;
+			name = octone;
 			productName = BrowseGithub;
-			productReference = B9B83D6915FE7DB50071F088 /* BrowseGithub.app */;
+			productReference = B9B83D6915FE7DB50071F088 /* octone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9B83D8C15FE7DB60071F088 /* BrowseGithubTests */ = {
+		B9B83D8C15FE7DB60071F088 /* octoneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9B83DA215FE7DB60071F088 /* Build configuration list for PBXNativeTarget "BrowseGithubTests" */;
+			buildConfigurationList = B9B83DA215FE7DB60071F088 /* Build configuration list for PBXNativeTarget "octoneTests" */;
 			buildPhases = (
 				B9B83D8815FE7DB60071F088 /* Sources */,
 				B9B83D8915FE7DB60071F088 /* Frameworks */,
@@ -992,9 +992,9 @@
 			dependencies = (
 				B9B83D9315FE7DB60071F088 /* PBXTargetDependency */,
 			);
-			name = BrowseGithubTests;
+			name = octoneTests;
 			productName = BrowseGithubTests;
-			productReference = B9B83D8D15FE7DB60071F088 /* BrowseGithubTests.octest */;
+			productReference = B9B83D8D15FE7DB60071F088 /* octoneTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -1007,7 +1007,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = yaakaito;
 			};
-			buildConfigurationList = B9B83D6315FE7DB50071F088 /* Build configuration list for PBXProject "BrowseGithub" */;
+			buildConfigurationList = B9B83D6315FE7DB50071F088 /* Build configuration list for PBXProject "octone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1019,8 +1019,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9B83D6815FE7DB50071F088 /* BrowseGithub */,
-				B9B83D8C15FE7DB60071F088 /* BrowseGithubTests */,
+				B9B83D6815FE7DB50071F088 /* octone */,
+				B9B83D8C15FE7DB60071F088 /* octoneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1278,7 +1278,7 @@
 /* Begin PBXTargetDependency section */
 		B9B83D9315FE7DB60071F088 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9B83D6815FE7DB50071F088 /* BrowseGithub */;
+			target = B9B83D6815FE7DB50071F088 /* octone */;
 			targetProxy = B9B83D9215FE7DB60071F088 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1359,8 +1359,8 @@
 			baseConfigurationReference = E5411D6CA0834872913C9F00 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
-				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
+				GCC_PREFIX_HEADER = "BrowseGithub/octone-Prefix.pch";
+				INFOPLIST_FILE = "BrowseGithub/octone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1373,8 +1373,8 @@
 			baseConfigurationReference = E5411D6CA0834872913C9F00 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrowseGithub/BrowseGithub-Prefix.pch";
-				INFOPLIST_FILE = "BrowseGithub/BrowseGithub-Info.plist";
+				GCC_PREFIX_HEADER = "BrowseGithub/octone-Prefix.pch";
+				INFOPLIST_FILE = "BrowseGithub/octone-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1397,7 +1397,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 					"${PODS_HEADERS_SEARCH_PATHS}",
 				);
-				INFOPLIST_FILE = "BrowseGithubTests/BrowseGithubTests-Info.plist";
+				INFOPLIST_FILE = "BrowseGithubTests/octoneTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lxml2",
@@ -1421,7 +1421,7 @@
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/EEHUDView\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/KissXML\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\" \"${PODS_ROOT}/Headers/UIGlossyButton\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = octoneTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1442,7 +1442,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 					"${PODS_HEADERS_SEARCH_PATHS}",
 				);
-				INFOPLIST_FILE = "BrowseGithubTests/BrowseGithubTests-Info.plist";
+				INFOPLIST_FILE = "BrowseGithubTests/octoneTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lxml2",
@@ -1466,7 +1466,7 @@
 				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
 				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/AFNetworking\" \"${PODS_ROOT}/Headers/CocoaAsyncSocket\" \"${PODS_ROOT}/Headers/CocoaHTTPServer\" \"${PODS_ROOT}/Headers/CocoaLumberjack\" \"${PODS_ROOT}/Headers/EEHUDView\" \"${PODS_ROOT}/Headers/JASidePanels\" \"${PODS_ROOT}/Headers/KissXML\" \"${PODS_ROOT}/Headers/Kiwi\" \"${PODS_ROOT}/Headers/MagicalRecord\" \"${PODS_ROOT}/Headers/NLTHTTPStubServer\" \"${PODS_ROOT}/Headers/TTTAttributedLabel\" \"${PODS_ROOT}/Headers/UIGlossyButton\"";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = octoneTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1475,7 +1475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9B83D6315FE7DB50071F088 /* Build configuration list for PBXProject "BrowseGithub" */ = {
+		B9B83D6315FE7DB50071F088 /* Build configuration list for PBXProject "octone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9B83D9D15FE7DB60071F088 /* Debug */,
@@ -1484,7 +1484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9B83D9F15FE7DB60071F088 /* Build configuration list for PBXNativeTarget "BrowseGithub" */ = {
+		B9B83D9F15FE7DB60071F088 /* Build configuration list for PBXNativeTarget "octone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9B83DA015FE7DB60071F088 /* Debug */,
@@ -1493,7 +1493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9B83DA215FE7DB60071F088 /* Build configuration list for PBXNativeTarget "BrowseGithubTests" */ = {
+		B9B83DA215FE7DB60071F088 /* Build configuration list for PBXNativeTarget "octoneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9B83DA315FE7DB60071F088 /* Debug */,
