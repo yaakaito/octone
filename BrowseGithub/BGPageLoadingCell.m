@@ -27,7 +27,7 @@
         self.indicator.hidden = NO;
         [self.contentView addSubview:self.indicator];
         
-        self.complete = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat"]];
+        self.complete = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"github"]];
         self.complete.backgroundColor = [UIColor clearColor];
         self.complete.contentMode = UIViewContentModeCenter;
         self.complete.hidden = YES;
