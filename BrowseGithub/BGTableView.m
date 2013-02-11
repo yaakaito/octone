@@ -18,6 +18,7 @@
         self.separatorColor = [UIColor clearColor];
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.backgroundColor = [UIColor githubBackgroundColor];
+
     }
     return self;
 }

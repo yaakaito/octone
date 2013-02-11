@@ -13,4 +13,5 @@
     #import <Foundation/Foundation.h>
     #import "UIColor+BrowseGithub.h"
     #import "UIFont+BrowseGithub.h"
+    #import "UIViewController+BrowseGithub.h"
 #endif

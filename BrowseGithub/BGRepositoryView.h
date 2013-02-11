@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGView.h"
 #import "BGReadmeView.h"
 
-@interface BGRepositoryView : UIView
+@interface BGRepositoryView : BGView
 @property (nonatomic, weak) IBOutlet UILabel *language;
 @property (nonatomic, weak) IBOutlet UILabel *stars;
 @property (nonatomic, weak) IBOutlet UILabel *forks;

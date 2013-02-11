@@ -11,21 +11,10 @@
 
 @implementation BGRepositoryView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
     [super willMoveToSuperview:newSuperview];
-    
-    self.backgroundColor = [UIColor githubBackgroundColor];
-    
     
     self.forks.text = @"4";
     self.stars.text = @"112";
@@ -40,14 +29,5 @@
     self.forks.textColor = [UIColor githubLightTextColor];
     
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

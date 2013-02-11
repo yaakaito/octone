@@ -9,6 +9,8 @@
 #import "BGPullRequestsController.h"
 #import "BGPullRequestCell.h"
 
+#import "BGDiscussionController.h"
+
 @interface BGPullRequestsController ()
 
 @end
@@ -72,12 +74,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*
-     BGRepositoryController *repositoryController = [[BGRepositoryController alloc] init];//[[BGRepositoryController alloc] initWithRepository:[self.manager repositoryAtIndex:indexPath.row]];
-     
-     [self assignBackBarButtonForTargetViewController:repositoryController];
-     [self.navigationController pushViewController:repositoryController animated:YES];
-     */
+    
+    BGDiscussionController *discussionController = [[BGDiscussionController alloc] init];
+    
+    [self assignBackBarButtonForTargetViewController:discussionController];
+    [self.navigationController pushViewController:discussionController animated:YES];
     
 }
 

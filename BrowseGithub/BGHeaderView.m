@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 yaakaito. All rights reserved.
 //
 
-#import "BGRepositoryHeaderView.h"
+#import "BGHeaderView.h"
 
-@implementation BGRepositoryHeaderView
+@implementation BGHeaderView
 
 - (id)initWithFrame:(CGRect)frame
 {

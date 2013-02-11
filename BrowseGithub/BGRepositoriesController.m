@@ -12,7 +12,6 @@
 #import "BGRepository.h"
 #import "BGRepositoryCell.h"
 #import "BGRepositoryController.h"
-#import "UIViewController+BrowseGithub.h"
 #import "BGPageLoadingCell.h"
 #import "BGAuthenticationManager.h"
 

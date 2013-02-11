@@ -10,6 +10,12 @@
 		B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
 		B90AE44216116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
 		B90AE478161181F2002D677E /* BGEventMessageFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */; };
+		B93D0A6416C9890300C4F96A /* BGCommentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6316C9890300C4F96A /* BGCommentsController.m */; };
+		B93D0A6816C9894A00C4F96A /* BGDiscussionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */; };
+		B93D0A6916C9894A00C4F96A /* BGDiscussionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */; };
+		B93D0A6C16C98C5500C4F96A /* BGBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6B16C98C5500C4F96A /* BGBodyView.m */; };
+		B93D0A6F16C98CBF00C4F96A /* BGDiscussionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6E16C98CBF00C4F96A /* BGDiscussionView.m */; };
+		B93D0A7416C98CF800C4F96A /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A7316C98CF800C4F96A /* BGView.m */; };
 		B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
@@ -70,7 +76,7 @@
 		B9B7932C16C801E50085CC75 /* BGRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7932A16C801D30085CC75 /* BGRepositoryController.m */; };
 		B9B7932D16C801E50085CC75 /* BGRepositoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B7932B16C801DB0085CC75 /* BGRepositoryController.xib */; };
 		B9B7933316C804370085CC75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B7933216C804350085CC75 /* QuartzCore.framework */; };
-		B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */; };
+		B9B7933616C80D3B0085CC75 /* BGHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933516C80D3B0085CC75 /* BGHeaderView.m */; };
 		B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933816C8184F0085CC75 /* BGRepositoryView.m */; };
 		B9B7933B16C823240085CC75 /* readme.html in Resources */ = {isa = PBXBuildFile; fileRef = B9B7933A16C823240085CC75 /* readme.html */; };
 		B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7933D16C823E70085CC75 /* BGReadmeView.m */; };
@@ -219,6 +225,17 @@
 		B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventMessageFormatter.h; sourceTree = "<group>"; };
 		B90AE44016116D44002D677E /* BGEventMessageFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatter.m; sourceTree = "<group>"; };
 		B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatterSpec.m; sourceTree = "<group>"; };
+		B93D0A6216C9890300C4F96A /* BGCommentsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCommentsController.h; sourceTree = "<group>"; };
+		B93D0A6316C9890300C4F96A /* BGCommentsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCommentsController.m; sourceTree = "<group>"; };
+		B93D0A6516C9894A00C4F96A /* BGDiscussionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDiscussionController.h; sourceTree = "<group>"; };
+		B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDiscussionController.m; sourceTree = "<group>"; };
+		B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGDiscussionController.xib; sourceTree = "<group>"; };
+		B93D0A6A16C98C5500C4F96A /* BGBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBodyView.h; sourceTree = "<group>"; };
+		B93D0A6B16C98C5500C4F96A /* BGBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBodyView.m; sourceTree = "<group>"; };
+		B93D0A6D16C98CBE00C4F96A /* BGDiscussionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDiscussionView.h; sourceTree = "<group>"; };
+		B93D0A6E16C98CBF00C4F96A /* BGDiscussionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDiscussionView.m; sourceTree = "<group>"; };
+		B93D0A7216C98CF800C4F96A /* BGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
+		B93D0A7316C98CF800C4F96A /* BGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
 		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
 		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
 		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
@@ -278,8 +295,8 @@
 		B9B7932A16C801D30085CC75 /* BGRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryController.m; sourceTree = "<group>"; };
 		B9B7932B16C801DB0085CC75 /* BGRepositoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGRepositoryController.xib; sourceTree = "<group>"; };
 		B9B7933216C804350085CC75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B9B7933416C80D3B0085CC75 /* BGRepositoryHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryHeaderView.h; sourceTree = "<group>"; };
-		B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryHeaderView.m; sourceTree = "<group>"; };
+		B9B7933416C80D3B0085CC75 /* BGHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGHeaderView.h; sourceTree = "<group>"; };
+		B9B7933516C80D3B0085CC75 /* BGHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGHeaderView.m; sourceTree = "<group>"; };
 		B9B7933716C8184F0085CC75 /* BGRepositoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRepositoryView.h; sourceTree = "<group>"; };
 		B9B7933816C8184F0085CC75 /* BGRepositoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoryView.m; sourceTree = "<group>"; };
 		B9B7933A16C823240085CC75 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
@@ -453,6 +470,28 @@
 			name = Commons;
 			sourceTree = "<group>";
 		};
+		B93D0A7016C98CC900C4F96A /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				B9B7933416C80D3B0085CC75 /* BGHeaderView.h */,
+				B9B7933516C80D3B0085CC75 /* BGHeaderView.m */,
+				B93D0A6A16C98C5500C4F96A /* BGBodyView.h */,
+				B93D0A6B16C98C5500C4F96A /* BGBodyView.m */,
+			);
+			name = Partials;
+			sourceTree = "<group>";
+		};
+		B93D0A7116C98CE200C4F96A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A7216C98CF800C4F96A /* BGView.h */,
+				B93D0A7316C98CF800C4F96A /* BGView.m */,
+				B9B83F1915FFB5CC0071F088 /* BGTableView.h */,
+				B9B83F1A15FFB5CD0071F088 /* BGTableView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		B9B792D116C7A9700085CC75 /* mooicon */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +545,8 @@
 				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
 				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
+				B93D0A6216C9890300C4F96A /* BGCommentsController.h */,
+				B93D0A6316C9890300C4F96A /* BGCommentsController.m */,
 			);
 			name = Independent;
 			sourceTree = "<group>";
@@ -666,6 +707,9 @@
 				B9B7932916C801D00085CC75 /* BGRepositoryController.h */,
 				B9B7932A16C801D30085CC75 /* BGRepositoryController.m */,
 				B9B7932B16C801DB0085CC75 /* BGRepositoryController.xib */,
+				B93D0A6516C9894A00C4F96A /* BGDiscussionController.h */,
+				B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */,
+				B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -689,18 +733,18 @@
 		B9B83EB015FE85B80071F088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B9B83F1915FFB5CC0071F088 /* BGTableView.h */,
-				B9B83F1A15FFB5CD0071F088 /* BGTableView.m */,
+				B93D0A7116C98CE200C4F96A /* Base */,
+				B93D0A7016C98CC900C4F96A /* Partials */,
 				B9B83DC615FE81290071F088 /* BGAuthenticationView.h */,
 				B9B83DC715FE81290071F088 /* BGAuthenticationView.m */,
 				B9B83DDD15FE81290071F088 /* BGGlobalMenuUserView.h */,
 				B9B83DDE15FE81290071F088 /* BGGlobalMenuUserView.m */,
-				B9B7933416C80D3B0085CC75 /* BGRepositoryHeaderView.h */,
-				B9B7933516C80D3B0085CC75 /* BGRepositoryHeaderView.m */,
 				B9B7933716C8184F0085CC75 /* BGRepositoryView.h */,
 				B9B7933816C8184F0085CC75 /* BGRepositoryView.m */,
 				B9B7933C16C823E60085CC75 /* BGReadmeView.h */,
 				B9B7933D16C823E70085CC75 /* BGReadmeView.m */,
+				B93D0A6D16C98CBE00C4F96A /* BGDiscussionView.h */,
+				B93D0A6E16C98CBF00C4F96A /* BGDiscussionView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1080,6 +1124,7 @@
 				B9B7935116C849980085CC75 /* pull-request@2x.png in Resources */,
 				B9B7935416C8F8970085CC75 /* github.png in Resources */,
 				B9B7935516C8F8970085CC75 /* github@2x.png in Resources */,
+				B93D0A6916C9894A00C4F96A /* BGDiscussionController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1195,11 +1240,16 @@
 				B9B792F016C7B6DF0085CC75 /* BGMenuContents.m in Sources */,
 				B9B7932216C801810085CC75 /* SDSegmentedControl.m in Sources */,
 				B9B7932C16C801E50085CC75 /* BGRepositoryController.m in Sources */,
-				B9B7933616C80D3B0085CC75 /* BGRepositoryHeaderView.m in Sources */,
+				B9B7933616C80D3B0085CC75 /* BGHeaderView.m in Sources */,
 				B9B7933916C818500085CC75 /* BGRepositoryView.m in Sources */,
 				B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */,
 				B9B7934116C8320E0085CC75 /* BGIssueCell.m in Sources */,
 				B9B7934B16C847120085CC75 /* BGPullRequestCell.m in Sources */,
+				B93D0A6416C9890300C4F96A /* BGCommentsController.m in Sources */,
+				B93D0A6816C9894A00C4F96A /* BGDiscussionController.m in Sources */,
+				B93D0A6C16C98C5500C4F96A /* BGBodyView.m in Sources */,
+				B93D0A6F16C98CBF00C4F96A /* BGDiscussionView.m in Sources */,
+				B93D0A7416C98CF800C4F96A /* BGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
