@@ -1,0 +1,3 @@
+[submodule "Vendor/Plasma"]
+	path = Vendor/Plasma
+	url = git@github.com:yaakaito/Plasma.git
