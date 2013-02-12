@@ -17,6 +17,16 @@
 		B93D0A6F16C98CBF00C4F96A /* BGDiscussionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6E16C98CBF00C4F96A /* BGDiscussionView.m */; };
 		B93D0A7416C98CF800C4F96A /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A7316C98CF800C4F96A /* BGView.m */; };
 		B93D0A7716C98F2E00C4F96A /* BGTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A7616C98F2E00C4F96A /* BGTabView.m */; };
+		B93D0AA316CA99D800C4F96A /* PLAException.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A8816CA99D800C4F96A /* PLAException.m */; };
+		B93D0AA416CA99D800C4F96A /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A8A16CA99D800C4F96A /* PLAModel.m */; };
+		B93D0AA516CA99D800C4F96A /* PLAModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A8C16CA99D800C4F96A /* PLAModelList.m */; };
+		B93D0AA616CA99D800C4F96A /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A8E16CA99D800C4F96A /* PLAValueAdapter.m */; };
+		B93D0AA716CA99D800C4F96A /* PLAWebAPIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9116CA99D800C4F96A /* PLAWebAPIModel.m */; };
+		B93D0AA816CA99D800C4F96A /* PLANetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9616CA99D800C4F96A /* PLANetworking.m */; };
+		B93D0AA916CA99D800C4F96A /* PLAResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9816CA99D800C4F96A /* PLAResponseParser.m */; };
+		B93D0AAA16CA99D800C4F96A /* Plasma.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9B16CA99D800C4F96A /* Plasma.m */; };
+		B93D0AAB16CA99D800C4F96A /* PLAURLTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9F16CA99D800C4F96A /* PLAURLTransformer.m */; };
+		B93D0AAC16CA99D800C4F96A /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0AA216CA99D800C4F96A /* PLAValueTransformer.m */; };
 		B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
@@ -239,6 +249,29 @@
 		B93D0A7316C98CF800C4F96A /* BGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
 		B93D0A7516C98F2E00C4F96A /* BGTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabView.h; sourceTree = "<group>"; };
 		B93D0A7616C98F2E00C4F96A /* BGTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabView.m; sourceTree = "<group>"; };
+		B93D0A8716CA99D800C4F96A /* PLAException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAException.h; sourceTree = "<group>"; };
+		B93D0A8816CA99D800C4F96A /* PLAException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAException.m; sourceTree = "<group>"; };
+		B93D0A8916CA99D800C4F96A /* PLAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAModel.h; sourceTree = "<group>"; };
+		B93D0A8A16CA99D800C4F96A /* PLAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModel.m; sourceTree = "<group>"; };
+		B93D0A8B16CA99D800C4F96A /* PLAModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAModelList.h; sourceTree = "<group>"; };
+		B93D0A8C16CA99D800C4F96A /* PLAModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModelList.m; sourceTree = "<group>"; };
+		B93D0A8D16CA99D800C4F96A /* PLAValueAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueAdapter.h; sourceTree = "<group>"; };
+		B93D0A8E16CA99D800C4F96A /* PLAValueAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueAdapter.m; sourceTree = "<group>"; };
+		B93D0A9016CA99D800C4F96A /* PLAWebAPIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAWebAPIModel.h; sourceTree = "<group>"; };
+		B93D0A9116CA99D800C4F96A /* PLAWebAPIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAWebAPIModel.m; sourceTree = "<group>"; };
+		B93D0A9216CA99D800C4F96A /* PLAWebAPIModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAWebAPIModelProtocol.h; sourceTree = "<group>"; };
+		B93D0A9416CA99D800C4F96A /* PLANetworkerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLANetworkerProtocol.h; sourceTree = "<group>"; };
+		B93D0A9516CA99D800C4F96A /* PLANetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLANetworking.h; sourceTree = "<group>"; };
+		B93D0A9616CA99D800C4F96A /* PLANetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLANetworking.m; sourceTree = "<group>"; };
+		B93D0A9716CA99D800C4F96A /* PLAResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAResponseParser.h; sourceTree = "<group>"; };
+		B93D0A9816CA99D800C4F96A /* PLAResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAResponseParser.m; sourceTree = "<group>"; };
+		B93D0A9916CA99D800C4F96A /* Plasma-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Plasma-Prefix.pch"; sourceTree = "<group>"; };
+		B93D0A9A16CA99D800C4F96A /* Plasma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plasma.h; sourceTree = "<group>"; };
+		B93D0A9B16CA99D800C4F96A /* Plasma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plasma.m; sourceTree = "<group>"; };
+		B93D0A9E16CA99D800C4F96A /* PLAURLTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAURLTransformer.h; sourceTree = "<group>"; };
+		B93D0A9F16CA99D800C4F96A /* PLAURLTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformer.m; sourceTree = "<group>"; };
+		B93D0AA116CA99D800C4F96A /* PLAValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueTransformer.h; sourceTree = "<group>"; };
+		B93D0AA216CA99D800C4F96A /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
 		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
 		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
 		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
@@ -495,6 +528,85 @@
 				B93D0A7616C98F2E00C4F96A /* BGTabView.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		B93D0A8516CA99D800C4F96A /* Plasma */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A8616CA99D800C4F96A /* Core */,
+				B93D0A9316CA99D800C4F96A /* Networking */,
+				B93D0A9916CA99D800C4F96A /* Plasma-Prefix.pch */,
+				B93D0A9A16CA99D800C4F96A /* Plasma.h */,
+				B93D0A9B16CA99D800C4F96A /* Plasma.m */,
+				B93D0A9C16CA99D800C4F96A /* Presets */,
+				B93D0AA016CA99D800C4F96A /* Transformer */,
+			);
+			name = Plasma;
+			path = Vendor/Plasma/Plasma;
+			sourceTree = SOURCE_ROOT;
+		};
+		B93D0A8616CA99D800C4F96A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A8716CA99D800C4F96A /* PLAException.h */,
+				B93D0A8816CA99D800C4F96A /* PLAException.m */,
+				B93D0A8916CA99D800C4F96A /* PLAModel.h */,
+				B93D0A8A16CA99D800C4F96A /* PLAModel.m */,
+				B93D0A8B16CA99D800C4F96A /* PLAModelList.h */,
+				B93D0A8C16CA99D800C4F96A /* PLAModelList.m */,
+				B93D0A8D16CA99D800C4F96A /* PLAValueAdapter.h */,
+				B93D0A8E16CA99D800C4F96A /* PLAValueAdapter.m */,
+				B93D0A8F16CA99D800C4F96A /* WebAPI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B93D0A8F16CA99D800C4F96A /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A9016CA99D800C4F96A /* PLAWebAPIModel.h */,
+				B93D0A9116CA99D800C4F96A /* PLAWebAPIModel.m */,
+				B93D0A9216CA99D800C4F96A /* PLAWebAPIModelProtocol.h */,
+			);
+			path = WebAPI;
+			sourceTree = "<group>";
+		};
+		B93D0A9316CA99D800C4F96A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A9416CA99D800C4F96A /* PLANetworkerProtocol.h */,
+				B93D0A9516CA99D800C4F96A /* PLANetworking.h */,
+				B93D0A9616CA99D800C4F96A /* PLANetworking.m */,
+				B93D0A9716CA99D800C4F96A /* PLAResponseParser.h */,
+				B93D0A9816CA99D800C4F96A /* PLAResponseParser.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B93D0A9C16CA99D800C4F96A /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A9D16CA99D800C4F96A /* Transformer */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		B93D0A9D16CA99D800C4F96A /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0A9E16CA99D800C4F96A /* PLAURLTransformer.h */,
+				B93D0A9F16CA99D800C4F96A /* PLAURLTransformer.m */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		B93D0AA016CA99D800C4F96A /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				B93D0AA116CA99D800C4F96A /* PLAValueTransformer.h */,
+				B93D0AA216CA99D800C4F96A /* PLAValueTransformer.m */,
+			);
+			path = Transformer;
 			sourceTree = "<group>";
 		};
 		B9B792D116C7A9700085CC75 /* mooicon */ = {
@@ -772,7 +884,7 @@
 		B9B83EB215FE85F50071F088 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B9ECACD11613DA17000D3F90 /* Bookmark */,
+				B93D0A8516CA99D800C4F96A /* Plasma */,
 				B9B83EB315FE85FD0071F088 /* Github */,
 				B9B83DD415FE81290071F088 /* BGGithubResource.h */,
 				B9B83DD515FE81290071F088 /* BGGithubResource.m */,
@@ -997,13 +1109,6 @@
 			children = (
 			);
 			name = _pending;
-			sourceTree = "<group>";
-		};
-		B9ECACD11613DA17000D3F90 /* Bookmark */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Bookmark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1256,6 +1361,16 @@
 				B93D0A6F16C98CBF00C4F96A /* BGDiscussionView.m in Sources */,
 				B93D0A7416C98CF800C4F96A /* BGView.m in Sources */,
 				B93D0A7716C98F2E00C4F96A /* BGTabView.m in Sources */,
+				B93D0AA316CA99D800C4F96A /* PLAException.m in Sources */,
+				B93D0AA416CA99D800C4F96A /* PLAModel.m in Sources */,
+				B93D0AA516CA99D800C4F96A /* PLAModelList.m in Sources */,
+				B93D0AA616CA99D800C4F96A /* PLAValueAdapter.m in Sources */,
+				B93D0AA716CA99D800C4F96A /* PLAWebAPIModel.m in Sources */,
+				B93D0AA816CA99D800C4F96A /* PLANetworking.m in Sources */,
+				B93D0AA916CA99D800C4F96A /* PLAResponseParser.m in Sources */,
+				B93D0AAA16CA99D800C4F96A /* Plasma.m in Sources */,
+				B93D0AAB16CA99D800C4F96A /* PLAURLTransformer.m in Sources */,
+				B93D0AAC16CA99D800C4F96A /* PLAValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
