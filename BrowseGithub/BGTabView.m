@@ -24,22 +24,24 @@
     return self;
 }
 
-- (UIView *)viewForIndex:(NSUInteger)index
+- (void)_displayViewForIndex:(NSUInteger)index
 {
-    NSLog(@"%u", index);
-    return nil;
+    UIView *view = [self.delegate viewForIndex:index];
+    view.frame = self.bodyArea.bounds;
+    view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    [self.bodyArea addSubview:view];
 }
 
 - (IBAction)selectedTabIndex:(UISegmentedControl *)sender
 {
-    [self viewForIndex:sender.selectedSegmentIndex];
+    [self _displayViewForIndex:sender.selectedSegmentIndex];
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
     [super willMoveToSuperview:newSuperview];
     
-    [self viewForIndex:0];
+    [self _displayViewForIndex:0];
 }
 
 @end

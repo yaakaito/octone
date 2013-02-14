@@ -8,7 +8,10 @@
 
 #import "BGView.h"
 
-@interface BGTabView : BGView
-
+@protocol BGTabViewDelegate
 - (UIView *)viewForIndex:(NSUInteger)index;
+@end
+
+@interface BGTabView : BGView
+@property (nonatomic, weak) NSObject<BGTabViewDelegate> *delegate;
 @end

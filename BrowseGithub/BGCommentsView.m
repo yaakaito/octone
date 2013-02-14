@@ -1,20 +1,19 @@
 //
-//  BGReadmeView.m
-//  BrowseGithub
+//  BGCommentsView.m
+//  octone
 //
-//  Created by yaakaito on 2013/02/11.
+//  Created by yaakaito on 2013/02/15.
 //  Copyright (c) 2013年 yaakaito. All rights reserved.
 //
 
-#import "BGReadmeView.h"
+#import "BGCommentsView.h"
 
-@implementation BGReadmeView
+@implementation BGCommentsView
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
     [super willMoveToSuperview:newSuperview];
-    
-    [self displayHTMLString:[[NSMutableString alloc] initWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"readme" ofType:@"html"]]
+    [self displayHTMLString:[[NSMutableString alloc] initWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"comments" ofType:@"html"]]
                                                          encoding:NSUTF8StringEncoding]];
 }
 
@@ -22,6 +21,5 @@
 {
     [self loadHTMLString:htmlString baseURL:nil];
 }
-
 
 @end

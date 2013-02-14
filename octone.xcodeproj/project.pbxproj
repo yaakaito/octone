@@ -10,7 +10,6 @@
 		B90AE44116116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
 		B90AE44216116D44002D677E /* BGEventMessageFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE44016116D44002D677E /* BGEventMessageFormatter.m */; };
 		B90AE478161181F2002D677E /* BGEventMessageFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */; };
-		B93D0A6416C9890300C4F96A /* BGCommentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6316C9890300C4F96A /* BGCommentsController.m */; };
 		B93D0A6816C9894A00C4F96A /* BGDiscussionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */; };
 		B93D0A6916C9894A00C4F96A /* BGDiscussionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */; };
 		B93D0A6C16C98C5500C4F96A /* BGBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A6B16C98C5500C4F96A /* BGBodyView.m */; };
@@ -27,6 +26,11 @@
 		B93D0AAA16CA99D800C4F96A /* Plasma.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9B16CA99D800C4F96A /* Plasma.m */; };
 		B93D0AAB16CA99D800C4F96A /* PLAURLTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0A9F16CA99D800C4F96A /* PLAURLTransformer.m */; };
 		B93D0AAC16CA99D800C4F96A /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0AA216CA99D800C4F96A /* PLAValueTransformer.m */; };
+		B93D0AF916CD7B5000C4F96A /* comments.html in Resources */ = {isa = PBXBuildFile; fileRef = B93D0AF816CD7B5000C4F96A /* comments.html */; };
+		B93D0AFC16CD7D0400C4F96A /* BGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0AFB16CD7D0300C4F96A /* BGWebView.m */; };
+		B93D0B0216CD7D5900C4F96A /* BGCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0B0116CD7D5900C4F96A /* BGCommentsView.m */; };
+		B93D0B0F16CD7DEE00C4F96A /* BGHTMLRenderingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0B0E16CD7DEE00C4F96A /* BGHTMLRenderingController.m */; };
+		B93D0B1216CD7F6800C4F96A /* BGCommentsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93D0B1116CD7F6700C4F96A /* BGCommentsController.m */; };
 		B9497A9816114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9916114C2F0080F147 /* mplus-2c-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */; };
 		B9497A9A16114C2F0080F147 /* mplus-2c-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */; };
@@ -236,8 +240,6 @@
 		B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGEventMessageFormatter.h; sourceTree = "<group>"; };
 		B90AE44016116D44002D677E /* BGEventMessageFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatter.m; sourceTree = "<group>"; };
 		B90AE47616117C1B002D677E /* BGEventMessageFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGEventMessageFormatterSpec.m; sourceTree = "<group>"; };
-		B93D0A6216C9890300C4F96A /* BGCommentsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCommentsController.h; sourceTree = "<group>"; };
-		B93D0A6316C9890300C4F96A /* BGCommentsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCommentsController.m; sourceTree = "<group>"; };
 		B93D0A6516C9894A00C4F96A /* BGDiscussionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDiscussionController.h; sourceTree = "<group>"; };
 		B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDiscussionController.m; sourceTree = "<group>"; };
 		B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGDiscussionController.xib; sourceTree = "<group>"; };
@@ -272,6 +274,15 @@
 		B93D0A9F16CA99D800C4F96A /* PLAURLTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformer.m; sourceTree = "<group>"; };
 		B93D0AA116CA99D800C4F96A /* PLAValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueTransformer.h; sourceTree = "<group>"; };
 		B93D0AA216CA99D800C4F96A /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
+		B93D0AF816CD7B5000C4F96A /* comments.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = comments.html; sourceTree = "<group>"; };
+		B93D0AFA16CD7D0300C4F96A /* BGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGWebView.h; sourceTree = "<group>"; };
+		B93D0AFB16CD7D0300C4F96A /* BGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGWebView.m; sourceTree = "<group>"; };
+		B93D0B0016CD7D5800C4F96A /* BGCommentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCommentsView.h; sourceTree = "<group>"; };
+		B93D0B0116CD7D5900C4F96A /* BGCommentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCommentsView.m; sourceTree = "<group>"; };
+		B93D0B0D16CD7DEE00C4F96A /* BGHTMLRenderingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGHTMLRenderingController.h; sourceTree = "<group>"; };
+		B93D0B0E16CD7DEE00C4F96A /* BGHTMLRenderingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGHTMLRenderingController.m; sourceTree = "<group>"; };
+		B93D0B1016CD7F6600C4F96A /* BGCommentsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGCommentsController.h; sourceTree = "<group>"; };
+		B93D0B1116CD7F6700C4F96A /* BGCommentsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGCommentsController.m; sourceTree = "<group>"; };
 		B9497A9516114C2D0080F147 /* mplus-2c-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-bold.ttf"; sourceTree = "<group>"; };
 		B9497A9616114C2E0080F147 /* mplus-2c-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-heavy.ttf"; sourceTree = "<group>"; };
 		B9497A9716114C2F0080F147 /* mplus-2c-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-2c-regular.ttf"; sourceTree = "<group>"; };
@@ -662,8 +673,8 @@
 				B9B83DE215FE81290071F088 /* BGIssuesController.m */,
 				B9B83DE515FE81290071F088 /* BGPullRequestsController.h */,
 				B9B83DE615FE81290071F088 /* BGPullRequestsController.m */,
-				B93D0A6216C9890300C4F96A /* BGCommentsController.h */,
-				B93D0A6316C9890300C4F96A /* BGCommentsController.m */,
+				B93D0B0D16CD7DEE00C4F96A /* BGHTMLRenderingController.h */,
+				B93D0B0E16CD7DEE00C4F96A /* BGHTMLRenderingController.m */,
 			);
 			name = Independent;
 			sourceTree = "<group>";
@@ -785,6 +796,7 @@
 				B9B83DFF15FE81290071F088 /* navigation-background.png */,
 				B9B83E0015FE81290071F088 /* navigation-background@2x.png */,
 				B9B7933A16C823240085CC75 /* readme.html */,
+				B93D0AF816CD7B5000C4F96A /* comments.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -827,6 +839,8 @@
 				B93D0A6516C9894A00C4F96A /* BGDiscussionController.h */,
 				B93D0A6616C9894A00C4F96A /* BGDiscussionController.m */,
 				B93D0A6716C9894A00C4F96A /* BGDiscussionController.xib */,
+				B93D0B1016CD7F6600C4F96A /* BGCommentsController.h */,
+				B93D0B1116CD7F6700C4F96A /* BGCommentsController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -862,6 +876,10 @@
 				B9B7933D16C823E70085CC75 /* BGReadmeView.m */,
 				B93D0A6D16C98CBE00C4F96A /* BGDiscussionView.h */,
 				B93D0A6E16C98CBF00C4F96A /* BGDiscussionView.m */,
+				B93D0AFA16CD7D0300C4F96A /* BGWebView.h */,
+				B93D0AFB16CD7D0300C4F96A /* BGWebView.m */,
+				B93D0B0016CD7D5800C4F96A /* BGCommentsView.h */,
+				B93D0B0116CD7D5900C4F96A /* BGCommentsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1235,6 +1253,7 @@
 				B9B7935416C8F8970085CC75 /* github.png in Resources */,
 				B9B7935516C8F8970085CC75 /* github@2x.png in Resources */,
 				B93D0A6916C9894A00C4F96A /* BGDiscussionController.xib in Resources */,
+				B93D0AF916CD7B5000C4F96A /* comments.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1355,7 +1374,6 @@
 				B9B7933E16C823E70085CC75 /* BGReadmeView.m in Sources */,
 				B9B7934116C8320E0085CC75 /* BGIssueCell.m in Sources */,
 				B9B7934B16C847120085CC75 /* BGPullRequestCell.m in Sources */,
-				B93D0A6416C9890300C4F96A /* BGCommentsController.m in Sources */,
 				B93D0A6816C9894A00C4F96A /* BGDiscussionController.m in Sources */,
 				B93D0A6C16C98C5500C4F96A /* BGBodyView.m in Sources */,
 				B93D0A6F16C98CBF00C4F96A /* BGDiscussionView.m in Sources */,
@@ -1371,6 +1389,10 @@
 				B93D0AAA16CA99D800C4F96A /* Plasma.m in Sources */,
 				B93D0AAB16CA99D800C4F96A /* PLAURLTransformer.m in Sources */,
 				B93D0AAC16CA99D800C4F96A /* PLAValueTransformer.m in Sources */,
+				B93D0AFC16CD7D0400C4F96A /* BGWebView.m in Sources */,
+				B93D0B0216CD7D5900C4F96A /* BGCommentsView.m in Sources */,
+				B93D0B0F16CD7DEE00C4F96A /* BGHTMLRenderingController.m in Sources */,
+				B93D0B1216CD7F6800C4F96A /* BGCommentsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

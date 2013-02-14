@@ -1,19 +1,18 @@
 //
-//  BGCommentsController.m
+//  BGHTMLRenderingController.m
 //  octone
 //
 //  Created by yaakaito on 2013/02/15.
 //  Copyright (c) 2013年 yaakaito. All rights reserved.
 //
 
-#import "BGCommentsController.h"
-#import "BGCommentsView.h"
+#import "BGHTMLRenderingController.h"
 
-@interface BGCommentsController ()
-
+@interface BGHTMLRenderingController ()
+@property (nonatomic, strong) UIWebView *_webView;
 @end
 
-@implementation BGCommentsController
+@implementation BGHTMLRenderingController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +27,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self._webView = [self.class webView];
+    [self.view addSubview:self._webView];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self._webView.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,7 +45,6 @@
 
 + (UIWebView *)webView
 {
-    return [[BGCommentsView alloc] init];
+    return nil;
 }
-
 @end

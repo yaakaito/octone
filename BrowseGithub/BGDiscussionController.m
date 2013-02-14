@@ -7,8 +7,11 @@
 //
 
 #import "BGDiscussionController.h"
+#import "BGTabView.h"
+#import "BGCommentsView.h"
 
-@interface BGDiscussionController ()
+
+@interface BGDiscussionController () <BGTabViewDelegate>
 
 @end
 
@@ -27,6 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    BGTabView *tabView = (BGTabView *)self.view;
+    tabView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +40,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIView *)viewForIndex:(NSUInteger)index
+{
+    return [[BGCommentsView alloc] init];
+}
 @end
