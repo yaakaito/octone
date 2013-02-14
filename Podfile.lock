@@ -1,0 +1,47 @@
+
+COCOAPODS: 0.14.0
+
+PODS: 
+- AFNetworking (1.0)
+- CocoaAsyncSocket (0.0.1)
+- CocoaHTTPServer (2.2.1): 
+  - CocoaAsyncSocket (~> 0.0.1)
+  - CocoaLumberjack (~> 1.3.0)
+- CocoaLumberjack (1.3.3)
+- EEHUDView (0.0.1)
+- JASidePanels (0.0.1)
+- JMImageCache (0.4.0)
+- Kiwi (1.1.0)
+- NLTHTTPStubServer (0.1.3): 
+  - CocoaHTTPServer (= 2.2.1)
+- Overline (0.1.4)
+- UIGlossyButton (0.0.7): 
+  - UIGlossyButton/Core (= 0.0.7)
+  - UIGlossyButton/LayerEffects (= 0.0.7)
+- UIGlossyButton/Core (0.0.7)
+- UIGlossyButton/LayerEffects (0.0.7)
+
+SPEC CHECKSUMS: 
+  UIGlossyButton/LayerEffects: ac45013a4cf79d80dd3a2c137f4d36baf7058b17
+  NLTHTTPStubServer: c8ca7b0352a4762d8889026eb5dfc8ccd601cf29
+  UIGlossyButton/Core: ac45013a4cf79d80dd3a2c137f4d36baf7058b17
+  UIGlossyButton: ac45013a4cf79d80dd3a2c137f4d36baf7058b17
+  JASidePanels: d50f0ecbc7f7889504f162443f4ca08b1c1212d5
+  CocoaAsyncSocket: 70f5de3c1ba13526c23df75fc98a0ea3049aa19c
+  Kiwi: 9141d15cf4f52a2178139ea16722f021b4059906
+  EEHUDView: 742f76dde9c9a0a2985300856931c5f6bcc33540
+  AFNetworking: 204f4b3d3a3ea7b38737c3fbf2646ba8c9719eea
+  Overline: 6704cd462f44cc277ecf50058221a087388b607b
+  CocoaLumberjack: 5b2c6e153a8b251dc4b5cea52138e5c2665e2eca
+  CocoaHTTPServer: 188251009cdf2fb9f422e6979621b8942733cb22
+  JMImageCache: f7077130a75781b78a04af0008e4953463687d34
+
+DEPENDENCIES: 
+- AFNetworking
+- EEHUDView
+- JASidePanels
+- JMImageCache
+- Kiwi
+- NLTHTTPStubServer
+- Overline
+- UIGlossyButton

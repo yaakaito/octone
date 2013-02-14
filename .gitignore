@@ -1,6 +1,5 @@
 octone.xcodeproj/project.xcworkspace/*
 octone.xcodeproj/xcuserdata/*
-Podfile.lock
 Pods
 octone.xcworkspace/xcuserdata/*
 BrowseGithub/BGSecretKeys.h
