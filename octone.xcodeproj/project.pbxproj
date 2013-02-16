@@ -317,6 +317,7 @@
 		B9A21E40160AEB32006167BE /* BGResourceManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGResourceManagerSpec.m; sourceTree = "<group>"; };
 		B9A21E42160AF96D006167BE /* MockResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockResource.h; sourceTree = "<group>"; };
 		B9A21E43160AF96D006167BE /* MockResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockResource.m; sourceTree = "<group>"; };
+		B9A73DEE16CDEDBA00B9C45E /* BGSecretKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
 		B9B792B416C6BE000085CC75 /* BGEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGEventCell.xib; sourceTree = "<group>"; };
 		B9B792CF16C789410085CC75 /* BGRepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGRepositoryCell.xib; sourceTree = "<group>"; };
 		B9B792D216C7A9800085CC75 /* fork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fork.png; path = mooicon/fork.png; sourceTree = "<group>"; };
@@ -406,7 +407,6 @@
 		B9B83DE815FE81290071F088 /* BGRepositoriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRepositoriesController.m; sourceTree = "<group>"; };
 		B9B83DE915FE81290071F088 /* BGRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRootController.h; sourceTree = "<group>"; };
 		B9B83DEA15FE81290071F088 /* BGRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRootController.m; sourceTree = "<group>"; };
-		B9B83DEB15FE81290071F088 /* BGSecretKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSecretKeys.h; sourceTree = "<group>"; };
 		B9B83DEE15FE81290071F088 /* BGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGUser.h; sourceTree = "<group>"; };
 		B9B83DEF15FE81290071F088 /* BGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGUser.m; sourceTree = "<group>"; };
 		B9B83DF015FE81290071F088 /* BrowseGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseGithub.h; sourceTree = "<group>"; };
@@ -850,13 +850,13 @@
 			children = (
 				B9B83EB515FE86C80071F088 /* Patches */,
 				B9B83EB415FE86630071F088 /* Extensions */,
-				B9B83DEB15FE81290071F088 /* BGSecretKeys.h */,
 				B9B83D7C15FE7DB50071F088 /* BGAppDelegate.h */,
 				B9B83D7D15FE7DB50071F088 /* BGAppDelegate.m */,
 				B9B83DF015FE81290071F088 /* BrowseGithub.h */,
 				B9B83DF115FE81290071F088 /* BrowseGithub.m */,
 				B90AE43F16116D44002D677E /* BGEventMessageFormatter.h */,
 				B90AE44016116D44002D677E /* BGEventMessageFormatter.m */,
+				B9A73DEE16CDEDBA00B9C45E /* BGSecretKeys.h */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
