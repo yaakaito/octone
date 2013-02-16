@@ -1,3 +1,6 @@
 [submodule "Vendor/Plasma"]
 	path = Vendor/Plasma
 	url = git@github.com:yaakaito/Plasma.git
+[submodule "Vendor/SDSegmentedControl"]
+	path = Vendor/SDSegmentedControl
+	url = git://github.com/rs/SDSegmentedControl.git
