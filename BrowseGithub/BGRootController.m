@@ -52,6 +52,7 @@
     
     _appRootController = [[PatchedJASidePanelController alloc] init];
     _appRootController.view.frame = [self initialFrame];
+    _appRootController.leftGapPercentage = 0.2f;
     [(PatchedJASidePanelController*)_appRootController startNotificationListener];
 
     UIViewController *firstController = [[BGGlobalMenuContext sharedContents] contentsControllerForIndex:0];
